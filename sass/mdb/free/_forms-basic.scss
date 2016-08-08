@@ -1,0 +1,302 @@
+// FORMS BASIC
+// Text inputs
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search-md],
+textarea.md-textarea {
+    // General Styles
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    border-radius: 0;
+    outline: none;
+    height: 2.1rem;
+    width: 100%;
+    font-size: 1rem;
+    box-shadow: none;
+    @include box-sizing(content-box);
+    transition: all .3s;
+    // Disabled input style
+    &:disabled,
+    &:disabled,
+    &[readonly="readonly"] {
+        color: $input-disabled-color;
+        border-bottom: 1px dotted $input-disabled-color;
+        background-color: transparent;
+    }
+    // Disabled label style
+    &:disabled+label,
+    &[readonly="readonly"]+label {
+        color: $input-disabled-color;
+        background-color: transparent;
+    }
+    // Focused input style
+    &:focus:not([readonly]) {
+        border-bottom: 1px solid $input-focus-color;
+        box-shadow: 0 1px 0 0 $input-focus-color;
+    }
+    // Focused label style
+    &:focus:not([readonly])+label {
+        color: $input-focus-color;
+    }
+    // Valid Input Style
+    &.valid,
+    &:focus.valid {
+        border-bottom: 1px solid $input-success-color;
+        box-shadow: 0 1px 0 0 $input-success-color;
+    }
+    // Custom Success Message
+    &.valid + label:after,
+    &:focus.valid + label:after {
+        content: attr(data-success);
+        color: $input-success-color;
+        opacity: 1;
+    }
+    // Invalid Input Style
+    &.invalid,
+    &:focus.invalid {
+        border-bottom: 1px solid $input-error-color;
+        box-shadow: 0 1px 0 0 $input-error-color;
+    }
+    // Custom Error message
+    &.invalid + label:after,
+    &:focus.invalid + label:after {
+        content: attr(data-error);
+        color: $input-error-color;
+        opacity: 1;
+    }
+    // Form Message Shared Styles
+    & + label:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 65px;
+        opacity: 0;
+        transition: .2s opacity ease-out, .2s color ease-out;
+    }
+}
+
+label {
+    font-size: $label-font-size;
+    color: darken ($input-border-color, 90%);
+}
+
+.form-control {
+    padding: 0;
+    padding-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: transparent;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+// Styling for input field wrapper
+.md-form {
+    position: relative;
+    margin-bottom: 1.5rem;
+    .btn {
+        margin-bottom: 1.5rem;
+    }
+    label {
+        color: #757575;
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+        font-size: 1rem;
+        cursor: text;
+        @include transition(.2s ease-out);
+    }
+    label.active {
+        font-size: $label-font-size;
+        @include transform(translateY(-140%));
+    }
+    // Prefix Icons
+    .prefix {
+        position: absolute;
+        width: 3rem;
+        font-size: 2rem;
+        @include transition(color .2s);
+        &.active {
+            color: $input-focus-color;
+        }
+    }
+    .prefix ~ input,
+    .prefix ~ textarea {
+        margin-left: 3rem;
+        width: 92%;
+        width: calc(100% - 3rem);
+    }
+    .prefix ~ textarea {
+        padding-top: .8rem;
+    }
+    .prefix ~ label {
+        margin-left: 3rem;
+    }
+    @media #{$medium-and-down} {
+        .prefix ~ input {
+            width: 86%;
+            width: calc(100% - 3rem);
+        }
+    }
+    @media #{$small-and-down} {
+        .prefix ~ input {
+            width: 80%;
+            width: calc(100% - 3rem);
+        }
+    }
+    .input-group {
+        border: 1px solid #eee;
+        .form-control {
+            margin: 0;
+        }
+        ::-webkit-input-placeholder {
+            padding-left: 7px;
+            padding-top: 2px;
+        }
+        :-moz-placeholder {
+            /* Firefox 18- */
+            padding-left: 7px;
+            padding-top: 2px;
+        }
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            padding-left: 7px;
+            padding-top: 2px;
+        }
+        :-ms-input-placeholder {
+            padding-left: 7px;
+            padding-top: 2px;
+        }
+    }
+}
+
+.form-inline {
+    fieldset {
+        margin-right: 1.5rem;
+    }
+}
+
+// Default textarea
+textarea {
+    width: 100%;
+    height: 3rem;
+    background-color: transparent;
+    &.md-textarea {
+        overflow-y: hidden;
+        /* prevents scroll bar flash */
+        padding: 1.6rem 0;
+        /* prevents text jump on Enter keypress */
+        resize: none;
+        min-height: 3rem;
+    }
+}
+
+// For textarea autoresize
+.hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* future version of deprecated 'word-wrap' */
+    padding-top: 1.2rem;
+    /* prevents text jump on Enter keypress */
+}
+
+//Input color
+.input-dark-bg {
+    // Style Placeholders
+    ::-webkit-input-placeholder {
+        color: #fff!important;
+        font-weight: 300;
+    }
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff!important;
+        font-weight: 300;
+    }
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff!important;
+        font-weight: 300;
+    }
+    :-ms-input-placeholder {
+        color: #fff!important;
+        font-weight: 300;
+    }
+    input[type=text] {
+        border-bottom: 1px solid #fff;
+    }
+    .form-control {
+        color: #fff;
+    }
+}
+
+.input-light-bg {
+    // Style Placeholders
+    ::-webkit-input-placeholder {
+        color: #1C2331!important;
+        font-weight: 300;
+    }
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #1C2331!important;
+        font-weight: 300;
+    }
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #1C2331!important;
+        font-weight: 300;
+    }
+    :-ms-input-placeholder {
+        color: #1C2331!important;
+        font-weight: 300;
+    }
+    input[type=text] {
+        border-bottom: 1px solid #1C2331;
+    }
+    .form-control {
+        color: #1C2331;
+    }
+}
+
+.form-inline .form-group {
+    margin-right: 2rem;
+}
+
+i {
+    &.btn-primary {
+        background: $primary-color!important;
+    }
+    &.btn-default {
+        background: $default-color!important;
+    }
+    &.btn-success {
+        background: $success-color!important;
+    }
+    &.btn-info {
+        background: $info-color!important;
+    }
+    &.btn-warning {
+        background: $warning-color-dark!important;
+    }
+    &.btn-danger {
+        background: $danger-color-dark!important;
+    }
+}

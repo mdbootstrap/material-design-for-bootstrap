@@ -1,0 +1,101 @@
+// VARIABLES
+
+/*** Colors ***/
+$primary-color: color("mdb-color", "lighten-2") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: color("teal", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+
+$link-color: color("light-blue", "darken-1") !default;
+
+/*** Fonts ***/
+$roboto-font-path: "../font/roboto/" !default;
+
+/*** Typography ***/
+$off-black: rgba(0, 0, 0, 0.87) !default;
+
+/*** Cards ***/
+$card-padding: 20px !default;
+$card-bg-color: #fff !default;
+$card-link-color: color("orange", "accent-2") !default;
+$card-link-color-light: lighten($card-link-color, 20%) !default;
+
+/*** Global ***/
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+// Text fluid
+$range : $large-screen - $small-screen !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default; 
+
+/*** Forms ***/
+// Text Inputs + Textarea
+$input-border-color: color("grey", "darken-4") !default;
+$input-bg-color: #fff !default;
+$input-error-color: $error-color !default;
+$input-success-color: $success-color !default;
+$input-focus-color: $primary-color !default;
+$label-font-size: .8rem !default;
+$input-disabled-color: rgba(0,0,0, .46) !default;
+$input-disabled-solid-color: #BDBDBD !default;
+
+// Radio Buttons
+$radio-fill-color: $primary-color !default;
+$radio-empty-color: #5a5a5a !default; 
+
+// Switches
+$switch-bg-color: $secondary-color !default;
+$switch-checked-lever-bg: desaturate(lighten($secondary-color, 25%), 25%) !default;
+$switch-unchecked-bg: #F1F1F1 !default;
+$switch-unchecked-lever-bg: #818181 !default;
+
+/*** Buttons ***/
+$button-bg-color-disabled: #DFDFDF !default;
+$button-color: $secondary-color !default;
+$button-color-disabled: #9F9F9F !default;
+$button-color-flat: #343434 !default;
+$button-color-raised: #fff !default;
+$button-floating-size: 37px !default;
+$button-height: 36px !default;
+$button-font-size-shared: 1.3rem !default;
+$button-large-icon-font-size: 1.6rem !default; 
+$button-line-height: 36px !default;
+
+// Grid Variables
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+/*** Dropdown ***/
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: $primary-color !default;
+$dropdown-item-height: 50px !default;
+
+/*** Tabs ***/
+$tabs-underline-color: $primary-color-light !default;
+$tabs-text-color: $primary-color !default;
+$tabs-bg-color: #fff !default;
+
+// Date Picker
+$datepicker-weekday-bg: darken($primary-color, 7%) !default;
+$datepicker-date-bg: $primary-color !default;
+$datepicker-year: rgba(255, 255, 255, .4) !default;
+$datepicker-focus: rgba(0,0,0, .05) !default;
+$datepicker-selected: $primary-color !default;
+$datepicker-selected-outfocus: desaturate(lighten($primary-color, 35%), 15%) !default;
