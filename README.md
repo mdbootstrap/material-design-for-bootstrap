@@ -2,6 +2,12 @@
 
 #Material Design for Bootstrap 4 
 
+400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more.
+
+All fully responsive. All compatible with different browsers.
+
+________
+
 Material Design for Bootstrap (MDB) is a free, powerful Material Design UI KIT for Bootstrap 4. It is one of the most comprehensive material design frameworks that was created to date.  
 
 Every day we challenged ourselves to create a visual language for us and our users that combines the classic principles of genuine design with the innovation and possibility of technology and science. That's what Material Design is about. Today we combine it with Bootstrap - most popular HTML, CSS, and JS framework for developing responsive, mobile first websites and apps. Bootstrap makes web development way faster and easier regardless of skill levels, devices and projects.    
@@ -24,6 +30,10 @@ Our framework includes CSS for handling Animations, Colors, Typography, Helpers,
 #PRO version:
 
 **Material Design for Bootstrap PRO (from $49)**: http://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
+
+#Documentation:
+
+**Huge, detailed documentation avilable online on**: http://mdbootstrap.com/
 
 #Highlights:  
 **Components**  
