@@ -110,24 +110,26 @@ If you're interested in learning about all the updates Material Design for Boots
 
 **What's new?**  
 
-It's Small but important update which integrates MDB with the latest alpha version of Bootstrap 4.
+It's Small but important update which integrates MDB with the latest alpha version of Bootstrap 4.  
 
-Fixed:
+**Fixed:**
 
-Blinking cursor within Material Select on IOS
-Bug with dropdown colors inside the Navbar
-Improved:
+-Blinking cursor within Material Select on IOS  
+-Bug with dropdown colors inside the Navbar  
 
-.mobile-nofixed class to keep Fixed Navbar fixed only on large screens
-New components:
+**Improved:**
 
-Tags
-Parallax
-Bootstrap 4 update
+-.mobile-nofixed class to keep Fixed Navbar fixed only on large screens  
 
-.offset-\*-\* instead of col-\*-offset-\*
-New markup for breadcrumb
-.tag instead of label
+**New components:**
+
+-Tags  
+-Parallax  
+-Bootstrap 4 update  
+
+-.offset-\*-\* instead of col-\*-offset-\*  
+-New markup for breadcrumb  
+-.tag instead of label  
 
 ###MDB 4.1.0  
 
