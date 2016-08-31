@@ -125,10 +125,21 @@ Tags
 Parallax
 Bootstrap 4 update
 
-.offset-*-* instead ofcol-*-offset-*
+.offset-\*-\* instead of col-\*-offset-\*
 New markup for breadcrumb
 .tag instead of label
 
+###MDB 4.1.0  
+
+**What's new?**  
+
+Kicking off an exciting summer with another Material Design for Bootstrap 4.1.0 software update.  
+
+Our tech team tinker away daily to develop new features, fix bugs, and make sure we’re delivering the best possible quality. While we believe all our updates are important, some are more ‘sexier’ than others. Release 4.1.0 is definitely one of them. The upgrade makes it significantly easier (yeah, we also didn't believe that can be possible until now ;)) to develop your websites and apps. With separate bugs fixes, 10 improvements, 500+ new components categories and brand new elements like 42 new sections, 10 fresh templates, and 17 documentation chapters will make August really exciting.  
+
+Note: Please read carefully entire release notes. Please DO NOT UPDATE your production environments without testing changes on your development/test environments as new updates brings a lot of changes within syntax. Unfortunately, some of them were not able to make them backward compatible, therefore, please read carefully the following post to verify whether changes may affect your project directly.  
+
+You can download new version of MDB Free on our HomePage and for MDB Pro from your account.  
 
 ####Fixed:  
 
