@@ -17,7 +17,12 @@ Our framework includes CSS for handling Animations, Colors, Typography, Helpers,
 #Demo:
 **Main demo**: http://mdbootstrap.com/material-design-for-bootstrap/
 
-#Getting started
+#How to install:
+You can install MDBootstrap using NPM or Bower:
+- `npm install mdbootstrap`
+- `bower install MDBootstrap`
+
+#Getting started:
 
 **5min Quick Start**: http://mdbootstrap.com/mdb-quick-start/
 
