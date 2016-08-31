@@ -1,0 +1,38 @@
+// FOOTER
+footer.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: $stylish-color-dark;
+    color: #fff;
+    .footer-copyright {
+        overflow: hidden;
+        height: 50px;
+        line-height: 50px;
+        color: rgba(255, 255, 255, .8);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    a {
+        color: #fff;
+    }
+    .title {
+        text-transform: uppercase;
+    }
+    .call-to-action {
+        text-align: center;
+        padding-top: 1.3rem;
+        padding-bottom: 0.5rem;
+        ul li  {
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+    .social-section {
+        text-align: center;
+         ul li  {
+            display: inline-block;
+             
+            
+        }
+    }
+}

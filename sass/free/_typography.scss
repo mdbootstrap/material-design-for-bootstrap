@@ -1,0 +1,190 @@
+    // TYPOGRAPHY
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 300;
+    }
+    
+    html {
+        @media only screen and (min-width: 0) {
+            font-size: 15px;
+        }
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 15.5px;
+        }
+        @media only screen and (min-width: $large-screen) {
+            font-size: 16px;
+        }
+    }
+    
+    .text-fluid {
+        font-weight: 300;
+        $i: 0;
+        @while $i <=$intervals {
+            @media only screen and (min-width: 360+ ($i * $interval-size)) {
+                font-size: 1.2rem * (1+ (.02 * $i));
+            }
+            $i: $i+ 1;
+        }
+        // Handle below 360px screen
+        @media only screen and (max-width: 360px) {
+            font-size: 1.2rem;
+        }
+    }
+    
+    p {
+        &.lead {
+            font-weight: 400;
+        }
+    }
+    /* Responsive Headings */
+    /* Extra Small Devices, Phones */
+    
+    @media only screen and (max-width: 768px) {
+        .h1-responsive {
+            font-size: 150%;
+            font-weight: 500;
+        }
+        .h2-responsive {
+            font-size: 145%;
+        }
+        .h3-responsive {
+            font-size: 135%;
+        }
+        .h4-responsive {
+            font-size: 135%;
+        }
+        .h5-responsive {
+            font-size: 135%;
+        }
+    }
+    /* Small Devices, Tablets */
+    
+    @media only screen and (min-width: 768px) {
+        .h1-responsive {
+            font-size: 170%;
+        }
+        .h2-responsive {
+            font-size: 140%;
+        }
+        .h3-responsive {
+            font-size: 125%;
+        }
+        .h4-responsive {
+            font-size: 125%;
+        }
+        .h5-responsive {
+            font-size: 125%;
+        }
+    }
+    /* Medium Devices, Desktops */
+    
+    @media only screen and (min-width: 992px) {
+        .h1-responsive {
+            font-size: 200%;
+        }
+        .h2-responsive {
+            font-size: 170%;
+        }
+        .h3-responsive {
+            font-size: 140%;
+        }
+        .h4-responsive {
+            font-size: 125%;
+        }
+        .h5-responsive {
+            font-size: 125%;
+        }
+    }
+    /* Large Devices, Wide Screens */
+    
+    @media only screen and (min-width: 1200px) {
+        .h1-responsive {
+            font-size: 250%;
+        }
+        .h2-responsive {
+            font-size: 200%;
+        }
+        .h3-responsive {
+            font-size: 170%;
+        }
+        .h4-responsive {
+            font-size: 140%;
+        }
+        .h5-responsive {
+            font-size: 125%;
+        }
+    }
+    
+    .section {
+        margin-bottom: 2rem;
+        .section-heading {
+            @extend .h1-responsive;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+        .section-description {
+            color: #757575;
+            margin-bottom: 4rem;
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+            @media (max-width: 992px) {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        img, .view {
+            @extend .img-fluid;
+            @extend .z-depth-2;
+        }
+        &.extra-margins {
+            h5,
+            h4,
+            a {
+                margin-bottom: 1rem;
+            }
+        }
+        h4 {
+            font-weight: 400;
+        }
+        h5 .fa {
+            margin-right: 8px;
+        }
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+        @media (min-width: 992px) {
+            hr {
+                display: none;
+            }
+        }
+        .map-container {
+            img {
+                @extend .z-depth-0;
+            }
+        }
+        .contact-icons {
+            text-align: center;
+            li {
+                margin-bottom: 2.2rem;
+            }
+            .fa {
+                font-size: 2.2rem;
+                margin-bottom: 0.6rem;
+                color: #424242;
+            }
+        }
+    }
+    
+    .between-sections {
+        margin-bottom: 4rem;
+    }
