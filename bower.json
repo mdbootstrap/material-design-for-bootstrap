@@ -16,7 +16,7 @@
   "authors": [
     "MDBootstrap"
   ],
-  "license": "MIT",
+  "license": "Custom license (read license.pdf)",
   "homepage": "http://mdbootstrap.com",
   "ignore": [
     "**/.*",
