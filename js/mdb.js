@@ -251,6 +251,10 @@ jQuery.extend( jQuery.easing,
   }
 })(window);
 
+// Identifies if the browser is NWJS.io
+(function () {
+    Window.isNWJS = (typeof process !== 'undefined' && typeof require !== 'undefined');
+})();
 
 // Unique ID
 Materialize.guid = (function() {
@@ -4591,7 +4595,7 @@ $(function () {
     else {
         window.Waves = factory.call(window);
     }
-})(typeof global === 'object' ? global : this, function () {
+})(typeof global === 'object' && !Window.isNWJS ? global : this, function () {
     'use strict';
 
     var Waves = Waves || {};
