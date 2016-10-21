@@ -61,7 +61,7 @@ ul {
 
 .jumbotron,
 .card,
-.label,
+.tag,
 .alert,
 .nav .nav-link,
 .navbar-toggler,
@@ -92,7 +92,8 @@ img {
 .popover,
 .navbar,
 .dropdown-menu,
-.label {
+.tag,
+.chip {
     @extend .z-depth-1;
 }
 

@@ -8,7 +8,7 @@ button:focus {
     border: 0;
     @extend .z-depth-1;
     transition: .2s ease-out;
-    color: #fff;
+    color: #fff!important;
     margin: 6px;
     white-space: normal !important;
     word-wrap: break-word;
@@ -78,11 +78,11 @@ button:focus {
 
 .btn-secondary:active:hover {
     background-color: lighten( $secondary-color, 5%)!important;
-    color: #fff;
 }
 
 .btn-primary {
     background: $primary-color;
+    color: #fff!important;
     &:hover,
     &:focus {
         background-color: lighten( $primary-color, 5%)!important;
@@ -155,7 +155,7 @@ button:focus {
 
 .btn-link {
     background-color: transparent;
-    color: #000;
+    color: #000!important;
     &:hover,
     &:focus {
         background-color: transparent;
@@ -166,20 +166,20 @@ button:focus {
 // Additional button styles
 .btn-primary-outline {
     border: 2px solid $primary-color;
-    color: $primary-color-dark;
+    color: $primary-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $primary-color;
     }
 }
 
 .btn-secondary-outline {
     border: 2px solid $secondary-color;
-    color: $secondary-color-dark;
+    color: $secondary-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $secondary-color;
         border: 2px solid $secondary-color;
     }
@@ -188,71 +188,71 @@ button:focus {
 .btn-default-outline {
     background-color: transparent;
     border: 2px solid $default-color;
-    color: $default-color-dark;
+    color: $default-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $default-color;
     }
 }
 
 .btn-success-outline {
     border: 2px solid $success-color;
-    color: $success-color-dark;
+    color: $success-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $success-color;
     }
 }
 
 .btn-info-outline {
     border: 2px solid $info-color;
-    color: $info-color-dark;
+    color: $info-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $info-color;
     }
 }
 
 .btn-warning-outline {
     border: 2px solid $warning-color;
-    color: $warning-color-dark;
+    color: $warning-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $warning-color;
     }
 }
 
 .btn-danger-outline {
     border: 2px solid $danger-color;
-    color: $danger-color-dark;
+    color: $danger-color-dark!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: $danger-color;
     }
 }
 
 .btn-white-outline {
     border: 2px solid #fff;
-    color: #fff;
+    color: #fff!important;
+    background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: darken( #fff, 10%)
     }
 }
 
 .btn-black-outline {
     border: 2px solid #000;
-    color: #000;
+    color: #000!important;
+    background-color: transparent;
     background-color: transparent;
     &:hover,
     &:focus {
-        background-color: transparent;
         color: #000;
     }
 }
@@ -363,6 +363,7 @@ button:focus {
         @extend .z-depth-1-half;
     }
 }
+
 .btn-dark-green {
     background: #007E33;
     &:hover,
