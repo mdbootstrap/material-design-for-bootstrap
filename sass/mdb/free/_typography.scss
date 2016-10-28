@@ -31,7 +31,7 @@
             @media only screen and (min-width: 360+ ($i * $interval-size)) {
                 font-size: 1.2rem * (1+ (.02 * $i));
             }
-            $i: $i+ 1;
+            $i: $i+1;
         }
         // Handle below 360px screen
         @media only screen and (max-width: 360px) {
@@ -43,6 +43,13 @@
         &.lead {
             font-weight: 400;
         }
+    }
+    
+    blockquote p {
+        font-size: 0.9rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     /* Responsive Headings */
     /* Extra Small Devices, Phones */
@@ -141,8 +148,12 @@
                 margin-right: 5%;
             }
         }
-        img, .view {
+        img,
+        .view {
             @extend .img-fluid;
+            @extend .z-depth-1-half;
+        }
+        .jumbotron {
             @extend .z-depth-2;
         }
         &.extra-margins {

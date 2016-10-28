@@ -1,4 +1,4 @@
-![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/05/updatepro-min-1.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)
 
 #Material Design for Bootstrap 4 
 
@@ -76,7 +76,7 @@ Our society grows day by day. Visit our forum and check how it is to be a part o
 **Flex box**  
 MDB fully suppports Flex Box. You can forget about alignment issues.  
 
-**jQuery 2.2.3**  
+**jQuery 3.1.1**  
 MDB is integrated with newest jQuery, therefore you can use all the newest features which comes along with it.  
 
 **SASS files**  
@@ -107,7 +107,7 @@ If you're interested in learning about all the updates Material Design for Boots
 
 #Preview
 
-![Material Design for Bootstrap](http://mdbootstrap.com/images/about/intro.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/images/about/intro-1.jpg)
 ![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/07/newsscreen-min.jpg)
 ![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/02/imagecarouselmdb-min.jpg)
 ![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/07/newsmdb4screen-min.jpg)
@@ -115,6 +115,50 @@ If you're interested in learning about all the updates Material Design for Boots
 
 
 #Version logs  
+
+###MDB 4.2.0  
+
+**What's new?**  
+
+MDBootstrap 4.2.0 has arrived two months after MDB 4.1.1 with new components, major improvements, and bugs fixes. 
+
+**Most important: Integration with Bootstrap 4 alpha-5 and jQuery 3.1.1**
+
+**Fixed:**
+
+-Blinking cursor within Material Select on iOS  
+-Added width to group list   
+
+**Improved:**
+
+-Lightbox  
+-Skins  
+-Sidenav  
+-Free and pro templates  
+-Buttons  
+-Code performance  
+-Shadows  
+-Font styles  
+
+**New components:**
+
+-Steppers  
+-Dotted scrollspy  
+-Classic tabs  
+-Streaks  
+-Stack Overflow button  
+-Edge Headers  
+-New gallery  
+-Vertical-align utilities with .align-top, .align-middle, and more  
+-New skins: pink, light grey  
+
+**Syntax changes:**
+
+-.btn-outline-\* instead of .btn-\*-outline  
+-Simpler margin and padding syntax (e.g. .mx-auto instead of m-x-auto)  
+-.rounded and .rounded-circle instead of .img-rounded and .img-circle  
+-.float-\*-\* instead of .pull-\*-\*  
+
 
 ###MDB 4.1.1  
 
@@ -124,7 +168,6 @@ It's Small but important update which integrates MDB with the latest alpha versi
 
 **Fixed:**
 
--Blinking cursor within Material Select on IOS  
 -Bug with dropdown colors inside the Navbar  
 
 **Improved:**

@@ -351,3 +351,65 @@
 .hm-zoom:hover .mask {
     opacity: 1;
 }
+
+.img-overlay {
+    position:relative;
+    &:after {
+        content: '';
+        display:block;
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background:rgba(0,0,0,.17);
+        transition: background 0.4s;
+    }
+    &:hover {
+        &:after {
+            background:rgba(0,0,0,.35);
+        }
+    }
+    &.light {
+        &:after {
+            background:rgba(255,255,255,.17);
+        }
+        &:hover {
+            &:after {
+                background:rgba(255,255,255,.35);
+            }
+        }
+    }
+    &.blue {
+        &:after {
+            background:rgba(0,145,234,.17);
+        }
+        &:hover {
+            &:after {
+                background:rgba(0,145,234,.35);
+            }
+        }
+    }
+    &.green {
+        &:after {
+            background:rgba(76,175,80,.17);
+        }
+        &:hover {
+            &:after {
+                background:rgba(76,175,80,.35);
+            }
+        }
+    }
+    &.red {
+        &:after {
+            background:rgba(213,0,0,.17);
+        }
+        &:hover {
+            &:after {
+                background:rgba(213,0,0,.35);
+            }
+        }
+    }
+}

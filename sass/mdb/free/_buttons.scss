@@ -4,6 +4,23 @@ button:focus {
 }
 
 .btn {
+    font-size: 0.8rem;
+    padding: 0.85rem 2.13rem;
+    &.btn-lg {
+        font-size: 0.9rem;
+        padding: 1rem 2.4rem;
+    }
+    &.btn-md {
+        font-size: 0.7rem;
+        padding: 0.7rem 1.6rem;
+    }
+    &.btn-sm {
+        font-size: 0.6rem;
+        padding:  0.5rem 1.6rem;
+    }
+}
+
+.btn {
     border-radius: 2px;
     border: 0;
     @extend .z-depth-1;
@@ -12,6 +29,7 @@ button:focus {
     margin: 6px;
     white-space: normal !important;
     word-wrap: break-word;
+    text-transform: uppercase;
     &:hover {
         @extend .z-depth-1-half;
         color: #fff;
@@ -21,9 +39,12 @@ button:focus {
     &.active {
         outline: 0;
         color: #fff;
-    }
+    } 
     .fa {
-        margin-top: 3px;
+        font-size: 1.1rem;
+        position: relative;
+        vertical-align: middle;
+        margin-top: -2px;
         &.right {
             margin-left: 3px;
         }
@@ -82,7 +103,6 @@ button:focus {
 
 .btn-primary {
     background: $primary-color;
-    color: #fff!important;
     &:hover,
     &:focus {
         background-color: lighten( $primary-color, 5%)!important;
@@ -164,96 +184,131 @@ button:focus {
 }
 
 // Additional button styles
-.btn-primary-outline {
+.btn-outline-primary {
     border: 2px solid $primary-color;
     color: $primary-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: $primary-color;
+        border-color: $primary-color;
+        background-color: transparent;
     }
 }
 
-.btn-secondary-outline {
+.btn-outline-secondary {
     border: 2px solid $secondary-color;
     color: $secondary-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: $secondary-color;
         border: 2px solid $secondary-color;
+        background-color: transparent;
     }
 }
 
-.btn-default-outline {
+.btn-outline-default {
     background-color: transparent;
     border: 2px solid $default-color;
     color: $default-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: $default-color;
+        border-color: $default-color;
+        background-color:transparent;
     }
 }
 
-.btn-success-outline {
+.btn-outline-success {
     border: 2px solid $success-color;
     color: $success-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: $success-color;
+        border-color: $success-color;
+        background-color: transparent;
     }
 }
 
-.btn-info-outline {
+.btn-outline-info {
     border: 2px solid $info-color;
     color: $info-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: $info-color;
+        border-color: $info-color;
+        background-color: transparent;
+
     }
 }
 
-.btn-warning-outline {
+.btn-outline-warning {
     border: 2px solid $warning-color;
     color: $warning-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
+        border-color: $warning-color;
         color: $warning-color;
+        background-color: transparent;
     }
 }
 
-.btn-danger-outline {
+.btn-outline-danger {
     border: 2px solid $danger-color;
     color: $danger-color-dark!important;
     background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: $danger-color;
+        border-color: $danger-color;
+        background-color: transparent;
     }
 }
 
-.btn-white-outline {
+.btn-outline-white {
     border: 2px solid #fff;
     color: #fff!important;
     background-color: transparent;
     &:hover,
-    &:focus {
-        color: darken( #fff, 10%)
+    &:focus,
+    &:active,
+    &:active:focus {
+        color: darken( #fff, 10%);
+        border-color: #fff;
+        background-color:transparent;
     }
 }
 
-.btn-black-outline {
+.btn-outline-black {
     border: 2px solid #000;
     color: #000!important;
     background-color: transparent;
-    background-color: transparent;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:active:focus {
         color: #000;
+        border-color: #000;
+        background-color: transparent;
     }
 }
 

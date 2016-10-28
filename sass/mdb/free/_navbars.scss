@@ -15,10 +15,13 @@
         a {
             padding-right: 8px;
             padding-left: 8px;
+            font-weight: 300;
         }
     }
     .navbar-toggler {
         float: right;
+        background:none;
+        border-width:0;
         &:focus {
             background-color: inherit;
         }
@@ -26,6 +29,7 @@
     .breadcrumb {
         margin: 0;
         background-color: inherit;
+        font-weight: 300;
     }
     .nav-flex-icons {
         float: right;
@@ -38,6 +42,12 @@
         }
     }
     &.navbar-dark {
+        .navbar-brand {
+            color:#fff;
+            &:hover {
+                color:#fff;
+            }
+        }
         .breadcrumb,
         .navbar-nav .nav-item {
             a {
