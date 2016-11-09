@@ -20,16 +20,16 @@ Our framework includes CSS for handling Animations, Colors, Typography, Helpers,
 #How to install:
 You can install MDBootstrap using NPM or Bower:
 - `npm install mdbootstrap`
-- `bower install MDBootstrap`
+- `bower install MDBootstrap#4.2.0`
 
 #Getting started:
 
 **5min Quick Start**: http://mdbootstrap.com/mdb-quick-start/
 
 #MDBootstrap on CDNJS:
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" />`
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>`
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/js/mdb.min.js"></script>`
 
 #Additional tutorials:
 
