@@ -1,4 +1,4 @@
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)
+![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)
 
 #Material Design for Bootstrap 4 
 
@@ -15,7 +15,7 @@ Every day we challenged ourselves to create a visual language for us and our use
 Our framework includes CSS for handling Animations, Colors, Typography, Helpers, Hover effects, Shadows, Icons, Components, and JavaScript. Additionally, it offers Badges, Buttons, Social buttons, Cards, Footer, Forms, Material box, Nabbers, Pagination, Panels, Parallax, Progress bar, Tables, Galleries and JavaScript.  
 
 #Demo:
-**Main demo**: http://mdbootstrap.com/material-design-for-bootstrap/
+**Main demo**: https://mdbootstrap.com/material-design-for-bootstrap/
 
 #How to install:
 You can install MDBootstrap using NPM or Bower:
@@ -24,7 +24,7 @@ You can install MDBootstrap using NPM or Bower:
 
 #Getting started:
 
-**5min Quick Start**: http://mdbootstrap.com/mdb-quick-start/
+**5min Quick Start**: https://mdbootstrap.com/mdb-quick-start/
 
 #MDBootstrap on CDNJS:
 `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.min.css" />`
@@ -33,17 +33,17 @@ You can install MDBootstrap using NPM or Bower:
 
 #Additional tutorials:
 
-**MDB - Bootstrap tutorial**: http://mdbootstrap.com/bootstrap-tutorial/
+**MDB - Bootstrap tutorial**: https://mdbootstrap.com/bootstrap-tutorial/
 
-**MDB - Wordpress tutorial**: http://mdbootstrap.com/wordpress-tutorial/
+**MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
 #PRO version:
 
-**Material Design for Bootstrap PRO (from $49)**: http://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
+**Material Design for Bootstrap PRO (from $49)**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
 
 #Documentation:
 
-**Huge, detailed documentation avilable online on**: http://mdbootstrap.com/
+**Huge, detailed documentation avilable online on**: https://mdbootstrap.com/
 
 #Highlights:  
 **Components**  
@@ -107,14 +107,58 @@ If you're interested in learning about all the updates Material Design for Boots
 
 #Preview
 
-![Material Design for Bootstrap](http://mdbootstrap.com/images/about/intro-1.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/07/newsscreen-min.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/02/imagecarouselmdb-min.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/07/newsmdb4screen-min.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/wp-content/uploads/2016/02/enavigationmdb-min.jpg)
+![Material Design for Bootstrap](https://mdbootstrap.com/images/about/intro-1.jpg)
+![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/07/newsscreen-min.jpg)
+![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/02/imagecarouselmdb-min.jpg)
+![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/07/newsmdb4screen-min.jpg)
+![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/02/enavigationmdb-min.jpg)
 
 
 #Version logs  
+
+###MDB 4.3.0  
+
+**What's new?**  
+
+MDBootstrap 4.3.0 is here! It is one of the biggest updates of Material Design for Bootstrap.
+
+**Most important: Integration with Bootstrap 4 alpha-6 and Flexbox**
+
+**Fixed:**
+
+-Navbars  
+-Removed gradients for IE  
+-Accordion  
+-Product Cards  
+-Tabs  
+
+**Improved:**
+
+-Smooth Scroll  
+-Free and pro templates  
+-Coding performance  
+-Text inputs  
+-Carousel  
+-Design performance  
+-Dropped IE9 Support  
+-Forms  
+-Flexbox grid  
+-Progress bars  
+
+**New components:**
+
+-New skins  
+-Autocomplete  
+-Social Section  
+-Slack buttons  
+-Alternate version of input   
+
+**Syntax changes:**
+
+-Dropped -xs infix  
+-.tag renamed to .badge  
+-.collapse.show instead of .collapse.in  
+-.show > .dropdown-menu instead of .open > .dropdown-menu  
 
 ###MDB 4.2.0  
 
@@ -304,15 +348,15 @@ This is the first update for MDB4 and Bootstrap 4. You can download new version 
 
 #Useful Links:  
 
-Getting started: http://mdbootstrap.com/getting-started/  
+Getting started: https://mdbootstrap.com/getting-started/  
 
-5 min quick start: tbd  
+5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
 
-Material Design + Bootstrap Tutorial: http://mdbootstrap.com/bootstrap-tutorial/  
+Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
 
-Material Design + WordPress Tutorial: http://mdbootstrap.com/wordpress-tutorial/  
+Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
 
-Templates (free): http://mdbootstrap.com/templates/  
+Templates (free): https://mdbootstrap.com/templates/  
 
 
 #Social Media:  
@@ -321,9 +365,6 @@ Twitter: https://twitter.com/MDBootstrap
 
 Facebook: https://www.facebook.com/mdbootstrap  
 
-Pinterest: https://pl.pinterest.com/materialdesignf/  
+Pinterest: https://pl.pinterest.com/mdbootstrap 
 
 Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
-
-Instagram: https://www.instagram.com/mdbootstrap/  
-

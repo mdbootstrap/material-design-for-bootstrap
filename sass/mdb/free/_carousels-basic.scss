@@ -49,3 +49,34 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+.carousel {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .carousel-control-prev-icon {
+        background-image: url(../img/svg/arrow_left.svg);
+    }
+    .carousel-control-next-icon {
+        background-image: url(../img/svg/arrow_right.svg);
+    }
+    .carousel-indicators {
+        li {
+            max-width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    }
+    .video-fluid {
+        height: 100%;
+    }
+    &.no-flex {
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+    }
+}

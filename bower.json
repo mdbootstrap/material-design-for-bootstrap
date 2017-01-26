@@ -14,14 +14,14 @@
     "responsive"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.5",
-    "jquery": "~2.2.3"
+    "bootstrap": "v4.0.0-alpha.6",
+    "jquery": "~3.1.1"
   },
   "authors": [
     "MDBootstrap"
   ],
   "license": "Custom license (read license.pdf)",
-  "homepage": "http://mdbootstrap.com",
+  "homepage": "https://mdbootstrap.com",
   "ignore": [
     "**/.*",
     "node_modules",

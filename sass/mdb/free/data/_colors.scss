@@ -415,123 +415,123 @@ $comm-color: #30CFC0;
 $vk-color: #4C75A3;
 $drib-color: #C32361;
 $so-color: #f69c55;
-
+$slack-color: #56b68b;
 
 // Material Design Colors`
 $danger-color: #ff4444;
 .danger-color {
-    background-color: #ff4444!important;
+    background-color: $danger-color!important;
 }
 
 $danger-color-dark: #CC0000;
 .danger-color-dark {
-    background-color: #CC0000!important;
+    background-color: $danger-color-dark!important;
 }
 
 $warning-color: #ffbb33;
 .warning-color {
-    background-color: #ffbb33!important;
+    background-color: $warning-color!important;
 }
 
 $warning-color-dark: #FF8800;
 .warning-color-dark {
-    background-color: #FF8800!important;
+    background-color: $warning-color-dark!important;
 }
 
 $success-color: #00C851;
 .success-color {
-    background-color: #00C851!important;
+    background-color: $success-color!important;
 }
 
 $success-color-dark: #007E33;
 .success-color-dark {
-    background-color: #007E33!important;
+    background-color: $success-color-dark!important;
 }
 
 $info-color: #33b5e5;
 .info-color {
-    background-color: #33b5e5!important;
+    background-color: $info-color!important;
 }
 
 $info-color-dark: #0099CC;
 .info-color-dark {
-    background-color: #0099CC!important;
+    background-color: $info-color-dark!important;
 }
 
 // MDB Colors
 $default-color: #2BBBAD;
 .default-color {
-    background-color: #2BBBAD!important;
+    background-color: $default-color!important;
 }
 
 $default-color-dark: #00695c;
 .default-color-dark {
-    background-color: #00695c!important;
+    background-color: $default-color-dark!important;
 }
 
 $primary-color: #4285F4;
 .primary-color {
-    background-color: #4285F4!important;
+    background-color: $primary-color!important;
 }
 
 $primary-color-dark: #0d47a1;
 .primary-color-dark {
-    background-color: #0d47a1!important;
+    background-color: $primary-color-dark!important;
 }
 
 $secondary-color: #aa66cc;
 .secondary-color {
-    background-color: #aa66cc!important;
+    background-color: $secondary-color!important;
 }
 
 $secondary-color-dark: #9933CC;
 .secondary-color-dark {
-    background-color: #9933CC!important;
+    background-color: $secondary-color-dark!important;
 }
 
 $elegant-color: #2E2E2E;
 .elegant-color {
-    background-color: #2E2E2E!important;
+    background-color: $elegant-color!important;
 }
 
 $elegant-color-dark: #212121;
 .elegant-color-dark {
-    background-color: #212121!important;
+    background-color: $elegant-color-dark!important;
 }
 
 $stylish-color: #4B515D;
 .stylish-color {
-    background-color: #4B515D!important;
+    background-color: $stylish-color!important;
 }
 
 $stylish-color-dark: #3E4551;
 .stylish-color-dark {
-    background-color: #3E4551!important;
+    background-color: $stylish-color-dark!important;
 }
 
 $special-color: #37474F;
 .special-color {
-    background-color: #37474F!important;
+    background-color: $special-color!important;
 }
 
 $special-color-dark: #263238;
 .special-color-dark {
-    background-color: #263238!important;
+    background-color: $special-color-dark!important;
 }
 
 $unique-color: #3F729B;
 .unique-color {
-    background-color: #3F729B!important;
+    background-color: $unique-color!important;
 }
 
 $unique-color-dark: #1C2331;
 .unique-color-dark {
-    background-color: #1C2331!important;
+    background-color: $unique-color-dark!important;
 }
 
 $mdb-color: #45526E;
 .mdb-color {
-    background-color: #45526E!important;
+    background-color: $mdb-color!important;
 }
 
 $error-color: color("red", "base") !default;
@@ -539,239 +539,239 @@ $error-color: color("red", "base") !default;
 // Light overlays
 $rgba-blue-light: rgba(3, 169, 244, 0.3);
 .rgba-blue-light {
-    background-color: rgba(3, 169, 244, 0.3)!important;
+    background-color: $rgba-blue-light!important;
 }
 
 $rgba-red-light: rgba(244, 67, 54, 0.3);
 .rgba-red-light {
-    background-color: rgba(244, 67, 54, 0.3)!important;
+    background-color: $rgba-red-light!important;
 }
 
 $rgba-pink-light: rgba(233, 30, 99, 0.3);
 .rgba-pink-light {
-    background-color: rgba(233, 30, 99, 0.3)!important;
+    background-color: $rgba-pink-light!important;
 }
 
 $rgba-purple-light: rgba(156, 39, 176, 0.3);
 .rgba-purple-light {
-    background-color: rgba(156, 39, 176, 0.3)!important;
+    background-color: $rgba-purple-light!important;
 }
 
 $rgba-indigo-light: rgba(63, 81, 181, 0.3);
 .rgba-indigo-light {
-    background-color: rgba(63, 81, 181, 0.3)!important;
+    background-color: $rgba-indigo-light!important;
 }
 
 $rgba-cyan-light: rgba(0, 188, 212, 0.3);
 .rgba-cyan-light {
-    background-color: rgba(0, 188, 212, 0.3)!important;
+    background-color: $rgba-cyan-light!important;
 }
 
 $rgba-teal-light: rgba(0, 150, 136, 0.3);
 .rgba-teal-light {
-    background-color: rgba(0, 150, 136, 0.3)!important;
+    background-color: $rgba-teal-light!important;
 }
 
 $rgba-green-light: rgba(76, 175, 80, 0.3);
 .rgba-green-light {
-    background-color: rgba(76, 175, 80, 0.3)!important;
+    background-color: $rgba-green-light!important;
 }
 
 $rgba-lime-light: rgba(205, 220, 57, 0.3);
 .rgba-lime-light {
-    background-color: rgba(205, 220, 57, 0.3)!important;
+    background-color: $rgba-lime-light!important;
 }
 
 $rgba-yellow-light: rgba(255, 235, 59, 0.3);
 .rgba-yellow-light {
-    background-color: rgba(255, 235, 59, 0.3)!important;
+    background-color: $rgba-yellow-light!important;
 }
 
 $rgba-orange-light: rgba(255, 152, 0, 0.3);
 .rgba-orange-light {
-    background-color: rgba(255, 152, 0, 0.3)!important;
+    background-color: $rgba-orange-light!important;
 }
 
 $rgba-brown-light: rgba(121, 85, 72, 0.3);
 .rgba-brown-light {
-    background-color: rgba(121, 85, 72, 0.3)!important;
+    background-color: $rgba-brown-light!important;
 }
 
 $rgba-grey-light: rgba(158, 158, 158, 0.3);
 .rgba-grey-light {
-    background-color: rgba(158, 158, 158, 0.3)!important;
+    background-color: $rgba-grey-light!important;
 }
 
 $rgba-bluegrey-light: rgba(96, 125, 139, 0.3);
 .rgba-bluegrey-light {
-    background-color: rgba(96, 125, 139, 0.3)!important;
+    background-color: $rgba-bluegrey-light!important;
 }
 
 $rgba-black-light: rgba(0, 0, 0, 0.3);
 .rgba-black-light {
-    background-color: rgba(0, 0, 0, 0.3)!important;
+    background-color: $rgba-black-light!important;
 }
 
 $rgba-stylish-light: rgba(62, 69, 81, 0.3);
 .rgba-stylish-light {
-    background-color: rgba(62, 69, 81, 0.3)!important;
+    background-color: $rgba-stylish-light!important;
 }
 
 $rgba-white-light: rgba(255, 255, 255, 0.3);
 .rgba-white-light {
-    background-color: rgba(255, 255, 255, 0.3)!important;
+    background-color: $rgba-white-light!important;
 }
 
 // Strong overlays
 $rgba-blue-strong: rgba(3, 169, 244, 0.7);
 .rgba-blue-strong {
-    background-color: rgba(3, 169, 244, 0.7)!important;
+    background-color: $rgba-blue-strong!important;
 }
 
 $rgba-red-strong: rgba(244, 67, 54, 0.7);
 .rgba-red-strong {
-    background-color: rgba(244, 67, 54, 0.7)!important;
+    background-color: $rgba-red-strong!important;
 }
 
 $rgba-pink-strong: rgba(233, 30, 99, 0.7);
 .rgba-pink-strong {
-    background-color: rgba(233, 30, 99, 0.7)!important;
+    background-color: $rgba-pink-strong!important;
 }
 
 $rgba-purple-strong: rgba(156, 39, 176, 0.7);
 .rgba-purple-strong {
-    background-color: rgba(156, 39, 176, 0.7)!important;
+    background-color: $rgba-purple-strong!important;
 }
 
 $rgba-indigo-strong: rgba(63, 81, 181, 0.7);
 .rgba-indigo-strong {
-    background-color: rgba(63, 81, 181, 0.7)!important;
+    background-color: $rgba-indigo-strong!important;
 }
 
 $rgba-cyan-strong: rgba(0, 188, 212, 0.7);
 .rgba-cyan-strong {
-    background-color: rgba(0, 188, 212, 0.7)!important;
+    background-color: $rgba-cyan-strong!important;
 }
 
 $rgba-teal-strong: rgba(0, 150, 136, 0.7);
 .rgba-teal-strong {
-    background-color: rgba(0, 150, 136, 0.7)!important;
+    background-color: $rgba-teal-strong!important;
 }
 
 $rgba-green-strong: rgba(76, 175, 80, 0.7);
 .rgba-green-strong {
-    background-color: rgba(76, 175, 80, 0.7)!important;
+    background-color: $rgba-green-strong!important;
 }
 
 $rgba-lime-strong: rgba(205, 220, 57, 0.7);
 .rgba-lime-strong {
-    background-color: rgba(205, 220, 57, 0.7)!important;
+    background-color: $rgba-lime-strong!important;
 }
 
 $rgba-yellow-strong: rgba(255, 235, 59, 0.7);
 .rgba-yellow-strong {
-    background-color: rgba(255, 235, 59, 0.7)!important;
+    background-color: $rgba-yellow-strong!important;
 }
 
 $rgba-orange-strong: rgba(255, 152, 0, 0.7);
 .rgba-orange-strong {
-    background-color: rgba(255, 152, 0, 0.7)!important;
+    background-color: $rgba-orange-strong!important;
 }
 
 $rgba-brown-strong: rgba(121, 85, 72, 0.7);
 .rgba-brown-strong {
-    background-color: rgba(121, 85, 72, 0.7)!important;
+    background-color: $rgba-brown-strong!important;
 }
 
 $rgba-grey-strong: rgba(158, 158, 158, 0.7);
 .rgba-grey-strong {
-    background-color: rgba(158, 158, 158, 0.7)!important;
+    background-color: $rgba-grey-strong!important;
 }
 
 $rgba-bluegrey-strong: rgba(96, 125, 139, 0.7);
 .rgba-bluegrey-strong {
-    background-color: rgba(96, 125, 139, 0.7)!important;
+    background-color: $rgba-bluegrey-strong!important;
 }
 
 $rgba-black-strong: rgba(0, 0, 0, 0.7);
 .rgba-black-strong {
-    background-color: rgba(0, 0, 0, 0.7)!important;
+    background-color: $rgba-black-strong!important;
 }
 
 $rgba-stylish-strong: rgba(62, 69, 81, 0.7);
 .rgba-stylish-strong {
-    background-color: rgba(62, 69, 81, 0.7)!important;
+    background-color: $rgba-stylish-strong!important;
 }
 
 $rgba-white-strong: rgba(255, 255, 255, 0.7);
 .rgba-white-strong {
-    background-color: rgba(255, 255, 255, 0.7)!important;
+    background-color: $rgba-white-strong!important;
 }
 
 // Super light overlays
 $rgba-blue-slight: rgba(3, 169, 244, 0.1);
 .rgba-blue-slight {
-    background-color: rgba(3, 169, 244, 0.1)!important;
+    background-color: $rgba-blue-slight!important;
 }
 
 $rgba-red-slight: rgba(244, 67, 54, 0.1);
 .rgba-red-slight {
-    background-color: rgba(244, 67, 54, 0.1)!important;
+    background-color: $rgba-red-slight!important;
 }
 
 $rgba-pink-slight: rgba(233, 30, 99, 0.1);
 .rgba-pink-slight {
-    background-color: rgba(233, 30, 99, 0.1)!important;
+    background-color: $rgba-pink-slight!important;
 }
 
 $rgba-purple-slight: rgba(156, 39, 176, 0.1);
 .rgba-purple-slight {
-    background-color: rgba(156, 39, 176, 0.1)!important;
+    background-color: $rgba-purple-slight!important;
 }
 
 $rgba-indigo-slight: rgba(63, 81, 181, 0.1);
 .rgba-indigo-slight {
-    background-color: rgba(63, 81, 181, 0.1)!important;
+    background-color: $rgba-indigo-slight!important;
 }
 
 $rgba-cyan-slight: rgba(0, 188, 212, 0.1);
 .rgba-cyan-slight {
-    background-color: rgba(0, 188, 212, 0.1)!important;
+    background-color: $rgba-cyan-slight!important;
 }
 
 $rgba-teal-slight: rgba(0, 150, 136, 0.1);
 .rgba-teal-slight {
-    background-color: rgba(0, 150, 136, 0.1)!important;
+    background-color: $rgba-teal-slight!important;
 }
 
 $rgba-green-slight: rgba(76, 175, 80, 0.1);
 .rgba-green-slight {
-    background-color: rgba(76, 175, 80, 0.1)!important;
+    background-color: $rgba-green-slight!important;
 }
 
 $rgba-lime-slight: rgba(205, 220, 57, 0.1);
 .rgba-lime-slight {
-    background-color: rgba(205, 220, 57, 0.1)!important;
+    background-color: $rgba-lime-slight!important;
 }
 
 $rgba-yellow-slight: rgba(255, 235, 59, 0.1);
 .rgba-yellow-slight {
-    background-color: rgba(255, 235, 59, 0.1)!important;
+    background-color: $rgba-yellow-slight!important;
 }
 
 $rgba-orange-slight: rgba(255, 152, 0, 0.1);
 .rgba-orange-slight {
-    background-color: rgba(255, 152, 0, 0.1)!important;
+    background-color: $rgba-orange-slight!important;
 }
 
 $rgba-brown-slight: rgba(121, 85, 72, 0.1);
 .rgba-brown-slight {
-    background-color: rgba(121, 85, 72, 0.1)!important;
+    background-color: $rgba-brown-slight!important;
 }
 
 $rgba-grey-slight: rgba(158, 158, 158, 0.1);
 .rgba-grey-slight {
-    background-color: rgba(158, 158, 158, 0.1)!important;
+    background-color: $rgba-grey-slight!important;
 }
 
 $rgba-bluegrey-slight: rgba(96, 125, 139, 0.1);
@@ -781,17 +781,17 @@ $rgba-bluegrey-slight: rgba(96, 125, 139, 0.1);
 
 $rgba-black-slight: rgba(0, 0, 0, 0.1);
 .rgba-black-slight {
-    background-color: rgba(0, 0, 0, 0.1)!important;
+    background-color: $rgba-black-slight!important;
 }
 
 $rgba-stylish-slight: rgba(62, 69, 81, 0.1);
 .rgba-stylish-slight {
-    background-color: rgba(62, 69, 81, 0.1)!important;
+    background-color: $rgba-stylish-slight!important;
 }
 
 $rgba-white-slight: rgba(255, 255, 255, 0.1);
 .rgba-white-slight {
-    background-color: rgba(255, 255, 255, 0.1)!important;
+    background-color: $rgba-white-slight!important;
 }
 
 .blue-gradient {

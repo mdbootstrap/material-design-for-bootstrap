@@ -14,8 +14,20 @@
         border-bottom-right-radius: 0;
         @extend .img-fluid;
     }
+    .card-block {
+        position:relative;
+    }
     .card-footer {
         padding-bottom: 0;
+        font-size:1.2rem;
+        &:after {
+            display:block;
+            content: "";
+            clear:both;
+        }
+        .card-link {
+            color: inherit;
+        }
     }
 }
 

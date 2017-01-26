@@ -39,6 +39,7 @@ button:focus {
     &.active {
         outline: 0;
         color: #fff;
+        @extend .z-depth-1-half;
     } 
     .fa {
         font-size: 1.1rem;
@@ -68,7 +69,8 @@ button:focus {
 .btn-secondary {
     background-color: $secondary-color;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: lighten( $secondary-color, 5%)!important;
         color: #fff;
     }
@@ -104,7 +106,8 @@ button:focus {
 .btn-primary {
     background: $primary-color;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: lighten( $primary-color, 5%)!important;
     }
     &.active {
@@ -116,7 +119,8 @@ button:focus {
 .btn-default {
     background: $default-color;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: lighten( $default-color, 5%)!important;
     }
     &.active {
@@ -128,7 +132,8 @@ button:focus {
 .btn-success {
     background: $success-color;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: lighten( $success-color, 2%)!important;
     }
     &.active {

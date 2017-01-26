@@ -81,3 +81,21 @@
     -o-border-radius: $args;
     border-radius: $args;
 }
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &::-ms-placeholder {
+        @content
+    }
+    &::placeholder {
+        @content
+    }
+}

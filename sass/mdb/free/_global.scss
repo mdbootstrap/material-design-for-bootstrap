@@ -61,7 +61,7 @@ ul {
 
 .jumbotron,
 .card,
-.tag,
+.badge,
 .alert,
 .nav .nav-link,
 .navbar-toggler,
@@ -92,7 +92,7 @@ img {
 .popover,
 .navbar,
 .dropdown-menu,
-.tag,
+.badge,
 .chip {
     @extend .z-depth-1;
 }
@@ -369,8 +369,11 @@ body {
 
 //Media improvement
 .media {
-    img {
-        @extend .z-depth-1-half;
+    .media-left {
+        padding:0 10px 10px 0;
+        img {
+            @extend .z-depth-1-half;
+        }
     }
 }
 
@@ -394,4 +397,9 @@ body {
         padding: 0.4rem 0.8rem;
         @extend .z-depth-1-half;
     }
+}
+
+// Make sections full width
+section {
+    flex: 0 0 100%;
 }

@@ -2,56 +2,102 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <title>Material Design Bootstrap</title>
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-
+    <style type="text/css">
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height:100vh;
+    }
+    
+    .flex-menu {
+        display: flex;
+        margin-top: 1.225rem;
+    }
+    
+    .flex-menu li:not(:last-child) {
+        margin-right: 14px;
+    }
+    
+    footer {
+        padding: 2.5rem 0;
+    }
+    
+    footer a,
+    footer a:hover {
+        color: #292b2c;
+    }
+    
+    footer h5 {
+        display: inline;
+        margin-right: 14px;
+    }
+    
+    .social-menu {
+        display: inline-flex;
+        margin-bottom: 0;
+    }
+    
+    .social-menu li:not(:last-child) {
+        margin-right: 10px;
+    }
+    </style>
 </head>
 
 <body>
-
-
     <!-- Start your project here-->
-
-    <div style="height: 100vh">
-        <div class="flex-center">
+    <div style="height: 80vh">
+        <div class="flex-center flex-column">
             <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
+            <ul class="flex-menu">
+                <li><a href="http://mdbootstrap.com/material-design-for-bootstrap/">About MDB</a></li>
+                <li><a href="http://mdbootstrap.com/getting-started/">Getting Started</a></li>
+                <li><a href="http://mdbootstrap.com/faq/">FAQ</a></li>
+                <li><a href="http://mdbootstrap.com/forums/forum/support/">Support</a></li>
+                <li><a href="http://mdbootstrap.com/changelog/">Changelog</a></li>
+            </ul>
         </div>
     </div>
-
+    <footer class="grey lighten-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col offset-lg-1">
+                    <h5 class="text-uppercase"><strong>Follow us</strong></h5>
+                    <ul class="social-menu">
+                        <li><a href="https://www.facebook.com/mdbootstrap"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/MDBootstrap"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/10912052"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://pinterest.com/mdbootstrap/"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="https://dribbble.com/mdbootstrap"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="https://github.com/mdbootstrap/bootstrap-material-design"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- /Start your project here-->
-
-
     <!-- SCRIPTS -->
-
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
-
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-
-
 </body>
 
 </html>

@@ -82,6 +82,16 @@ textarea.md-textarea {
         opacity: 0;
         transition: .2s opacity ease-out, .2s color ease-out;
     }
+    &.input-alternate {
+        padding: 0 15px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+        font-size: 0.875rem;
+        border-bottom: 0;
+        &:focus:not([readonly]) {
+            border-bottom: 0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+        }
+    }
 }
 
 label {
@@ -165,28 +175,14 @@ label {
             width: calc(100% - 3rem);
         }
     }
-    .input-group {
-        border: 1px solid #eee;
+    &.input-group {
         .form-control {
             margin: 0;
-        }
-        ::-webkit-input-placeholder {
-            padding-left: 7px;
-            padding-top: 2px;
-        }
-        :-moz-placeholder {
-            /* Firefox 18- */
-            padding-left: 7px;
-            padding-top: 2px;
-        }
-        ::-moz-placeholder {
-            /* Firefox 19+ */
-            padding-left: 7px;
-            padding-top: 2px;
-        }
-        :-ms-input-placeholder {
-            padding-left: 7px;
-            padding-top: 2px;
+            padding-left:1rem;
+            @include placeholder {
+                color: #999;
+                padding-top: 2px;
+            }
         }
     }
 }
@@ -226,21 +222,7 @@ textarea {
 //Input color
 .input-dark-bg {
     // Style Placeholders
-    ::-webkit-input-placeholder {
-        color: #fff!important;
-        font-weight: 300;
-    }
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #fff!important;
-        font-weight: 300;
-    }
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #fff!important;
-        font-weight: 300;
-    }
-    :-ms-input-placeholder {
+    @include placeholder {
         color: #fff!important;
         font-weight: 300;
     }
@@ -254,21 +236,7 @@ textarea {
 
 .input-light-bg {
     // Style Placeholders
-    ::-webkit-input-placeholder {
-        color: #1C2331!important;
-        font-weight: 300;
-    }
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #1C2331!important;
-        font-weight: 300;
-    }
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #1C2331!important;
-        font-weight: 300;
-    }
-    :-ms-input-placeholder {
+    @include placeholder {
         color: #1C2331!important;
         font-weight: 300;
     }
