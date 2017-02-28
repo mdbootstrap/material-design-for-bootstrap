@@ -26,9 +26,10 @@
             }
         }
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-        }
-        .breadcrumb,
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            cursor: pointer; 
+        } 
+        .breadcrumb, 
         .navbar-nav .nav-item {
             a {
                 color: #fff;
@@ -45,8 +46,7 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    color: #fff;
-                    @extend .z-depth-1;
+                    color: #212121;
                 }
             }
         }
@@ -84,11 +84,10 @@
         }
     }
     .dropdown-menu {
-        padding: .5rem;
         a {
             font-size: 0.9375rem;
             font-weight: 300;
-            padding: 1rem;
+            padding: 10px;
         }
     }
     .navbar-toggler {

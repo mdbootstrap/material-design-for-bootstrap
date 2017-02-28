@@ -87,9 +87,12 @@ textarea.md-textarea {
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
         font-size: 0.875rem;
         border-bottom: 0;
-        &:focus:not([readonly]) {
-            border-bottom: 0;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+        transition:none !important;
+        &:hover,
+        &:focus {
+            box-shadow: 0 3px 8px 0 rgba(0,0,0,.2),
+                        0 0 0 1px rgba(0,0,0,.08) !important;
+            border-bottom:0;
         }
     }
 }

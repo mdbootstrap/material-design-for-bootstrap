@@ -67,5 +67,24 @@
 }
 
 .free-bird {
-    margin-top:-100px;
+    margin-top:-100px; 
+}
+
+// Form sets
+
+.card .form-header {
+    color: #fff;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    @extend .z-depth-1-half;
+    @include border-radius(2px);
+    h3 {
+        margin: 0;
+        padding: 0.7rem;
+    }
+}
+.call .fa {
+    margin-right: 5px;
 }

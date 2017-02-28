@@ -1,12 +1,25 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.3.0 
+ * Version: MDB FREE 4.3.1
  *
  *
  * Copyright: Material Design for Bootstrap
  * http://mdbootstrap.com/
  *
  * Read the license: http://mdbootstrap.com/license/
+ *
+ *
+ * Documentation: http://mdbootstrap.com/
+ *
+ * Getting started: http://mdbootstrap.com/getting-started/
+ *
+ * Tutorials: http://mdbootstrap.com/bootstrap-tutorial/
+ *
+ * Templates: http://mdbootstrap.com/templates/
+ *
+ * Support: http://mdbootstrap.com/forums/forum/support/
+ *
+ * Contact: office@mdbootstrap.com 
  *
  * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
  *
@@ -1995,14 +2008,11 @@
 .navbar,
 .dropdown-menu,
 .badge,
-.chip, .pagination .active .page-link, .btn, .pager li a, .navbar.navbar-dark .breadcrumb .dropdown-menu a:hover, .navbar.navbar-dark .breadcrumb .dropdown-menu a:focus, .navbar.navbar-dark .breadcrumb .dropdown-menu a:active,
-.navbar.navbar-dark .navbar-nav .nav-item .dropdown-menu a:hover,
-.navbar.navbar-dark .navbar-nav .nav-item .dropdown-menu a:focus,
-.navbar.navbar-dark .navbar-nav .nav-item .dropdown-menu a:active {
+.chip, .pagination .active .page-link, .btn, .pager li a {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .media .media-left img, .tooltip .tooltip-inner, .section img,
-.section .view, .btn:hover, .btn:active, .btn:focus, .btn.active, .btn-secondary.active, .btn-secondary.dropdown-toggle, .btn-primary.active, .btn-default.active, .btn-success.active, .btn-info.active, .btn-warning.active, .btn-danger.active, .pager li a:hover, .btn-elegant.active, .btn-unique.active, .btn-pink.active, .btn-purple.active, .btn-deep-purple.active, .btn-indigo.active, .btn-cyan.active, .btn-light-green.active, .btn-dark-green.active, .btn-lime.active, .btn-yellow.active, .btn-amber.active, .btn-orange.active, .btn-deep-orange.active, .btn-brown.active, .btn-blue-grey.active, .btn-mdb.active, ul.instagram-photos li img {
+.section .view, .btn:hover, .btn:active, .btn:focus, .btn.active, .btn-secondary.active, .btn-secondary.dropdown-toggle, .btn-primary.active, .btn-default.active, .btn-success.active, .btn-info.active, .btn-warning.active, .btn-danger.active, .pager li a:hover, .btn-elegant.active, .btn-unique.active, .btn-pink.active, .btn-purple.active, .btn-deep-purple.active, .btn-indigo.active, .btn-cyan.active, .btn-light-green.active, .btn-dark-green.active, .btn-lime.active, .btn-yellow.active, .btn-amber.active, .btn-orange.active, .btn-deep-orange.active, .btn-brown.active, .btn-blue-grey.active, .btn-mdb.active, .card .form-header, ul.instagram-photos li img {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
 .z-depth-2, .section .jumbotron {
@@ -2276,6 +2286,15 @@ section {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%; }
 
+.breadcrumb .breadcrumb-item.active {
+  color: #818a91; }
+
+.dropdown-menu .dropdown-item:active {
+  background: #f7f7f9; }
+
+.dropdown-menu {
+  transition: all 0.2s cubic-bezier(0.72, 1.2, 0.71, 0.72); }
+
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("../font/roboto/Roboto-Thin.eot");
@@ -2476,10 +2495,6 @@ blockquote p {
       .section .section-description {
         margin-left: 5%;
         margin-right: 5%; } }
-  .section.extra-margins h5,
-  .section.extra-margins h4,
-  .section.extra-margins a {
-    margin-bottom: 1rem; }
   .section h4 {
     font-weight: 400; }
   .section h5 .fa {
@@ -5273,6 +5288,8 @@ button:focus {
   .btn.btn-sm {
     font-size: 0.6rem;
     padding: 0.5rem 1.6rem; }
+    .btn.btn-sm.btn-table {
+      padding: 0.5rem 0.9rem; }
 
 .btn {
   border-radius: 2px;
@@ -5582,6 +5599,15 @@ button:focus {
   .btn-mdb.active {
     background-color: #1e232f !important; }
 
+.btn-secondary.disabled, .btn-secondary:disabled {
+  background-color: #aa66cc;
+  cursor: not-allowed;
+  pointer-events: auto !important; }
+
+.btn-split {
+  padding-left: 0.85rem;
+  padding-right: 1.25rem; }
+
 input[type=text],
 input[type=password],
 input[type=email],
@@ -5834,21 +5860,33 @@ textarea.md-textarea {
     padding: 0 15px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
     font-size: 0.875rem;
-    border-bottom: 0; }
-    input[type=text].input-alternate:focus:not([readonly]),
-    input[type=password].input-alternate:focus:not([readonly]),
-    input[type=email].input-alternate:focus:not([readonly]),
-    input[type=url].input-alternate:focus:not([readonly]),
-    input[type=time].input-alternate:focus:not([readonly]),
-    input[type=date].input-alternate:focus:not([readonly]),
-    input[type=datetime-local].input-alternate:focus:not([readonly]),
-    input[type=tel].input-alternate:focus:not([readonly]),
-    input[type=number].input-alternate:focus:not([readonly]),
-    input[type=search-md].input-alternate:focus:not([readonly]),
-    input[type=search].input-alternate:focus:not([readonly]),
-    textarea.md-textarea.input-alternate:focus:not([readonly]) {
-      border-bottom: 0;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    border-bottom: 0;
+    transition: none !important; }
+    input[type=text].input-alternate:hover, input[type=text].input-alternate:focus,
+    input[type=password].input-alternate:hover,
+    input[type=password].input-alternate:focus,
+    input[type=email].input-alternate:hover,
+    input[type=email].input-alternate:focus,
+    input[type=url].input-alternate:hover,
+    input[type=url].input-alternate:focus,
+    input[type=time].input-alternate:hover,
+    input[type=time].input-alternate:focus,
+    input[type=date].input-alternate:hover,
+    input[type=date].input-alternate:focus,
+    input[type=datetime-local].input-alternate:hover,
+    input[type=datetime-local].input-alternate:focus,
+    input[type=tel].input-alternate:hover,
+    input[type=tel].input-alternate:focus,
+    input[type=number].input-alternate:hover,
+    input[type=number].input-alternate:focus,
+    input[type=search-md].input-alternate:hover,
+    input[type=search-md].input-alternate:focus,
+    input[type=search].input-alternate:hover,
+    input[type=search].input-alternate:focus,
+    textarea.md-textarea.input-alternate:hover,
+    textarea.md-textarea.input-alternate:focus {
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08) !important;
+      border-bottom: 0; }
 
 label {
   font-size: 0.8rem;
@@ -6131,6 +6169,24 @@ i.btn-danger {
 .free-bird {
   margin-top: -100px; }
 
+.card .form-header {
+  color: #fff;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px; }
+  .card .form-header h3 {
+    margin: 0;
+    padding: 0.7rem; }
+
+.call .fa {
+  margin-right: 5px; }
+
 .navbar {
   font-weight: 300; }
   .navbar form input {
@@ -6153,7 +6209,8 @@ i.btn-danger {
     .navbar.navbar-dark .navbar-brand:hover {
       color: #fff; }
   .navbar.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    cursor: pointer; }
   .navbar.navbar-dark .breadcrumb a,
   .navbar.navbar-dark .navbar-nav .nav-item a {
     color: #fff;
@@ -6171,7 +6228,7 @@ i.btn-danger {
     .navbar.navbar-dark .navbar-nav .nav-item .dropdown-menu a:hover,
     .navbar.navbar-dark .navbar-nav .nav-item .dropdown-menu a:focus,
     .navbar.navbar-dark .navbar-nav .nav-item .dropdown-menu a:active {
-      color: #fff; }
+      color: #212121; }
   .navbar.navbar-dark .nav-link {
     color: #fff; }
   .navbar.navbar-dark .navbar-toggler {
@@ -6195,12 +6252,10 @@ i.btn-danger {
     padding: 1rem; }
   .navbar.navbar-light .navbar-toggler {
     color: #000; }
-  .navbar .dropdown-menu {
-    padding: .5rem; }
-    .navbar .dropdown-menu a {
-      font-size: 0.9375rem;
-      font-weight: 300;
-      padding: 1rem; }
+  .navbar .dropdown-menu a {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    padding: 10px; }
   .navbar .navbar-toggler {
     border-width: 0; }
   .navbar .nav-flex-icons {
