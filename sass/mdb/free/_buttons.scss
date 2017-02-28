@@ -17,6 +17,9 @@ button:focus {
     &.btn-sm {
         font-size: 0.6rem;
         padding:  0.5rem 1.6rem;
+        &.btn-table {
+            padding: 0.5rem 0.9rem;
+        }
     }
 }
 
@@ -530,4 +533,18 @@ button:focus {
         background-color: darken(#45526E, 20%)!important;
         @extend .z-depth-1-half;
     }
+}
+
+.btn-secondary {
+    &.disabled,
+    &:disabled {
+        background-color: #aa66cc;
+        cursor: not-allowed;
+        pointer-events: auto !important;
+    }
+}
+
+.btn-split {
+    padding-left: 0.85rem;
+    padding-right: 1.25rem;
 }

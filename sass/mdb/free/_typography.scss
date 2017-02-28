@@ -156,13 +156,6 @@
         .jumbotron {
             @extend .z-depth-2;
         }
-        &.extra-margins {
-            h5,
-            h4,
-            a {
-                margin-bottom: 1rem;
-            }
-        }
         h4 {
             font-weight: 400;
         }

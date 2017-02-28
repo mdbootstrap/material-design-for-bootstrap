@@ -116,6 +116,21 @@ If you're interested in learning about all the updates Material Design for Boots
 
 #Version logs  
 
+###MDB 4.3.1 
+
+**What's new?**  
+
+MDBootstrap 4.3.1 is just a small update with many bugs fixes.
+
+**Fixed:**
+
+-Dropdowns & dropdowns animations
+-Horizontal steppers bug
+-Navbar items padding
+-Split buttons
+-Hamburger fix for Firefox
+...and many many more!
+
 ###MDB 4.3.0  
 
 **What's new?**  

@@ -403,3 +403,16 @@ body {
 section {
     flex: 0 0 100%;
 }
+
+.breadcrumb .breadcrumb-item.active {
+    color: #818a91;
+}
+
+.dropdown-menu .dropdown-item:active {
+    background:#f7f7f9;
+}
+
+.dropdown-menu {
+    transition: all 0.2s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+    
+}
