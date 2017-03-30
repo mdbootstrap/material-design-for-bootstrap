@@ -1,6 +1,6 @@
 ![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)
 
-#Material Design for Bootstrap 4 
+# Material Design for Bootstrap 4 
 
 400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more.
 
@@ -14,38 +14,38 @@ Every day we challenged ourselves to create a visual language for us and our use
 
 Our framework includes CSS for handling Animations, Colors, Typography, Helpers, Hover effects, Shadows, Icons, Components, and JavaScript. Additionally, it offers Badges, Buttons, Social buttons, Cards, Footer, Forms, Material box, Nabbers, Pagination, Panels, Parallax, Progress bar, Tables, Galleries and JavaScript.  
 
-#Demo:
+# Demo:  
 **Main demo**: https://mdbootstrap.com/material-design-for-bootstrap/
 
-#How to install:
+# How to install:
 You can install MDBootstrap using NPM or Bower:
 - `npm install mdbootstrap`
 - `bower install MDBootstrap`
 
-#Getting started:
+# Getting started:
 
 **5min Quick Start**: https://mdbootstrap.com/mdb-quick-start/
 
-#MDBootstrap on CDNJS:
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css" />`
+# MDBootstrap on CDNJS:
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>`
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/js/mdb.min.js"></script>`
 
-#Additional tutorials:
+# Additional tutorials:
 
 **MDB - Bootstrap tutorial**: https://mdbootstrap.com/bootstrap-tutorial/
 
 **MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
-#PRO version:
+# PRO version:
 
-**Material Design for Bootstrap PRO (from $49)**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
+**Material Design for Bootstrap PRO (from $79)**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
 
-#Documentation:
+# Documentation:
 
 **Huge, detailed documentation avilable online on**: https://mdbootstrap.com/
 
-#Highlights:  
+# Highlights:  
 **Components**  
 Choose **among 400+  predefined components**. Each component is ready to use and fits perfectly with each other like LEGO bricks. Take, combine, enjoy!.  
 
@@ -105,18 +105,19 @@ A big **thank you to all our users** who are working with us to improve the soft
 If you're interested in learning about all the updates Material Design for Bootstrap release, follow us on social media <tu linki>.  
 
 
-#Preview
+# Preview
 
-![Material Design for Bootstrap](https://mdbootstrap.com/images/about/intro-1.jpg)
-![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/07/newsscreen-min.jpg)
-![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/02/imagecarouselmdb-min.jpg)
-![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/07/newsmdb4screen-min.jpg)
-![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/02/enavigationmdb-min.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/1.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/2.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/3.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/4.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/5.jpg)
+![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/6.jpg)
 
 
-#Version logs  
+# Version logs  
 
-###MDB 4.3.1 
+### MDB 4.3.1 
 
 **What's new?**  
 
@@ -131,7 +132,7 @@ MDBootstrap 4.3.1 is just a small update with many bugs fixes.
 -Hamburger fix for Firefox
 ...and many many more!
 
-###MDB 4.3.0  
+### MDB 4.3.0  
 
 **What's new?**  
 
@@ -175,7 +176,7 @@ MDBootstrap 4.3.0 is here! It is one of the biggest updates of Material Design f
 -.collapse.show instead of .collapse.in  
 -.show > .dropdown-menu instead of .open > .dropdown-menu  
 
-###MDB 4.2.0  
+### MDB 4.2.0  
 
 **What's new?**  
 
@@ -219,7 +220,7 @@ MDBootstrap 4.2.0 has arrived two months after MDB 4.1.1 with new components, ma
 -.float-\*-\* instead of .pull-\*-\*  
 
 
-###MDB 4.1.1  
+### MDB 4.1.1  
 
 **What's new?**  
 
@@ -243,7 +244,7 @@ It's Small but important update which integrates MDB with the latest alpha versi
 -New markup for breadcrumb  
 -.tag instead of label  
 
-###MDB 4.1.0  
+### MDB 4.1.0  
 
 **What's new?**  
 
@@ -255,13 +256,13 @@ Note: Please read carefully entire release notes. Please DO NOT UPDATE your prod
 
 You can download new version of MDB Free on our HomePage and for MDB Pro from your account.  
 
-####Fixed:  
+#### Fixed:  
 
 -Prevent collapse of accordion menu in sidenav on page load  
 -btn-block alignment  
 -"word-wrap" for buttons with long text  
 
-####Improved:  
+#### Improved:  
 
 -Waves effect for nav icons  
 -Typography responsivness  
@@ -274,7 +275,7 @@ You can download new version of MDB Free on our HomePage and for MDB Pro from yo
 -Better Accordion  
 -Many small design improvements  
 
-####New components:  
+#### New components:  
 
 -Page layouts  
 -Skins  
@@ -291,7 +292,7 @@ You can download new version of MDB Free on our HomePage and for MDB Pro from yo
 -New Pagination  
 -New Material Selects  
 
-####New sections ( we've replaced "sets" with "sections"):  
+#### New sections ( we've replaced "sets" with "sections"):  
 
 -4 Blog listings  
 -2 Contact sections  
@@ -304,7 +305,7 @@ You can download new version of MDB Free on our HomePage and for MDB Pro from yo
 -4 Team sections  
 -4 Testimonials section  
 
-####New templates:  
+#### New templates:  
 
 -E-commerce HomePage  
 -Product Page  
@@ -312,7 +313,7 @@ You can download new version of MDB Free on our HomePage and for MDB Pro from yo
 -Blog Post  
 -7 new Landing Pages  
 
-####New documentation:  
+#### New documentation:  
 
 -Bootstrap grid  
 -Page layouts  
@@ -332,14 +333,14 @@ You can download new version of MDB Free on our HomePage and for MDB Pro from yo
 -Team sections  
 -Contact sections  
 
-###MDB 4.0.1  
+### MDB 4.0.1  
 
-####What's new?####
+#### What's new?####
 
 This is the first update for MDB4 and Bootstrap 4. You can download new version of MDB Free on our HomePage and for MDB Pro from your account.  
 
 
-####Fixed:  
+#### Fixed:  
 
 -SideNav issue with draging-out on mobile  
 -Fixed action button issue on mobile  
@@ -349,10 +350,10 @@ This is the first update for MDB4 and Bootstrap 4. You can download new version 
 -Waves effect in Navbar's links issue  
 -_footer.scss and _variables.scss file issue with sass to css compilation  
 
-####Added:  
+#### Added:  
 -Preloading script  
 
-####Improved:  
+#### Improved:  
 -Video background  
 -Removed blue buttons outline added by default by Google Chrome  
 -Changed property overflow: hidden to overflow: visible for .card  
@@ -361,7 +362,7 @@ This is the first update for MDB4 and Bootstrap 4. You can download new version 
 -Updated script for touch gestures  
 
 
-#Useful Links:  
+# Useful Links:  
 
 Getting started: https://mdbootstrap.com/getting-started/  
 
@@ -374,7 +375,7 @@ Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial
 Templates (free): https://mdbootstrap.com/templates/  
 
 
-#Social Media:  
+# Social Media:  
 
 Twitter: https://twitter.com/MDBootstrap  
 
