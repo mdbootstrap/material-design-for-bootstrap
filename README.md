@@ -1,4 +1,4 @@
-![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
 
 # Material Design for Bootstrap 4 
 
@@ -105,14 +105,14 @@ A big **thank you to all our users** who are working with us to improve the soft
 If you're interested in learning about all the updates Material Design for Bootstrap release, follow us on social media <tu linki>.  
 
 
-# Preview
+# Live Preview
 
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/1.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/2.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/3.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/4.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/5.jpg)
-![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/6.jpg)
+[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/1.jpg)](https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-9.html)
+[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/2.jpg)](https://mdbootstrap.com/live/_MDB/templates/Admin/home%20v3.html)
+[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/3.jpg)](https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-11.html)
+[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/4.jpg)](https://mdbootstrap.com/live/_MDB/templates/Landing-Page/travel-landing-page.html)
+[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/5.jpg)](https://mdbootstrap.com/live/_MDB/templates/Portfolio/culinary.html)
+[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/6.jpg)](https://mdbootstrap.com/live/_MDB/templates/Ecommerce/product-page-4.html)
 
 
 # Version logs  
@@ -372,7 +372,9 @@ Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial
 
 Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
 
-Templates (free): https://mdbootstrap.com/templates/  
+Freebies: https://mdbootstrap.com/freebies/  
+
+Premium Templates: https://mdbootstrap.com/templates/  
 
 
 # Social Media:  
@@ -384,3 +386,7 @@ Facebook: https://www.facebook.com/mdbootstrap
 Pinterest: https://pl.pinterest.com/mdbootstrap 
 
 Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
+
+Dribbble: https://dribbble.com/mdbootstrap
+
+LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
