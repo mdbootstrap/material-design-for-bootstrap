@@ -48,39 +48,39 @@
 
 //Overlay patterns
 .pattern-1 {
-    background: url(../img/overlays/01.png);
+    background: url("#{$overlays-image-path}01.png");
 }
 
 .pattern-2 {
-    background: url(../img/overlays/02.png);
+    background: url("#{$overlays-image-path}02.png");
 }
 
 .pattern-3 {
-    background: url(../img/overlays/03.png);
+    background: url("#{$overlays-image-path}03.png");
 }
 
 .pattern-4 {
-    background: url(../img/overlays/04.png);
+    background: url("#{$overlays-image-path}04.png");
 }
 
 .pattern-5 {
-    background: url(../img/overlays/05.png);
+    background: url("#{$overlays-image-path}05.png");
 }
 
 .pattern-6 {
-    background: url(../img/overlays/06.png);
+    background: url("#{$overlays-image-path}06.png");
 }
 
 .pattern-7 {
-    background: url(../img/overlays/07.png);
+    background: url("#{$overlays-image-path}07.png");
 }
 
 .pattern-8 {
-    background: url(../img/overlays/08.png);
+    background: url("#{$overlays-image-path}08.png");
 }
 
 .pattern-9 {
-    background: url(../img/overlays/09.png);
+    background: url("#{$overlays-image-path}09.png");
 }
 
 // Overlay masks

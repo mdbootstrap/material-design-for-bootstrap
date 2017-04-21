@@ -13,6 +13,10 @@ $link-color: color("light-blue", "darken-1") !default;
 /*** Fonts ***/
 $roboto-font-path: "../font/roboto/" !default;
 
+/*** Images ***/
+$overlays-image-path: "../img/overlays/" !default;
+$svg-image-path: "../img/svg/" !default;
+
 /*** Typography ***/
 $off-black: rgba(0, 0, 0, 0.87) !default;
 

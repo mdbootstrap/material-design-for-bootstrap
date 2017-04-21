@@ -57,10 +57,10 @@
         height: 36px;
     }
     .carousel-control-prev-icon {
-        background-image: url(../img/svg/arrow_left.svg);
+        background-image: url("#{$svg-image-path}arrow_left.svg");
     }
     .carousel-control-next-icon {
-        background-image: url(../img/svg/arrow_right.svg);
+        background-image: url("#{$svg-image-path}arrow_right.svg");
     }
     .carousel-indicators {
         li {
