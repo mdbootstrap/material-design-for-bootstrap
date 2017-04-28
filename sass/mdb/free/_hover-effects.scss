@@ -32,6 +32,17 @@
     left: 0;
 }
 
+header {
+    .view {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
 // Overlays
 .overlay {
     &:hover .mask {

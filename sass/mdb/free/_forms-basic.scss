@@ -54,8 +54,8 @@ textarea.md-textarea {
         box-shadow: 0 1px 0 0 $input-success-color;
     }
     // Custom Success Message
-    &.valid + label:after,
-    &:focus.valid + label:after {
+    &.valid+label:after,
+    &:focus.valid+label:after {
         content: attr(data-success);
         color: $input-success-color;
         opacity: 1;
@@ -67,14 +67,14 @@ textarea.md-textarea {
         box-shadow: 0 1px 0 0 $input-error-color;
     }
     // Custom Error message
-    &.invalid + label:after,
-    &:focus.invalid + label:after {
+    &.invalid+label:after,
+    &:focus.invalid+label:after {
         content: attr(data-error);
         color: $input-error-color;
         opacity: 1;
     }
     // Form Message Shared Styles
-    & + label:after {
+    &+label:after {
         display: block;
         content: "";
         position: absolute;
@@ -87,12 +87,11 @@ textarea.md-textarea {
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
         font-size: 0.875rem;
         border-bottom: 0;
-        transition:none !important;
+        transition: none !important;
         &:hover,
         &:focus {
-            box-shadow: 0 3px 8px 0 rgba(0,0,0,.2),
-                        0 0 0 1px rgba(0,0,0,.08) !important;
-            border-bottom:0;
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0, 0, 0, .08) !important;
+            border-bottom: 0;
         }
     }
 }
@@ -128,6 +127,28 @@ label {
 .md-form {
     position: relative;
     margin-bottom: 1.5rem;
+    &.form-sm {
+        input {
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
+            font-size: 0.8rem;
+            line-height: 0.5;
+        }
+        label {
+            font-size: 0.9rem;
+        }
+        .prefix {
+            font-size: 1.5rem;
+            top: 0.4rem;
+        }
+        .prefix~input,
+        .prefix~textarea {
+            margin-left: 2.2rem; //Po dodaniu marginesu z lewej powstaje dziwny margines po prawej. Do poprawienia przed updatem
+        }
+        .prefix~label {
+            margin-left: 2.2rem;
+        }
+    }
     .btn {
         margin-bottom: 1.5rem;
     }
@@ -154,26 +175,26 @@ label {
             color: $input-focus-color;
         }
     }
-    .prefix ~ input,
-    .prefix ~ textarea {
+    .prefix~input,
+    .prefix~textarea {
         margin-left: 3rem;
         width: 92%;
         width: calc(100% - 3rem);
     }
-    .prefix ~ textarea {
+    .prefix~textarea {
         padding-top: .8rem;
     }
-    .prefix ~ label {
+    .prefix~label {
         margin-left: 3rem;
     }
     @media #{$medium-and-down} {
-        .prefix ~ input {
+        .prefix~input {
             width: 86%;
             width: calc(100% - 3rem);
         }
     }
     @media #{$small-and-down} {
-        .prefix ~ input {
+        .prefix~input {
             width: 80%;
             width: calc(100% - 3rem);
         }
@@ -181,7 +202,7 @@ label {
     &.input-group {
         .form-control {
             margin: 0;
-            padding-left:1rem;
+            padding-left: 1rem;
             @include placeholder {
                 color: #999;
                 padding-top: 2px;

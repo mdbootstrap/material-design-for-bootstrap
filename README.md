@@ -27,9 +27,9 @@ You can install MDBootstrap using NPM or Bower:
 **5min Quick Start**: https://mdbootstrap.com/mdb-quick-start/
 
 # MDBootstrap on CDNJS:
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css" />`
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/js/mdb.min.js"></script>`
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>`
 
 # Additional tutorials:
 
@@ -102,7 +102,6 @@ Our license is user friendly. Feel free to use MDB for both private as well as c
 
 A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
 
-If you're interested in learning about all the updates Material Design for Bootstrap release, follow us on social media <tu linki>.  
 
 
 # Live Preview
@@ -116,6 +115,26 @@ If you're interested in learning about all the updates Material Design for Boots
 
 
 # Version logs  
+
+### MDB 4.3.2
+MDB 4.3.2 brings 2 huge improvements - Enhanced Bootstrap Modals plugin and BrandFlow Software
+
+EBM (Enhanced Bootstrap Modals) is a powerful plugin which extends functionality and features of the standard Bootstrap plugin.
+
+Static UI elements aren't enough in modern web development. Enhanced Bootstrap Modals lets you create a dynamic and reactive environment similarly to the websites and apps of the biggest companies.
+
+It can enhance UI of your projects and let you create Automated Rule and Scoring system, Related Content system, Shopping Carts Recovery system and much more.
+
+Note: Enhanced Bootstrap Modals are part of both MDB Free and MBD Pro.
+
+You can download the new version of MDB Free on our website and for MDB Pro from your account page.
+
+Note 2: MDB 4.3.2 is fully compatible with MDB 4.3.1 and you can update it without fear of any conflict.
+
+**What's new?**  
+-New option for inputs: Small Inputs  
+-New List Style Types  
+
 
 ### MDB 4.3.1 
 

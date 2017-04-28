@@ -161,15 +161,10 @@
         }
         h5 .fa {
             margin-right: 8px;
-        }
-        hr {
+        } 
+        hr { 
             margin-top: 1rem;
             margin-bottom: 3rem;
-        }
-        @media (min-width: 992px) {
-            hr {
-                display: none;
-            }
         }
         .map-container {
             img {
@@ -191,4 +186,43 @@
     
     .between-sections {
         margin-bottom: 4rem;
+    }
+    
+    // Lists default style
+    ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+            list-style-type: none;
+        }
+    }
+    
+    // List style types
+    .list-disc {
+        li {
+            list-style-type: disc;
+        }
+    }
+    
+    .list-circle {
+        li {
+            list-style-type: circle;
+        }
+    }
+    
+    .list-square {
+        li {
+            list-style-type: square;
+        }
+    }
+    
+    .list-roman {
+        li {
+            list-style-type: upper-roman;
+        }
+    }
+    .list-alpha {
+        li {
+            list-style-type: upper-alpha;
+        }
     }
