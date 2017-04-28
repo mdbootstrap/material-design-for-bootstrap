@@ -51,14 +51,6 @@ a {
     }
 }
 
-ul {
-    padding: 0;
-    list-style-type: none;
-    li {
-        list-style-type: none;
-    }
-}
-
 .jumbotron,
 .card,
 .badge,
@@ -74,7 +66,6 @@ ul {
 .pagination-sm .page-item:first-child .page-link,
 .pagination-sm .page-item:last-child .page-link,
 .list-group .list-group-item,
-.modal-content,
 .tooltip-inner,
 .popover,
 .dropdown-menu,
