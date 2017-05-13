@@ -1,6 +1,7 @@
 [![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
 
 # Material Design for Bootstrap 4 
+[![CDNJS version](https://img.shields.io/cdnjs/v/mdbootstrap.svg)](https://cdnjs.com/libraries/mdbootstrap)
 
 400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more.
 
