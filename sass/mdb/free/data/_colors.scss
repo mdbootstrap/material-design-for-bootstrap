@@ -1,6 +1,6 @@
 // COLORS
 
-$mdb-color: (
+$mdbcolor: (
   "lighten-5":  #D0D6E2,
   "lighten-4":  #B1BACE,
   "lighten-3":  #929FBA,
@@ -331,7 +331,7 @@ $shades: (
 );
 
 $colors: (
-  "mdb-color": $mdb-color,
+  "mdb-color": $mdbcolor,
   "red": $red,
   "pink": $pink,
   "purple": $purple,
@@ -418,118 +418,118 @@ $so-color: #f69c55;
 $slack-color: #56b68b;
 
 // Material Design Colors`
-$danger-color: #ff4444;
+$danger-color: #ff4444 !default;
 .danger-color {
     background-color: $danger-color!important;
 }
 
-$danger-color-dark: #CC0000;
+$danger-color-dark: #CC0000 !default;
 .danger-color-dark {
     background-color: $danger-color-dark!important;
 }
 
-$warning-color: #ffbb33;
+$warning-color: #ffbb33 !default;
 .warning-color {
     background-color: $warning-color!important;
 }
 
-$warning-color-dark: #FF8800;
+$warning-color-dark: #FF8800 !default;
 .warning-color-dark {
     background-color: $warning-color-dark!important;
 }
 
-$success-color: #00C851;
+$success-color: #00C851 !default;
 .success-color {
     background-color: $success-color!important;
 }
 
-$success-color-dark: #007E33;
+$success-color-dark: #007E33 !default;
 .success-color-dark {
     background-color: $success-color-dark!important;
 }
 
-$info-color: #33b5e5;
+$info-color: #33b5e5 !default;
 .info-color {
     background-color: $info-color!important;
 }
 
-$info-color-dark: #0099CC;
+$info-color-dark: #0099CC !default;
 .info-color-dark {
     background-color: $info-color-dark!important;
 }
 
 // MDB Colors
-$default-color: #2BBBAD;
+$default-color: #2BBBAD !default;
 .default-color {
     background-color: $default-color!important;
 }
 
-$default-color-dark: #00695c;
+$default-color-dark: #00695c !default;
 .default-color-dark {
     background-color: $default-color-dark!important;
 }
 
-$primary-color: #4285F4;
+$primary-color: #4285F4 !default;
 .primary-color {
     background-color: $primary-color!important;
 }
 
-$primary-color-dark: #0d47a1;
+$primary-color-dark: #0d47a1 !default;
 .primary-color-dark {
     background-color: $primary-color-dark!important;
 }
 
-$secondary-color: #aa66cc;
+$secondary-color: #aa66cc !default;
 .secondary-color {
     background-color: $secondary-color!important;
 }
 
-$secondary-color-dark: #9933CC;
+$secondary-color-dark: #9933CC !default;
 .secondary-color-dark {
     background-color: $secondary-color-dark!important;
 }
 
-$elegant-color: #2E2E2E;
+$elegant-color: #2E2E2E !default;
 .elegant-color {
     background-color: $elegant-color!important;
 }
 
-$elegant-color-dark: #212121;
+$elegant-color-dark: #212121 !default;
 .elegant-color-dark {
     background-color: $elegant-color-dark!important;
 }
 
-$stylish-color: #4B515D;
+$stylish-color: #4B515D !default;
 .stylish-color {
     background-color: $stylish-color!important;
 }
 
-$stylish-color-dark: #3E4551;
+$stylish-color-dark: #3E4551 !default;
 .stylish-color-dark {
     background-color: $stylish-color-dark!important;
 }
 
-$special-color: #37474F;
+$special-color: #37474F !default;
 .special-color {
     background-color: $special-color!important;
 }
 
-$special-color-dark: #263238;
+$special-color-dark: #263238 !default;
 .special-color-dark {
     background-color: $special-color-dark!important;
 }
 
-$unique-color: #3F729B;
+$unique-color: #3F729B !default;
 .unique-color {
     background-color: $unique-color!important;
 }
 
-$unique-color-dark: #1C2331;
+$unique-color-dark: #1C2331 !default;
 .unique-color-dark {
     background-color: $unique-color-dark!important;
 }
 
-$mdb-color: #45526E;
+$mdb-color: #45526E !default;
 .mdb-color {
     background-color: $mdb-color!important;
 }
