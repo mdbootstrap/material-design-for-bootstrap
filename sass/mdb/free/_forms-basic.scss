@@ -1,4 +1,4 @@
-// FORMS BASIC
+// Forms basic
 // Text inputs
 input[type=text],
 input[type=password],
@@ -20,61 +20,54 @@ textarea.md-textarea {
     outline: none;
     height: 2.1rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: $input-font-size;
     box-shadow: none;
-    @include box-sizing(content-box);
-    transition: all .3s;
-    // Disabled input style
-    &:disabled,
-    &:disabled,
-    &[readonly="readonly"] {
+    box-sizing: content-box;
+    @include transition(all .3s);
+
+    // Disabled & readonly
+    &:disabled, &[readonly="readonly"] {
         color: $input-disabled-color;
         border-bottom: 1px dotted $input-disabled-color;
         background-color: transparent;
-    }
-    // Disabled label style
-    &:disabled+label,
-    &[readonly="readonly"]+label {
-        color: $input-disabled-color;
-        background-color: transparent;
+        + label {
+            color: $input-disabled-color;
+            background-color: transparent;
+        }
     }
     // Focused input style
     &:focus:not([readonly]) {
         border-bottom: 1px solid $input-focus-color;
         box-shadow: 0 1px 0 0 $input-focus-color;
+        // Focused label style
+        + label {
+            color: $input-focus-color;
+        }
     }
-    // Focused label style
-    &:focus:not([readonly])+label {
-        color: $input-focus-color;
-    }
-    // Valid Input Style
-    &.valid,
-    &:focus.valid {
+
+    // Valid input style
+    &.valid, &:focus.valid {
         border-bottom: 1px solid $input-success-color;
         box-shadow: 0 1px 0 0 $input-success-color;
     }
-    // Custom Success Message
-    &.valid+label:after,
-    &:focus.valid+label:after {
+
+    &.valid + label:after, &:focus.valid + label:after {
         content: attr(data-success);
         color: $input-success-color;
         opacity: 1;
     }
-    // Invalid Input Style
-    &.invalid,
-    &:focus.invalid {
+    // Invalid input style
+    &.invalid, &:focus.invalid {
         border-bottom: 1px solid $input-error-color;
         box-shadow: 0 1px 0 0 $input-error-color;
     }
-    // Custom Error message
-    &.invalid+label:after,
-    &:focus.invalid+label:after {
+    &.invalid + label:after, &:focus.invalid + label:after {
         content: attr(data-error);
         color: $input-error-color;
         opacity: 1;
     }
-    // Form Message Shared Styles
-    &+label:after {
+    // Form message shared styles
+    + label:after {
         display: block;
         content: "";
         position: absolute;
@@ -82,8 +75,10 @@ textarea.md-textarea {
         opacity: 0;
         transition: .2s opacity ease-out, .2s color ease-out;
     }
+
     &.input-alternate {
         padding: 0 15px;
+        height: 2.1rem;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
         font-size: 0.875rem;
         border-bottom: 0;
@@ -94,13 +89,9 @@ textarea.md-textarea {
             border-bottom: 0;
         }
     }
-}
 
-label {
-    font-size: $label-font-size;
-    color: darken ($input-border-color, 90%);
 }
-
+// Input with label
 .form-control {
     padding: 0;
     padding-bottom: 0.6rem;
@@ -115,18 +106,67 @@ label {
     &:focus {
         background: transparent;
     }
+    &:disabled,
+    &[readonly] {
+        background-color: transparent;
+        border-bottom: 1px solid #bdbdbd;
+    }
 }
-
-.form-control:disabled,
-.form-control[readonly] {
-    background-color: transparent;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-// Styling for input field wrapper
+// Input + label wrapper styles
 .md-form {
     position: relative;
     margin-bottom: 1.5rem;
+    label {
+        @include transition(.2s ease-out);
+        color: #757575;
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+        font-size: 1rem;
+        cursor: text;
+        &.active {
+            @include transform(translateY(-140%));
+            font-size: $label-font-size;
+        }
+    }
+    // Icon
+    .prefix {
+        @include transition(color .2s);
+        position: absolute;
+        width: 3rem;
+        font-size: 2rem;
+        ~ input, ~ textarea {
+            margin-left: 3rem;
+            width: 92%;
+            width: calc(100% - 3rem);
+        }
+        ~ textarea {
+            padding-top: .8rem;
+        }
+        ~ label {
+            margin-left: 3rem;
+        }
+        &.active {
+            color: $input-focus-color;
+        } 
+    }
+
+    @media #{$medium-and-down} {
+        .prefix ~ input {
+            width: 86%;
+            width: calc(100% - 3rem);
+        }
+    }
+    @media #{$small-and-down} {
+        .prefix ~ input {
+            width: 80%;
+            width: calc(100% - 3rem);
+        }
+    }
+    .btn {
+        margin-bottom: 1.5rem;
+    }
+
     &.form-sm {
         input {
             padding-bottom: 0.2rem;
@@ -141,82 +181,33 @@ label {
             font-size: 1.5rem;
             top: 0.4rem;
         }
-        .prefix~input,
-        .prefix~textarea {
-            margin-left: 2.2rem;
-        }
-        .prefix~label {
+        .prefix ~ input, .prefix ~ textarea, .prefix ~ label  {
             margin-left: 2.2rem;
         }
     }
-    .btn {
-        margin-bottom: 1.5rem;
-    }
-    label {
-        color: #757575;
-        position: absolute;
-        top: 0.8rem;
-        left: 0;
-        font-size: 1rem;
-        cursor: text;
-        @include transition(.2s ease-out);
-    }
-    label.active {
-        font-size: $label-font-size;
-        @include transform(translateY(-140%));
-    }
-    // Prefix Icons
-    .prefix {
-        position: absolute;
-        width: 3rem;
-        font-size: 2rem;
-        @include transition(color .2s);
-        &.active {
-            color: $input-focus-color;
-        }
-    }
-    .prefix~input,
-    .prefix~textarea {
-        margin-left: 3rem;
-        width: 92%;
-        width: calc(100% - 3rem);
-    }
-    .prefix~textarea {
-        padding-top: .8rem;
-    }
-    .prefix~label {
-        margin-left: 3rem;
-    }
-    @media #{$medium-and-down} {
-        .prefix~input {
-            width: 86%;
-            width: calc(100% - 3rem);
-        }
-    }
-    @media #{$small-and-down} {
-        .prefix~input {
-            width: 80%;
-            width: calc(100% - 3rem);
-        }
-    }
+
     &.input-group {
-        .form-control {
-            margin: 0;
-            padding-left: 1rem;
-            @include placeholder {
-                color: #999;
-                padding-top: 2px;
-            }
+        padding-left: 1rem;
+        @include placeholder {
+            color: #999;
+            padding-top: 2px;
         }
     }
+
+}
+
+.form-group {
+    display:block;
 }
 
 .form-inline {
     fieldset {
         margin-right: 1.5rem;
     }
-}
-
+    .form-group {
+        margin-right: 2rem;
+    }
+}   
 // Default textarea
 textarea {
     width: 100%;
@@ -224,9 +215,7 @@ textarea {
     background-color: transparent;
     &.md-textarea {
         overflow-y: hidden;
-        /* prevents scroll bar flash */
         padding: 1.6rem 0;
-        /* prevents text jump on Enter keypress */
         resize: none;
         min-height: 3rem;
     }
@@ -238,61 +227,9 @@ textarea {
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    /* future version of deprecated 'word-wrap' */
     padding-top: 1.2rem;
-    /* prevents text jump on Enter keypress */
 }
 
-//Input color
-.input-dark-bg {
-    // Style Placeholders
-    @include placeholder {
-        color: #fff!important;
-        font-weight: 300;
-    }
-    input[type=text] {
-        border-bottom: 1px solid #fff;
-    }
-    .form-control {
-        color: #fff;
-    }
-}
-
-.input-light-bg {
-    // Style Placeholders
-    @include placeholder {
-        color: #1C2331!important;
-        font-weight: 300;
-    }
-    input[type=text] {
-        border-bottom: 1px solid #1C2331;
-    }
-    .form-control {
-        color: #1C2331;
-    }
-}
-
-.form-inline .form-group {
-    margin-right: 2rem;
-}
-
-i {
-    &.btn-primary {
-        background: $primary-color!important;
-    }
-    &.btn-default {
-        background: $default-color!important;
-    }
-    &.btn-success {
-        background: $success-color!important;
-    }
-    &.btn-info {
-        background: $info-color!important;
-    }
-    &.btn-warning {
-        background: $warning-color-dark!important;
-    }
-    &.btn-danger {
-        background: $danger-color-dark!important;
-    }
+.orange-gradient{
+    background: linear-gradient(40deg, #FFD86F, #FC6262);
 }

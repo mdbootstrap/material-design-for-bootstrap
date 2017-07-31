@@ -32,13 +32,9 @@
     position: relative; 
     cursor: pointer;
     overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     z-index: 1;
-    
     .waves-ripple {
         position: absolute;
         border-radius: 50%;
@@ -54,9 +50,6 @@
         background: -moz-radial-gradient($gradient); 
         background: radial-gradient($gradient);
         @include waves-transition(all 0.5s ease-out);
-        -webkit-transition-property: -webkit-transform, opacity;
-        -moz-transition-property: -moz-transform, opacity;
-        -o-transition-property: -o-transform, opacity;
         transition-property: transform, opacity;
         @include waves-transform(scale(0) translate(0,0));
         pointer-events: none;
@@ -121,7 +114,7 @@
 .waves-input-wrapper {
     border-radius: 0.2em;
     vertical-align: bottom;
-
+    display:inline-block;
     &.waves-button {
         padding: 0;
     }
@@ -154,4 +147,11 @@
 
 .waves-block {
     display: block;
+}
+
+a {
+    &.waves-effect,
+    &.waves-light {
+        display:inline-block;
+    }
 }

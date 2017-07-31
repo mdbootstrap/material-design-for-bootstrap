@@ -1,0 +1,10 @@
+.media .media-left {
+    padding: 0 10px 10px 0;
+    img {
+        @extend .z-depth-1-half;
+    }
+}
+
+.list-group a:hover {
+    transition: 0.5s;
+}

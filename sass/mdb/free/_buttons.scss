@@ -1,11 +1,38 @@
-// BUTTONS
+// Buttons
 button:focus {
-    outline: none!important;
+    outline:0 !important;
 }
-
 .btn {
     font-size: 0.8rem;
     padding: 0.85rem 2.13rem;
+    margin: 6px;
+    border-radius: 2px;
+    border: 0;
+    transition: .2s ease-out;
+    text-transform: uppercase;
+    white-space: normal !important;
+    word-wrap: break-word;
+    cursor: pointer;
+    @extend .white-text;
+    @extend .z-depth-1;
+    &:hover,
+    &:active,
+    &:focus {
+        @extend .z-depth-1-half;
+        outline: 0;
+    }
+    .fa {
+        font-size: 1.1rem;
+        position: relative;
+        vertical-align: middle;
+        margin-top: -2px;
+        &.right {
+            margin-left: 3px;
+        }
+        &.left {
+            margin-right: 3px;
+        }
+    }
     &.btn-lg {
         font-size: 0.9rem;
         padding: 1rem 2.4rem;
@@ -21,44 +48,37 @@ button:focus {
             padding: 0.5rem 0.9rem;
         }
         .fa {
-            font-size:0.8rem;
+            font-size: 0.8rem;
+        }
+    }
+    &.btn-tb {
+        padding: 0.3rem 1rem;
+    }
+    &.disabled,
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &[class*="btn-outline-"] {
+        padding-top:.76rem;
+        padding-bottom: .76rem;
+        &.btn-sm {
+            padding-top:.42rem;
+            padding-bottom: .42rem;
+        }
+        &.btn-md {
+            padding-top:.58rem;
+            padding-bottom: .58rem;
+        }
+        &.btn-lg {
+            padding-top:.9rem;
+            padding-bottom: .9rem;
         }
     }
 }
 
-.btn {
-    border-radius: 2px;
-    border: 0;
-    @extend .z-depth-1;
-    transition: .2s ease-out;
-    color: #fff!important;
-    margin: 6px;
-    white-space: normal !important;
-    word-wrap: break-word;
-    text-transform: uppercase;
-    &:hover {
-        @extend .z-depth-1-half;
-        color: #fff;
-    }
-    &:active,
-    &:focus,
-    &.active {
-        outline: 0;
-        color: #fff;
-        @extend .z-depth-1-half;
-    } 
-    .fa {
-        font-size: 1.1rem;
-        position: relative;
-        vertical-align: middle;
-        margin-top: -2px;
-        &.right {
-            margin-left: 3px;
-        }
-        &.left {
-            margin-right: 3px;
-        }
-    }
+.btn-secondary.disabled, .btn-secondary:disabled {
+        background-color: #b579d2!important;
+        border-color: #b579d2 !important; 
 }
 
 .btn-group {
@@ -66,488 +86,25 @@ button:focus {
         margin: 0;
     }
 }
-
 .btn-block {
     margin: inherit;
 }
-
-// Alert buttons
-.btn-secondary {
-    background-color: $secondary-color;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: lighten( $secondary-color, 5%)!important;
-        color: #fff;
-    }
-    &.active {
-        background-color: darken( $secondary-color, 20%)!important;
-        @extend .z-depth-1-half;
-        &:hover {
-            color: #fff;
-        }
-        &:focus {
-            color: #fff;
-        }
-    }
-    &.dropdown-toggle {
-        color: #fff!important;
-        background-color: $secondary-color!important;
-        @extend .z-depth-1-half;
-        &:hover {
-            color: #fff;
-            background-color: lighten( $secondary-color, 5%)!important;
-        }
-        &:focus {
-            color: #fff;
-            background-color: $secondary-color;
-        }
-    }
-}
-
-.btn-secondary:active:hover {
-    background-color: lighten( $secondary-color, 5%)!important;
-}
-
-.btn-primary {
-    background: $primary-color;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: lighten( $primary-color, 5%)!important;
-    }
-    &.active {
-        background-color: darken( $primary-color, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-default {
-    background: $default-color;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: lighten( $default-color, 5%)!important;
-    }
-    &.active {
-        background-color: darken( $default-color, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-success {
-    background: $success-color;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: lighten( $success-color, 2%)!important;
-    }
-    &.active {
-        background-color: darken( $success-color, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-info {
-    background: $info-color;
-    &:hover,
-    &:focus {
-        background-color: lighten( $info-color, 5%)!important;
-    }
-    &.active {
-        background-color: darken( $info-color, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-warning {
-    background: $warning-color-dark;
-    &:hover,
-    &:focus {
-        background-color: lighten( $warning-color-dark, 6%)!important;
-    }
-    &.active {
-        background-color: darken( $warning-color, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-danger {
-    background: $danger-color-dark;
-    &:hover,
-    &:focus {
-        background-color: lighten( $danger-color-dark, 3%)!important;
-    }
-    &.active {
-        background-color: darken( $danger-color-dark, 15%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-link {
-    background-color: transparent;
-    color: #000!important;
-    &:hover,
-    &:focus {
-        background-color: transparent;
-        color: #000;
-    }
-}
-
-// Additional button styles
-.btn-outline-primary {
-    border: 2px solid $primary-color;
-    color: $primary-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: $primary-color;
-        border-color: $primary-color;
-        background-color: transparent;
-    }
-}
-
-.btn-outline-secondary {
-    border: 2px solid $secondary-color;
-    color: $secondary-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: $secondary-color;
-        border: 2px solid $secondary-color;
-        background-color: transparent;
-    }
-}
-
-.btn-outline-default {
-    background-color: transparent;
-    border: 2px solid $default-color;
-    color: $default-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: $default-color;
-        border-color: $default-color;
-        background-color:transparent;
-    }
-}
-
-.btn-outline-success {
-    border: 2px solid $success-color;
-    color: $success-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: $success-color;
-        border-color: $success-color;
-        background-color: transparent;
-    }
-}
-
-.btn-outline-info {
-    border: 2px solid $info-color;
-    color: $info-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: $info-color;
-        border-color: $info-color;
-        background-color: transparent;
-
-    }
-}
-
-.btn-outline-warning {
-    border: 2px solid $warning-color;
-    color: $warning-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        border-color: $warning-color;
-        color: $warning-color;
-        background-color: transparent;
-    }
-}
-
-.btn-outline-danger {
-    border: 2px solid $danger-color;
-    color: $danger-color-dark!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: $danger-color;
-        border-color: $danger-color;
-        background-color: transparent;
-    }
-}
-
-.btn-outline-white {
-    border: 2px solid #fff;
-    color: #fff!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: darken( #fff, 10%);
-        border-color: #fff;
-        background-color:transparent;
-    }
-}
-
-.btn-outline-black {
-    border: 2px solid #000;
-    color: #000!important;
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus {
-        color: #000;
-        border-color: #000;
-        background-color: transparent;
-    }
-}
-
-// Pagination
-.pager li a {
-    border: 0;
-    @extend .z-depth-1;
-    transition: .2s ease-out;
-    &:hover {
-        @extend .z-depth-1-half;
-    }
-}
-
-// Additional buttons colors
-.btn-elegant {
-    background: $elegant-color;
-    &:hover,
-    &:focus {
-        background-color: lighten( $elegant-color, 5%)!important;
-    }
-    &.active {
-        background-color: darken( $elegant-color, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-unique {
-    background: $unique-color-dark;
-    &:hover,
-    &:focus {
-        background-color: lighten( $unique-color-dark, 5%)!important;
-    }
-    &.active {
-        background-color: darken( $unique-color-dark, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-pink {
-    background: #e91e63;
-    &:hover,
-    &:focus {
-        background-color: lighten(#e91e63, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#e91e63, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-purple {
-    background: #4a148c;
-    &:hover,
-    &:focus {
-        background-color: lighten(#4a148c, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#4a148c, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-deep-purple {
-    background: #311b92;
-    &:hover,
-    &:focus {
-        background-color: lighten(#311b92, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#311b92, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-indigo {
-    background: #1a237e;
-    &:hover,
-    &:focus {
-        background-color: lighten(#1a237e, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#1a237e, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-cyan {
-    background: #00acc1;
-    &:hover,
-    &:focus {
-        background-color: lighten(#00acc1, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#00acc1, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-light-green {
-    background: #7cb342;
-    &:hover,
-    &:focus {
-        background-color: lighten(#7cb342, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#7cb342, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-dark-green {
-    background: #007E33;
-    &:hover,
-    &:focus {
-        background-color: lighten(#007E33, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#007E33, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-lime {
-    background: #afb42b;
-    &:hover,
-    &:focus {
-        background-color: lighten(#afb42b, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#afb42b, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-yellow {
-    background: #fbc02d;
-    &:hover,
-    &:focus {
-        background-color: lighten(#fbc02d, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#fbc02d, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-amber {
-    background: #ff6f00;
-    &:hover,
-    &:focus {
-        background-color: lighten(#ff6f00, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#ff6f00, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-orange {
-    background: #e65100;
-    &:hover,
-    &:focus {
-        background-color: lighten(#e65100, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#e65100, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-deep-orange {
-    background: #bf360c;
-    &:hover,
-    &:focus {
-        background-color: lighten(#bf360c, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#bf360c, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-brown {
-    background: #6d4c41;
-    &:hover,
-    &:focus {
-        background-color: lighten(#6d4c41, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#6d4c41, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-blue-grey {
-    background: #607d8b;
-    &:hover,
-    &:focus {
-        background-color: lighten(#607d8b, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#607d8b, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-mdb {
-    background: #45526E;
-    &:hover,
-    &:focus {
-        background-color: lighten(#45526E, 5%)!important;
-    }
-    &.active {
-        background-color: darken(#45526E, 20%)!important;
-        @extend .z-depth-1-half;
-    }
-}
-
-.btn-secondary {
-    &.disabled,
-    &:disabled {
-        background-color: #aa66cc;
-        cursor: not-allowed;
-        pointer-events: auto !important;
-    }
-}
-
 .btn-split {
     padding-left: 0.85rem;
     padding-right: 1.25rem;
 }
+.btn-link {
+    background-color: transparent;
+    @extend .black-text;
+    box-shadow: none;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+@each $btn-name, $color-value in $material-colors {
+    @include make-button($btn-name, $color-value);
+    @include make-outline-button($btn-name, $color-value);
+}
+

@@ -9,6 +9,7 @@ $modal-danger-color: #ff4b4b;
 body {
     &.modal-open {
         padding-right: 0 !important;
+        overflow: auto;
     }
     &.scrollable {
         overflow-y: auto;
@@ -27,34 +28,37 @@ body {
 
 // Position & Size
 .modal {
+    padding-right:0 !important;
     .modal-dialog {
-        &.modal-top {
-            top: 0;
-        }
-        &.modal-left {
-            left: 0;
-        }
-        &.modal-right {
-            right: 0;
-        }
-        &.modal-bottom {
-            bottom: 0;
-        }
-        &.modal-top-left {
-            top: $modal-distance;
-            left: $modal-distance;
-        }
-        &.modal-top-right {
-            top: $modal-distance;
-            right: $modal-distance;
-        }
-        &.modal-bottom-left {
-            left: $modal-distance;
-            bottom: $modal-distance;
-        }
-        &.modal-bottom-right {
-            right: $modal-distance;
-            bottom: $modal-distance;
+        @media (min-width: 768px) {
+            &.modal-top {
+                top: 0;
+            }
+            &.modal-left {
+                left: 0;
+            }
+            &.modal-right {
+                right: 0;
+            }
+            &.modal-bottom {
+                bottom: 0;
+            }
+            &.modal-top-left {
+                top: $modal-distance;
+                left: $modal-distance;
+            }
+            &.modal-top-right {
+                top: $modal-distance;
+                right: $modal-distance;
+            }
+            &.modal-bottom-left {
+                left: $modal-distance;
+                bottom: $modal-distance;
+            }
+            &.modal-bottom-right {
+                right: $modal-distance;
+                bottom: $modal-distance;
+            }
         }
     }
     &.fade {
@@ -71,79 +75,81 @@ body {
             transform: translate3d(0, 25%, 0);
         }
     }
-    &.modal-scrolling {
-        position: relative;
-        .modal-dialog {
-            position: fixed;
-            z-index: 1050;
+    @media (min-width: $medium-screen) {
+        &.modal-scrolling {
+            position: relative;
+            .modal-dialog {
+                position: fixed;
+                z-index: 1050;
+            }
         }
-    }
-    &.modal-content-clickable {
-        top:auto;
-        bottom:auto;
-        .modal-dialog {
-            position:fixed;
-        }
-    }
-    .modal-fluid {
-        width: 100%;
-        max-width: 100%;
-        .modal-content {
-            width: 100%;
-        }
-    }
-    .modal-frame {
-        position: absolute;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        &.modal-bottom {
-            bottom: 0;
-        }
-    }
-    .modal-full-height {
-        display: flex;
-        position: absolute;
-        width: 400px;
-        height: 100%;
-        margin: 0;
-        top: 0;
-        // bottom: 0;
-        right: 0;
-        &.modal-top, &.modal-bottom {
-            display:block;
-            width:100%;
-            max-width:100%;
-            height:auto;
-        }
-        &.modal-top {
-            bottom:auto;
-        }
-        &.modal-bottom {
+        &.modal-content-clickable {
             top:auto;
-        }
-        .modal-content {
-            width:100%;
-        }
-        &.modal-lg {
-            max-width:90%;
-            width:90%;
-            @media (min-width:992px) {
-                max-width:800px;
-                width:800px;  
-            }
-            @media (min-width:1200px) {
-                max-width:1000px;
-                width:1000px;  
+            bottom:auto;
+            .modal-dialog {
+                position:fixed;
             }
         }
-    }
-    .modal-side {
-        position: absolute;
-        right: $modal-distance;
-        bottom: $modal-distance;
-        margin: 0;
-        width: 400px;
+        .modal-fluid {
+            width: 100%;
+            max-width: 100%;
+            .modal-content {
+                width: 100%;
+            }
+        }
+        .modal-frame {
+            position: absolute;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            &.modal-bottom {
+                bottom: 0;
+            }
+        }
+        .modal-full-height {
+            display: flex;
+            position: absolute;
+            width: 400px;
+            height: 100%;
+            margin: 0;
+            top: 0;
+            // bottom: 0;
+            right: 0;
+            &.modal-top, &.modal-bottom {
+                display:block;
+                width:100%;
+                max-width:100%;
+                height:auto;
+            }
+            &.modal-top {
+                bottom:auto;
+            }
+            &.modal-bottom {
+                top:auto;
+            }
+            .modal-content {
+                width:100%;
+            }
+            &.modal-lg {
+                max-width:90%;
+                width:90%;
+                @media (min-width:$medium-screen) {
+                    max-width:800px;
+                    width:800px;  
+                }
+                @media (min-width:$large-screen) {
+                    max-width:1000px;
+                    width:1000px;  
+                }
+            }
+        }
+        .modal-side {
+            position: absolute;
+            right: $modal-distance;
+            bottom: $modal-distance;
+            margin: 0;
+            width: 400px;
+        }
     }
 }
 
@@ -158,23 +164,21 @@ body {
     // Cascading modals
     &.cascading-modal {
         margin-top: 10%;
+        .close {
+            color:#fff;
+            opacity:1;
+            text-shadow:none;
+        }
         // Cascading header
         .modal-header {
             text-align: center;
             margin: -2rem 1rem 1rem 1rem;
             padding: 1.5rem;
             border: none;
-            flex-direction: column;
             @extend .z-depth-1-half;
             @include border-radius(3px);
             .close {
-                margin-right: 2.5rem;
-            }
-            &.white-text {
-                .close {
-                    color: #fff;
-                    opacity: 1;
-                }
+                margin-right: 1rem;
             }
             .title {
                 width: 100%;
@@ -201,6 +205,16 @@ body {
                 padding: 1.7rem 0 0 0;
             }
         }
+        .nav-tabs {
+            display:flex;
+            li {
+                flex:1;
+                a {
+                    text-align:center;
+                    font-weight:normal;
+                }
+            }
+        }
         // Footer customization
         .modal-body,
         .modal-footer {
@@ -222,6 +236,8 @@ body {
                 img {
                     width: 130px;
                     @extend .z-depth-2;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
@@ -259,22 +275,8 @@ body {
             .badge {
                 background-color: $modal-info-color;
             }
-            .btn-primary-modal {
-                background: $modal-info-color;
-                &:hover,
-                &:focus,
-                &:active {
-                    background-color: lighten( $modal-info-color, 5%)!important;
-                }
-                &.active {
-                    background-color: darken( $modal-info-color, 20%)!important;
-                    @extend .z-depth-1-half;
-                }
-            }
-            .btn-outline-secondary-modal {
-                border: 2px solid $modal-info-color;
-                color: $modal-info-color!important;
-            }
+            @include make-button('primary-modal', $modal-info-color);
+            @include make-outline-button('secondary-modal', $modal-info-color);
         }
         // Modal warning
         &.modal-warning {
@@ -287,22 +289,8 @@ body {
             .badge {
                 background-color: $modal-warning-color;
             }
-            .btn-primary-modal {
-                background: $modal-warning-color;
-                &:hover,
-                &:focus,
-                &:active {
-                    background-color: lighten( $modal-warning-color, 5%)!important;
-                }
-                &.active {
-                    background-color: darken( $modal-warning-color, 20%)!important;
-                    @extend .z-depth-1-half;
-                }
-            }
-            .btn-outline-secondary-modal {
-                border: 2px solid $modal-warning-color;
-                color: $modal-warning-color!important;
-            }
+            @include make-button('primary-modal', $modal-warning-color);
+            @include make-outline-button('secondary-modal', $modal-warning-color);
         }
         // Modal success
         &.modal-success {
@@ -315,22 +303,8 @@ body {
             .badge {
                 background-color: $modal-success-color;
             }
-            .btn-primary-modal {
-                background: $modal-success-color;
-                &:hover,
-                &:focus,
-                &:active {
-                    background-color: lighten( $modal-success-color, 5%)!important;
-                }
-                &.active {
-                    background-color: darken( $modal-success-color, 20%)!important;
-                    @extend .z-depth-1-half;
-                }
-            }
-            .btn-outline-secondary-modal {
-                border: 2px solid $modal-success-color;
-                color: $modal-success-color!important;
-            }
+            @include make-button('primary-modal', $modal-success-color);
+            @include make-outline-button('secondary-modal', $modal-success-color);
         }
         // Modal danger
         &.modal-danger {
@@ -343,22 +317,8 @@ body {
             .badge {
                 background-color: $modal-danger-color;
             }
-            .btn-primary-modal {
-                background: $modal-danger-color;
-                &:hover,
-                &:focus,
-                &:active {
-                    background-color: lighten( $modal-danger-color, 5%)!important;
-                }
-                &.active {
-                    background-color: darken( $modal-danger-color, 20%)!important;
-                    @extend .z-depth-1-half;
-                }
-            }
-            .btn-outline-secondary-modal {
-                border: 2px solid $modal-danger-color;
-                color: $modal-danger-color!important;
-            }
+            @include make-button('primary-modal', $modal-danger-color);
+            @include make-outline-button('secondary-modal', $modal-danger-color);
         }
     }
 }

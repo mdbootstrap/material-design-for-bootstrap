@@ -1,0 +1,51 @@
+table {
+    th {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    td {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+    &.table {
+        thead th {
+            border-top: none;
+        }
+        th,
+        td {
+            padding-top: 1.1rem;
+            padding-bottom: 1rem;
+        }
+        a {
+            margin: 0;
+            color: #212529;
+        }
+        .label-table {
+            margin: 0;
+            padding: 0;
+            line-height: 15px;
+            height: 15px; 
+        }
+        .btn-table {
+            margin: 0px 1px;
+            padding: 3px 7px;
+            .fa {
+                font-size: 11px;
+            }
+        }
+    }
+    &.table-hover tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+        transition: 0.5s;
+    }
+    .th-lg {
+        min-width: 9rem;
+    }
+    &.table-sm {
+        th,
+        td {
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+        }
+    }
+}
