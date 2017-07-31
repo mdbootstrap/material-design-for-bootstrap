@@ -1,0 +1,86 @@
+.pagination {
+    .page-link {
+        background-color: transparent;
+        font-size: 0.8rem;
+    }
+    .active .page-link {
+        border-radius: 2px;
+        transition: all 0.2s linear;
+        @extend.z-depth-1;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// Circle pagination
+.pagination {
+    &.pagination-circle {
+        .page-link {
+            border-radius: 50%;
+            margin-left: 2px;
+            margin-right: 2px;
+            &:hover {
+                border-radius: 50%;
+            }
+        }
+        .active .page-link {
+            border-radius: 50%;
+        }
+    }
+}
+
+.pagination .page-link {
+    border: 0;
+    transition: all 0.3s linear;
+    &:hover {
+        transition: all 0.3s linear;
+        background-color: #eee;
+    }
+    &:focus {
+        background-color: transparent;
+    }
+}
+
+.pagination {
+    &.pg-blue {
+        .active .page-link {
+            background-color: $primary-color;
+        }
+    }
+    &.pg-red {
+        .active .page-link {
+            background-color: $danger-color;
+        }
+    }
+    &.pg-teal {
+        .active .page-link {
+            background-color: $default-color;
+        }
+    }
+    &.pg-darkgrey {
+        .active .page-link {
+            background-color: $special-color;
+        }
+    }
+    &.pg-dark {
+        .active .page-link {
+            background-color: $elegant-color;
+        }
+    }
+    &.pg-bluegrey {
+        .active .page-link {
+            background-color: #3F729B;
+        }
+    }
+    &.pg-amber {
+        .active .page-link {
+            background-color: #ff6f00;
+        }
+    }
+    &.pg-purple {
+        .active .page-link {
+            background-color: #5e35b1;
+        }
+    }
+}

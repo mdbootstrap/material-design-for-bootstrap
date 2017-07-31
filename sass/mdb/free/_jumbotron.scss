@@ -1,0 +1,22 @@
+// Jumbtotron
+.jumbotron {
+    background-color: $white;
+    padding: 2rem;
+    &.m-1,
+    &.m-2,
+    &.m-3 {
+        z-index: 50;
+        position: relative;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    &.m-1 {
+        margin-top: -20px;
+    }
+    &.m-2 {
+        margin-top: -30px;
+    }
+    &.m-3 {
+        margin-top: -40px;
+    }
+}

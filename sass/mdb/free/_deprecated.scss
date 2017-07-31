@@ -1,0 +1,4 @@
+// Buttons
+// .btn-mdb was replaced by .btn-mdb-color
+
+@include make-button('mdb', map-get($mdb-color, base));

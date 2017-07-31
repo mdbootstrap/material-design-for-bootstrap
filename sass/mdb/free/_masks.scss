@@ -1,0 +1,111 @@
+// Masks
+.view {
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    .mask {
+        background-attachment: fixed;
+    }
+    .mask,
+    .full-bg-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    img, video {
+        display: block;
+        position: relative;
+    }
+}
+
+// Zoom and overlays
+.hm-zoom,
+.overlay {
+    img,
+    video {
+        @include transition(all 0.2s linear);
+    }
+    &:hover {
+        .mask {
+            opacity: 1;
+        }
+    }
+}
+.hm-zoom {
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+.overlay {
+    .mask {
+        opacity: 0;
+        @include transition(all 0.4s ease-in-out);
+    }
+}
+
+// Overlay patterns 
+$patterns: (
+    1: "01",
+    2: "02",
+    3: "03",
+    4: "04",
+    5: "05",
+    6: "06",
+    7: "07",
+    8: "08",
+    9: "09"
+);
+
+@each $no, $filename in $patterns {
+    .pattern-#{$no} {
+        background: url('../img/overlays/#{$filename}.png');
+    }
+}
+
+// Overlay masks
+@each $name, $color in $rgba-colors {
+    .hm-#{$name} {
+        .mask,
+        .full-bg-img {
+            background-color: $color;
+        }
+    }
+}
+
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+    height: 100%;
+}
+
+.intro {
+    min-height: 1000px;
+    position: relative;
+    @media (max-width: 768px) {
+        min-height: 1000px;
+    }
+}
+
+.intro-video {
+    video {
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        transition: 1s opacity;
+    }
+}
+   

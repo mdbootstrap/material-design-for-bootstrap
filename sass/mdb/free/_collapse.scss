@@ -1,0 +1,38 @@
+// ACCORDION
+.accordion {
+  .card {
+      border-bottom: 1px solid color('grey', 'lighten-3');
+      box-shadow: none;
+      .card-header {
+          padding: 1rem 1.5rem;
+          background: transparent;
+          border-bottom: 0;
+          a:not(.collapsed) {
+              .rotate-icon {
+                  transform: rotate(180deg);
+              }
+          }
+      }
+      .fa-angle-down {
+          float: right;
+      }
+      .card-block {
+          padding-top: .25rem;
+      }
+      .card-body {
+          line-height: 1.7;
+          color: #626262;
+          font-size: 0.9rem;
+          font-weight: 300;
+      }
+      h5 {
+          font-size: 1.1rem;
+          font-weight: 400;
+      }
+  }
+}
+
+// Collapsible body
+.collapsible-body {
+    display: none;
+}
