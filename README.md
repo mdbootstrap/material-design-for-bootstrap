@@ -120,6 +120,18 @@ A big **thank you to all our users** who are working with us to improve the soft
 
 # Version logs  
 
+### MDB 4.4.1
+
+**What's new**
+
+MDB 4.4.1 brings one major change - integration with freshly released Bootstra 4 beta.  
+
+You can download the new version of MDB Free on our website and for MDB Pro from your account page.  
+
+Note 1: If you already use MDB 4.4 beta, there are no breaking changes for you. You can update your project to 4.4.1 without fear of conflict. Backward compatibility is provided.  
+
+Note 2: If you use version MDB 4.3.2 or lower - read carefully the detailed list of changes in MDB 4.4 release note. These changes apply to MDB 4.4 and Bootstrap 4 beta as well.  
+
 ### MDB 4.4.0
 That's the most significant update in the history of MDBootstrap. Together with the newest Bootstrap, we introduce you a brand new, completely rewritten MDB.
 
