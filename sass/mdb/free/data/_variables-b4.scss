@@ -325,15 +325,15 @@ $table-inverse-color:           $body-bg !default;
 
 $input-btn-padding-y:       .5rem !default;
 $input-btn-padding-x:       .75rem !default;
-$input-btn-line-height:     1.25 !default;
+$input-btn-line-height:     $line-height-base !default;
 
 $input-btn-padding-y-sm:    .25rem !default;
 $input-btn-padding-x-sm:    .5rem !default;
-$input-btn-line-height-sm:  1.5 !default;
+$input-btn-line-height-sm:  $line-height-sm !default;
 
 $input-btn-padding-y-lg:    .5rem !default;
 $input-btn-padding-x-lg:    1rem !default;
-$input-btn-line-height-lg:  1.5 !default;
+$input-btn-line-height-lg:  $line-height-lg !default;
 
 $btn-font-weight:                $font-weight-normal !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
@@ -433,9 +433,9 @@ $custom-checkbox-indicator-indeterminate-box-shadow: none !default;
 $custom-radio-indicator-border-radius: 50% !default;
 $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$custom-control-indicator-checked-color}'/%3E%3C/svg%3E"), "#", "%23") !default;
 
-$custom-select-padding-y:          .375rem !default;
-$custom-select-padding-x:          .75rem  !default;
-$custom-select-height:              $input-height  !default;
+$custom-select-padding-y:           .375rem !default;
+$custom-select-padding-x:           .75rem !default;
+$custom-select-height:              $input-height !default;
 $custom-select-indicator-padding:   1rem !default; // Extra padding to account for the presence of the background-image based indicator
 $custom-select-line-height:         $input-btn-line-height !default;
 $custom-select-color:               $input-color !default;
@@ -455,21 +455,21 @@ $custom-select-focus-box-shadow:   inset 0 1px 2px rgba($black, .075), 0 0 5px r
 $custom-select-font-size-sm:  75% !default;
 $custom-select-height-sm: $input-height-sm !default;
 
-$custom-file-height:           2.5rem !default;
+$custom-file-height:           $input-height !default;
 $custom-file-width:            14rem !default;
 $custom-file-focus-box-shadow: 0 0 0 .075rem $white, 0 0 0 .2rem theme-color("primary") !default;
 
-$custom-file-padding-y:     1rem !default;
-$custom-file-padding-x:     .5rem !default;
-$custom-file-line-height:   1.5 !default;
-$custom-file-color:         $gray-700 !default;
-$custom-file-bg:            $white !default;
-$custom-file-border-width:  $border-width !default;
+$custom-file-padding-y:     $input-btn-padding-y !default;
+$custom-file-padding-x:     $input-btn-padding-x !default;
+$custom-file-line-height:   $input-btn-line-height !default;
+$custom-file-color:         $input-color !default;
+$custom-file-bg:            $input-bg !default;
+$custom-file-border-width:  $input-btn-border-width !default;
 $custom-file-border-color:  $input-border-color !default;
-$custom-file-border-radius: $border-radius !default;
-$custom-file-box-shadow:    inset 0 .2rem .4rem rgba($black,.05) !default;
+$custom-file-border-radius: $input-border-radius !default;
+$custom-file-box-shadow:    $input-box-shadow !default;
 $custom-file-button-color:  $custom-file-color !default;
-$custom-file-button-bg:     $gray-200 !default;
+$custom-file-button-bg:     $input-group-addon-bg !default;
 $custom-file-text: (
   placeholder: (
     en: "Choose file..."
@@ -646,28 +646,26 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 
 // Popovers
 
-$popover-inner-padding:               1px !default;
-$popover-bg:                          $white !default;
-$popover-max-width:                   276px !default;
-$popover-border-width:                $border-width !default;
-$popover-border-color:                rgba($black,.2) !default;
-$popover-box-shadow:                  0 5px 10px rgba($black,.2) !default;
+$popover-bg:                        $white !default;
+$popover-max-width:                 276px !default;
+$popover-border-width:              $border-width !default;
+$popover-border-color:              rgba($black,.2) !default;
+$popover-box-shadow:                0 .25rem .5rem rgba($black,.2) !default;
 
 $popover-header-bg:                    darken($popover-bg, 3%) !default;
 $popover-header-color:                 $headings-color !default;
-$popover-header-padding-y:             8px !default;
-$popover-header-padding-x:             14px !default;
+$popover-header-padding-y:             .5rem !default;
+$popover-header-padding-x:             .75rem !default;
 
 $popover-body-color:               $body-color !default;
-$popover-body-padding-y:           9px !default;
-$popover-body-padding-x:           14px !default;
+$popover-body-padding-y:           $popover-header-padding-y !default;
+$popover-body-padding-x:           $popover-header-padding-x !default;
 
-$popover-arrow-width:                 10px !default;
-$popover-arrow-height:                5px !default;
+$popover-arrow-width:                 .8rem !default;
+$popover-arrow-height:                .4rem !default;
 $popover-arrow-color:                 $popover-bg !default;
 
-$popover-arrow-outer-width:           ($popover-arrow-width + 1px) !default;
-$popover-arrow-outer-color:           fade-in($popover-border-color, .05) !default;
+$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
 
 
 // Badges
