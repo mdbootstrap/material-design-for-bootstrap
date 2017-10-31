@@ -1,19 +1,19 @@
 // Transforms
 
 @mixin transform($args) {
-    -webkit-transform: $args;
-    -moz-transform: $args;
-    -ms-transform: $args;
-    -o-transform: $args;
-    transform: $args;
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
 }
 
 @mixin transform-origin($args) {
-    -webkit-transform-origin: $args;
-    -moz-transform-origin: $args;
-    -ms-transform-origin: $args;
-    -o-transform-origin: $args;
-    transform-origin: $args;
+  -webkit-transform-origin: $args;
+  -moz-transform-origin: $args;
+  -ms-transform-origin: $args;
+  -o-transform-origin: $args;
+  transform-origin: $args;
 }
 
 // Keyframes
@@ -25,17 +25,17 @@
 
 //animations
 @mixin animation($args) {
-    -webkit-animation: $args;
-    -moz-animation: $args;
-    -ms-animation: $args;
-    -o-animation: $args;
-    animation: $args;
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -ms-animation: $args;
+  -o-animation: $args;
+  animation: $args;
 }
 
 @mixin animation-delay($delay) {
-    -webkit-animation-delay: $delay;
-    -moz-animation-delay: $delay;
-    -ms-animation-delay: $delay;
-    -o-animation-delay: $delay;
-    animation-delay: $delay;
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -ms-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  animation-delay: $delay;
 }

@@ -29,11 +29,11 @@ $spacers: (
 
 // Extreme Padding
 $extreme-padding: (
-	"xs": 0,
-	"sm": 5%,
-	"md": 10%,
-	"lg": 15%,
-	"xl": 20%
+  "xs": 0,
+  "sm": 5%,
+  "md": 10%,
+  "lg": 15%,
+  "xl": 20%
 );
 
 // Navbar
@@ -62,12 +62,12 @@ $navbar-avatar-height: 35px;
 $navbar-double-small-padding: 4px;
 $navbar-double-font-size: 15px;
 $navbar-breadcrumb-dn-padding: 1rem;
-$navbar-button-collapse-top: 1px;
+// $navbar-button-collapse-top: 1px;
 $navbar-button-collapse-left: 10px;
 $navbar-button-collapse-font-size: 1.5rem;
 $navbar-button-collapse-fs-sm: 1.4rem;
 $navbar-button-collapse-mx: 10px;
-$navbar-button-collapse-mt: 2px;
+// $navbar-button-collapse-mt: 1px;
 
 //Dropdown
 $dropdown-menu-padding: 0.5rem;
@@ -137,43 +137,41 @@ $image-path: '../img/';
 // Reponsive Headings
 $responsive-headings: (
   "xs": (
-      "h1": 150%,
-      "h2": 145%,
-      "h3": 135%,
-      "h4": 135%,
-      "h5": 135%
+    "h1": 150%,
+    "h2": 145%,
+    "h3": 135%,
+    "h4": 135%,
+    "h5": 135%
   ),
   "sm": (
-      "h1": 170%,
-      "h2": 140%,
-      "h3": 125%,
-      "h4": 125%,
-      "h5": 125%
+    "h1": 170%,
+    "h2": 140%,
+    "h3": 125%,
+    "h4": 125%,
+    "h5": 125%
   ),
   "md": (
-      "h1": 200%,
-      "h2": 170%,
-      "h3": 140%,
-      "h4": 125%,
-      "h5": 125%
+    "h1": 200%,
+    "h2": 170%,
+    "h3": 140%,
+    "h4": 125%,
+    "h5": 125%
   ),
   "lg": (
-      "h1": 200%,
-      "h2": 170%,
-      "h3": 140%,
-      "h4": 125%,
-      "h5": 125%
+    "h1": 200%,
+    "h2": 170%,
+    "h3": 140%,
+    "h4": 125%,
+    "h5": 125%
   ),
   "xl": (
-      "h1": 250%,
-      "h2": 200%,
-      "h3": 170%,
-      "h4": 140%,
-      "h5": 125%
+    "h1": 250%,
+    "h2": 200%,
+    "h3": 170%,
+    "h4": 140%,
+    "h5": 125%
   ),
 );
-
-
 
 /*** Global ***/
 // Media Query Ranges
@@ -194,3 +192,20 @@ $hide-sidenav: "only screen and (max-width : #{$sidenav-breakpoint})" !default;
 
 // Link color
 $link-color: #0275d8;
+
+$navbar-option: (
+  "light": (
+    "navbar-toggler-icon": $navbar-light-toggler-icon,
+    "navbar-option-color": $black,
+    "navbar-link-hover-color": $navbar-light-hover-color,
+    "navbar-active-link-bg-color": $navbar-light-bg-active-color,
+    "navbar-placeholder-color": $black !important
+  ),
+  "dark": (
+    "navbar-toggler-icon": $navbar-dark-toggler-icon,
+    "navbar-option-color": $white,
+    "navbar-link-hover-color": $navbar-dark-hover-color,
+    "navbar-active-link-bg-color": $navbar-dark-bg-active-color,
+    "navbar-placeholder-color": $white !important
+  )
+);
