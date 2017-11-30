@@ -80,7 +80,7 @@ Our society grows day by day. Visit our forum and check how it is to be a part o
 **Flex box**  
 MDB fully suppports Flex Box. You can forget about alignment issues.  
 
-**jQuery 3.1.1**  
+**jQuery 3.2.1**  
 MDB is integrated with newest jQuery, therefore you can use all the newest features which comes along with it.  
 
 **SASS files**  
