@@ -68,7 +68,7 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
 .list-group .list-group-item,
 .jumbotron,
 .navbar-toggler,
-.badge { 
+.badge {
   @include border-radius(2px);
 }
 
@@ -83,6 +83,6 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
 .media {
   .avatar-sm {
     width: 56px;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
 }

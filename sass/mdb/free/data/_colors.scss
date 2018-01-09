@@ -7,7 +7,7 @@ $mdb-color: (
   "lighten-2":  #7283A7,
   "lighten-1":  #59698D,
   "base":     #45526E,
-  "darken-1":   #3B465E, 
+  "darken-1":   #3B465E,
   "darken-2":   #2E3951,
   "darken-3":   #1C2A48,
   "darken-4":   #1C2331,
@@ -912,6 +912,8 @@ $material-colors: (
   "brown": map-get($brown, base),
   "grey": map-get($grey, darken-2),
   "blue-grey": map-get($blue-grey, lighten-1),
+  "dark": map-get($grey, darken-4),
+  "light": map-get($grey, lighten-2),
   "white": $white,
   "black": $black
 );

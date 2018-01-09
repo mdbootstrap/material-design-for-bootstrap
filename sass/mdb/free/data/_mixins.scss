@@ -101,14 +101,26 @@
 // New mixins
 @mixin make-button($name, $color) {
   .btn-#{$name} {
-    background-color: $color;
+    @function set-notification-text-color($color) {
+      @if (lightness($color) > 80) {
+        @return $black; // Lighter backgorund, return dark color
+      } @else {
+        @return $white; // Darker background, return light color
+      }
+    }
+    background-color: $color !important;
+    color: set-notification-text-color($color) !important;
     &:hover {
-      background-color: lighten($color, 5%) !important;
+      background-color: lighten($color, 5%);
+    }
+    &:focus,
+    &.focus {
+      @extend .z-depth-1-half;
     }
     &:focus,
     &:active,
     &.active {
-      background-color: darken($color, 15%) !important;
+      background-color: darken($color, 10%);
     }
     &.dropdown-toggle {
       background-color: $color!important;
@@ -116,6 +128,17 @@
       &:focus {
         background-color: lighten($color, 5%) !important;
       }
+    }
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      @extend .z-depth-1-half;
+      background-color: $color !important;
+    }
+    &:not([disabled]):not(.disabled):active:focus,
+    &:not([disabled]):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      @extend .z-depth-1-half;
     }
   }
 }
@@ -133,6 +156,18 @@
       background-color: transparent;
       color: $color;
       border-color: $color;
+    }
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      @extend .z-depth-1-half;
+      background-color: transparent !important;
+      border-color: $color !important;
+    }
+    &:not([disabled]):not(.disabled):active:focus,
+    &:not([disabled]):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      @extend .z-depth-1-half;
     }
   }
 }
