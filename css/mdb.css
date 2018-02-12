@@ -7870,7 +7870,7 @@ textarea.md-textarea {
     width: 3rem;
     font-size: 2rem;
     padding-top: .5rem; }
-    .md-form .prefix ~ input, .md-form .prefix ~ textarea {
+    .md-form .prefix ~ input, .md-form .prefix ~ textarea, .md-form .prefix ~ .form-text {
       margin-left: 3rem;
       width: 92%;
       width: -webkit-calc(100% - 3rem);
@@ -7880,12 +7880,12 @@ textarea.md-textarea {
     .md-form .prefix.active {
       color: #4285F4; }
   @media only screen and (max-width: 992px) {
-    .md-form .prefix ~ input {
+    .md-form .prefix ~ input, .md-form .prefix ~ .form-text {
       width: 86%;
       width: -webkit-calc(100% - 3rem);
       width: calc(100% - 3rem); } }
   @media only screen and (max-width: 600px) {
-    .md-form .prefix ~ input {
+    .md-form .prefix ~ input, .md-form .prefix ~ .form-text {
       width: 80%;
       width: -webkit-calc(100% - 3rem);
       width: calc(100% - 3rem); } }
@@ -7901,7 +7901,10 @@ textarea.md-textarea {
   .md-form.form-sm .prefix {
     font-size: 1.5rem;
     top: 0.4rem; }
-  .md-form.form-sm .prefix ~ input, .md-form.form-sm .prefix ~ textarea, .md-form.form-sm .prefix ~ label {
+  .md-form.form-sm .prefix ~ input,
+  .md-form.form-sm .prefix ~ textarea,
+  .md-form.form-sm .prefix ~ label,
+  .md-form.form-sm .prefix ~ .form-text {
     margin-left: 2.2rem; }
   .md-form.input-group {
     padding-left: 1rem; }
