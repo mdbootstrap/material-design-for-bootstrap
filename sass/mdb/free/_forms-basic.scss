@@ -137,7 +137,7 @@ textarea.md-textarea {
     width: 3rem;
     font-size: 2rem;
     padding-top: .5rem;
-    ~ input, ~ textarea {
+    ~ input, ~ textarea, ~ .form-text {
       margin-left: 3rem;
       width: 92%;
       width: calc(100% - 3rem);
@@ -151,13 +151,13 @@ textarea.md-textarea {
   }
 
   @media #{$medium-and-down} {
-    .prefix ~ input {
+    .prefix ~ input, .prefix ~ .form-text {
       width: 86%;
       width: calc(100% - 3rem);
     }
   }
   @media #{$small-and-down} {
-    .prefix ~ input {
+    .prefix ~ input, .prefix ~ .form-text {
       width: 80%;
       width: calc(100% - 3rem);
     }
@@ -180,7 +180,10 @@ textarea.md-textarea {
       font-size: 1.5rem;
       top: 0.4rem;
     }
-    .prefix ~ input, .prefix ~ textarea, .prefix ~ label  {
+    .prefix ~ input,
+    .prefix ~ textarea,
+    .prefix ~ label,
+    .prefix ~ .form-text {
       margin-left: 2.2rem;
     }
   }
