@@ -1,39 +1,44 @@
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/MDB-post/bootstrap-material-design.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
 
 # Material Design for Bootstrap 4 
 [![CDNJS version](https://img.shields.io/cdnjs/v/mdbootstrap.svg)](https://cdnjs.com/libraries/mdbootstrap)
 [![npm version](https://badge.fury.io/js/mdbootstrap.svg)](https://badge.fury.io/js/mdbootstrap)
-[![Bower version](https://badge.fury.io/bo/MDBootstrap.svg)](https://badge.fury.io/bo/MDBootstrap)
 
+400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more. Free for personal and commercial use. Available jQuery, Angular, React and Vue versions
 
-400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more.
-
-All fully responsive. All compatible with different browsers.
+Trusted by 400 000 + developers & designers. Used by such a companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
 
 ________
 
-Material Design for Bootstrap (MDB) is a free, powerful Material Design UI KIT for Bootstrap 4. It is one of the most comprehensive material design frameworks that was created to date.  
+# Most important features:
 
-Every day we challenged ourselves to create a visual language for us and our users that combines the classic principles of genuine design with the innovation and possibility of technology and science. That's what Material Design is about. Today we combine it with Bootstrap - most popular HTML, CSS, and JS framework for developing responsive, mobile first websites and apps. Bootstrap makes web development way faster and easier regardless of skill levels, devices and projects.    
+1. Lots of tutorials
 
-Our framework includes CSS for handling Animations, Colors, Typography, Helpers, Hover effects, Shadows, Icons, Components, and JavaScript. Additionally, it offers Badges, Buttons, Social buttons, Cards, Footer, Forms, Material box, Nabbers, Pagination, Panels, Parallax, Progress bar, Tables, Galleries and JavaScript.  
+2. Fully responsive
+
+3. Plenty of useful templates
+
+4. Easy installation
+
+5. Easy to use and customize
+
+6. Active community
+
+7. Dedicated support forum
+
+8. Detailed documentation
 
 # Demo:  
-**Main demo**: https://mdbootstrap.com/material-design-for-bootstrap/
+**Main demo**: https://mdbootstrap.com/components/
+
+# Quick Start (5 minutes):
+**Written Tutorial**: https://mdbootstrap.com/mdb-quick-start/
+
+**Video Tutorial**:https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
 
 # How to install:
-You can install MDBootstrap using NPM or Bower:
+You can install MDBootstrap using NPM:
 - `npm install mdbootstrap`
-- `bower install MDBootstrap`
-
-# Getting started:
-
-**5min Quick Start**: https://mdbootstrap.com/mdb-quick-start/
-
-# MDBootstrap on CDNJS:
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />`
-
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>`
 
 # Additional tutorials:
 
@@ -41,13 +46,23 @@ You can install MDBootstrap using NPM or Bower:
 
 **MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
-# PRO version:
+# MDBootstrap on CDNJS:
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />`
 
-**Material Design for Bootstrap PRO (from $79)**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>`
 
 # Documentation:
 
 **Huge, detailed documentation avilable online on**: https://mdbootstrap.com/
+
+# Live Preview
+
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-more.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-tutorial.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/11/admin-jquery-min.jpg)](https://mdbootstrap.com/previews/templates/admin-dashboard/html/dashboards/v-1.html)
+[![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/01/ecommerce-min-4.jpg)](https://mdbootstrap.com/previews/templates/e-commerce/html/homepage/homepage-v2.html)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20%2888%29.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20%2879%29.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
 
 # Highlights:  
 **Components**  
@@ -57,7 +72,7 @@ Choose **among 400+  predefined components**. Each component is ready to use and
 Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.   
 
 **42 thematic sections**  
-To save your time we have combined our components and prepared thematic sections like blog listings, contact forms, pricing table and much more. Choose, combine and enjoy your website in less than a minute.    
+To save your time we have combined our components and prepared thematic sections like **blog listings, contact forms, pricing table** and much more. Choose, combine and enjoy your website in less than a minute.    
 
 **10 fresh ready to use templates**  
 We are going further and giving to you ready to use templates! Use them as you like, as an inspiration, prototype or final product for your customers.  
@@ -69,13 +84,13 @@ Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers, all
 Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.  
 
 **Frequent updates**  
-MDB becomes better every month. We love the project and enhance as much as possible.  
+MDB becomes better **every month**. We love the project and enhance as much as possible.  
 
 **Technical support**  
 We really care about reliability. If you have any questions - do not hesitate to contact us.  
 
 **Active community**  
-Our society grows day by day. Visit our forum and check how it is to be a part of our family.  
+Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.  
 
 **Flex box**  
 MDB fully suppports Flex Box. You can forget about alignment issues.  
@@ -106,19 +121,113 @@ Our license is user friendly. Feel free to use MDB for both private as well as c
 
 A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
 
+# Useful Links:  
+
+Getting started: https://mdbootstrap.com/getting-started/  
+
+5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
+
+Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
+
+Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
+
+Freebies: https://mdbootstrap.com/freebies/  
+
+Premium Templates: https://mdbootstrap.com/templates/  
 
 
-# Live Preview
+# Social Media:  
 
-[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/1.jpg)](https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-9.html)
-[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/2.jpg)](https://mdbootstrap.com/live/_MDB/templates/Admin/home%20v3.html)
-[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/3.jpg)](https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-11.html)
-[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/4.jpg)](https://mdbootstrap.com/live/_MDB/templates/Landing-Page/travel-landing-page.html)
-[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/5.jpg)](https://mdbootstrap.com/live/_MDB/templates/Portfolio/culinary.html)
-[![Material Design for Bootstrap](http://mdbootstrap.com/img/Others/github/6.jpg)](https://mdbootstrap.com/live/_MDB/templates/Ecommerce/product-page-4.html)
+Twitter: https://twitter.com/MDBootstrap  
 
+Facebook: https://www.facebook.com/mdbootstrap  
 
-# Version logs  
+Pinterest: https://pl.pinterest.com/mdbootstrap 
+
+Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
+
+Dribbble: https://dribbble.com/mdbootstrap
+
+LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
+
+# PRO version:
+
+**Material Design for Bootstrap PRO**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
+
+# Version logs
+
+### MDB 4.4.5
+
+**What's new?**
+
+MDB 4.4.5 comes up with integration with **Bootstrap 4.0.0 (stable version)** and some improvements
+It's fully compatible with the previous version and guarantees no breaking changes
+Read detailed info about Bootstrap 4.0.0 (stable) here: https://mdbootstrap.com/bootstrap-4-stable/
+You can download the new version of MDB Free on our website.
+
+Major changes:
+- **Integration with Bootstrap 4.0.0 (stable version)**
+
+What's new:
+- Added responsive .order-0 and .order-last classes
+- **Added gulp file**
+- What's changed
+- .input-group-addon was renamed to .input-group-text
+- Improved design performance for buttons
+
+### MDB 4.4.4
+
+**What's new?**
+
+With this small update we've made MDBootstrap even more stable
+In MDB 4.4.4 you can notice integration with the latest version of Bootstrap and some various fixes
+You can download the new version of MDB Free on our website.
+
+What we've changed:
+- Integration with Bootstrap 4 beta-3
+- Removed unnecessary outline from buttons
+- Fixed search in material select
+- Update popper.js to the latest version
+- Improved scrolling navbar
+- Improved buttons
+- Fixed positioning in alerts
+
+### MDB 4.4.3
+**What's new?**
+
+Just a small update with various bug fixes
+MDB 4.4.3 comes with the integration of the newest Bootstrap and with few fixes and improvements.
+You can download the new version of MDB Free on our website.
+
+What we've changed:
+- Changed sideNav construction
+- Fixed waves effect in buttons
+
+### MDB 4.4.2
+**What's new?**
+
+Recently, Bootstrap 4 beta 2 has been released.
+MDB 4.4.2 comes with the integration of the newest Bootstrap and with few fixes and improvements.
+You can download the new version of MDB Free on our website.
+
+What we've changed:
+-nIntegration with Bootstrap 4 beta-2
+- Fixed Scrolling Navbar
+- Improved buttons
+- Updated Autocomplete component
+- Fixed fade effect in Carousel
+- Removed default background color from footer
+- Fixed select in Date Picker
+- Fixed dropdown alignment
+- Fixed SideNav in White Skin
+- Fixed nested tabs
+- Improved wow effect on Internet Explorer/Edge
+- Improved SideNav on Internet Explorer/Edge
+- Dropped support for Bower
+- What's new in Bootstrap 4 beta-2:
+- Restored `.offset-*` classes
+- Switched Breadcrumbs from `float` to Flexbox
+- Dropped support for Bower
 
 ### MDB 4.4.1
 
@@ -514,31 +623,4 @@ This is the first update for MDB4 and Bootstrap 4. You can download new version 
 -Updated script for touch gestures  
 
 
-# Useful Links:  
-
-Getting started: https://mdbootstrap.com/getting-started/  
-
-5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
-
-Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
-
-Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
-
-Freebies: https://mdbootstrap.com/freebies/  
-
-Premium Templates: https://mdbootstrap.com/templates/  
-
-
-# Social Media:  
-
-Twitter: https://twitter.com/MDBootstrap  
-
-Facebook: https://www.facebook.com/mdbootstrap  
-
-Pinterest: https://pl.pinterest.com/mdbootstrap 
-
-Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
-
-Dribbble: https://dribbble.com/mdbootstrap
-
-LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
+# Visit our website: https://mdbootstrap.com/
