@@ -132,7 +132,7 @@ $footer-insta-photos-max-width: 100px;
 $footer-insta-photos-margin: 4px;
 
 // Images Path
-$image-path: '../img/';
+$image-path: '../img/' !default;
 
 // Reponsive Headings
 $responsive-headings: (
