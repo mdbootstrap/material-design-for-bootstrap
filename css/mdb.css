@@ -6678,6 +6678,7 @@ button:focus {
 
 body.modal-open {
   padding-right: 0 !important;
+  overscroll-behavior: contain;
   overflow: auto; }
 
 body.scrollable {
