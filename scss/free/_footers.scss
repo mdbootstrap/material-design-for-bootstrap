@@ -1,0 +1,19 @@
+// Footers
+footer {
+  &.page-footer {
+    bottom: 0;
+    color: $white;
+    .container-fluid {
+      width:auto;
+    }
+    .footer-copyright {
+      overflow: hidden;
+      background-color: $footer-copyright-bg-color;
+      font-size: $footer-font-size;
+      color: $footer-copyright-color;
+    }
+    a {
+      color: $white;
+    }
+  }
+}

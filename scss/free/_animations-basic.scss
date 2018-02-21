@@ -1,0 +1,170 @@
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &.infinite {
+    animation-iteration-count: infinite;
+  }
+  &.hinge {
+    animation-duration: 2s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  animation-name: fadeOutDown;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  animation-name: fadeOutRight;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}

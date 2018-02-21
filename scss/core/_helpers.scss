@@ -1,0 +1,55 @@
+// Helpers
+// MDB helpers
+.img-fluid,
+.video-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  p {
+    margin: 0;
+  }
+  ul {
+    text-align: center;
+    li {
+      margin-bottom: $flex-center-ul-mb;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.hr-light {
+  border-top: 1px solid $hr-light;
+}
+
+.hr-dark {
+  border-top: 1px solid $hr-dark;
+}
+
+// Collapsible body
+.collapsible-body {
+  display: none;
+}
+
+.jumbotron {
+  @extend .z-depth-1;
+  border-radius: $border-radius-base;
+  background-color: $white;
+}
+
+.avatar {
+  max-width: $avatar-max-width;
+}
+
+@each $name, $color in $basic-mdb-colors {
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}

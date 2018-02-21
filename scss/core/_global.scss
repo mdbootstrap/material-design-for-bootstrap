@@ -1,0 +1,60 @@
+// Globals
+// Shadows
+.z-depth-0 {
+  box-shadow: none;
+}
+.z-depth-1 {
+  box-shadow: $z-depth-1;
+}
+.z-depth-1-half {
+  box-shadow: $z-depth-1-half;
+}
+.z-depth-2 {
+  box-shadow: $z-depth-2;
+}
+.z-depth-3 {
+  box-shadow: $z-depth-3;
+}
+.z-depth-4 {
+  box-shadow: $z-depth-4;
+}
+.z-depth-5 {
+  box-shadow: $z-depth-5;
+}
+
+// Shadow on hover
+.hoverable {
+  @extend .z-depth-0;
+  transition: $transition-hoverable;
+  &:hover {
+    @extend .z-depth-2;
+    transition: $transition-hoverable;
+  }
+}
+
+// Disabled cursor
+.disabled,
+:disabled {
+  pointer-events: none !important;
+}
+
+// Links
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $link-color;
+  &:hover {
+    text-decoration: none;
+  }
+  &.disabled,
+  &:disabled {
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}

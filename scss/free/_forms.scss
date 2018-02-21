@@ -1,0 +1,172 @@
+// Forms basic
+// Input + label wrapper styles
+.md-form {
+  // Text inputs
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=url],
+  input[type=time],
+  input[type=date],
+  input[type=datetime-local],
+  input[type=tel],
+  input[type=number],
+  input[type=search-md],
+  input[type=search],
+  textarea.md-textarea {
+    // General Styles
+    transition: $input-transition;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    border-radius: 0;
+    box-sizing: content-box;
+    // width: 100%;
+    background-color: transparent;
+
+    // Focused input style
+    &:focus:not([readonly]) {
+      box-shadow: 0 1px 0 0 $input-focus-color;
+      border-bottom: 1px solid $input-focus-color;
+      // Focused label style
+      + label {
+        color: $input-focus-color;
+      }
+    }
+
+    // Form message shared styles
+    + label:after {
+      content: "";
+      position: absolute;
+      top: $input-label-after-top;
+      display: block;
+      opacity: 0;
+      transition: $input-label-after-transition;
+    }
+
+    // Alternative input
+    &.input-alternate {
+      @extend .z-depth-1;
+      transition: $input-alternate-transition;
+      border-bottom: 0;
+      height: $input-alternate-height;
+      padding: 0 $input-alternate-padding-x;
+      font-size: $input-alternate-font-size;
+      &:hover,
+      &:focus {
+        box-shadow: $input-alternate-box-shadow;
+        border-bottom: 0;
+      }
+    }
+    // Valid input style
+    &.valid, &:focus.valid {
+      border-bottom: 1px solid $input-success-color;
+      box-shadow: 0 1px 0 0 $input-success-color;
+    }
+
+    &.valid + label:after, &:focus.valid + label:after {
+      content: attr(data-success);
+      color: $input-success-color;
+      opacity: 1;
+    }
+    // Invalid input style
+    &.invalid, &:focus.invalid {
+      border-bottom: 1px solid $input-error-color;
+      box-shadow: 0 1px 0 0 $input-error-color;
+    }
+    &.invalid + label:after, &:focus.invalid + label:after {
+      content: attr(data-error);
+      color: $input-error-color;
+      opacity: 1;
+    }
+  }
+
+  .was-validated {
+    input[type=text] {
+      &:valid {
+        + label {
+          color: $input-success-color !important;
+        }
+      }
+      &:invalid {
+        + label {
+          color: $input-error-color !important;
+        }
+      }
+    }
+    .form-control {
+      &:valid:focus {
+        box-shadow: 0 1px 0 0 $input-success-color !important;
+      }
+      &:valid {
+        border-color: $input-success-color !important;
+      }
+      &:invalid:focus {
+        box-shadow: 0 1px 0 0 $input-error-color !important;
+      }
+      &:invalid {
+        border-color: $input-error-color !important;
+      }
+    }
+  }
+
+  // Input with label
+  .form-control {
+    margin: 0 0 $input-form-control-margin-bottom 0;
+    border-radius: 0;
+    padding: $input-form-control-padding-top 0 $input-form-control-padding-bottom 0;
+    background-image: none;
+    background-color: transparent;
+    &:focus {
+      box-shadow: none;
+      background: transparent;
+    }
+    &:disabled,
+    &[readonly] {
+      border-bottom: 1px solid map-get($grey, lighten-1);
+      background-color: transparent;
+    }
+  }
+
+  @include make-input($input-label-font-size, $input-label-active-font-size, $input-prefix-top, $input-prefix-font-size, $input-prefix-margin-left, $input-prefix-width);
+  position: relative;
+  margin-top: $input-md-form-margin-top;
+  label {
+    position: absolute;
+    top: $input-label-top;
+    left: 0;
+    transition: $input-label-transition;
+    cursor: text;
+    color: $input-label-color;
+    &.active {
+      transform: $input-label-active-transform;
+    }
+  }
+  .prefix {
+    position: absolute;
+    transition: $input-prefix-transition;
+    &.active {
+      color: $input-focus-color;
+    }
+  }
+  &.form-lg {
+    @include make-input($input-label-font-size-lg, $input-label-active-font-size-lg, $input-prefix-top-lg, $input-prefix-font-size-lg, $input-prefix-margin-left-lg, $input-prefix-width-lg);
+  }
+  &.form-sm {
+    @include make-input($input-label-font-size-sm, $input-label-active-font-size-sm, $input-prefix-top-sm, $input-prefix-font-size-sm, $input-prefix-margin-left-sm, $input-prefix-width-sm);
+  }
+
+  // Textarea
+  textarea {
+    &.md-textarea {
+      overflow-y: hidden;
+      padding: $textarea-padding 0;
+      resize: none;
+    }
+    &.md-textarea-auto {
+      padding: 0;
+      padding-top: 1.5rem;
+    }
+  }
+}

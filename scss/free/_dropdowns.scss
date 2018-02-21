@@ -1,0 +1,10 @@
+// Dropdowns
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item {
+      &:active {
+        background-color: map-get($grey, darken-1);
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// Masks
+// General properties
+.view {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  .full-bg-img {
+    height: 100%;
+  }
+  .full-bg-img,
+  .full-bg-img video {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+  }
+  img, video {
+    position: relative;
+    display: block;
+  }
+  video {
+    &.video-intro {
+      z-index: -100;
+      top: 50%;
+      left: 50%;
+      transform: $intro-video-transform;
+      transition: $intro-video-transition opacity;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+// Overlay
+.overlay {
+  .mask {
+    opacity: 0;
+    transition: $mask-overlay-transition;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// Zoom
+.zoom {
+  img, video {
+    transition: $mask-zoom-transition;
+  }
+  &:hover {
+    img, video {
+      transform: $mask-zoom-transform;
+    }
+  }
+}
+
+// Patterns
+$patterns: (
+  1: "01",
+  2: "02",
+  3: "03",
+  4: "04",
+  5: "05",
+  6: "06",
+  7: "07",
+  8: "08",
+  9: "09"
+);
+
+@each $no, $filename in $patterns {
+  .pattern-#{$no} {
+    background: url("../img/overlays/#{$filename}.png");
+  }
+}
+
+// Full background
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+  height: 100%;
+}

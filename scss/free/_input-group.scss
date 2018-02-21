@@ -1,0 +1,24 @@
+// Input group
+.input-group {
+  .input-group-text {
+    background-color: #e0e0e0;
+    // Style Placeholders
+    @include placeholder {
+      padding-left: $input-group-text-placeholder-pl;
+    }
+    &.md-addon {
+      border: none;
+      background-color: transparent;
+    }
+  }
+  span {
+    z-index: 10;
+  }
+  .form-control {
+    // margin-top: $input-group-form-control-mt;
+    margin: 0;
+    padding-top: $input-group-form-control-pt;
+    padding-bottom: $input-group-form-control-pb;
+    padding-left: $input-group-form-control-pl;
+  }
+}

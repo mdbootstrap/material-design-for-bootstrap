@@ -1,0 +1,137 @@
+// Typography
+// ROBOTO FONT
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Thin),
+    url("#{$roboto-font-path}Roboto-Thin.eot");
+  src: url("#{$roboto-font-path}Roboto-Thin.eot?#iefix") format("embedded-opentype"),
+    url("#{$roboto-font-path}Roboto-Thin.woff2") format("woff2"),
+    url("#{$roboto-font-path}Roboto-Thin.woff") format("woff"),
+    url("#{$roboto-font-path}Roboto-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Light),
+    url("#{$roboto-font-path}Roboto-Light.eot");
+  src: url("#{$roboto-font-path}Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("#{$roboto-font-path}Roboto-Light.woff2") format("woff2"),
+    url("#{$roboto-font-path}Roboto-Light.woff") format("woff"),
+    url("#{$roboto-font-path}Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular),
+    url("#{$roboto-font-path}Roboto-Regular.eot");
+  src: url("#{$roboto-font-path}Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("#{$roboto-font-path}Roboto-Regular.woff2") format("woff2"),
+    url("#{$roboto-font-path}Roboto-Regular.woff") format("woff"),
+    url("#{$roboto-font-path}Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("#{$roboto-font-path}Roboto-Medium.eot");
+  src: url("#{$roboto-font-path}Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+    url("#{$roboto-font-path}Roboto-Medium.woff2") format("woff2"),
+    url("#{$roboto-font-path}Roboto-Medium.woff") format("woff"),
+    url("#{$roboto-font-path}Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("#{$roboto-font-path}Roboto-Bold.eot");
+  src: url("#{$roboto-font-path}Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("#{$roboto-font-path}Roboto-Bold.woff2") format("woff2"),
+    url("#{$roboto-font-path}Roboto-Bold.woff") format("woff"),
+    url("#{$roboto-font-path}Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+// Responsive headings
+@each $key, $val in $grid-breakpoints {
+  @include media-breakpoint-up($key) {
+    $y: map-get($responsive-headings, $key);
+    @each $name,
+      $value in $y {
+      .#{$name}-responsive {
+        font-size: $value;
+      }
+    }
+  }
+}
+
+// Divider
+.divider-new {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: $divider-margin-y;
+  margin-bottom: $divider-margin-y;
+  > h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+  &:before,
+  &:after {
+    content: "";
+    height: 1.5px;
+    flex: 1;
+    height: $divider-height;
+    background: #c6c6c6;
+  }
+  &:before {
+    margin: 0 $divider-margin-x 0 0;
+  }
+  &:after {
+    margin: 0 0 0 $divider-margin-x;
+  }
+}
+
+// Blockquote
+.blockquote {
+  padding: $blockquote-padding-y $blockquote-padding-x;
+  border-left: .25rem solid #eceeef;
+  .bq-title {
+    margin-bottom: 0;
+    font-size: $font-size-large;
+    font-weight: 400;
+  }
+  p {
+    padding: $blockquote-p-padding-t 0 $blockquote-p-padding-b $blockquote-p-padding-l;
+    font-size: $blockquote-p-font-size;
+  }
+}
+
+@each $name, $color in $basic {
+  .bq-#{$name} {
+    border-left: 3px solid $color !important;
+    .bq-title {
+      color: $color !important;
+    }
+  }
+}
+
+@each $name, $color in $basic-mdb-colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+.font-small {
+  font-size: $font-small;
+}
