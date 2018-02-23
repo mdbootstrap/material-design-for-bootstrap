@@ -156,6 +156,330 @@ LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
 # Version logs
 
+## MDB 4.5.0
+
+What's new?
+
+**1. Changed syntax**
+
+- Inputs
+
+- Forms
+
+- Footer
+
+- Preloaders
+
+- Masks
+
+- Hover effects
+
+- Accordion
+
+- Modals
+
+- Sections
+
+- Cards
+
+- Flipping cards
+
+- Cards
+
+**2. Main fixes**
+
+- Range input bugs fixed
+
+- Material select z-index bug fixed
+
+- Checkbox & radio buttons .active class bug fixed
+
+- Waves effect bugs fixed
+
+- Multiselect bugs fixed
+
+- Updated charts
+
+- Fixed bug "Uncaught TypeError: Cannot read property 'top' of undefined"
+
+- Dotted scrollspy bug fixed
+
+- Time picker bug fixed
+
+- Sort table bugs fixed
+
+- Modals bugs fixed
+
+- Preloaders bugs fixed
+
+- Social buttons bugs fixed
+
+- Collapse bugs fixed
+
+- Gulp package bugs fixed
+
+
+
+**3. Updated & improved**
+
+- Animations
+
+- Colors
+
+- Gradient
+
+- Hover Effects
+
+- Masks
+
+- Parallax
+
+- Shadows
+
+- Skins
+
+- E-mail Templates
+
+- Background Image
+
+- Text Color
+
+- Code
+
+- Figures
+
+- Icons Usage
+
+- Icons List
+
+- Images
+
+- Tables
+
+- Table Responsive
+
+- Table Sort
+
+- Table Search
+
+- Table Scroll
+
+- Table Pagination
+
+- Table Editable
+
+- Typography
+
+- Card Layout
+
+- Equal Height Columns
+
+- Grid Examples
+
+- Grid Usage
+
+- Layout Overview
+
+- Media Object
+
+- Navigation
+
+- Utilities for Layout
+
+- Media Queries
+
+- Borders
+
+- Clearfix
+
+- Close Icon
+
+- Display
+
+- Embeds
+
+- Float
+
+- Flexbox
+
+- Image Replacement
+
+- Position
+
+- Screenreaders
+
+- Sizing
+
+- Spacing
+
+- Text
+
+- Vertical Align
+
+- Visibility
+
+- Blog components
+
+- Breadcrumb
+
+- Buttons
+
+- Button Group
+
+- Button Icon
+
+- Cards
+
+- Card Animation
+
+- Checkbox
+
+- Contact Form
+
+- Dropdowns
+
+- Edge Header
+
+- E-commerce Components
+
+- File Input
+
+- Flipping Cards
+
+- Footer
+
+- Footers
+
+- Forms
+
+- Hamburger Menu
+
+- IFrame
+
+- Inputs
+
+- Input Group
+
+- Jumbotron
+
+- List Group
+
+- Mega menu
+
+- Navbar
+
+- Navs
+
+- Pagination
+
+- Panels
+
+- Pills
+
+- Progress Bar
+
+- Radio Button
+
+- Search
+
+- Social Buttons
+
+- Slider
+
+- Steps (stepper)
+
+- Streak
+
+- Switch
+
+- Tabs and Pills
+
+- Textarea
+
+- Timeline
+
+- Video
+
+- Notifications
+
+- Chat
+
+- Autocomplete
+
+- Accordion
+
+- Alerts
+
+- Carousel
+
+- Charts
+
+- Collapse
+
+- Date Picker
+
+- Gallery
+
+- Google Map
+
+- LightBox
+
+- Material Select
+
+- Mobile
+
+- Modals Core Docs
+
+- Modal Events
+
+- Modal Form
+
+- Modal Styles
+
+- Modal Templates & Examples
+
+- Multiselect
+
+- Popovers
+
+- ScrollSpy
+
+- SideNav
+
+- SmoothScroll and ScrollBar
+
+- StickyContent
+
+- Time Picker
+
+- Tooltips
+
+- Waves Effect
+
+- Contact
+
+- E-commerce
+
+- Features
+
+- Intros
+
+- Magazine
+
+- Projects
+
+- Social
+
+- Team
+
+- Testimonials
+
+**4. Depreciated**
+
+Input alternate:
+
+.font-bold, fold-light, fold-up - Instead of this we use standard bootstrap text utilities
+
 ### MDB 4.4.5
 
 **What's new?**
