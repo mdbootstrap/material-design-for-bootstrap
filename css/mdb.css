@@ -5966,10 +5966,10 @@ body.scrollable {
   height: 2.25rem; }
 
 .carousel .carousel-control-prev-icon {
-  background-image: url(../img//svg/arrow_left.svg); }
+  background-image: url(../img/svg/arrow_left.svg); }
 
 .carousel .carousel-control-next-icon {
-  background-image: url(../img//svg/arrow_right.svg); }
+  background-image: url(../img/svg/arrow_right.svg); }
 
 .carousel .carousel-indicators li {
   width: 0.625rem;
