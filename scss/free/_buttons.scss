@@ -10,7 +10,7 @@
   text-transform: uppercase;
   white-space: normal;
   word-wrap: break-word;
-  color: $white !important;
+  color: $btn-color-basic;
   &:hover,
   &:active,
   &:focus {
@@ -95,6 +95,14 @@
   .btn {
     margin: 0;
   }
+}
+// Overwrite default button icon size
+.btn {
+  .fa-lg {font-size: 1.33333333em !important;}
+  .fa-2x {font-size: 2em !important;}
+  .fa-3x {font-size: 3em !important;}
+  .fa-4x {font-size: 4em !important;}
+  .fa-5x {font-size: 5em !important;}
 }
 @each $btn_name, $color_value in $mdb-colors {
   @include make-button($btn_name, $color_value);

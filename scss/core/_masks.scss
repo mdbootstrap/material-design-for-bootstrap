@@ -4,15 +4,6 @@
   position: relative;
   overflow: hidden;
   cursor: default;
-  .full-bg-img {
-    height: 100%;
-  }
-  .full-bg-img,
-  .full-bg-img video {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
   .mask {
     position: absolute;
     top: 0;
@@ -78,14 +69,6 @@ $patterns: (
 
 @each $no, $filename in $patterns {
   .pattern-#{$no} {
-    background: url("../img/overlays/#{$filename}.png");
+    background: url("#{$image-path}/overlays/#{$filename}.png");
   }
-}
-
-// Full background
-.full-height,
-.full-height body,
-.full-height header,
-.full-height header .view {
-  height: 100%;
 }

@@ -88,6 +88,26 @@
   @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
 
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+// Bacground color
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+  a#{$parent},
+  button#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
 // Placeholder
 @mixin placeholder {
   &::placeholder {
@@ -96,19 +116,20 @@
 }
 
 // MDB Mixins
-// @function set-notification-text-color($color) {
-//   @if (lightness($color) > 80) {
-//     @return $black; Lighter backgorund, return dark color
-//   } @else {
-//     @return $white; Darker background, return light color
-//   }
-// }
+// Set the color of the button and badge
+@function set-notification-text-color($color) {
+  @if (lightness($color) > 80) {
+    @return $black; // Lighter backgorund, return dark color
+  } @else {
+    @return $white; // Darker background, return light color
+  }
+}
 
 // Make button
 @mixin make-button ($name, $color) {
   .btn-#{$name} {
     background-color: $color !important;
-    color: $white !important;
+    color: set-notification-text-color($color) !important;
     &:hover {
       background-color: lighten($color, 5%);
     }
@@ -209,23 +230,15 @@
   font-size: $font-size;
 }
 
-// Make badge
 @mixin make-badge($name, $color) {
   .badge-#{$name} {
-    @function set-notification-text-color($color) {
-      @if (lightness($color) > 70) {
-        @return $black; // Lighter backgorund, return dark color
-      } @else {
-        @return $white; // Darker background, return light color
-      }
-    }
     background-color: $color !important;
     color: set-notification-text-color($color) !important;
   }
 }
 
 // Make input
-@mixin make-input($label-font-size, $label-active-font-size, $top, $prefix-font-size, $margin-left, $width) {
+@mixin make-input($label-font-size, $label-active-font-size, $top, $prefix-font-size, $margin-left, $width, $margin-left-2) {
   label {
     font-size: $label-font-size;
     &.active {
@@ -241,6 +254,9 @@
     }
     ~ label {
       margin-left: $margin-left;
+    }
+    ~ .form-text {
+      margin-left: $margin-left-2;
     }
   }
 }

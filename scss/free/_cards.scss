@@ -2,22 +2,14 @@
 .card {
   @extend .z-depth-1;
   border: 0;
-  border-radius: $md-card-border-radius;
   font-weight: 400;
   &[class*="border-"] {
     border: 1px solid map-get($grey, "base");
     box-shadow: none;
   }
-  img {
-    border-radius: $md-card-img-border-radius;
-  }
   .card-body {
-    position: relative;
     h1, h2, h3, h4, h5, h6 {
       font-weight: 400;
-    }
-    h5 {
-      font-size: 1rem;
     }
     .card-title {
       a {
@@ -28,8 +20,8 @@
       }
     }
     .card-text {
+      @extend .dark-grey-text;
       font-size: $md-card-font-size;
-      color: $md-card-text-color;
       font-weight: 400;
     }
   }

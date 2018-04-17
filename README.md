@@ -156,6 +156,77 @@ LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
 # Version logs
 
+## MDB 4.5.1
+**Changed syntax**
+
+- Cards
+
+- Flipping ards
+
+- Cards animation
+
+- Parallax
+
+- Intros
+
+- Ecommerce sections
+
+- Team sections
+
+**Main fixes**
+
+- Added the class.card-img-top to the img tag within .card class, which set border-radius and width
+
+- Bug 'magp-get' fixed
+
+- Added '!default' flag to all our variables and objects
+
+- Removed function from make-button and make-badge mixins
+
+- Removed min-height and background settings from .jarallax class
+
+- Saved all our material colors as variables
+
+- An image path in variables and masks files fixed
+
+- Added material color versions of .bg-* classes
+
+- Horizontal steppers on small screens fixed
+
+- Improved overwriting button icons with .fa-2x .fa-3x etc.
+
+- Neccessary to use e.g. .text-secondary with .card-text class to change color
+
+- Added .card-header-title class (which add font-weight: 500) within .gradient-card-header class
+
+- Added margins to help text for inputs with prefix (to the .form-text class)
+
+- Added .form-header class to the forms
+
+- Removed .no-padding class from ecommerce components
+
+- Added figcaption to the pictures in the lightbox
+
+- Removed unnecessary settings from .avatar class
+
+- Restored .waves-effect to the .nav-tabs
+
+- Possibility of adding custom skin
+
+**Depreciated - these settings will be stored only by one version yet**
+
+- .full-bg-img class
+
+- .full-height class
+
+- .double-navbar .bc-min classes (Button Collapse Without Navbar)
+
+- .ql-modal and .product-panel classes
+
+- .no-padding class
+
+- Settings for .parallax class BUT ONLY IN SCSS files. This class still exists for javascript settings. If you need the scss settings, please, uncomment the class in depreciated.scss file and recompile it.
+
 ## MDB 4.5.0
 
 What's new?

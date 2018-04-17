@@ -44,11 +44,8 @@
   background-color: $white;
 }
 
-.avatar {
-  max-width: $avatar-max-width;
-}
-
 @each $name, $color in $basic-mdb-colors {
+  @include bg-variant(".bg-#{$name}", $color);
   .border-#{$name} {
     border-color: $color !important;
   }

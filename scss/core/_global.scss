@@ -43,7 +43,9 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: $link-color;
+  transition: $transition-basic;
   &:hover {
+    transition: $transition-basic;
     text-decoration: none;
   }
   &.disabled,
