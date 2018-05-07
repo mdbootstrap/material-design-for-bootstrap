@@ -1,7 +1,7 @@
 // Globals
 // Shadows
 .z-depth-0 {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .z-depth-1 {
   box-shadow: $z-depth-1;
@@ -24,10 +24,10 @@
 
 // Shadow on hover
 .hoverable {
-  @extend .z-depth-0;
+  box-shadow: none;
   transition: $transition-hoverable;
   &:hover {
-    @extend .z-depth-2;
+    box-shadow: $z-depth-2;
     transition: $transition-hoverable;
   }
 }

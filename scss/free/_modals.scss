@@ -14,7 +14,7 @@ body {
 // General styles
 .modal-dialog {
   .modal-content {
-    @extend .z-depth-1-half;
+    box-shadow: $z-depth-1-half;
     border: 0;
     border-radius: $border-radius-base;
     .modal-header {
@@ -36,12 +36,12 @@ body {
     .close {
       opacity: 1;
       text-shadow: none;
-      color: $white;
+      color: $white-base;
       outline: 0;
     }
     // Cascading header
     .modal-header {
-      @extend .z-depth-1-half;
+      box-shadow: $z-depth-1-half;
       margin: $cascading-modal-margin-top $cascading-modal-margin-right $cascading-modal-margin-bottom $cascading-modal-margin-left;
       border: none;
       border-radius: $border-radius-base;
@@ -68,7 +68,7 @@ body {
     // Cascading tabs nav
     .modal-c-tabs {
       .nav-tabs {
-        @extend .z-depth-1;
+        box-shadow: $z-depth-1;
         margin: $cascading-modal-tabs-margin-top $cascading-modal-tabs-margin-x 0 $cascading-modal-tabs-margin-x;
       }
       .tab-content {
@@ -89,7 +89,7 @@ body {
     .modal-footer {
       padding-left: $modal-body-padding-left;
       padding-right: $modal-body-padding-right;
-      color: map-get($grey, darken-2);
+      color: $grey-darken-2;
       .additional-option {
         margin-top: $modal-body-margin-top;
         text-align: center;
@@ -99,12 +99,12 @@ body {
     &.modal-avatar {
       margin-top: $modal-avatar-margin-top;
       .modal-header {
-        @extend .z-depth-0;
+        box-shadow: none;
         @extend .img-fluid;
         margin: $modal-avatar-header-margin-top 0 $modal-avatar-header-margin-bottom;
         img {
           width: $modal-avatar-img-width;
-          @extend .z-depth-2;
+          box-shadow: $z-depth-2;
           margin-left: auto;
           margin-right: auto;
         }
@@ -117,10 +117,10 @@ body {
       margin: 0;
       padding: $modal-notify-heading-padding;
       font-size: $modal-notify-font-size;
-      color: $white;
+      color: $white-base;
     }
     .modal-header {
-      @extend .z-depth-1;
+      box-shadow: $z-depth-1;
       border: 0;
     }
     .close {
@@ -128,7 +128,7 @@ body {
     }
     .modal-body {
       padding: $modal-notify-body-padding;
-      color: map-get($grey, darken-2);
+      color: $grey-darken-2;
     }
     @each $name, $color in $basic {
       &.modal-#{$name}  {

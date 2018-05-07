@@ -1,6 +1,6 @@
 // Buttons
 .btn {
-  @extend .z-depth-1;
+  box-shadow: $z-depth-1;
   @include button-size($btn-padding-y-basic, $btn-padding-x-basic, $btn-font-size-basic);
   transition: $btn-transition;
   margin: $btn-margin-basic;
@@ -14,12 +14,12 @@
   &:hover,
   &:active,
   &:focus {
-    @extend .z-depth-1-half;
+    box-shadow: $z-depth-1-half;
     outline: 0;
   }
   &:not([disabled]):not(.disabled):active,
   &:not([disabled]):not(.disabled).active {
-    @extend .z-depth-1-half;
+    box-shadow: $z-depth-1-half;
   }
   .fa {
     position: relative;
@@ -57,7 +57,7 @@
     &:active,
     &:focus,
     &:hover {
-      @extend .z-depth-1;
+      box-shadow: $z-depth-1;
     }
   }
   &.btn-block {

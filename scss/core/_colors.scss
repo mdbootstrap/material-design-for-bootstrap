@@ -10,20 +10,6 @@ $mdb-color-darken-2:   #2e3951 !default;
 $mdb-color-darken-3:   #1c2a48 !default;
 $mdb-color-darken-4:   #1c2331 !default;
 
-$mdb-color: () !default;
-$mdb-color: map-merge((
-  "lighten-5":  $mdb-color-lighten-5,
-  "lighten-4":  $mdb-color-lighten-4,
-  "lighten-3":  $mdb-color-lighten-3,
-  "lighten-2":  $mdb-color-lighten-2,
-  "lighten-1":  $mdb-color-lighten-1,
-  "base":	      $mdb-color-base,
-  "darken-1":   $mdb-color-darken-1,
-  "darken-2":   $mdb-color-darken-2,
-  "darken-3":   $mdb-color-darken-3,
-  "darken-4":   $mdb-color-darken-4
-), $mdb-color);
-
 $red-lighten-5:  #ffebee !default;
 $red-lighten-4:  #ffcdd2 !default;
 $red-lighten-3:  #ef9a9a !default;
@@ -38,24 +24,6 @@ $red-accent-1:   #ff8a80 !default;
 $red-accent-2:   #ff5252 !default;
 $red-accent-3:   #ff1744 !default;
 $red-accent-4:   #d50000 !default;
-
-$red: () !default;
-$red: map-merge((
-  "lighten-5":  $red-lighten-5,
-  "lighten-4":  $red-lighten-4,
-  "lighten-3":  $red-lighten-3,
-  "lighten-2":  $red-lighten-2,
-  "lighten-1":  $red-lighten-1,
-  "base":       $red-base,
-  "darken-1":   $red-darken-1,
-  "darken-2":   $red-darken-2,
-  "darken-3":   $red-darken-3,
-  "darken-4":   $red-darken-4,
-  "accent-1":   $red-accent-1,
-  "accent-2":   $red-accent-2,
-  "accent-3":   $red-accent-3,
-  "accent-4":   $red-accent-4
-), $red);
 
 $pink-lighten-5:  #fce4ec !default;
 $pink-lighten-4:  #f8bbd0 !default;
@@ -72,24 +40,6 @@ $pink-accent-2:   #ff4081 !default;
 $pink-accent-3:   #f50057 !default;
 $pink-accent-4:   #c51162 !default;
 
-$pink: () !default;
-$pink: map-merge((
-  "lighten-5":  $pink-lighten-5,
-  "lighten-4":  $pink-lighten-4,
-  "lighten-3":  $pink-lighten-3,
-  "lighten-2":  $pink-lighten-2,
-  "lighten-1":  $pink-lighten-1,
-  "base":       $pink-base,
-  "darken-1":   $pink-darken-1,
-  "darken-2":   $pink-darken-2,
-  "darken-3":   $pink-darken-3,
-  "darken-4":   $pink-darken-4,
-  "accent-1":   $pink-accent-1,
-  "accent-2":   $pink-accent-2,
-  "accent-3":   $pink-accent-3,
-  "accent-4":   $pink-accent-4
-), $pink);
-
 $purple-lighten-5:  #f3e5f5 !default;
 $purple-lighten-4:  #e1bee7 !default;
 $purple-lighten-3:  #ce93d8 !default;
@@ -104,24 +54,6 @@ $purple-accent-1:   #ea80fc !default;
 $purple-accent-2:   #e040fb !default;
 $purple-accent-3:   #d500f9 !default;
 $purple-accent-4:   #aa00ff !default;
-
-$purple: () !default;
-$purple: map-merge((
-  "lighten-5":  $purple-lighten-5,
-  "lighten-4":  $purple-lighten-4,
-  "lighten-3":  $purple-lighten-3,
-  "lighten-2":  $purple-lighten-2,
-  "lighten-1":  $purple-lighten-1,
-  "base":       $purple-base,
-  "darken-1":   $purple-darken-1,
-  "darken-2":   $purple-darken-2,
-  "darken-3":   $purple-darken-3,
-  "darken-4":   $purple-darken-4,
-  "accent-1":   $purple-accent-1,
-  "accent-2":   $purple-accent-2,
-  "accent-3":   $purple-accent-3,
-  "accent-4":   $purple-accent-4
-), $purple);
 
 $deep-purple-lighten-5:  #ede7f6 !default;
 $deep-purple-lighten-4:  #d1c4e9 !default;
@@ -138,24 +70,6 @@ $deep-purple-accent-2:   #7c4dff !default;
 $deep-purple-accent-3:   #651fff !default;
 $deep-purple-accent-4:   #6200ea !default;
 
-$deep-purple: () !default;
-$deep-purple: map-merge((
-  "lighten-5":  $deep-purple-lighten-5,
-  "lighten-4":  $deep-purple-lighten-4,
-  "lighten-3":  $deep-purple-lighten-3,
-  "lighten-2":  $deep-purple-lighten-2,
-  "lighten-1":  $deep-purple-lighten-1,
-  "base":       $deep-purple-base,
-  "darken-1":   $deep-purple-darken-1,
-  "darken-2":   $deep-purple-darken-2,
-  "darken-3":   $deep-purple-darken-3,
-  "darken-4":   $deep-purple-darken-4,
-  "accent-1":   $deep-purple-accent-1,
-  "accent-2":   $deep-purple-accent-2,
-  "accent-3":   $deep-purple-accent-3,
-  "accent-4":   $deep-purple-accent-4
-), $deep-purple);
-
 $indigo-lighten-5:  #e8eaf6 !default;
 $indigo-lighten-4:  #c5cae9 !default;
 $indigo-lighten-3:  #9fa8da !default;
@@ -170,24 +84,6 @@ $indigo-accent-1:   #8c9eff !default;
 $indigo-accent-2:   #536dfe !default;
 $indigo-accent-3:   #3d5afe !default;
 $indigo-accent-4:   #304ffe !default;
-
-$indigo: () !default;
-$indigo: map-merge((
-  "lighten-5":  $indigo-lighten-5,
-  "lighten-4":  $indigo-lighten-4,
-  "lighten-3":  $indigo-lighten-3,
-  "lighten-2":  $indigo-lighten-2,
-  "lighten-1":  $indigo-lighten-1,
-  "base":       $indigo-base,
-  "darken-1":   $indigo-darken-1,
-  "darken-2":   $indigo-darken-2,
-  "darken-3":   $indigo-darken-3,
-  "darken-4":   $indigo-darken-4,
-  "accent-1":   $indigo-accent-1,
-  "accent-2":   $indigo-accent-2,
-  "accent-3":   $indigo-accent-3,
-  "accent-4":   $indigo-accent-4
-), $indigo);
 
 $blue-lighten-5:  #e3f2fd !default;
 $blue-lighten-4:  #bbdefb !default;
@@ -204,24 +100,6 @@ $blue-accent-2:   #448aff !default;
 $blue-accent-3:   #2979ff !default;
 $blue-accent-4:   #2962ff !default;
 
-$blue: () !default;
-$blue: map-merge((
-  "lighten-5":  $blue-lighten-5,
-  "lighten-4":  $blue-lighten-4,
-  "lighten-3":  $blue-lighten-3,
-  "lighten-2":  $blue-lighten-2,
-  "lighten-1":  $blue-lighten-1,
-  "base":       $blue-base,
-  "darken-1":   $blue-darken-1,
-  "darken-2":   $blue-darken-2,
-  "darken-3":   $blue-darken-3,
-  "darken-4":   $blue-darken-4,
-  "accent-1":   $blue-accent-1,
-  "accent-2":   $blue-accent-2,
-  "accent-3":   $blue-accent-3,
-  "accent-4":   $blue-accent-4
-), $blue);
-
 $light-blue-lighten-5:  #e1f5fe !default;
 $light-blue-lighten-4:  #b3e5fc !default;
 $light-blue-lighten-3:  #81d4fa !default;
@@ -236,24 +114,6 @@ $light-blue-accent-1:   #80d8ff !default;
 $light-blue-accent-2:   #40c4ff !default;
 $light-blue-accent-3:   #00b0ff !default;
 $light-blue-accent-4:   #0091ea !default;
-
-$light-blue: () !default;
-$light-blue: map-merge((
-  "lighten-5":  $light-blue-lighten-5,
-  "lighten-4":  $light-blue-lighten-4,
-  "lighten-3":  $light-blue-lighten-3,
-  "lighten-2":  $light-blue-lighten-2,
-  "lighten-1":  $light-blue-lighten-1,
-  "base":       $light-blue-base,
-  "darken-1":   $light-blue-darken-1,
-  "darken-2":   $light-blue-darken-2,
-  "darken-3":   $light-blue-darken-3,
-  "darken-4":   $light-blue-darken-4,
-  "accent-1":   $light-blue-accent-1,
-  "accent-2":   $light-blue-accent-2,
-  "accent-3":   $light-blue-accent-3,
-  "accent-4":   $light-blue-accent-4
-), $light-blue);
 
 $cyan-lighten-5:  #e0f7fa !default;
 $cyan-lighten-4:  #b2ebf2 !default;
@@ -270,24 +130,6 @@ $cyan-accent-2:   #18ffff !default;
 $cyan-accent-3:   #00e5ff !default;
 $cyan-accent-4:   #00b8d4 !default;
 
-$cyan: () !default;
-$cyan: map-merge((
-  "lighten-5":  $cyan-lighten-5,
-  "lighten-4":  $cyan-lighten-4,
-  "lighten-3":  $cyan-lighten-3,
-  "lighten-2":  $cyan-lighten-2,
-  "lighten-1":  $cyan-lighten-1,
-  "base":       $cyan-base,
-  "darken-1":   $cyan-darken-1,
-  "darken-2":   $cyan-darken-2,
-  "darken-3":   $cyan-darken-3,
-  "darken-4":   $cyan-darken-4,
-  "accent-1":   $cyan-accent-1,
-  "accent-2":   $cyan-accent-2,
-  "accent-3":   $cyan-accent-3,
-  "accent-4":   $cyan-accent-4
-), $cyan);
-
 $teal-lighten-5:  #e0f2f1 !default;
 $teal-lighten-4:  #b2dfdb !default;
 $teal-lighten-3:  #80cbc4 !default;
@@ -302,24 +144,6 @@ $teal-accent-1:   #a7ffeb !default;
 $teal-accent-2:   #64ffda !default;
 $teal-accent-3:   #1de9b6 !default;
 $teal-accent-4:   #00bfa5 !default;
-
-$teal: () !default;
-$teal: map-merge((
-  "lighten-5":  $teal-lighten-5,
-  "lighten-4":  $teal-lighten-4,
-  "lighten-3":  $teal-lighten-3,
-  "lighten-2":  $teal-lighten-2,
-  "lighten-1":  $teal-lighten-1,
-  "base":       $teal-base,
-  "darken-1":   $teal-darken-1,
-  "darken-2":   $teal-darken-2,
-  "darken-3":   $teal-darken-3,
-  "darken-4":   $teal-darken-4,
-  "accent-1":   $teal-accent-1,
-  "accent-2":   $teal-accent-2,
-  "accent-3":   $teal-accent-3,
-  "accent-4":   $teal-accent-4
-), $teal);
 
 $green-lighten-5:  #e8f5e9 !default;
 $green-lighten-4:  #c8e6c9 !default;
@@ -336,24 +160,6 @@ $green-accent-2:   #69f0ae !default;
 $green-accent-3:   #00e676 !default;
 $green-accent-4:   #00c853 !default;
 
-$green: () !default;
-$green: map-merge((
-  "lighten-5":  $green-lighten-5,
-  "lighten-4":  $green-lighten-4,
-  "lighten-3":  $green-lighten-3,
-  "lighten-2":  $green-lighten-2,
-  "lighten-1":  $green-lighten-1,
-  "base":       $green-base,
-  "darken-1":   $green-darken-1,
-  "darken-2":   $green-darken-2,
-  "darken-3":   $green-darken-3,
-  "darken-4":   $green-darken-4,
-  "accent-1":   $green-accent-1,
-  "accent-2":   $green-accent-2,
-  "accent-3":   $green-accent-3,
-  "accent-4":   $green-accent-4
-), $green);
-
 $light-green-lighten-5:  #f1f8e9 !default;
 $light-green-lighten-4:  #dcedc8 !default;
 $light-green-lighten-3:  #c5e1a5 !default;
@@ -368,24 +174,6 @@ $light-green-accent-1:   #ccff90 !default;
 $light-green-accent-2:   #b2ff59 !default;
 $light-green-accent-3:   #76ff03 !default;
 $light-green-accent-4:   #64dd17 !default;
-
-$light-green: () !default;
-$light-green: map-merge((
-  "lighten-5":  $light-green-lighten-5,
-  "lighten-4":  $light-green-lighten-4,
-  "lighten-3":  $light-green-lighten-3,
-  "lighten-2":  $light-green-lighten-2,
-  "lighten-1":  $light-green-lighten-1,
-  "base":       $light-green-base,
-  "darken-1":   $light-green-darken-1,
-  "darken-2":   $light-green-darken-2,
-  "darken-3":   $light-green-darken-3,
-  "darken-4":   $light-green-darken-4,
-  "accent-1":   $light-green-accent-1,
-  "accent-2":   $light-green-accent-2,
-  "accent-3":   $light-green-accent-3,
-  "accent-4":   $light-green-accent-4
-), $light-green);
 
 $lime-lighten-5:  #f9fbe7 !default;
 $lime-lighten-4:  #f0f4c3 !default;
@@ -402,24 +190,6 @@ $lime-accent-2:   #eeff41 !default;
 $lime-accent-3:   #c6ff00 !default;
 $lime-accent-4:   #aeea00 !default;
 
-$lime: () !default;
-$lime: map-merge((
-  "lighten-5":  $lime-lighten-5,
-  "lighten-4":  $lime-lighten-4,
-  "lighten-3":  $lime-lighten-3,
-  "lighten-2":  $lime-lighten-2,
-  "lighten-1":  $lime-lighten-1,
-  "base":       $lime-base,
-  "darken-1":   $lime-darken-1,
-  "darken-2":   $lime-darken-2,
-  "darken-3":   $lime-darken-3,
-  "darken-4":   $lime-darken-4,
-  "accent-1":   $lime-accent-1,
-  "accent-2":   $lime-accent-2,
-  "accent-3":   $lime-accent-3,
-  "accent-4":   $lime-accent-4
-), $lime);
-
 $yellow-lighten-5:  #fffde7 !default;
 $yellow-lighten-4:  #fff9c4 !default;
 $yellow-lighten-3:  #fff59d !default;
@@ -434,24 +204,6 @@ $yellow-accent-1:   #ffff8d !default;
 $yellow-accent-2:   #ffff00 !default;
 $yellow-accent-3:   #ffea00 !default;
 $yellow-accent-4:   #ffd600 !default;
-
-$yellow: () !default;
-$yellow: map-merge((
-  "lighten-5":  $yellow-lighten-5,
-  "lighten-4":  $yellow-lighten-4,
-  "lighten-3":  $yellow-lighten-3,
-  "lighten-2":  $yellow-lighten-2,
-  "lighten-1":  $yellow-lighten-1,
-  "base":       $yellow-base,
-  "darken-1":   $yellow-darken-1,
-  "darken-2":   $yellow-darken-2,
-  "darken-3":   $yellow-darken-3,
-  "darken-4":   $yellow-darken-4,
-  "accent-1":   $yellow-accent-1,
-  "accent-2":   $yellow-accent-2,
-  "accent-3":   $yellow-accent-3,
-  "accent-4":   $yellow-accent-4
-), $yellow);
 
 $amber-lighten-5:  #fff8e1 !default;
 $amber-lighten-4:  #ffecb3 !default;
@@ -468,24 +220,6 @@ $amber-accent-2:   #ffd740 !default;
 $amber-accent-3:   #ffc400 !default;
 $amber-accent-4:   #ffab00 !default;
 
-$amber: () !default;
-$amber: map-merge((
-  "lighten-5":  $amber-lighten-5,
-  "lighten-4":  $amber-lighten-4,
-  "lighten-3":  $amber-lighten-3,
-  "lighten-2":  $amber-lighten-2,
-  "lighten-1":  $amber-lighten-1,
-  "base":       $amber-base,
-  "darken-1":   $amber-darken-1,
-  "darken-2":   $amber-darken-2,
-  "darken-3":   $amber-darken-3,
-  "darken-4":   $amber-darken-4,
-  "accent-1":   $amber-accent-1,
-  "accent-2":   $amber-accent-2,
-  "accent-3":   $amber-accent-3,
-  "accent-4":   $amber-accent-4
-), $amber);
-
 $orange-lighten-5:  #fff3e0 !default;
 $orange-lighten-4:  #ffe0b2 !default;
 $orange-lighten-3:  #ffcc80 !default;
@@ -500,24 +234,6 @@ $orange-accent-1:   #ffd180 !default;
 $orange-accent-2:   #ffab40 !default;
 $orange-accent-3:   #ff9100 !default;
 $orange-accent-4:   #ff6d00 !default;
-
-$orange: () !default;
-$orange: map-merge((
-  "lighten-5":  $orange-lighten-5,
-  "lighten-4":  $orange-lighten-4,
-  "lighten-3":  $orange-lighten-3,
-  "lighten-2":  $orange-lighten-2,
-  "lighten-1":  $orange-lighten-1,
-  "base":       $orange-base,
-  "darken-1":   $orange-darken-1,
-  "darken-2":   $orange-darken-2,
-  "darken-3":   $orange-darken-3,
-  "darken-4":   $orange-darken-4,
-  "accent-1":   $orange-accent-1,
-  "accent-2":   $orange-accent-2,
-  "accent-3":   $orange-accent-3,
-  "accent-4":   $orange-accent-4
-), $orange);
 
 $deep-orange-lighten-5:  #fbe9e7 !default;
 $deep-orange-lighten-4:  #ffccbc !default;
@@ -534,24 +250,6 @@ $deep-orange-accent-2:   #ff6e40 !default;
 $deep-orange-accent-3:   #ff3d00 !default;
 $deep-orange-accent-4:   #dd2c00 !default;
 
-$deep-orange: () !default;
-$deep-orange: map-merge((
-  "lighten-5":  $deep-orange-lighten-5,
-  "lighten-4":  $deep-orange-lighten-4,
-  "lighten-3":  $deep-orange-lighten-3,
-  "lighten-2":  $deep-orange-lighten-2,
-  "lighten-1":  $deep-orange-lighten-1,
-  "base":       $deep-orange-base,
-  "darken-1":   $deep-orange-darken-1,
-  "darken-2":   $deep-orange-darken-2,
-  "darken-3":   $deep-orange-darken-3,
-  "darken-4":   $deep-orange-darken-4,
-  "accent-1":   $deep-orange-accent-1,
-  "accent-2":   $deep-orange-accent-2,
-  "accent-3":   $deep-orange-accent-3,
-  "accent-4":   $deep-orange-accent-4
-), $deep-orange);
-
 $brown-lighten-5:  #efebe9 !default;
 $brown-lighten-4:  #d7ccc8 !default;
 $brown-lighten-3:  #bcaaa4 !default;
@@ -562,20 +260,6 @@ $brown-darken-1:   #6d4c41 !default;
 $brown-darken-2:   #5d4037 !default;
 $brown-darken-3:   #4e342e !default;
 $brown-darken-4:   #3e2723 !default;
-
-$brown: () !default;
-$brown: map-merge((
-  "lighten-5":  $brown-lighten-5,
-  "lighten-4":  $brown-lighten-4,
-  "lighten-3":  $brown-lighten-3,
-  "lighten-2":  $brown-lighten-2,
-  "lighten-1":  $brown-lighten-1,
-  "base":       $brown-base,
-  "darken-1":   $brown-darken-1,
-  "darken-2":   $brown-darken-2,
-  "darken-3":   $brown-darken-3,
-  "darken-4":   $brown-darken-4
-), $brown);
 
 $blue-grey-lighten-5:  #eceff1 !default;
 $blue-grey-lighten-4:  #cfd8dc !default;
@@ -588,20 +272,6 @@ $blue-grey-darken-2:   #455a64 !default;
 $blue-grey-darken-3:   #37474f !default;
 $blue-grey-darken-4:   #263238 !default;
 
-$blue-grey: () !default;
-$blue-grey: map-merge((
-  "lighten-5":  $blue-grey-lighten-5,
-  "lighten-4":  $blue-grey-lighten-4,
-  "lighten-3":  $blue-grey-lighten-3,
-  "lighten-2":  $blue-grey-lighten-2,
-  "lighten-1":  $blue-grey-lighten-1,
-  "base":       $blue-grey-base,
-  "darken-1":   $blue-grey-darken-1,
-  "darken-2":   $blue-grey-darken-2,
-  "darken-3":   $blue-grey-darken-3,
-  "darken-4":   $blue-grey-darken-4
-), $blue-grey);
-
 $grey-lighten-5:  #fafafa !default;
 $grey-lighten-4:  #f5f5f5 !default;
 $grey-lighten-3:  #eeeeee !default;
@@ -613,66 +283,328 @@ $grey-darken-2:   #616161 !default;
 $grey-darken-3:   #424242 !default;
 $grey-darken-4:   #212121 !default;
 
-$grey: () !default;
-$grey: map-merge((
-  "lighten-5":  $grey-lighten-5,
-  "lighten-4":  $grey-lighten-4,
-  "lighten-3":  $grey-lighten-3,
-  "lighten-2":  $grey-lighten-2,
-  "lighten-1":  $grey-lighten-1,
-  "base":       $grey-base,
-  "darken-1":   $grey-darken-1,
-  "darken-2":   $grey-darken-2,
-  "darken-3":   $grey-darken-3,
-  "darken-4":   $grey-darken-4
-), $grey);
-
 $black-base: #000 !default;
-
-$black: () !default;
-$black: map-merge((
-  "base":  $black-base
-), $black);
-
 $white-base: #fff !default;
 
-$white: () !default;
-$white: map-merge((
-  "base":  $white-base
-), $white);
-
-// Colors palette
-$colors: () !default;
-$colors: map-merge((
-  "mdb-color":   $mdb-color,
-  "red":         $red,
-  "pink":        $pink,
-  "purple":      $purple,
-  "deep-purple": $deep-purple,
-  "indigo":      $indigo,
-  "blue":        $blue,
-  "light-blue":  $light-blue,
-  "cyan":        $cyan,
-  "teal":        $teal,
-  "green":       $green,
-  "light-green": $light-green,
-  "lime":        $lime,
-  "yellow":      $yellow,
-  "amber":       $amber,
-  "orange":      $orange,
-  "deep-orange": $deep-orange,
-  "brown":       $brown,
-  "blue-grey":   $blue-grey,
-  "grey":        $grey,
-  "black":       $black,
-  "white":       $white
-), $colors);
+$mdb-colors-1: () !default;
+$mdb-colors-1: map-merge((
+  "mdb-color": (
+    "lighten-5":  $mdb-color-lighten-5,
+    "lighten-4":  $mdb-color-lighten-4,
+    "lighten-3":  $mdb-color-lighten-3,
+    "lighten-2":  $mdb-color-lighten-2,
+    "lighten-1":  $mdb-color-lighten-1,
+    "base":       $mdb-color-base,
+    "darken-1":   $mdb-color-darken-1,
+    "darken-2":   $mdb-color-darken-2,
+    "darken-3":   $mdb-color-darken-3,
+    "darken-4":   $mdb-color-darken-4
+  ),
+  "red": (
+    "lighten-5":  $red-lighten-5,
+    "lighten-4":  $red-lighten-4,
+    "lighten-3":  $red-lighten-3,
+    "lighten-2":  $red-lighten-2,
+    "lighten-1":  $red-lighten-1,
+    "base":       $red-base,
+    "darken-1":   $red-darken-1,
+    "darken-2":   $red-darken-2,
+    "darken-3":   $red-darken-3,
+    "darken-4":   $red-darken-4,
+    "accent-1":   $red-accent-1,
+    "accent-2":   $red-accent-2,
+    "accent-3":   $red-accent-3,
+    "accent-4":   $red-accent-4
+  ),
+  "pink": (
+    "lighten-5":  $pink-lighten-5,
+    "lighten-4":  $pink-lighten-4,
+    "lighten-3":  $pink-lighten-3,
+    "lighten-2":  $pink-lighten-2,
+    "lighten-1":  $pink-lighten-1,
+    "base":       $pink-base,
+    "darken-1":   $pink-darken-1,
+    "darken-2":   $pink-darken-2,
+    "darken-3":   $pink-darken-3,
+    "darken-4":   $pink-darken-4,
+    "accent-1":   $pink-accent-1,
+    "accent-2":   $pink-accent-2,
+    "accent-3":   $pink-accent-3,
+    "accent-4":   $pink-accent-4
+  ),
+  "purple": (
+    "lighten-5":  $purple-lighten-5,
+    "lighten-4":  $purple-lighten-4,
+    "lighten-3":  $purple-lighten-3,
+    "lighten-2":  $purple-lighten-2,
+    "lighten-1":  $purple-lighten-1,
+    "base":       $purple-base,
+    "darken-1":   $purple-darken-1,
+    "darken-2":   $purple-darken-2,
+    "darken-3":   $purple-darken-3,
+    "darken-4":   $purple-darken-4,
+    "accent-1":   $purple-accent-1,
+    "accent-2":   $purple-accent-2,
+    "accent-3":   $purple-accent-3,
+    "accent-4":   $purple-accent-4
+  ),
+  "deep-purple": (
+    "lighten-5":  $deep-purple-lighten-5,
+    "lighten-4":  $deep-purple-lighten-4,
+    "lighten-3":  $deep-purple-lighten-3,
+    "lighten-2":  $deep-purple-lighten-2,
+    "lighten-1":  $deep-purple-lighten-1,
+    "base":       $deep-purple-base,
+    "darken-1":   $deep-purple-darken-1,
+    "darken-2":   $deep-purple-darken-2,
+    "darken-3":   $deep-purple-darken-3,
+    "darken-4":   $deep-purple-darken-4,
+    "accent-1":   $deep-purple-accent-1,
+    "accent-2":   $deep-purple-accent-2,
+    "accent-3":   $deep-purple-accent-3,
+    "accent-4":   $deep-purple-accent-4
+  ),
+  "indigo": (
+    "lighten-5":  $indigo-lighten-5,
+    "lighten-4":  $indigo-lighten-4,
+    "lighten-3":  $indigo-lighten-3,
+    "lighten-2":  $indigo-lighten-2,
+    "lighten-1":  $indigo-lighten-1,
+    "base":       $indigo-base,
+    "darken-1":   $indigo-darken-1,
+    "darken-2":   $indigo-darken-2,
+    "darken-3":   $indigo-darken-3,
+    "darken-4":   $indigo-darken-4,
+    "accent-1":   $indigo-accent-1,
+    "accent-2":   $indigo-accent-2,
+    "accent-3":   $indigo-accent-3,
+    "accent-4":   $indigo-accent-4
+  ),
+  "blue": (
+    "lighten-5":  $blue-lighten-5,
+    "lighten-4":  $blue-lighten-4,
+    "lighten-3":  $blue-lighten-3,
+    "lighten-2":  $blue-lighten-2,
+    "lighten-1":  $blue-lighten-1,
+    "base":       $blue-base,
+    "darken-1":   $blue-darken-1,
+    "darken-2":   $blue-darken-2,
+    "darken-3":   $blue-darken-3,
+    "darken-4":   $blue-darken-4,
+    "accent-1":   $blue-accent-1,
+    "accent-2":   $blue-accent-2,
+    "accent-3":   $blue-accent-3,
+    "accent-4":   $blue-accent-4
+  ),
+  "light-blue": (
+    "lighten-5":  $light-blue-lighten-5,
+    "lighten-4":  $light-blue-lighten-4,
+    "lighten-3":  $light-blue-lighten-3,
+    "lighten-2":  $light-blue-lighten-2,
+    "lighten-1":  $light-blue-lighten-1,
+    "base":       $light-blue-base,
+    "darken-1":   $light-blue-darken-1,
+    "darken-2":   $light-blue-darken-2,
+    "darken-3":   $light-blue-darken-3,
+    "darken-4":   $light-blue-darken-4,
+    "accent-1":   $light-blue-accent-1,
+    "accent-2":   $light-blue-accent-2,
+    "accent-3":   $light-blue-accent-3,
+    "accent-4":   $light-blue-accent-4
+  ),
+  "cyan": (
+    "lighten-5":  $cyan-lighten-5,
+    "lighten-4":  $cyan-lighten-4,
+    "lighten-3":  $cyan-lighten-3,
+    "lighten-2":  $cyan-lighten-2,
+    "lighten-1":  $cyan-lighten-1,
+    "base":       $cyan-base,
+    "darken-1":   $cyan-darken-1,
+    "darken-2":   $cyan-darken-2,
+    "darken-3":   $cyan-darken-3,
+    "darken-4":   $cyan-darken-4,
+    "accent-1":   $cyan-accent-1,
+    "accent-2":   $cyan-accent-2,
+    "accent-3":   $cyan-accent-3,
+    "accent-4":   $cyan-accent-4
+  ),
+  "teal": (
+    "lighten-5":  $teal-lighten-5,
+    "lighten-4":  $teal-lighten-4,
+    "lighten-3":  $teal-lighten-3,
+    "lighten-2":  $teal-lighten-2,
+    "lighten-1":  $teal-lighten-1,
+    "base":       $teal-base,
+    "darken-1":   $teal-darken-1,
+    "darken-2":   $teal-darken-2,
+    "darken-3":   $teal-darken-3,
+    "darken-4":   $teal-darken-4,
+    "accent-1":   $teal-accent-1,
+    "accent-2":   $teal-accent-2,
+    "accent-3":   $teal-accent-3,
+    "accent-4":   $teal-accent-4
+  ),
+  "green": (
+    "lighten-5":  $green-lighten-5,
+    "lighten-4":  $green-lighten-4,
+    "lighten-3":  $green-lighten-3,
+    "lighten-2":  $green-lighten-2,
+    "lighten-1":  $green-lighten-1,
+    "base":       $green-base,
+    "darken-1":   $green-darken-1,
+    "darken-2":   $green-darken-2,
+    "darken-3":   $green-darken-3,
+    "darken-4":   $green-darken-4,
+    "accent-1":   $green-accent-1,
+    "accent-2":   $green-accent-2,
+    "accent-3":   $green-accent-3,
+    "accent-4":   $green-accent-4
+  ),
+  "light-green": (
+    "lighten-5":  $light-green-lighten-5,
+    "lighten-4":  $light-green-lighten-4,
+    "lighten-3":  $light-green-lighten-3,
+    "lighten-2":  $light-green-lighten-2,
+    "lighten-1":  $light-green-lighten-1,
+    "base":       $light-green-base,
+    "darken-1":   $light-green-darken-1,
+    "darken-2":   $light-green-darken-2,
+    "darken-3":   $light-green-darken-3,
+    "darken-4":   $light-green-darken-4,
+    "accent-1":   $light-green-accent-1,
+    "accent-2":   $light-green-accent-2,
+    "accent-3":   $light-green-accent-3,
+    "accent-4":   $light-green-accent-4
+  ),
+  "lime": (
+    "lighten-5":  $lime-lighten-5,
+    "lighten-4":  $lime-lighten-4,
+    "lighten-3":  $lime-lighten-3,
+    "lighten-2":  $lime-lighten-2,
+    "lighten-1":  $lime-lighten-1,
+    "base":       $lime-base,
+    "darken-1":   $lime-darken-1,
+    "darken-2":   $lime-darken-2,
+    "darken-3":   $lime-darken-3,
+    "darken-4":   $lime-darken-4,
+    "accent-1":   $lime-accent-1,
+    "accent-2":   $lime-accent-2,
+    "accent-3":   $lime-accent-3,
+    "accent-4":   $lime-accent-4
+  ),
+  "yellow": (
+    "lighten-5":  $yellow-lighten-5,
+    "lighten-4":  $yellow-lighten-4,
+    "lighten-3":  $yellow-lighten-3,
+    "lighten-2":  $yellow-lighten-2,
+    "lighten-1":  $yellow-lighten-1,
+    "base":       $yellow-base,
+    "darken-1":   $yellow-darken-1,
+    "darken-2":   $yellow-darken-2,
+    "darken-3":   $yellow-darken-3,
+    "darken-4":   $yellow-darken-4,
+    "accent-1":   $yellow-accent-1,
+    "accent-2":   $yellow-accent-2,
+    "accent-3":   $yellow-accent-3,
+    "accent-4":   $yellow-accent-4
+  ),
+  "amber": (
+    "lighten-5":  $amber-lighten-5,
+    "lighten-4":  $amber-lighten-4,
+    "lighten-3":  $amber-lighten-3,
+    "lighten-2":  $amber-lighten-2,
+    "lighten-1":  $amber-lighten-1,
+    "base":       $amber-base,
+    "darken-1":   $amber-darken-1,
+    "darken-2":   $amber-darken-2,
+    "darken-3":   $amber-darken-3,
+    "darken-4":   $amber-darken-4,
+    "accent-1":   $amber-accent-1,
+    "accent-2":   $amber-accent-2,
+    "accent-3":   $amber-accent-3,
+    "accent-4":   $amber-accent-4
+  ),
+  "orange": (
+    "lighten-5":  $orange-lighten-5,
+    "lighten-4":  $orange-lighten-4,
+    "lighten-3":  $orange-lighten-3,
+    "lighten-2":  $orange-lighten-2,
+    "lighten-1":  $orange-lighten-1,
+    "base":       $orange-base,
+    "darken-1":   $orange-darken-1,
+    "darken-2":   $orange-darken-2,
+    "darken-3":   $orange-darken-3,
+    "darken-4":   $orange-darken-4,
+    "accent-1":   $orange-accent-1,
+    "accent-2":   $orange-accent-2,
+    "accent-3":   $orange-accent-3,
+    "accent-4":   $orange-accent-4
+  ),
+  "deep-orange": (
+    "lighten-5":  $deep-orange-lighten-5,
+    "lighten-4":  $deep-orange-lighten-4,
+    "lighten-3":  $deep-orange-lighten-3,
+    "lighten-2":  $deep-orange-lighten-2,
+    "lighten-1":  $deep-orange-lighten-1,
+    "base":       $deep-orange-base,
+    "darken-1":   $deep-orange-darken-1,
+    "darken-2":   $deep-orange-darken-2,
+    "darken-3":   $deep-orange-darken-3,
+    "darken-4":   $deep-orange-darken-4,
+    "accent-1":   $deep-orange-accent-1,
+    "accent-2":   $deep-orange-accent-2,
+    "accent-3":   $deep-orange-accent-3,
+    "accent-4":   $deep-orange-accent-4
+  ),
+  "brown": (
+    "lighten-5":  $brown-lighten-5,
+    "lighten-4":  $brown-lighten-4,
+    "lighten-3":  $brown-lighten-3,
+    "lighten-2":  $brown-lighten-2,
+    "lighten-1":  $brown-lighten-1,
+    "base":       $brown-base,
+    "darken-1":   $brown-darken-1,
+    "darken-2":   $brown-darken-2,
+    "darken-3":   $brown-darken-3,
+    "darken-4":   $brown-darken-4
+  ),
+  "blue-grey": (
+    "lighten-5":  $blue-grey-lighten-5,
+    "lighten-4":  $blue-grey-lighten-4,
+    "lighten-3":  $blue-grey-lighten-3,
+    "lighten-2":  $blue-grey-lighten-2,
+    "lighten-1":  $blue-grey-lighten-1,
+    "base":       $blue-grey-base,
+    "darken-1":   $blue-grey-darken-1,
+    "darken-2":   $blue-grey-darken-2,
+    "darken-3":   $blue-grey-darken-3,
+    "darken-4":   $blue-grey-darken-4
+  ),
+  "grey": (
+    "lighten-5":  $grey-lighten-5,
+    "lighten-4":  $grey-lighten-4,
+    "lighten-3":  $grey-lighten-3,
+    "lighten-2":  $grey-lighten-2,
+    "lighten-1":  $grey-lighten-1,
+    "base":       $grey-base,
+    "darken-1":   $grey-darken-1,
+    "darken-2":   $grey-darken-2,
+    "darken-3":   $grey-darken-3,
+    "darken-4":   $grey-darken-4
+  ),
+  "black": (
+    "base":  $black-base
+  ),
+  "white": (
+    "base":  $white-base
+  )
+), $mdb-colors-1);
 
 // Full palette of colors
 $enable_full_palette: true !default;
 
 // Colors classes
-@each $color_name, $color in $colors {
+@each $color_name, $color in $mdb-colors-1 {
   @each $color_type, $color_value in $color {
     @if $color_type == "base" {
       .#{$color_name} {
@@ -716,6 +648,10 @@ $stylish-rgba: (
 
 .dark-grey-text {
   color: #4f4f4f;
+  &:hover,
+  &:focus {
+    color: #4f4f4f;
+  }
 }
 
 // Material colors
@@ -743,7 +679,7 @@ $special-color:        #37474f !default;
 $special-color-dark:   #263238 !default;
 $white:                #fff;
 $black:                #000;
-$error-color:          map-get($red, "base") !default;
+$error-color:          $red-base !default;
 
 $material-colors: () !default;
 $material-colors: map-merge((
@@ -822,32 +758,32 @@ $mdb-colors: map-merge((
   "default":     $default-color,
   "secondary":   $secondary-color,
   "elegant":     $elegant-color,
-  "unique":      map-get($pink, darken-4),
-  "dark-green":  map-get($green, darken-2),
-  "mdb-color":   map-get($mdb-color, lighten-1),
-  "red":         map-get($red, darken-2),
-  "pink":        map-get($pink, lighten-1),
-  "purple":      map-get($purple, darken-1),
-  "deep-purple": map-get($deep-purple, darken-2),
-  "indigo":      map-get($indigo, base),
-  "blue":        map-get($blue, darken-2),
-  "light-blue":  map-get($blue, accent-1),
-  "cyan":        map-get($cyan, base),
-  "teal":        map-get($teal, darken-2),
-  "green":       map-get($green, darken-2),
-  "light-green": map-get($light-green, base),
-  "lime":        map-get($lime, darken-2),
-  "yellow":      map-get($yellow, darken-2),
-  "amber":       map-get($amber, darken-2),
-  "orange":      map-get($orange, darken-2),
-  "deep-orange": map-get($deep-orange, lighten-1),
-  "brown":       map-get($brown, base),
-  "grey":        map-get($grey, darken-2),
-  "blue-grey":   map-get($blue-grey, lighten-1),
-  "dark":        map-get($grey, darken-4),
-  "light":       map-get($grey, lighten-2),
-  "white":       $white,
-  "black":       $black
+  "unique":      $pink-darken-4,
+  "dark-green":  $green-darken-2,
+  "mdb-color":   $mdb-color-lighten-1,
+  "red":         $red-darken-2,
+  "pink":        $pink-lighten-1,
+  "purple":      $purple-darken-1,
+  "deep-purple": $deep-purple-darken-2,
+  "indigo":      $indigo-base,
+  "blue":        $blue-darken-2,
+  "light-blue":  $blue-accent-1,
+  "cyan":        $cyan-base,
+  "teal":        $teal-darken-2,
+  "green":       $green-darken-2,
+  "light-green": $light-green-base,
+  "lime":        $lime-darken-2,
+  "yellow":      $yellow-darken-2,
+  "amber":       $amber-darken-2,
+  "orange":      $orange-darken-2,
+  "deep-orange": $deep-orange-lighten-1,
+  "brown":       $brown-base,
+  "grey":        $grey-darken-2,
+  "blue-grey":   $blue-grey-lighten-1,
+  "dark":        $grey-darken-4,
+  "light":       $grey-lighten-2,
+  "white":       $white-base,
+  "black":       $black-base
 ), $mdb-colors);
 
 // Basic colors
@@ -869,8 +805,8 @@ $basic-mdb-colors: map-merge((
   "info":        $info-color,
   "default":     $default-color,
   "secondary":   $secondary-color,
-  "dark":        map-get($grey, darken-4),
-  "light":       map-get($grey, lighten-2)
+  "dark":        $grey-darken-4,
+  "light":       $grey-lighten-2
 ), $basic-mdb-colors);
 
 $pagination-colors: () !default;
@@ -881,18 +817,18 @@ $pagination-colors: map-merge((
   "dark-grey": $special-color,
   "dark": $elegant-color,
   "blue-grey": $unique-color,
-  "amber": map-get($amber, darken-4),
-  "purple": map-get($deep-purple, darken-1)
+  "amber": $amber-darken-4,
+  "purple": $deep-purple-darken-1
 ), $pagination-colors);
 
 $ctbc: () !default;
 $ctbc: map-merge((
-  "tabs-cyan": map-get($yellow, base),
-  "tabs-orange": map-get($red, darken-1),
-  "tabs-grey": $white,
-  "tabs-pink": map-get($deep-purple, base),
-  "tabs-green": map-get($blue, darken-3),
-  "tabs-primary": $white
+  "tabs-cyan": $yellow-base,
+  "tabs-orange": $red-darken-1,
+  "tabs-grey": $white-base,
+  "tabs-pink": $deep-purple-base,
+  "tabs-green": $blue-darken-3,
+  "tabs-primary": $white-base
 ), $ctbc);
 
 $switch-color-bg:                 $secondary-color !default;

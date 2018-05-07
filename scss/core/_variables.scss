@@ -74,7 +74,7 @@ $border-radius-base:          .125rem !default;
 $border-radius-circle:        50% !default;
 
 // Buttons
-$btn-color-basic:             $white !default;
+$btn-color-basic:             $white-base !default;
 $btn-margin-basic:            .375rem !default;
 $btn-padding-y-basic:         .84rem !default;
 $btn-padding-x-basic:         2.14rem !default;
@@ -129,7 +129,7 @@ $hide-sidenav: "only screen and (max-width : #{$sidenav-breakpoint})" !default;
 $link-color: #0275d8 !default;
 
 // Dividers colors
-$hr-light:            $white !default;
+$hr-light:            $white-base !default;
 $hr-dark:             #666 !default;
 $flex-center-ul-mb:   1rem !default;
 
@@ -174,21 +174,21 @@ $badge-pill-border-radius:            10rem !default;
 // Footers
 $footer-margin-top:                    1.25rem !default;
 $footer-padding-top:                   $footer-margin-top !default;
-$footer-copyright-color:               rgba($white, .6) !default;
-$footer-copyright-bg-color:            rgba($black, .2) !default;
+$footer-copyright-color:               rgba($white-base, .6) !default;
+$footer-copyright-bg-color:            rgba($black-base, .2) !default;
 $footer-font-size:                     .9rem !default;
 
 // Forms
-$input-bg-color:                      $white !default;
+$input-bg-color:                      $white-base !default;
 $label-font-size:                     .8rem !default;
 $input-transition:                    all .3s !default;
 $input-disabled-color:                rgba(0,0,0, .46) !default;
-$input-focus-color:                   $primary-color !default;
+$input-md-focus-color:                   $primary-color !default;
 $input-error-color:                   $error-color !default;
 $input-success-color:                 $success-color !default;
 $input-label-after-top:               65px !default;
 $input-label-after-transition:        .2s opacity ease-out, .2s color ease-out !default;
-$input-border-color: #ced4da !default;
+$input-border-color:                  #ced4da !default;
 
 $input-label-transition:              .2s ease-out !default;
 $input-label-color:                   #757575 !default;
@@ -197,6 +197,7 @@ $input-label-active-transform:        translateY(-140%) !default;
 $input-prefix-transition:             color .2s !default;
 
 $input-md-form-margin-top:            1.5rem !default;
+$input-md-form-margin-bottom:         $input-md-form-margin-top !default;
 $input-label-font-size:               1rem !default;
 $input-label-active-font-size:        .8rem !default;
 $input-prefix-top:                    .25rem !default;
@@ -285,13 +286,13 @@ $navbar-font-weight:                   300 !default;
 $navbar-double-font-size:              15px !default;
 
 $navbar-light-toggler-icon:            url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
-$navbar-light-bg-active-color:         rgba($black, .1) !default;
-$navbar-light-hover-color:             rgba($black, .75) !default;
+$navbar-light-bg-active-color:         rgba($black-base, .1) !default;
+$navbar-light-hover-color:             rgba($black-base, .75) !default;
 $navbar-light-disabled-color:          rgba(0, 0, 0, 0.5) !default;
 
 $navbar-dark-toggler-icon:             url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
-$navbar-dark-bg-active-color:          rgba($white, .1) !default;
-$navbar-dark-hover-color:              rgba($white, .75) !default;
+$navbar-dark-bg-active-color:          rgba($white-base, .1) !default;
+$navbar-dark-hover-color:              rgba($white-base, .75) !default;
 $navbar-dark-disabled-color:           rgba(255, 255, 255, 0.5) !default;
 
 $navbar-scrolling-transition:          background .5s ease-in-out, padding .5s ease-in-out !default;
@@ -332,6 +333,6 @@ $table-a-color:                        #212529 !default;
 $table-hover-transition:               .5s !default;
 $table-hover-background-color:         rgba(0, 0, 0, 0.075) !default;
 $table-sm-padding-y:                   .6rem !default;
-$table-inverse-color-border:           $white !default;
+$table-inverse-color-border:           $white-base !default;
 $product-table-img-max-height:         150px !default;
 $product-table-img-min-width:          50px !default;

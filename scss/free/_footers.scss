@@ -2,7 +2,7 @@
 footer {
   &.page-footer {
     bottom: 0;
-    color: $white;
+    color: $white-base;
     .container-fluid {
       width:auto;
     }
@@ -13,7 +13,7 @@ footer {
       color: $footer-copyright-color;
     }
     a {
-      color: $white;
+      color: $white-base;
     }
   }
 }

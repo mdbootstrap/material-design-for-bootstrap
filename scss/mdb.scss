@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB Free 4.5.1
+ * Version: MDB FREE 4.5.2
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -33,6 +33,8 @@
 
 // CORE
 @import "core/mixins";
+// Your custom variables
+@import "custom-variables";
 @import "core/colors";
 @import "core/variables";
 @import "core/global";
@@ -61,4 +63,4 @@
 @import "free/depreciated";
 
 // Your custom styles
-@import "custom";
+@import "custom-styles";

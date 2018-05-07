@@ -1,6 +1,6 @@
 // Navbars
 .navbar {
-  @extend .z-depth-1;
+  box-shadow: $z-depth-1;
   padding-right: 1rem !important;
   font-weight: $navbar-font-weight;
   form {
@@ -17,7 +17,7 @@
     font-size: $navbar-double-font-size;
     font-weight: $navbar-font-weight;
     .breadcrumb-item {
-      color: $white;
+      color: $white-base;
       &.active {
         color: $navbar-breadcrumb-color;
       }

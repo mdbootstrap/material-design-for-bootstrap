@@ -26,11 +26,11 @@
 
     // Focused input style
     &:focus:not([readonly]) {
-      box-shadow: 0 1px 0 0 $input-focus-color;
-      border-bottom: 1px solid $input-focus-color;
+      box-shadow: 0 1px 0 0 $input-md-focus-color;
+      border-bottom: 1px solid $input-md-focus-color;
       // Focused label style
       + label {
-        color: $input-focus-color;
+        color: $input-md-focus-color;
       }
     }
 
@@ -109,7 +109,7 @@
     }
     &:disabled,
     &[readonly] {
-      border-bottom: 1px solid map-get($grey, lighten-1);
+      border-bottom: 1px solid $grey-lighten-1;
       background-color: transparent;
     }
   }
@@ -117,6 +117,7 @@
   @include make-input($input-label-font-size, $input-label-active-font-size, $input-prefix-top, $input-prefix-font-size, $input-prefix-margin-left, $input-prefix-width, $input-form-text-ml);
   position: relative;
   margin-top: $input-md-form-margin-top;
+  margin-bottom: $input-md-form-margin-bottom;
   label {
     position: absolute;
     top: $input-label-top;
@@ -132,7 +133,7 @@
     position: absolute;
     transition: $input-prefix-transition;
     &.active {
-      color: $input-focus-color;
+      color: $input-md-focus-color;
     }
   }
   &.form-lg {

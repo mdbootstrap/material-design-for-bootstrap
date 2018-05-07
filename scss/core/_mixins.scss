@@ -95,7 +95,7 @@
   }
 }
 
-// Bacground color
+// Background color
 @mixin bg-variant($parent, $color) {
   #{$parent} {
     background-color: $color !important;
@@ -104,6 +104,18 @@
   button#{$parent} {
     @include hover-focus {
       background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+// Typography
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      color: darken($color, 10%) !important;
     }
   }
 }
@@ -119,9 +131,9 @@
 // Set the color of the button and badge
 @function set-notification-text-color($color) {
   @if (lightness($color) > 80) {
-    @return $black; // Lighter backgorund, return dark color
+    @return $black-base; // Lighter backgorund, return dark color
   } @else {
-    @return $white; // Darker background, return light color
+    @return $white-base; // Darker background, return light color
   }
 }
 
@@ -135,7 +147,7 @@
     }
     &:focus,
     &.focus {
-      @extend .z-depth-1-half;
+      box-shadow: $z-depth-1-half;
     }
     &:focus,
     &:active,
@@ -152,13 +164,13 @@
     &:not([disabled]):not(.disabled):active,
     &:not([disabled]):not(.disabled).active,
     .show > &.dropdown-toggle {
-      @extend .z-depth-1-half;
+      box-shadow: $z-depth-1-half;
       background-color: darken($color, 20%) !important;
     }
     &:not([disabled]):not(.disabled):active:focus,
     &:not([disabled]):not(.disabled).active:focus,
     .show > &.dropdown-toggle:focus {
-      @extend .z-depth-1-half;
+      box-shadow: $z-depth-1-half;
     }
   }
   .#{$name}-ic {
@@ -188,14 +200,14 @@
     &:not([disabled]):not(.disabled):active,
     &:not([disabled]):not(.disabled).active,
     .show > &.dropdown-toggle {
-      @extend .z-depth-1-half;
+      box-shadow: $z-depth-1-half;
       background-color: transparent !important;
       border-color: $color !important;
     }
     &:not([disabled]):not(.disabled):active:focus,
     &:not([disabled]):not(.disabled).active:focus,
     .show > &.dropdown-toggle:focus {
-      @extend .z-depth-1-half;
+      box-shadow: $z-depth-1-half;
     }
   }
 }
@@ -212,7 +224,7 @@
   .btn {
     &.#{$name}-gradient {
       transition: .5s ease;
-      color: $white;
+      color: $white-base;
       &:hover,
       &:focus,
       &:active,
@@ -305,7 +317,7 @@
       input {
         border-bottom: 1px solid $color;
         &:focus:not([readonly]) {
-          border-color: $input-focus-color;
+          border-color: $input-md-focus-color;
         }
       }
       .form-control {

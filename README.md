@@ -47,9 +47,9 @@ You can install MDBootstrap using NPM:
 **MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
 # MDBootstrap on CDNJS:
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />`
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.2/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>`
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.2/js/mdb.min.js"></script>`
 
 # Documentation:
 
@@ -155,6 +155,79 @@ LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 **Material Design for Bootstrap PRO**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
 
 # Version logs
+
+## MDB 4.5.2
+**Changed syntax**
+
+- Navbar (only inputs within navbar)
+
+- Carousel (only cards in multi-item carousel)
+
+- Blog sections
+
+- Magazine sections
+
+- Project sections
+
+- E-commerce sections
+
+- Contact sections
+
+- Feature sections
+
+- Social sections
+
+- Team sections
+
+- Testimonial sections
+
+**Main fixes**
+
+- Integration with Bootstrap 4.1.0 version
+
+- Added new .w-responsive class which adds margins to the section description
+
+- Errors in compiling Bootstrap and MDB colors variables solved
+
+- Added margin-bottom to the .md-form class
+
+- Added _custom-variables.scss and _custom-skin.scss files
+
+- Described in the documentation how to add custom skin
+
+- Added a list of things which change under the influence of skins
+
+- Bug with video within modal fixed
+
+- Example code of .table-responsive in the documentation fixed
+
+- Added possibility to change box-shadow of .card
+
+- Bug with border radius within pricing cards fixed
+
+**New and deprecated classes (Bootstrap ones)**
+
+- Added new .carousel-fade modifier to switch carousel from horizontal sliding to crossfade.
+
+- Added new .dropdown-item-text for plaintext dropdown items.
+
+- Added new .flex-fill, .flex-grow-*, and .flex-shrink-* utilities.
+
+- Added new .table-borderless variant for tables.
+
+- Added new .text-monospace utility.
+
+- Added new .text-body (default body color), .text-black-50 (50% opacity black), and .text-white-50 (50% opacity white) utilities.
+
+- Deprecated .text-hide—you’ll see a warning during compilation—as it’s a dated and undocumented feature.
+
+**Deprecated - these settings will be stored only by one version yet**
+- .heading, .card-overlay, .naked-card classes within .pricing-card class
+
+- .no-radius class
+
+- .section-blog-fw class
+
 
 ## MDB 4.5.1
 **Changed syntax**

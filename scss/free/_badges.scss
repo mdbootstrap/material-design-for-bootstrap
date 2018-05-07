@@ -1,6 +1,6 @@
 // Badges
 .badge {
-  @extend .z-depth-1;
+  box-shadow: $z-depth-1;
   border-radius: $border-radius-base;
   color: $white !important;
 }

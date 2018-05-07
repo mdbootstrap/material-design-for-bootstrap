@@ -3,11 +3,11 @@
   .page-item {
     &.active {
       .page-link {
-        @extend .z-depth-1;
+        box-shadow: $z-depth-1;
         transition: $pagination-active-transition;
         border-radius: $border-radius-base;
         background-color: $primary-color;
-        color: $white;
+        color: $white-base;
         &:hover {
           background-color: $primary-color;
         }

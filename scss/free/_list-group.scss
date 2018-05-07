@@ -3,7 +3,7 @@
   .media-left {
     padding: $list-group-padding;
     img {
-      @extend .z-depth-1;
+      box-shadow: $z-depth-1;
     }
   }
 }
