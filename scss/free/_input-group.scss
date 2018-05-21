@@ -1,24 +1,21 @@
 // Input group
-.input-group {
-  .input-group-text {
-    background-color: #e0e0e0;
-    // Style Placeholders
-    @include placeholder {
-      padding-left: $input-group-text-placeholder-pl;
+.md-form {
+  &.input-group {
+    label {
+      top: 0;
+      margin-bottom: 0;
     }
-    &.md-addon {
-      border: none;
-      background-color: transparent;
+    .input-group-text {
+      background-color: $input-group-text-bgc;
+      &.md-addon {
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+      }
     }
-  }
-  span {
-    z-index: 10;
-  }
-  .form-control {
-    // margin-top: $input-group-form-control-mt;
-    margin: 0;
-    padding-top: $input-group-form-control-pt;
-    padding-bottom: $input-group-form-control-pb;
-    padding-left: $input-group-form-control-pl;
+    .form-control {
+      margin: 0;
+      padding: $input-group-form-control-py $input-group-form-control-px;
+    }
   }
 }

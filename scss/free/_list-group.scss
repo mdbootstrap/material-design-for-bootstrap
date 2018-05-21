@@ -18,7 +18,8 @@
       border-bottom-right-radius: $border-radius-base;
     }
   }
-  a {
+  a,
+  button {
     transition: $list-group-transition;
     &:hover {
       transition: $list-group-transition;

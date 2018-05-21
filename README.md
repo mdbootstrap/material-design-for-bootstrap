@@ -156,6 +156,28 @@ LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
 # Version logs
 
+## MDB 4.5.3
+
+**Changed syntax**
+
+- Footers
+
+- Input group
+
+**Main fixes**
+
+- Updated our packages to jQuery 3.3.1 version
+
+- Added possibility to have both versions of input group - Bootstrap or MDB one
+
+- Fixed issues with search input and input group within navbar
+
+- Fixed issues in modal with tabs within MDB Free version
+
+- Added new animation - Jack In The Box (you can find it within "attention seekers" select, Jack In The Box is the last one animation in this select)
+
+- Fixed issues with rounded corners of card within classic tabs
+
 ## MDB 4.5.2
 **Changed syntax**
 

@@ -1,7 +1,6 @@
 // Navbars
 .navbar {
   box-shadow: $z-depth-1;
-  padding-right: 1rem !important;
   font-weight: $navbar-font-weight;
   form {
     .md-form {
@@ -30,7 +29,6 @@
     outline: 0;
     border-width: 0;
   }
-  // &.double-nav,
   .nav-flex-icons {
     flex-direction: row;
   }
@@ -77,7 +75,6 @@
     @include make-navbar($navbar-dark-disabled-color, $navbar-dark-toggler-icon, $white, $navbar-dark-hover-color, $navbar-dark-bg-active-color);
   }
   &.scrolling-navbar {
-    // z-index: 100;
     @media (min-width: $small-screen) {
       transition: $navbar-scrolling-transition;
       padding-top: $navbar-scrolling-padding;

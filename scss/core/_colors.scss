@@ -647,10 +647,10 @@ $stylish-rgba: (
 }
 
 .dark-grey-text {
-  color: #4f4f4f;
+  color: #4f4f4f !important;
   &:hover,
   &:focus {
-    color: #4f4f4f;
+    color: #4f4f4f !important;
   }
 }
 

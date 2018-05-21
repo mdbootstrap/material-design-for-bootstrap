@@ -22,14 +22,6 @@ body {
       border-top-right-radius: $border-radius-base;
     }
   }
-  .btn  {
-    .fa {
-      color: $white !important;
-    }
-  }
-  [class*="btn-outline-"] .fa {
-    color: inherit !important;
-  }
   // Cascading modals
   &.cascading-modal {
     margin-top: 10%;
@@ -269,6 +261,16 @@ body {
       right: $modal-distance;
       margin: 0;
       width: $modal-width;
+    }
+  }
+}
+.nav-tabs {
+  border-radius: $md-card-border-radius;
+  .nav-item {
+    .nav-link {
+      border-radius: $md-card-border-radius;
+      background-color: inherit;
+      color: $white-base;
     }
   }
 }

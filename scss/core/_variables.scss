@@ -172,8 +172,6 @@ $badge-pill-padding-x:                .6rem !default;
 $badge-pill-border-radius:            10rem !default;
 
 // Footers
-$footer-margin-top:                    1.25rem !default;
-$footer-padding-top:                   $footer-margin-top !default;
 $footer-copyright-color:               rgba($white-base, .6) !default;
 $footer-copyright-bg-color:            rgba($black-base, .2) !default;
 $footer-font-size:                     .9rem !default;
@@ -233,11 +231,9 @@ $input-form-control-padding-bottom:    .55rem !default;
 $input-disabled-solid-color:           #BDBDBD !default;
 
 // Input group
-$input-group-text-placeholder-pl:     1rem !default;
-$input-group-form-control-mt:         3px !default;
-$input-group-form-control-pt:         14px !default;
-$input-group-form-control-pb:         7px !default;
-$input-group-form-control-pl:         1.2rem !default;
+$input-group-text-bgc:                #e0e0e0 !default;
+$input-group-form-control-px:         .75rem !default;
+$input-group-form-control-py:         .375rem !default;
 
 // List group
 $list-group-padding:                   0 10px 10px 0 !default;
