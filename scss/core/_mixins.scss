@@ -341,6 +341,16 @@
   }
 }
 
+// Make waves effect
+@mixin make-waves($name, $color) {
+  &.waves-#{$name} .waves-ripple {
+    $waves-color: lighten($color, 10%);
+    background: rgba($waves-color,0.4);
+    $gradient: rgba($waves-color,0.2) 0,rgba($waves-color,.3) 40%,rgba($waves-color,.4) 50%,rgba($waves-color,.5) 60%,rgba($waves-color,0) 70%;
+    background: radial-gradient($gradient);
+  }
+}
+
 // Keyframes
 @mixin keyframes($animation-name) {
   @keyframes #{$animation-name} {
