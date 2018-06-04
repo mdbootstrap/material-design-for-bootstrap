@@ -24,8 +24,8 @@ table {
     .label-table {
       margin: 0;
       padding: 0;
-      line-height: 15px;
-      height: 15px;
+      line-height: $table-label-height;
+      height: $table-label-line-height;
     }
     &.btn-table {
       td {
@@ -44,10 +44,10 @@ table {
     }
   }
   .th-lg {
-    min-width: 9rem;
+    min-width: $table-th-lg-min-width;
   }
   .th-sm {
-    min-width: 6rem;
+    min-width: $table-th-sm-min-width;
   }
   &.table-sm {
     th,
@@ -56,4 +56,11 @@ table {
       padding-bottom: $table-sm-padding-y;
     }
   }
+}
+.table-scroll-vertical {
+  max-height: $table-scroll-vertical-max-height;
+  overflow-y: auto;
+}
+.table-fixed {
+  table-layout: fixed;
 }

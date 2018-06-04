@@ -613,13 +613,16 @@ $enable_full_palette: true !default;
       .#{$color_name}-text {
         color: $color-value !important;
       }
-      .rgba-#{$color_name}-slight {
+      .rgba-#{$color_name}-slight,
+      .rgba-#{$color_name}-slight:after {
         background-color: rgba($color_value, .1);
       }
-      .rgba-#{$color_name}-light {
+      .rgba-#{$color_name}-light,
+      .rgba-#{$color_name}-light:after {
         background-color: rgba($color_value, .3);
       }
-      .rgba-#{$color_name}-strong {
+      .rgba-#{$color_name}-strong,
+      .rgba-#{$color_name}-strong:after {
         background-color: rgba($color_value, .7);
       }
     }
@@ -728,6 +731,7 @@ $drib-color:  #ec4a89 !default;
 $so-color:    #ffac44 !default;
 $slack-color: #56b68b !default;
 $email-color: #4b515d !default;
+$redd-color:  #ff4500 !default;
 
 $social-colors: () !default;
 $social-colors: map-merge((
@@ -744,7 +748,8 @@ $social-colors: map-merge((
   "dribbble": $drib-color,
   "so":       $so-color,
   "slack":    $slack-color,
-  "email":    $email-color
+  "email":    $email-color,
+  "reddit":   $redd-color
 ), $social-colors);
 
 // MDB buttons colors

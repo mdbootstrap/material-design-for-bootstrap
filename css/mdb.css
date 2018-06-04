@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB Free 4.5.3
+ * Version: MDB Free 4.5.4
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -45,13 +45,16 @@
 .mdb-color-text {
   color: #45526e !important; }
 
-.rgba-mdb-color-slight {
+.rgba-mdb-color-slight,
+.rgba-mdb-color-slight:after {
   background-color: rgba(69, 82, 110, 0.1); }
 
-.rgba-mdb-color-light {
+.rgba-mdb-color-light,
+.rgba-mdb-color-light:after {
   background-color: rgba(69, 82, 110, 0.3); }
 
-.rgba-mdb-color-strong {
+.rgba-mdb-color-strong,
+.rgba-mdb-color-strong:after {
   background-color: rgba(69, 82, 110, 0.7); }
 
 .mdb-color.darken-1 {
@@ -87,13 +90,16 @@
 .red-text {
   color: #f44336 !important; }
 
-.rgba-red-slight {
+.rgba-red-slight,
+.rgba-red-slight:after {
   background-color: rgba(244, 67, 54, 0.1); }
 
-.rgba-red-light {
+.rgba-red-light,
+.rgba-red-light:after {
   background-color: rgba(244, 67, 54, 0.3); }
 
-.rgba-red-strong {
+.rgba-red-strong,
+.rgba-red-strong:after {
   background-color: rgba(244, 67, 54, 0.7); }
 
 .red.darken-1 {
@@ -141,13 +147,16 @@
 .pink-text {
   color: #e91e63 !important; }
 
-.rgba-pink-slight {
+.rgba-pink-slight,
+.rgba-pink-slight:after {
   background-color: rgba(233, 30, 99, 0.1); }
 
-.rgba-pink-light {
+.rgba-pink-light,
+.rgba-pink-light:after {
   background-color: rgba(233, 30, 99, 0.3); }
 
-.rgba-pink-strong {
+.rgba-pink-strong,
+.rgba-pink-strong:after {
   background-color: rgba(233, 30, 99, 0.7); }
 
 .pink.darken-1 {
@@ -195,13 +204,16 @@
 .purple-text {
   color: #9c27b0 !important; }
 
-.rgba-purple-slight {
+.rgba-purple-slight,
+.rgba-purple-slight:after {
   background-color: rgba(156, 39, 176, 0.1); }
 
-.rgba-purple-light {
+.rgba-purple-light,
+.rgba-purple-light:after {
   background-color: rgba(156, 39, 176, 0.3); }
 
-.rgba-purple-strong {
+.rgba-purple-strong,
+.rgba-purple-strong:after {
   background-color: rgba(156, 39, 176, 0.7); }
 
 .purple.darken-1 {
@@ -249,13 +261,16 @@
 .deep-purple-text {
   color: #673ab7 !important; }
 
-.rgba-deep-purple-slight {
+.rgba-deep-purple-slight,
+.rgba-deep-purple-slight:after {
   background-color: rgba(103, 58, 183, 0.1); }
 
-.rgba-deep-purple-light {
+.rgba-deep-purple-light,
+.rgba-deep-purple-light:after {
   background-color: rgba(103, 58, 183, 0.3); }
 
-.rgba-deep-purple-strong {
+.rgba-deep-purple-strong,
+.rgba-deep-purple-strong:after {
   background-color: rgba(103, 58, 183, 0.7); }
 
 .deep-purple.darken-1 {
@@ -303,13 +318,16 @@
 .indigo-text {
   color: #3f51b5 !important; }
 
-.rgba-indigo-slight {
+.rgba-indigo-slight,
+.rgba-indigo-slight:after {
   background-color: rgba(63, 81, 181, 0.1); }
 
-.rgba-indigo-light {
+.rgba-indigo-light,
+.rgba-indigo-light:after {
   background-color: rgba(63, 81, 181, 0.3); }
 
-.rgba-indigo-strong {
+.rgba-indigo-strong,
+.rgba-indigo-strong:after {
   background-color: rgba(63, 81, 181, 0.7); }
 
 .indigo.darken-1 {
@@ -357,13 +375,16 @@
 .blue-text {
   color: #2196f3 !important; }
 
-.rgba-blue-slight {
+.rgba-blue-slight,
+.rgba-blue-slight:after {
   background-color: rgba(33, 150, 243, 0.1); }
 
-.rgba-blue-light {
+.rgba-blue-light,
+.rgba-blue-light:after {
   background-color: rgba(33, 150, 243, 0.3); }
 
-.rgba-blue-strong {
+.rgba-blue-strong,
+.rgba-blue-strong:after {
   background-color: rgba(33, 150, 243, 0.7); }
 
 .blue.darken-1 {
@@ -411,13 +432,16 @@
 .light-blue-text {
   color: #03a9f4 !important; }
 
-.rgba-light-blue-slight {
+.rgba-light-blue-slight,
+.rgba-light-blue-slight:after {
   background-color: rgba(3, 169, 244, 0.1); }
 
-.rgba-light-blue-light {
+.rgba-light-blue-light,
+.rgba-light-blue-light:after {
   background-color: rgba(3, 169, 244, 0.3); }
 
-.rgba-light-blue-strong {
+.rgba-light-blue-strong,
+.rgba-light-blue-strong:after {
   background-color: rgba(3, 169, 244, 0.7); }
 
 .light-blue.darken-1 {
@@ -465,13 +489,16 @@
 .cyan-text {
   color: #00bcd4 !important; }
 
-.rgba-cyan-slight {
+.rgba-cyan-slight,
+.rgba-cyan-slight:after {
   background-color: rgba(0, 188, 212, 0.1); }
 
-.rgba-cyan-light {
+.rgba-cyan-light,
+.rgba-cyan-light:after {
   background-color: rgba(0, 188, 212, 0.3); }
 
-.rgba-cyan-strong {
+.rgba-cyan-strong,
+.rgba-cyan-strong:after {
   background-color: rgba(0, 188, 212, 0.7); }
 
 .cyan.darken-1 {
@@ -519,13 +546,16 @@
 .teal-text {
   color: #009688 !important; }
 
-.rgba-teal-slight {
+.rgba-teal-slight,
+.rgba-teal-slight:after {
   background-color: rgba(0, 150, 136, 0.1); }
 
-.rgba-teal-light {
+.rgba-teal-light,
+.rgba-teal-light:after {
   background-color: rgba(0, 150, 136, 0.3); }
 
-.rgba-teal-strong {
+.rgba-teal-strong,
+.rgba-teal-strong:after {
   background-color: rgba(0, 150, 136, 0.7); }
 
 .teal.darken-1 {
@@ -573,13 +603,16 @@
 .green-text {
   color: #4caf50 !important; }
 
-.rgba-green-slight {
+.rgba-green-slight,
+.rgba-green-slight:after {
   background-color: rgba(76, 175, 80, 0.1); }
 
-.rgba-green-light {
+.rgba-green-light,
+.rgba-green-light:after {
   background-color: rgba(76, 175, 80, 0.3); }
 
-.rgba-green-strong {
+.rgba-green-strong,
+.rgba-green-strong:after {
   background-color: rgba(76, 175, 80, 0.7); }
 
 .green.darken-1 {
@@ -627,13 +660,16 @@
 .light-green-text {
   color: #8bc34a !important; }
 
-.rgba-light-green-slight {
+.rgba-light-green-slight,
+.rgba-light-green-slight:after {
   background-color: rgba(139, 195, 74, 0.1); }
 
-.rgba-light-green-light {
+.rgba-light-green-light,
+.rgba-light-green-light:after {
   background-color: rgba(139, 195, 74, 0.3); }
 
-.rgba-light-green-strong {
+.rgba-light-green-strong,
+.rgba-light-green-strong:after {
   background-color: rgba(139, 195, 74, 0.7); }
 
 .light-green.darken-1 {
@@ -681,13 +717,16 @@
 .lime-text {
   color: #cddc39 !important; }
 
-.rgba-lime-slight {
+.rgba-lime-slight,
+.rgba-lime-slight:after {
   background-color: rgba(205, 220, 57, 0.1); }
 
-.rgba-lime-light {
+.rgba-lime-light,
+.rgba-lime-light:after {
   background-color: rgba(205, 220, 57, 0.3); }
 
-.rgba-lime-strong {
+.rgba-lime-strong,
+.rgba-lime-strong:after {
   background-color: rgba(205, 220, 57, 0.7); }
 
 .lime.darken-1 {
@@ -735,13 +774,16 @@
 .yellow-text {
   color: #ffeb3b !important; }
 
-.rgba-yellow-slight {
+.rgba-yellow-slight,
+.rgba-yellow-slight:after {
   background-color: rgba(255, 235, 59, 0.1); }
 
-.rgba-yellow-light {
+.rgba-yellow-light,
+.rgba-yellow-light:after {
   background-color: rgba(255, 235, 59, 0.3); }
 
-.rgba-yellow-strong {
+.rgba-yellow-strong,
+.rgba-yellow-strong:after {
   background-color: rgba(255, 235, 59, 0.7); }
 
 .yellow.darken-1 {
@@ -789,13 +831,16 @@
 .amber-text {
   color: #ffc107 !important; }
 
-.rgba-amber-slight {
+.rgba-amber-slight,
+.rgba-amber-slight:after {
   background-color: rgba(255, 193, 7, 0.1); }
 
-.rgba-amber-light {
+.rgba-amber-light,
+.rgba-amber-light:after {
   background-color: rgba(255, 193, 7, 0.3); }
 
-.rgba-amber-strong {
+.rgba-amber-strong,
+.rgba-amber-strong:after {
   background-color: rgba(255, 193, 7, 0.7); }
 
 .amber.darken-1 {
@@ -843,13 +888,16 @@
 .orange-text {
   color: #ff9800 !important; }
 
-.rgba-orange-slight {
+.rgba-orange-slight,
+.rgba-orange-slight:after {
   background-color: rgba(255, 152, 0, 0.1); }
 
-.rgba-orange-light {
+.rgba-orange-light,
+.rgba-orange-light:after {
   background-color: rgba(255, 152, 0, 0.3); }
 
-.rgba-orange-strong {
+.rgba-orange-strong,
+.rgba-orange-strong:after {
   background-color: rgba(255, 152, 0, 0.7); }
 
 .orange.darken-1 {
@@ -897,13 +945,16 @@
 .deep-orange-text {
   color: #ff5722 !important; }
 
-.rgba-deep-orange-slight {
+.rgba-deep-orange-slight,
+.rgba-deep-orange-slight:after {
   background-color: rgba(255, 87, 34, 0.1); }
 
-.rgba-deep-orange-light {
+.rgba-deep-orange-light,
+.rgba-deep-orange-light:after {
   background-color: rgba(255, 87, 34, 0.3); }
 
-.rgba-deep-orange-strong {
+.rgba-deep-orange-strong,
+.rgba-deep-orange-strong:after {
   background-color: rgba(255, 87, 34, 0.7); }
 
 .deep-orange.darken-1 {
@@ -951,13 +1002,16 @@
 .brown-text {
   color: #795548 !important; }
 
-.rgba-brown-slight {
+.rgba-brown-slight,
+.rgba-brown-slight:after {
   background-color: rgba(121, 85, 72, 0.1); }
 
-.rgba-brown-light {
+.rgba-brown-light,
+.rgba-brown-light:after {
   background-color: rgba(121, 85, 72, 0.3); }
 
-.rgba-brown-strong {
+.rgba-brown-strong,
+.rgba-brown-strong:after {
   background-color: rgba(121, 85, 72, 0.7); }
 
 .brown.darken-1 {
@@ -993,13 +1047,16 @@
 .blue-grey-text {
   color: #607d8b !important; }
 
-.rgba-blue-grey-slight {
+.rgba-blue-grey-slight,
+.rgba-blue-grey-slight:after {
   background-color: rgba(96, 125, 139, 0.1); }
 
-.rgba-blue-grey-light {
+.rgba-blue-grey-light,
+.rgba-blue-grey-light:after {
   background-color: rgba(96, 125, 139, 0.3); }
 
-.rgba-blue-grey-strong {
+.rgba-blue-grey-strong,
+.rgba-blue-grey-strong:after {
   background-color: rgba(96, 125, 139, 0.7); }
 
 .blue-grey.darken-1 {
@@ -1035,13 +1092,16 @@
 .grey-text {
   color: #9e9e9e !important; }
 
-.rgba-grey-slight {
+.rgba-grey-slight,
+.rgba-grey-slight:after {
   background-color: rgba(158, 158, 158, 0.1); }
 
-.rgba-grey-light {
+.rgba-grey-light,
+.rgba-grey-light:after {
   background-color: rgba(158, 158, 158, 0.3); }
 
-.rgba-grey-strong {
+.rgba-grey-strong,
+.rgba-grey-strong:after {
   background-color: rgba(158, 158, 158, 0.7); }
 
 .grey.darken-1 {
@@ -1062,13 +1122,16 @@
 .black-text, .btn.btn-link {
   color: #000 !important; }
 
-.rgba-black-slight {
+.rgba-black-slight,
+.rgba-black-slight:after {
   background-color: rgba(0, 0, 0, 0.1); }
 
-.rgba-black-light {
+.rgba-black-light,
+.rgba-black-light:after {
   background-color: rgba(0, 0, 0, 0.3); }
 
-.rgba-black-strong {
+.rgba-black-strong,
+.rgba-black-strong:after {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .white {
@@ -1077,13 +1140,16 @@
 .white-text {
   color: #fff !important; }
 
-.rgba-white-slight {
+.rgba-white-slight,
+.rgba-white-slight:after {
   background-color: rgba(255, 255, 255, 0.1); }
 
-.rgba-white-light {
+.rgba-white-light,
+.rgba-white-light:after {
   background-color: rgba(255, 255, 255, 0.3); }
 
-.rgba-white-strong {
+.rgba-white-strong,
+.rgba-white-strong:after {
   background-color: rgba(255, 255, 255, 0.7); }
 
 .rgba-stylish-slight {
@@ -1379,6 +1445,14 @@ button.bg-light:focus {
 
 .border-light {
   border-color: #e0e0e0 !important; }
+
+.card-img-100 {
+  width: 100px;
+  height: 100px; }
+
+.card-img-64 {
+  width: 64px;
+  height: 64px; }
 
 @font-face {
   font-family: "Roboto";
@@ -7047,8 +7121,8 @@ table.table a {
 table.table .label-table {
   margin: 0;
   padding: 0;
-  line-height: 15px;
-  height: 15px; }
+  line-height: 0.94rem;
+  height: 0.94rem; }
 
 table.table.btn-table td {
   vertical-align: middle; }
@@ -7069,6 +7143,13 @@ table.table-sm th,
 table.table-sm td {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem; }
+
+.table-scroll-vertical {
+  max-height: 300px;
+  overflow-y: auto; }
+
+.table-fixed {
+  table-layout: fixed; }
 
 .view .full-bg-img {
   height: 100%; }
