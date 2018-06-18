@@ -1,4 +1,4 @@
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/products/social/jquery/mdb-jquery-free.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/free/social/jquery/mdb-jquery-free.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
 
 # Material Design for Bootstrap 4 
 [![CDNJS version](https://img.shields.io/cdnjs/v/mdbootstrap.svg)](https://cdnjs.com/libraries/mdbootstrap)
