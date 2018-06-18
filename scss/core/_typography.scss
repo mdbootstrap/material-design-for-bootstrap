@@ -106,13 +106,17 @@ h1, h2, h3, h4, h5, h6 {
 .blockquote {
   padding: $blockquote-padding-y $blockquote-padding-x;
   border-left: .25rem solid #eceeef;
+  &.text-right {
+    border-left: none;
+    border-right: .25rem solid #eceeef;
+  }
   .bq-title {
     margin-bottom: 0;
     font-size: $font-size-large;
     font-weight: 400;
   }
   p {
-    padding: $blockquote-p-padding-t 0 $blockquote-p-padding-b $blockquote-p-padding-l;
+    padding: $blockquote-p-padding-y 0;
     font-size: $blockquote-p-font-size;
   }
 }

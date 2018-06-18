@@ -52,8 +52,7 @@ $responsive-headings: map-merge((
 // Blockquote
 $blockquote-padding-y:      .5rem !default;
 $blockquote-padding-x:      1rem !default;
-$blockquote-p-padding-t:    $blockquote-padding-x !default;
-$blockquote-p-padding-b:    $blockquote-padding-x !default;
+$blockquote-p-padding-y:    $blockquote-padding-x !default;
 $blockquote-p-padding-l:    2rem !default;
 $blockquote-p-font-size:    1.1rem !default;
 

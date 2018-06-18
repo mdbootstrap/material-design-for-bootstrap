@@ -108,3 +108,15 @@
   @include make-button($btn_name, $color_value);
   @include make-outline-button($btn_name, $color_value);
 }
+
+// button,
+// html [type="file"] {
+//   -webkit-appearance: button; 
+//   appearance: button;
+// }
+
+// button::-moz-focus-inner,
+// [type="file"]::-moz-focus-inner {
+//   padding: 0;
+//   border-style: none;
+// }
