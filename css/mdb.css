@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.5.5
+ * Version: MDB Free 4.5.6
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -1734,40 +1734,39 @@ a.text-light:hover, a.text-light:focus {
   transform: scale(1.1); }
 
 .pattern-1 {
-  background: url("../img//overlays/01.png"); }
+  background: url("../../img//overlays/01.png"); }
 
 .pattern-2 {
-  background: url("../img//overlays/02.png"); }
+  background: url("../../img//overlays/02.png"); }
 
 .pattern-3 {
-  background: url("../img//overlays/03.png"); }
+  background: url("../../img//overlays/03.png"); }
 
 .pattern-4 {
-  background: url("../img//overlays/04.png"); }
+  background: url("../../img//overlays/04.png"); }
 
 .pattern-5 {
-  background: url("../img//overlays/05.png"); }
+  background: url("../../img//overlays/05.png"); }
 
 .pattern-6 {
-  background: url("../img//overlays/06.png"); }
+  background: url("../../img//overlays/06.png"); }
 
 .pattern-7 {
-  background: url("../img//overlays/07.png"); }
+  background: url("../../img//overlays/07.png"); }
 
 .pattern-8 {
-  background: url("../img//overlays/08.png"); }
+  background: url("../../img//overlays/08.png"); }
 
 .pattern-9 {
-  background: url("../img//overlays/09.png"); }
+  background: url("../../img//overlays/09.png"); }
 
 /*!
- * Waves v0.7.5
+ * Waves v0.7.6
  * http://fian.my.id/Waves
  *
- * Copyright 2014-2016 Alfiana E. Sibuea and other contributors
+ * Copyright 2014-2018 Alfiana E. Sibuea and other contributors
  * Released under the MIT license
- * https://github.com/fians/Waves/blob/master/LICENSE
- */
+ * https://github.com/fians/Waves/blob/master/LICENSE */
 .waves-effect {
   position: relative;
   cursor: pointer;
@@ -1776,8 +1775,7 @@ a.text-light:hover, a.text-light:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  z-index: 1; }
+  -webkit-tap-highlight-color: transparent; }
   .waves-effect .waves-ripple {
     position: absolute;
     -webkit-border-radius: 50%;
@@ -1794,6 +1792,8 @@ a.text-light:hover, a.text-light:focus {
     -webkit-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
     -o-transition-property: transform, opacity;
@@ -1821,6 +1821,7 @@ a.text-light:hover, a.text-light:focus {
 .waves-button,
 .waves-circle {
   -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); }
 
@@ -1853,8 +1854,7 @@ a.text-light:hover, a.text-light:focus {
 .waves-input-wrapper {
   -webkit-border-radius: 0.2em;
   border-radius: 0.2em;
-  vertical-align: middle;
-  display: inline-block; }
+  vertical-align: bottom; }
   .waves-input-wrapper.waves-button {
     padding: 0; }
   .waves-input-wrapper .waves-button-input {
@@ -6215,6 +6215,12 @@ a.waves-effect, a.waves-light {
       font-size: 0.9375rem;
       font-weight: 300;
       color: #000 !important; }
+    @media (max-width: 600px) {
+      .navbar .dropdown-menu form {
+        width: 17rem; } }
+    @media (min-width: 600px) {
+      .navbar .dropdown-menu form {
+        width: 22rem; } }
   .navbar.navbar-light .navbar-nav .nav-item .nav-link.disbled {
     color: rgba(0, 0, 0, 0.3); }
     .navbar.navbar-light .navbar-nav .nav-item .nav-link.disbled:hover {
@@ -6727,10 +6733,10 @@ body.scrollable {
   height: 20px; }
 
 .carousel .carousel-control-prev-icon {
-  background-image: url(../img//svg/arrow_left.svg); }
+  background-image: url(../../img//svg/arrow_left.svg); }
 
 .carousel .carousel-control-next-icon {
-  background-image: url(../img//svg/arrow_right.svg); }
+  background-image: url(../../img//svg/arrow_right.svg); }
 
 .carousel .carousel-indicators li {
   width: 0.625rem;
@@ -6957,6 +6963,156 @@ body.scrollable {
       content: attr(data-error);
       color: #f44336;
       opacity: 1; }
+    .md-form input[type=text].form-control.valid + label:after,
+    .md-form input[type=text].form-control:focus.valid + label:after,
+    .md-form input[type=password].form-control.valid + label:after,
+    .md-form input[type=password].form-control:focus.valid + label:after,
+    .md-form input[type=email].form-control.valid + label:after,
+    .md-form input[type=email].form-control:focus.valid + label:after,
+    .md-form input[type=url].form-control.valid + label:after,
+    .md-form input[type=url].form-control:focus.valid + label:after,
+    .md-form input[type=time].form-control.valid + label:after,
+    .md-form input[type=time].form-control:focus.valid + label:after,
+    .md-form input[type=date].form-control.valid + label:after,
+    .md-form input[type=date].form-control:focus.valid + label:after,
+    .md-form input[type=datetime-local].form-control.valid + label:after,
+    .md-form input[type=datetime-local].form-control:focus.valid + label:after,
+    .md-form input[type=tel].form-control.valid + label:after,
+    .md-form input[type=tel].form-control:focus.valid + label:after,
+    .md-form input[type=number].form-control.valid + label:after,
+    .md-form input[type=number].form-control:focus.valid + label:after,
+    .md-form input[type=search-md].form-control.valid + label:after,
+    .md-form input[type=search-md].form-control:focus.valid + label:after,
+    .md-form input[type=search].form-control.valid + label:after,
+    .md-form input[type=search].form-control:focus.valid + label:after,
+    .md-form textarea.md-textarea.form-control.valid + label:after,
+    .md-form textarea.md-textarea.form-control:focus.valid + label:after {
+      top: 3.56rem; }
+    .md-form input[type=text].form-control.invalid + label:after,
+    .md-form input[type=text].form-control:focus.invalid + label:after,
+    .md-form input[type=password].form-control.invalid + label:after,
+    .md-form input[type=password].form-control:focus.invalid + label:after,
+    .md-form input[type=email].form-control.invalid + label:after,
+    .md-form input[type=email].form-control:focus.invalid + label:after,
+    .md-form input[type=url].form-control.invalid + label:after,
+    .md-form input[type=url].form-control:focus.invalid + label:after,
+    .md-form input[type=time].form-control.invalid + label:after,
+    .md-form input[type=time].form-control:focus.invalid + label:after,
+    .md-form input[type=date].form-control.invalid + label:after,
+    .md-form input[type=date].form-control:focus.invalid + label:after,
+    .md-form input[type=datetime-local].form-control.invalid + label:after,
+    .md-form input[type=datetime-local].form-control:focus.invalid + label:after,
+    .md-form input[type=tel].form-control.invalid + label:after,
+    .md-form input[type=tel].form-control:focus.invalid + label:after,
+    .md-form input[type=number].form-control.invalid + label:after,
+    .md-form input[type=number].form-control:focus.invalid + label:after,
+    .md-form input[type=search-md].form-control.invalid + label:after,
+    .md-form input[type=search-md].form-control:focus.invalid + label:after,
+    .md-form input[type=search].form-control.invalid + label:after,
+    .md-form input[type=search].form-control:focus.invalid + label:after,
+    .md-form textarea.md-textarea.form-control.invalid + label:after,
+    .md-form textarea.md-textarea.form-control:focus.invalid + label:after {
+      top: 3.44rem; }
+    .md-form input[type=text].form-control-lg.valid + label:after,
+    .md-form input[type=text].form-control-lg:focus.valid + label:after,
+    .md-form input[type=password].form-control-lg.valid + label:after,
+    .md-form input[type=password].form-control-lg:focus.valid + label:after,
+    .md-form input[type=email].form-control-lg.valid + label:after,
+    .md-form input[type=email].form-control-lg:focus.valid + label:after,
+    .md-form input[type=url].form-control-lg.valid + label:after,
+    .md-form input[type=url].form-control-lg:focus.valid + label:after,
+    .md-form input[type=time].form-control-lg.valid + label:after,
+    .md-form input[type=time].form-control-lg:focus.valid + label:after,
+    .md-form input[type=date].form-control-lg.valid + label:after,
+    .md-form input[type=date].form-control-lg:focus.valid + label:after,
+    .md-form input[type=datetime-local].form-control-lg.valid + label:after,
+    .md-form input[type=datetime-local].form-control-lg:focus.valid + label:after,
+    .md-form input[type=tel].form-control-lg.valid + label:after,
+    .md-form input[type=tel].form-control-lg:focus.valid + label:after,
+    .md-form input[type=number].form-control-lg.valid + label:after,
+    .md-form input[type=number].form-control-lg:focus.valid + label:after,
+    .md-form input[type=search-md].form-control-lg.valid + label:after,
+    .md-form input[type=search-md].form-control-lg:focus.valid + label:after,
+    .md-form input[type=search].form-control-lg.valid + label:after,
+    .md-form input[type=search].form-control-lg:focus.valid + label:after,
+    .md-form textarea.md-textarea.form-control-lg.valid + label:after,
+    .md-form textarea.md-textarea.form-control-lg:focus.valid + label:after {
+      top: 4.1rem; }
+    .md-form input[type=text].form-control-lg.invalid + label:after,
+    .md-form input[type=text].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=password].form-control-lg.invalid + label:after,
+    .md-form input[type=password].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=email].form-control-lg.invalid + label:after,
+    .md-form input[type=email].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=url].form-control-lg.invalid + label:after,
+    .md-form input[type=url].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=time].form-control-lg.invalid + label:after,
+    .md-form input[type=time].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=date].form-control-lg.invalid + label:after,
+    .md-form input[type=date].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=datetime-local].form-control-lg.invalid + label:after,
+    .md-form input[type=datetime-local].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=tel].form-control-lg.invalid + label:after,
+    .md-form input[type=tel].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=number].form-control-lg.invalid + label:after,
+    .md-form input[type=number].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=search-md].form-control-lg.invalid + label:after,
+    .md-form input[type=search-md].form-control-lg:focus.invalid + label:after,
+    .md-form input[type=search].form-control-lg.invalid + label:after,
+    .md-form input[type=search].form-control-lg:focus.invalid + label:after,
+    .md-form textarea.md-textarea.form-control-lg.invalid + label:after,
+    .md-form textarea.md-textarea.form-control-lg:focus.invalid + label:after {
+      top: 4rem; }
+    .md-form input[type=text].form-control-sm.valid + label:after,
+    .md-form input[type=text].form-control-sm:focus.valid + label:after,
+    .md-form input[type=password].form-control-sm.valid + label:after,
+    .md-form input[type=password].form-control-sm:focus.valid + label:after,
+    .md-form input[type=email].form-control-sm.valid + label:after,
+    .md-form input[type=email].form-control-sm:focus.valid + label:after,
+    .md-form input[type=url].form-control-sm.valid + label:after,
+    .md-form input[type=url].form-control-sm:focus.valid + label:after,
+    .md-form input[type=time].form-control-sm.valid + label:after,
+    .md-form input[type=time].form-control-sm:focus.valid + label:after,
+    .md-form input[type=date].form-control-sm.valid + label:after,
+    .md-form input[type=date].form-control-sm:focus.valid + label:after,
+    .md-form input[type=datetime-local].form-control-sm.valid + label:after,
+    .md-form input[type=datetime-local].form-control-sm:focus.valid + label:after,
+    .md-form input[type=tel].form-control-sm.valid + label:after,
+    .md-form input[type=tel].form-control-sm:focus.valid + label:after,
+    .md-form input[type=number].form-control-sm.valid + label:after,
+    .md-form input[type=number].form-control-sm:focus.valid + label:after,
+    .md-form input[type=search-md].form-control-sm.valid + label:after,
+    .md-form input[type=search-md].form-control-sm:focus.valid + label:after,
+    .md-form input[type=search].form-control-sm.valid + label:after,
+    .md-form input[type=search].form-control-sm:focus.valid + label:after,
+    .md-form textarea.md-textarea.form-control-sm.valid + label:after,
+    .md-form textarea.md-textarea.form-control-sm:focus.valid + label:after {
+      top: 3.2rem; }
+    .md-form input[type=text].form-control-sm.invalid + label:after,
+    .md-form input[type=text].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=password].form-control-sm.invalid + label:after,
+    .md-form input[type=password].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=email].form-control-sm.invalid + label:after,
+    .md-form input[type=email].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=url].form-control-sm.invalid + label:after,
+    .md-form input[type=url].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=time].form-control-sm.invalid + label:after,
+    .md-form input[type=time].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=date].form-control-sm.invalid + label:after,
+    .md-form input[type=date].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=datetime-local].form-control-sm.invalid + label:after,
+    .md-form input[type=datetime-local].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=tel].form-control-sm.invalid + label:after,
+    .md-form input[type=tel].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=number].form-control-sm.invalid + label:after,
+    .md-form input[type=number].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=search-md].form-control-sm.invalid + label:after,
+    .md-form input[type=search-md].form-control-sm:focus.invalid + label:after,
+    .md-form input[type=search].form-control-sm.invalid + label:after,
+    .md-form input[type=search].form-control-sm:focus.invalid + label:after,
+    .md-form textarea.md-textarea.form-control-sm.invalid + label:after,
+    .md-form textarea.md-textarea.form-control-sm:focus.invalid + label:after {
+      top: 3.1rem; }
   .md-form .was-validated input[type=text]:valid + label {
     color: #00c851 !important; }
   .md-form .was-validated input[type=text]:invalid + label {
@@ -6985,6 +7141,8 @@ body.scrollable {
     .md-form .form-control:disabled, .md-form .form-control[readonly] {
       border-bottom: 1px solid #bdbdbd;
       background-color: transparent; }
+  .md-form .validate {
+    margin-bottom: 2.5rem; }
   .md-form label {
     font-size: 1rem; }
     .md-form label.active {
@@ -6992,7 +7150,8 @@ body.scrollable {
   .md-form .prefix {
     top: 0.25rem;
     font-size: 1.75rem; }
-    .md-form .prefix ~ input, .md-form .prefix ~ textarea {
+    .md-form .prefix ~ input,
+    .md-form .prefix ~ textarea {
       margin-left: 2.5rem;
       width: -webkit-calc(100% - 2.5rem);
       width: calc(100% - 2.5rem); }
@@ -7020,6 +7179,8 @@ body.scrollable {
     transition: color 0.2s; }
     .md-form .prefix.active {
       color: #4285f4; }
+  .md-form.form-lg .validate {
+    margin-bottom: 2.8rem; }
   .md-form.form-lg label {
     font-size: 1.25rem; }
     .md-form.form-lg label.active {
@@ -7027,7 +7188,8 @@ body.scrollable {
   .md-form.form-lg .prefix {
     top: 0.4rem;
     font-size: 2rem; }
-    .md-form.form-lg .prefix ~ input, .md-form.form-lg .prefix ~ textarea {
+    .md-form.form-lg .prefix ~ input,
+    .md-form.form-lg .prefix ~ textarea {
       margin-left: 3rem;
       width: -webkit-calc(100% - 3rem);
       width: calc(100% - 3rem); }
@@ -7035,6 +7197,8 @@ body.scrollable {
       margin-left: 3rem; }
     .md-form.form-lg .prefix ~ .form-text {
       margin-left: 3.1rem; }
+  .md-form.form-sm .validate {
+    margin-bottom: 2.3rem; }
   .md-form.form-sm label {
     font-size: 0.875rem; }
     .md-form.form-sm label.active {
@@ -7042,7 +7206,8 @@ body.scrollable {
   .md-form.form-sm .prefix {
     top: 0.35rem;
     font-size: 1.5rem; }
-    .md-form.form-sm .prefix ~ input, .md-form.form-sm .prefix ~ textarea {
+    .md-form.form-sm .prefix ~ input,
+    .md-form.form-sm .prefix ~ textarea {
       margin-left: 2rem;
       width: -webkit-calc(100% - 2rem);
       width: calc(100% - 2rem); }

@@ -67,6 +67,14 @@
       font-weight: $navbar-font-weight;
       color: $black !important;
     }
+    form {
+      @media (max-width: $small-screen) {
+        width: 17rem;
+      }
+      @media (min-width: $small-screen) {
+        width: 22rem;
+      }
+    }
   }
   &.navbar-light {
     @include make-navbar($navbar-light-disabled-color, $navbar-light-toggler-icon, $black, $navbar-light-hover-color, $navbar-light-bg-active-color);

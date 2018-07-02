@@ -65,6 +65,31 @@
       color: $input-error-color;
       opacity: 1;
     }
+
+    &.form-control.valid + label:after,
+    &.form-control:focus.valid + label:after  {
+      top: $input-label-valid-top;
+    }
+    &.form-control.invalid + label:after,
+    &.form-control:focus.invalid + label:after  {
+      top: $input-label-invalid-top;
+    }
+    &.form-control-lg.valid + label:after,
+    &.form-control-lg:focus.valid + label:after  {
+      top: $input-label-valid-top-lg;
+    }
+    &.form-control-lg.invalid + label:after,
+    &.form-control-lg:focus.invalid + label:after  {
+      top: $input-label-invalid-top-lg;
+    }
+    &.form-control-sm.valid + label:after,
+    &.form-control-sm:focus.valid + label:after  {
+      top: $input-label-valid-top-sm;
+    }
+    &.form-control-sm.invalid + label:after,
+    &.form-control-sm:focus.invalid + label:after  {
+      top: $input-label-invalid-top-sm;
+    }
   }
 
   .was-validated {
@@ -114,7 +139,7 @@
     }
   }
 
-  @include make-input($input-label-font-size, $input-label-active-font-size, $input-prefix-top, $input-prefix-font-size, $input-prefix-margin-left, $input-prefix-width, $input-form-text-ml);
+  @include make-input($input-validate-mb, $input-label-font-size, $input-label-active-font-size, $input-prefix-top, $input-prefix-font-size, $input-prefix-margin-left, $input-prefix-width, $input-form-text-ml);
   position: relative;
   margin-top: $input-md-form-margin-top;
   margin-bottom: $input-md-form-margin-bottom;
@@ -137,10 +162,10 @@
     }
   }
   &.form-lg {
-    @include make-input($input-label-font-size-lg, $input-label-active-font-size-lg, $input-prefix-top-lg, $input-prefix-font-size-lg, $input-prefix-margin-left-lg, $input-prefix-width-lg, $input-form-text-ml-lg);
+    @include make-input($input-validate-mb-lg, $input-label-font-size-lg, $input-label-active-font-size-lg, $input-prefix-top-lg, $input-prefix-font-size-lg, $input-prefix-margin-left-lg, $input-prefix-width-lg, $input-form-text-ml-lg);
   }
   &.form-sm {
-    @include make-input($input-label-font-size-sm, $input-label-active-font-size-sm, $input-prefix-top-sm, $input-prefix-font-size-sm, $input-prefix-margin-left-sm, $input-prefix-width-sm, $input-form-text-ml-sm);
+    @include make-input($input-validate-mb-sm, $input-label-font-size-sm, $input-label-active-font-size-sm, $input-prefix-top-sm, $input-prefix-font-size-sm, $input-prefix-margin-left-sm, $input-prefix-width-sm, $input-form-text-ml-sm);
   }
 
   // Textarea
