@@ -715,6 +715,9 @@ $material-colors: map-merge((
   .#{$color_name} {
     background-color: $color !important;
   }
+  .#{$color_name}-text {
+    color: $color !important;
+  }
 }
 
 // Social colors
