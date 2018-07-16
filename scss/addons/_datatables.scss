@@ -1,0 +1,136 @@
+// Datatables
+
+/*
+ * MDBootstrap integration with Datatables
+ * Learn more: https://mdbootstrap.com/content/bootstrap-datatables/
+ * About MDBootstrap: https://mdbootstrap.com/
+ *
+ * This combined file was created by the DataTables downloader builder:
+ *   https://datatables.net/download
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.18
+ *
+ * Included libraries:
+ *   DataTables 1.10.18
+ */
+
+ table {
+	&.dataTable {
+		thead {
+			cursor: pointer;
+			> tr {
+				> th {
+					&:active {
+						outline: none;
+					}
+				}
+				> td {
+					&:active {
+						outline: none;							
+					}
+				}
+			}
+		}
+	}
+}
+
+div {
+	&.dataTables_wrapper {
+		div {
+			&.dataTables_length {
+				&.d-flex {
+					&.flex-row {
+						label {
+							margin-top: 1.2rem;
+							margin-right: 1rem;
+						}
+						.select-wrapper {
+							&.mdb-select {
+								span,
+								.select-dropdown {
+									margin-top: 1rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			&.dataTables_length,
+			&.dataTables_filter {
+				label {
+					text-align: left;
+					font-weight: normal;
+					padding-top: .5rem;
+					padding-bottom: .5rem;
+				}
+			}
+			&.dataTables_length,
+			&.dataTables_filter {
+				select,
+				input {
+					width: auto;
+				}
+			}
+			&.dataTables_filter {
+				text-align: right;
+				input {
+					margin-left: .5rem;
+					display: inline-block;
+				}
+			}
+			&.dataTables_info,
+			&.dataTables_paginate {
+				font-weight: normal;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+			&.dataTables_paginate {
+				text-align: right;
+				margin: 0;
+				ul {
+					&.pagination {
+				    justify-content: flex-end;
+						.page-item {
+							&.active {
+								.page-link {
+									&:focus {
+										background-color: #4285f4;
+									}
+								}
+							}
+							.page-link {
+								&:focus {
+									box-shadow: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	div {
+		&.dataTables_wrapper {
+			div {
+				.dataTables_length,
+				.dataTables_filter,
+				.dataTables_info,
+				.dataTables_paginate ul.pagination {
+					text-align: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+
+.bs-select {
+	select {
+		display: inline-block !important;
+	}
+}

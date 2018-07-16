@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB Free 4.5.6
+ * Version: MDB PRO 4.5.7
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -61,6 +61,61 @@
 @import "free/list-group";
 @import "free/tables";
 @import "free/depreciated";
+
+// Free addons
+// @import "addons/datatables";
+
+// PRO
+@import "pro/variables";
+@import "pro/buttons";
+@import "pro/social-buttons";
+@import "pro/tabs";
+@import "pro/cards";
+@import "pro/dropdowns";
+@import "pro/navbars";
+@import "pro/scrollspy";
+@import "pro/lightbox";
+@import "pro/chips";
+@import "pro/msc";
+@import "pro/forms";
+@import "pro/radio";
+@import "pro/checkbox";
+@import "pro/material-select";
+@import "pro/switch";
+@import "pro/file-input";
+@import "pro/range";
+@import "pro/input-group";
+@import "pro/autocomplete";
+@import "pro/accordion";
+@import "pro/parallax";
+@import "pro/sidenav";
+@import "pro/ecommerce";
+@import "pro/carousels";
+@import "pro/steppers";
+@import "pro/blog";
+@import "pro/toasts";
+@import "pro/animations";
+@import "pro/charts";
+@import "pro/progress";
+@import "pro/scrollbar";
+// Your custom skin
+@import "custom-skin";
+@import "pro/skins";
+@import "pro/depreciated";
+
+// Picker
+@import "pro/picker/default";
+@import "pro/picker/default-time";
+@import "pro/picker/default-date";
+
+// Sections
+@import "pro/sections/templates";
+@import "pro/sections/social";
+@import "pro/sections/team";
+@import "pro/sections/testimonials";
+@import "pro/sections/magazine";
+@import "pro/sections/pricing";
+@import "pro/sections/contacts";
 
 // Your custom styles
 @import "custom-styles";
