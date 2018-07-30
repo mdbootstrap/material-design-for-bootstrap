@@ -72,6 +72,6 @@ $patterns: (
 
 @each $no, $filename in $patterns {
   .pattern-#{$no} {
-    background: url("#{$image-path}/overlays/#{$filename}.png");
+    background: url("#{$image-path1}/overlays/#{$filename}.png");
   }
 }

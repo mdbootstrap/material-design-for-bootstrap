@@ -223,7 +223,7 @@ body {
       display: flex;
       margin: 0;
       width: $modal-width;
-      height: 100%;
+      height: auto;
       top: 0;
       right: 0;
       &.modal-top,
