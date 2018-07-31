@@ -263,14 +263,14 @@ body {
       width: $modal-width;
     }
   }
-}
-.nav-tabs {
-  border-radius: $md-card-border-radius;
-  .nav-item {
-    .nav-link {
-      border-radius: $md-card-border-radius;
-      background-color: inherit;
-      color: $white-base;
+  .nav-tabs {
+    border-radius: $md-card-border-radius;
+    .nav-item {
+      .nav-link {
+        border-radius: $md-card-border-radius;
+        background-color: inherit;
+        color: $white-base;
+      }
     }
   }
 }
