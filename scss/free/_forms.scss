@@ -128,6 +128,7 @@
     padding: $input-form-control-padding-top 0 $input-form-control-padding-bottom 0;
     background-image: none;
     background-color: transparent;
+    height: auto;
     &:focus {
       box-shadow: none;
       background: transparent;

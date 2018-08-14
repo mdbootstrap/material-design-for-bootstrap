@@ -339,10 +339,17 @@
     }
   }
 }
-
 // Make gradient
 @mixin make-gradient($name, $value) {
   .#{$name}-gradient {
+    background: linear-gradient(40deg, map-get($value, start), map-get($value, end)) !important;
+  }
+}
+
+$opacity: .9;
+// Make gradient
+@mixin make-gradient-rgba($name, $value) {
+  .#{$name}-gradient-rgba {
     background: linear-gradient(40deg, map-get($value, start), map-get($value, end)) !important;
   }
 }
