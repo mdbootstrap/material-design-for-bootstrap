@@ -604,59 +604,12 @@ $mdb-colors-1: map-merge((
 // Full palette of colors
 $enable_full_palette: true !default;
 
-// Colors classes
-@each $color_name, $color in $mdb-colors-1 {
-  @each $color_type, $color_value in $color {
-    @if $color_type == "base" {
-      .#{$color_name} {
-        background-color: $color_value !important;
-      }
-      .#{$color_name}-text {
-        color: $color-value !important;
-      }
-      .rgba-#{$color_name}-slight,
-      .rgba-#{$color_name}-slight:after {
-        background-color: rgba($color_value, .1);
-      }
-      .rgba-#{$color_name}-light,
-      .rgba-#{$color_name}-light:after {
-        background-color: rgba($color_value, .3);
-      }
-      .rgba-#{$color_name}-strong,
-      .rgba-#{$color_name}-strong:after {
-        background-color: rgba($color_value, .7);
-      }
-    }
-    @else {
-      @if $enable_full_palette {
-        .#{$color_name}.#{$color_type} {
-          background-color: $color_value !important;
-        }
-      }
-    }
-  }
-}
-
 // Stylish rgba colors
 $stylish-rgba: (
   "rgba-stylish-slight": rgba(62, 69, 81, .1),
   "rgba-stylish-light": rgba(62, 69, 81, .3),
   "rgba-stylish-strong": rgba(62, 69, 81, .7),
 );
-
-@each $color_name, $color_value in $stylish-rgba {
-  .#{$color_name} {
-    background-color: $color_value;
-  }
-}
-
-.dark-grey-text {
-  color: #4f4f4f !important;
-  &:hover,
-  &:focus {
-    color: #4f4f4f !important;
-  }
-}
 
 // Material colors
 $primary-color:        #4285f4 !default;
@@ -710,12 +663,6 @@ $material-colors: map-merge((
   "special-color":        $special-color,
   "special-color-dark":   $special-color-dark
 ), $material-colors);
-
-@each $color_name, $color in $material-colors {
-  .#{$color_name} {
-    background-color: $color !important;
-  }
-}
 
 // Social colors
 $fb-color:    #3b5998 !default;
