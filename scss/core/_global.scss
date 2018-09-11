@@ -60,3 +60,56 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   color: inherit;
   text-decoration: none;
 }
+
+// Colors classes
+@each $color_name, $color in $mdb-colors-1 {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text {
+        color: $color-value !important;
+      }
+      .rgba-#{$color_name}-slight,
+      .rgba-#{$color_name}-slight:after {
+        background-color: rgba($color_value, .1);
+      }
+      .rgba-#{$color_name}-light,
+      .rgba-#{$color_name}-light:after {
+        background-color: rgba($color_value, .3);
+      }
+      .rgba-#{$color_name}-strong,
+      .rgba-#{$color_name}-strong:after {
+        background-color: rgba($color_value, .7);
+      }
+    }
+    @else {
+      @if $enable_full_palette {
+        .#{$color_name}.#{$color_type} {
+          background-color: $color_value !important;
+        }
+      }
+    }
+  }
+}
+
+@each $color_name, $color_value in $stylish-rgba {
+  .#{$color_name} {
+    background-color: $color_value;
+  }
+}
+
+.dark-grey-text {
+  color: #4f4f4f !important;
+  &:hover,
+  &:focus {
+    color: #4f4f4f !important;
+  }
+}
+
+@each $color_name, $color in $material-colors {
+  .#{$color_name} {
+    background-color: $color !important;
+  }
+}
