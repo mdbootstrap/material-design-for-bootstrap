@@ -1,4 +1,59 @@
 // Globals
+// Full palette of colors
+@each $color_name, $color in $mdb-colors-1 {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text {
+        color: $color-value !important;
+      }
+      .rgba-#{$color_name}-slight,
+      .rgba-#{$color_name}-slight:after {
+        background-color: rgba($color_value, .1);
+      }
+      .rgba-#{$color_name}-light,
+      .rgba-#{$color_name}-light:after {
+        background-color: rgba($color_value, .3);
+      }
+      .rgba-#{$color_name}-strong,
+      .rgba-#{$color_name}-strong:after {
+        background-color: rgba($color_value, .7);
+      }
+    }
+    @else {
+      @if $enable_full_palette {
+        .#{$color_name}.#{$color_type} {
+          background-color: $color_value !important;
+        }
+      }
+    }
+  }
+}
+
+// Stylish color
+@each $color_name, $color_value in $stylish-rgba {
+  .#{$color_name} {
+    background-color: $color_value;
+  }
+}
+
+// Material colors palette
+@each $color_name, $color in $material-colors {
+  .#{$color_name} {
+    background-color: $color !important;
+  }
+}
+
+// Basic gradients
+@each $name, $val in $gradients {
+  @include make-gradient($name, $val);
+}
+@each $name, $val in $gradients-rgba {
+  @include make-gradient-rgba($name, $val);
+}
+
 // Shadows
 .z-depth-0 {
   box-shadow: none !important;

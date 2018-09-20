@@ -65,7 +65,7 @@
       padding: $navbar-dropdown-menu-padding;
       font-size: $navbar-dropdown-font-size;
       font-weight: $navbar-font-weight;
-      color: $black !important;
+      color: $black;
     }
     form {
       @media (max-width: $small-screen) {

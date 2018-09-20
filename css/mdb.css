@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.5.10
+ * Version: MDB FREE 4.5.11
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -24,6 +24,12 @@
  * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
  *
  */
+.dark-grey-text {
+  color: #4f4f4f !important; }
+  .dark-grey-text:hover, .dark-grey-text:focus {
+    color: #4f4f4f !important; }
+
+/*** Global ***/
 .mdb-color.lighten-5 {
   background-color: #d0d6e2 !important; }
 
@@ -1161,11 +1167,6 @@
 .rgba-stylish-strong {
   background-color: rgba(62, 69, 81, 0.7); }
 
-.dark-grey-text {
-  color: #4f4f4f !important; }
-  .dark-grey-text:hover, .dark-grey-text:focus {
-    color: #4f4f4f !important; }
-
 .primary-color {
   background-color: #4285f4 !important; }
 
@@ -1232,7 +1233,46 @@
 .special-color-dark {
   background-color: #263238 !important; }
 
-/*** Global ***/
+.purple-gradient {
+  background: -webkit-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
+  background: -o-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5) !important; }
+
+.peach-gradient {
+  background: -webkit-linear-gradient(50deg, #FFD86F, #FC6262) !important;
+  background: -o-linear-gradient(50deg, #FFD86F, #FC6262) !important;
+  background: linear-gradient(40deg, #FFD86F, #FC6262) !important; }
+
+.aqua-gradient {
+  background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
+  background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
+
+.blue-gradient {
+  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
+  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
+  background: linear-gradient(40deg, #45cafc, #303f9f) !important; }
+
+.purple-gradient-rgba {
+  background: -webkit-linear-gradient(50deg, rgba(255, 110, 196, 0.9), rgba(120, 115, 245, 0.9)) !important;
+  background: -o-linear-gradient(50deg, rgba(255, 110, 196, 0.9), rgba(120, 115, 245, 0.9)) !important;
+  background: linear-gradient(40deg, rgba(255, 110, 196, 0.9), rgba(120, 115, 245, 0.9)) !important; }
+
+.peach-gradient-rgba {
+  background: -webkit-linear-gradient(50deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important;
+  background: -o-linear-gradient(50deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important;
+  background: linear-gradient(40deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important; }
+
+.aqua-gradient-rgba {
+  background: -webkit-linear-gradient(50deg, rgba(32, 150, 255, 0.9), rgba(5, 255, 163, 0.9)) !important;
+  background: -o-linear-gradient(50deg, rgba(32, 150, 255, 0.9), rgba(5, 255, 163, 0.9)) !important;
+  background: linear-gradient(40deg, rgba(32, 150, 255, 0.9), rgba(5, 255, 163, 0.9)) !important; }
+
+.blue-gradient-rgba {
+  background: -webkit-linear-gradient(50deg, rgba(69, 202, 252, 0.9), rgba(48, 63, 159, 0.9)) !important;
+  background: -o-linear-gradient(50deg, rgba(69, 202, 252, 0.9), rgba(48, 63, 159, 0.9)) !important;
+  background: linear-gradient(40deg, rgba(69, 202, 252, 0.9), rgba(48, 63, 159, 0.9)) !important; }
+
 .z-depth-0 {
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
@@ -6294,7 +6334,7 @@ a.waves-effect, a.waves-light {
       padding: 10px;
       font-size: 0.9375rem;
       font-weight: 300;
-      color: #000 !important; }
+      color: #000; }
     @media (max-width: 600px) {
       .navbar .dropdown-menu form {
         width: 17rem; } }
@@ -7299,6 +7339,122 @@ body.scrollable {
 .free-bird {
   margin-top: -100px; }
 
+.juicy-peach-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#fcb69f));
+  background-image: -webkit-linear-gradient(left, #ffecd2 0%, #fcb69f 100%);
+  background-image: -o-linear-gradient(left, #ffecd2 0%, #fcb69f 100%);
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+
+.young-passion-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8177), color-stop(0%, #ff867a), color-stop(21%, #ff8c7f), color-stop(52%, #f99185), color-stop(78%, #cf556c), to(#b12a5b));
+  background-image: -webkit-linear-gradient(left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  background-image: -o-linear-gradient(left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); }
+
+.lady-lips-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff9a9e), color-stop(99%, #fecfef), to(#fecfef));
+  background-image: -webkit-linear-gradient(bottom, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  background-image: -o-linear-gradient(bottom, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); }
+
+.sunny-morning-gradient {
+  background-image: -webkit-linear-gradient(330deg, #f6d365 0%, #fda085 100%);
+  background-image: -o-linear-gradient(330deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
+
+.rainy-ashville-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
+  background-image: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: -o-linear-gradient(bottom, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); }
+
+.frozen-dreams-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdcbf1), color-stop(1%, #fdcbf1), to(#e6dee9));
+  background-image: -webkit-linear-gradient(bottom, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  background-image: -o-linear-gradient(bottom, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
+
+.warm-flame-gradient {
+  background-image: -webkit-linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-image: -o-linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); }
+
+.night-fade-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
+  background-image: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -o-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); }
+
+.spring-warmth-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fad0c4), to(#ffd1ff));
+  background-image: -webkit-linear-gradient(bottom, #fad0c4 0%, #ffd1ff 100%);
+  background-image: -o-linear-gradient(bottom, #fad0c4 0%, #ffd1ff 100%);
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); }
+
+.winter-neva-gradient {
+  background-image: -webkit-linear-gradient(330deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: -o-linear-gradient(330deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); }
+
+.dusty-grass-gradient {
+  background-image: -webkit-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
+  background-image: -o-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); }
+
+.tempting-azure-gradient {
+  background-image: -webkit-linear-gradient(330deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: -o-linear-gradient(330deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
+
+.heavy-rain-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: -webkit-linear-gradient(bottom, #cfd9df 0%, #e2ebf0 100%);
+  background-image: -o-linear-gradient(bottom, #cfd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); }
+
+.amy-crisp-gradient {
+  background-image: -webkit-linear-gradient(330deg, #a6c0fe 0%, #f68084 100%);
+  background-image: -o-linear-gradient(330deg, #a6c0fe 0%, #f68084 100%);
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); }
+
+.mean-fruit-gradient {
+  background-image: -webkit-linear-gradient(330deg, #fccb90 0%, #d57eeb 100%);
+  background-image: -o-linear-gradient(330deg, #fccb90 0%, #d57eeb 100%);
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); }
+
+.deep-blue-gradient {
+  background-image: -webkit-linear-gradient(330deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: -o-linear-gradient(330deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); }
+
+.ripe-malinka-gradient {
+  background-image: -webkit-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
+  background-image: -o-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); }
+
+.cloudy-knoxville-gradient {
+  background-image: -webkit-linear-gradient(330deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: -o-linear-gradient(330deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
+
+.morpheus-den-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
+  background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
+  background-image: -o-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
+
+.rare-wind-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
+  background-image: -webkit-linear-gradient(bottom, #a8edea 0%, #fed6e3 100%);
+  background-image: -o-linear-gradient(bottom, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); }
+
+.near-moon-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5ee7df), to(#b490ca));
+  background-image: -webkit-linear-gradient(bottom, #5ee7df 0%, #b490ca 100%);
+  background-image: -o-linear-gradient(bottom, #5ee7df 0%, #b490ca 100%);
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
+
 footer.page-footer {
   bottom: 0;
   color: #fff; }
@@ -7437,19 +7593,3 @@ table.table-sm td {
       .bs-switch .slider.round:before {
         -webkit-border-radius: 50%;
         border-radius: 50%; }
-
-.view .full-bg-img {
-  height: 100%; }
-
-.view .full-bg-img,
-.view .full-bg-img video {
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  background-size: cover; }
-
-.full-height,
-.full-height body,
-.full-height header,
-.full-height header .view {
-  height: 100%; }

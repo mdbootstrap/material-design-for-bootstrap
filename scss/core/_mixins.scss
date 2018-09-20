@@ -364,7 +364,7 @@ $opacity: .9;
       &:focus,
       &:active,
       &:active:focus &.active {
-        background: linear-gradient(40deg, lighten(map-get($value, start), 5%), lighten(map-get($value, end), 5%));
+        background: linear-gradient(lighten(map-get($value, start), 5%), lighten(map-get($value, end), 5%));
       }
     }
   }
