@@ -69,7 +69,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 
 div.dataTables_wrapper div.dataTables_paginate {
     text-align: right;
-    margin: 0;
+    margin: 5px;
 }
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
@@ -85,7 +85,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
     -webkit-box-shadow: none;
-    box-shadow: none;
+    box-shadow: 5px 5px;
 }
 
 @media (max-width: 767px) {
@@ -160,7 +160,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 
 div.dataTables_wrapper div.dataTables_paginate {
     text-align: right;
-    margin: 0;
+    margin: 5px;
 }
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
@@ -176,7 +176,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
     -webkit-box-shadow: none;
-    box-shadow: none;
+    box-shadow: 5px 5px;
 }
 
 @media (max-width: 767px) {
