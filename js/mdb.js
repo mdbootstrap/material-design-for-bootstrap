@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.5.11
+ * Version: MDB FREE: 4.5.12
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -14815,20 +14815,17 @@ var WOW;
     };
 })(jQuery);
 
-($ => {
+"use strict";
 
-  const SCROLLING_NAVBAR_OFFSET_TOP = 50;
+(function ($) {
+  let SCROLLING_NAVBAR_OFFSET_TOP = 50;
+  $(window).on('scroll', function () {
+    let $navbar = $('.navbar');
 
-  $(window).on('scroll', () => {
-
-    const $navbar = $('.navbar');
     if ($navbar.length) {
-
       if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
-
         $('.scrolling-navbar').addClass('top-nav-collapse');
       } else {
-
         $('.scrolling-navbar').removeClass('top-nav-collapse');
       }
     }
@@ -15445,149 +15442,124 @@ Waves.attach('.navbar-nav a:not(.navbar-brand), .nav-icons li a, .nav-tabs .nav-
 Waves.attach('.pager li a', ['waves-light']);
 Waves.attach('.pagination .page-item .page-link', ['waves-effect']);
 Waves.init();
-var _this = this;
+"use strict";
 
-($ => {
+var _this = void 0;
 
-  const inputSelector = `${['text', 'password', 'email', 'url', 'tel', 'number', 'search', 'search-md'].map(selector => `input[type=${selector}]`).join(', ')}, textarea`;
+(function ($) {
+  let inputSelector = `${['text', 'password', 'email', 'url', 'tel', 'number', 'search', 'search-md'].map(function (selector) {
+    return `input[type=${selector}]`;
+  }).join(', ')}, textarea`;
+  let textAreaSelector = '.materialize-textarea';
 
-  const textAreaSelector = '.materialize-textarea';
-
-  const updateTextFields = $input => {
-
-    const $labelAndIcon = $input.siblings('label, i');
-    const hasValue = $input.val().length;
-    const hasPlaceholder = $input.attr('placeholder');
-    const addOrRemove = `${hasValue || hasPlaceholder ? 'add' : 'remove'}Class`;
-
+  let updateTextFields = function updateTextFields($input) {
+    let $labelAndIcon = $input.siblings('label, i');
+    let hasValue = $input.val().length;
+    let hasPlaceholder = $input.attr('placeholder');
+    let addOrRemove = `${hasValue || hasPlaceholder ? 'add' : 'remove'}Class`;
     $labelAndIcon[addOrRemove]('active');
   };
 
-  const validateField = $input => {
-
+  let validateField = function validateField($input) {
     if ($input.hasClass('validate')) {
-
-      const value = $input.val();
-      const noValue = !value.length;
-      const isValid = !$input[0].validity.badInput;
+      let value = $input.val();
+      let noValue = !value.length;
+      let isValid = !$input[0].validity.badInput;
 
       if (noValue && isValid) {
-
         $input.removeClass('valid').removeClass('invalid');
       } else {
-
-        const valid = $input.is(':valid');
-        const length = Number($input.attr('length')) || 0;
+        let valid = $input.is(':valid');
+        let length = Number($input.attr('length')) || 0;
 
         if (valid && (!length || length > value.length)) {
-
           $input.removeClass('invalid').addClass('valid');
         } else {
-
           $input.removeClass('valid').addClass('invalid');
         }
       }
     }
   };
 
-  const textAreaAutoResize = () => {
+  let textAreaAutoResize = function textAreaAutoResize() {
+    let $textarea = $(_this);
 
-    const $textarea = $(_this);
     if ($textarea.val().length) {
-
-      const $hiddenDiv = $('.hiddendiv');
-      const fontFamily = $textarea.css('font-family');
-      const fontSize = $textarea.css('font-size');
+      let $hiddenDiv = $('.hiddendiv');
+      let fontFamily = $textarea.css('font-family');
+      let fontSize = $textarea.css('font-size');
 
       if (fontSize) {
-
         $hiddenDiv.css('font-size', fontSize);
       }
 
       if (fontFamily) {
-
         $hiddenDiv.css('font-family', fontFamily);
       }
 
       if ($textarea.attr('wrap') === 'off') {
-
         $hiddenDiv.css('overflow-wrap', 'normal').css('white-space', 'pre');
       }
 
       $hiddenDiv.text(`${$textarea.val()}\n`);
-      const content = $hiddenDiv.html().replace(/\n/g, '<br>');
-      $hiddenDiv.html(content);
-
-      // When textarea is hidden, width goes crazy.
+      let content = $hiddenDiv.html().replace(/\n/g, '<br>');
+      $hiddenDiv.html(content); // When textarea is hidden, width goes crazy.
       // Approximate with half of window size
+
       $hiddenDiv.css('width', $textarea.is(':visible') ? $textarea.width() : $(window).width() / 2);
       $textarea.css('height', $hiddenDiv.height());
     }
   };
 
-  $(inputSelector).each((index, input) => {
-
-    const $this = $(input);
-    const $labelAndIcon = $this.siblings('label, i');
+  $(inputSelector).each(function (index, input) {
+    let $this = $(input);
+    let $labelAndIcon = $this.siblings('label, i');
     updateTextFields($this);
-    const isValid = input.validity.badInput;
-    if (isValid) {
+    let isValid = input.validity.badInput;
 
+    if (isValid) {
       $labelAndIcon.addClass('active');
     }
   });
-
-  $(document).on('focus', inputSelector, e => {
-
+  $(document).on('focus', inputSelector, function (e) {
     $(e.target).siblings('label, i').addClass('active');
   });
-
-  $(document).on('blur', inputSelector, e => {
-
-    const $this = $(e.target);
-    const noValue = !$this.val();
-    const invalid = !e.target.validity.badInput;
-    const noPlaceholder = $this.attr('placeholder') === undefined;
+  $(document).on('blur', inputSelector, function (e) {
+    let $this = $(e.target);
+    let noValue = !$this.val();
+    let invalid = !e.target.validity.badInput;
+    let noPlaceholder = $this.attr('placeholder') === undefined;
 
     if (noValue && invalid && noPlaceholder) {
-
       $this.siblings('label, i').removeClass('active');
     }
 
     validateField($this);
   });
-
-  $(document).on('change', inputSelector, e => {
-
-    const $this = $(e.target);
+  $(document).on('change', inputSelector, function (e) {
+    let $this = $(e.target);
     updateTextFields($this);
     validateField($this);
   });
-
   $('input[autofocus]').siblings('label, i').addClass('active');
+  $(document).on('reset', function (e) {
+    let $formReset = $(e.target);
 
-  $(document).on('reset', e => {
-
-    const $formReset = $(e.target);
     if ($formReset.is('form')) {
+      let $formInputs = $formReset.find(inputSelector);
+      $formInputs.removeClass('valid').removeClass('invalid').each(function (index, input) {
+        let $this = $(input);
+        let noDefaultValue = !$this.val();
+        let noPlaceholder = !$this.attr('placeholder');
 
-      const $formInputs = $formReset.find(inputSelector);
-      $formInputs.removeClass('valid').removeClass('invalid').each((index, input) => {
-
-        const $this = $(input);
-        const noDefaultValue = !$this.val();
-        const noPlaceholder = !$this.attr('placeholder');
         if (noDefaultValue && noPlaceholder) {
           $this.siblings('label, i').removeClass('active');
         }
       });
-
-      $formReset.find('select.initialized').each((index, select) => {
-
-        const $select = $(select);
-        const $visibleInput = $select.siblings('input.select-dropdown');
-        const defaultValue = $select.children('[selected]').val();
-
+      $formReset.find('select.initialized').each(function (index, select) {
+        let $select = $(select);
+        let $visibleInput = $select.siblings('input.select-dropdown');
+        let defaultValue = $select.children('[selected]').val();
         $select.val(defaultValue);
         $visibleInput.val(defaultValue);
       });
@@ -15595,37 +15567,30 @@ var _this = this;
   });
 
   function init() {
+    let $text = $('.md-textarea-auto');
 
-    const $text = $('.md-textarea-auto');
     if ($text.length) {
-
       let observe;
+
       if (window.attachEvent) {
-
-        observe = function (element, event, handler) {
-
+        observe = function observe(element, event, handler) {
           element.attachEvent(`on${event}`, handler);
         };
       } else {
-
-        observe = function (element, event, handler) {
-
+        observe = function observe(element, event, handler) {
           element.addEventListener(event, handler, false);
         };
       }
 
       $text.each(function () {
-
-        const self = this;
+        let self = this;
 
         function resize() {
-
           self.style.height = 'auto';
           self.style.height = `${self.scrollHeight}px`;
         }
 
         function delayedResize() {
-
           window.setTimeout(resize, 0);
         }
 
@@ -15634,17 +15599,16 @@ var _this = this;
         observe(self, 'paste', delayedResize);
         observe(self, 'drop', delayedResize);
         observe(self, 'keydown', delayedResize);
-
         resize();
       });
     }
   }
+
   init();
+  let $body = $('body');
 
-  const $body = $('body');
   if (!$('.hiddendiv').first().length) {
-
-    const $hiddenDiv = $('<div class="hiddendiv common"></div>');
+    let $hiddenDiv = $('<div class="hiddendiv common"></div>');
     $body.append($hiddenDiv);
   }
 
