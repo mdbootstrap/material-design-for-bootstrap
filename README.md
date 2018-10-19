@@ -42,7 +42,7 @@ You can install MDBootstrap using NPM:
 
 # Additional tutorials:
 
-**MDB - Bootstrap tutorial**: https://mdbootstrap.com/bootstrap-tutorial/
+**MDB - Bootstrap tutorial**: https://mdbootstrap.com/education/bootstrap/
 
 **MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
@@ -127,7 +127,7 @@ Getting started: https://mdbootstrap.com/getting-started/
 
 5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
 
-Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
+Material Design + Bootstrap Tutorial: https://mdbootstrap.com/education/bootstrap/  
 
 Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
 

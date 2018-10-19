@@ -13,7 +13,7 @@
  *
  * Getting started: https://mdbootstrap.com/getting-started/
  *
- * Tutorials: https://mdbootstrap.com/bootstrap-tutorial/
+ * Tutorials: https://mdbootstrap.com/education/bootstrap/
  *
  * Templates: https://mdbootstrap.com/templates/
  *

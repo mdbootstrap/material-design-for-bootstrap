@@ -9,7 +9,7 @@ Getting started:
 https://mdbootstrap.com/getting-started/
 
 Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/bootstrap-tutorial/
+MDB-Bootstrap: https://mdbootstrap.com/education/bootstrap/
 MDB-Wordpress: https://mdbootstrap.com/wordpress-tutorial/
 
 Templates:
