@@ -54,27 +54,12 @@
   @include make-gradient-rgba($name, $val);
 }
 
-// Shadows
-.z-depth-0 {
-  box-shadow: none !important;
-}
-.z-depth-1 {
-  box-shadow: $z-depth-1;
-}
-.z-depth-1-half {
-  box-shadow: $z-depth-1-half;
-}
-.z-depth-2 {
-  box-shadow: $z-depth-2;
-}
-.z-depth-3 {
-  box-shadow: $z-depth-3;
-}
-.z-depth-4 {
-  box-shadow: $z-depth-4;
-}
-.z-depth-5 {
-  box-shadow: $z-depth-5;
+.dark-grey-text {
+  color: #4f4f4f !important;
+  &:hover,
+  &:focus {
+    color: #4f4f4f !important;
+  }
 }
 
 // Shadow on hover
@@ -85,6 +70,29 @@
     box-shadow: $z-depth-2;
     transition: $transition-hoverable;
   }
+}
+
+// Shadows
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: $z-depth-1 !important;
+}
+.z-depth-1-half {
+  box-shadow: $z-depth-1-half !important;
+}
+.z-depth-2 {
+  box-shadow: $z-depth-2 !important;
+}
+.z-depth-3 {
+  box-shadow: $z-depth-3 !important;
+}
+.z-depth-4 {
+  box-shadow: $z-depth-4 !important;
+}
+.z-depth-5 {
+  box-shadow: $z-depth-5 !important;
 }
 
 // Disabled cursor

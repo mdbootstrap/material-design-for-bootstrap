@@ -611,14 +611,6 @@ $stylish-rgba: (
   "rgba-stylish-strong": rgba(62, 69, 81, .7),
 );
 
-.dark-grey-text {
-  color: #4f4f4f !important;
-  &:hover,
-  &:focus {
-    color: #4f4f4f !important;
-  }
-}
-
 // Material colors
 $primary-color:        #4285f4 !default;
 $primary-color-dark:   #0d47a1 !default;
