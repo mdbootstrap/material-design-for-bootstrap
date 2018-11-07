@@ -1,4 +1,4 @@
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/free/social/jquery/mdb-jquery-free.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/free/social/jquery/mdb-jquery-free.jpg)](https://mdbootstrap.com/docs/jquery/)
 
 # Material Design for Bootstrap 4 
 [![CDNJS version](https://img.shields.io/cdnjs/v/mdbootstrap.svg)](https://cdnjs.com/libraries/mdbootstrap)
@@ -29,10 +29,10 @@ ________
 8. Detailed documentation
 
 # Demo:  
-**Main demo**: https://mdbootstrap.com/components/
+**Main demo**: https://mdbootstrap.com/docs/jquery/components/demo/
 
 # Quick Start (5 minutes):
-**Written Tutorial**: https://mdbootstrap.com/mdb-quick-start/
+**Written Tutorial**: https://mdbootstrap.com/education/bootstrap/quick-start/
 
 **Video Tutorial**:https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
 
@@ -44,7 +44,7 @@ You can install MDBootstrap using NPM:
 
 **MDB - Bootstrap tutorial**: https://mdbootstrap.com/education/bootstrap/
 
-**MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
+**MDB - Wordpress tutorial**: https://mdbootstrap.com/education/wordpress/
 
 # MDBootstrap on CDNJS:
 `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/css/mdb.min.css" />`
@@ -57,12 +57,12 @@ You can install MDBootstrap using NPM:
 
 # Live Preview
 
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-more.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-tutorial.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-more.jpg)](https://mdbootstrap.com/docs/jquery/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-tutorial.jpg)](https://mdbootstrap.com/docs/jquery/)
 [![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/11/admin-jquery-min.jpg)](https://mdbootstrap.com/previews/templates/admin-dashboard/html/dashboards/v-1.html)
 [![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2016/01/ecommerce-min-4.jpg)](https://mdbootstrap.com/previews/templates/e-commerce/html/homepage/homepage-v2.html)
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20%2888%29.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
-[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20%2879%29.jpg)](https://mdbootstrap.com/material-design-for-bootstrap/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20%2888%29.jpg)](https://mdbootstrap.com/docs/jquery/)
+[![Material Design for Bootstrap](https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20%2879%29.jpg)](https://mdbootstrap.com/docs/jquery/)
 
 # Highlights:  
 **Components**  
@@ -123,13 +123,13 @@ A big **thank you to all our users** who are working with us to improve the soft
 
 # Useful Links:  
 
-Getting started: https://mdbootstrap.com/getting-started/  
+Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/  
 
-5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
+5 min quick start: https://mdbootstrap.com/education/bootstrap/quick-start/  
 
 Material Design + Bootstrap Tutorial: https://mdbootstrap.com/education/bootstrap/  
 
-Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
+Material Design + WordPress Tutorial: https://mdbootstrap.com/education/wordpress/  
 
 Freebies: https://mdbootstrap.com/freebies/  
 
@@ -152,7 +152,7 @@ LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
 # PRO version:
 
-**Material Design for Bootstrap PRO**: https://mdbootstrap.com/product/material-design-for-bootstrap-pro/  
+**Material Design for Bootstrap PRO**: https://mdbootstrap.com/products/jquery-ui-kit/  
 
 # Version logs
 

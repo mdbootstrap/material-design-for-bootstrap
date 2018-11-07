@@ -11,7 +11,7 @@
  *
  * Documentation: https://mdbootstrap.com/
  *
- * Getting started: https://mdbootstrap.com/getting-started/
+ * Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
  *
  * Tutorials: https://mdbootstrap.com/education/bootstrap/
  *

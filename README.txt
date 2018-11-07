@@ -6,11 +6,11 @@ Documentation:
 https://mdbootstrap.com/
 
 Getting started:
-https://mdbootstrap.com/getting-started/
+https://mdbootstrap.com/docs/jquery/getting-started/download/
 
 Tutorials:
 MDB-Bootstrap: https://mdbootstrap.com/education/bootstrap/
-MDB-Wordpress: https://mdbootstrap.com/wordpress-tutorial/
+MDB-Wordpress: https://mdbootstrap.com/education/wordpress/
 
 Templates:
 https://mdbootstrap.com/templates/
