@@ -64,3 +64,12 @@ table {
 .table-fixed {
   table-layout: fixed;
 }
+.table-responsive,
+.table-responsive-sm,
+.table-responsive-md,
+.table-responsive-lg,
+.table-responsive-xl {
+  > .table-bordered {
+    border-top: 1px solid #dee2e6;
+  }
+}
