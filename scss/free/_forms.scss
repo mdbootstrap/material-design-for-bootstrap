@@ -180,5 +180,11 @@
       padding: 0;
       padding-top: $textarea-padding;
     }
+    // Label color for textarea
+    ~ label {
+      &.active {
+        color: $input-md-focus-color;
+      }
+    }
   }
 }

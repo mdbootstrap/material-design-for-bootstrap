@@ -116,8 +116,10 @@
 }
 
 .waves-input-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
     border-radius: 0.2em;
-    vertical-align: bottom;
 
     &.waves-button {
         padding: 0;

@@ -16,17 +16,19 @@
  *   DataTables 1.10.18
  */
 
- table {
+table {
   &.dataTable {
     thead {
       cursor: pointer;
-      > tr {
-        > th {
+
+      >tr {
+        >th {
           &:active {
             outline: none;
           }
         }
-        > td {
+
+        >td {
           &:active {
             outline: none;
           }
@@ -46,8 +48,10 @@ div {
               margin-top: 1.2rem;
               margin-right: 1rem;
             }
+
             .select-wrapper {
               &.mdb-select {
+
                 span,
                 .select-dropdown {
                   margin-top: 1rem;
@@ -57,6 +61,7 @@ div {
           }
         }
       }
+
       &.dataTables_length,
       &.dataTables_filter {
         label {
@@ -66,32 +71,40 @@ div {
           padding-bottom: .5rem;
         }
       }
+
       &.dataTables_length,
       &.dataTables_filter {
+
         select,
         input {
           width: auto;
         }
       }
+
       &.dataTables_filter {
         text-align: right;
+
         input {
           margin-left: .5rem;
           display: inline-block;
         }
       }
+
       &.dataTables_info,
       &.dataTables_paginate {
         font-weight: normal;
         padding-top: 1rem;
         padding-bottom: 1rem;
       }
+
       &.dataTables_paginate {
         text-align: right;
         margin: 0;
+
         ul {
           &.pagination {
             justify-content: flex-end;
+
             .page-item {
               &.active {
                 .page-link {
@@ -100,6 +113,7 @@ div {
                   }
                 }
               }
+
               .page-link {
                 &:focus {
                   box-shadow: none;
@@ -117,6 +131,7 @@ div {
   div {
     &.dataTables_wrapper {
       div {
+
         .dataTables_length,
         .dataTables_filter,
         .dataTables_info,
@@ -139,13 +154,15 @@ table {
   &.dataTable {
     thead {
       cursor: pointer;
-      > tr {
-        > th {
+
+      >tr {
+        >th {
           &:active {
             outline: none;
           }
         }
-        > td {
+
+        >td {
           &:active {
             outline: none;
           }
@@ -165,8 +182,10 @@ div {
               margin-top: 1.2rem;
               margin-right: 1rem;
             }
+
             .select-wrapper {
               &.mdb-select {
+
                 span,
                 .select-dropdown {
                   margin-top: 1rem;
@@ -176,6 +195,7 @@ div {
           }
         }
       }
+
       &.dataTables_length,
       &.dataTables_filter {
         label {
@@ -185,32 +205,40 @@ div {
           padding-bottom: .5rem;
         }
       }
+
       &.dataTables_length,
       &.dataTables_filter {
+
         select,
         input {
           width: auto;
         }
       }
+
       &.dataTables_filter {
         text-align: right;
+
         input {
           margin-left: .5rem;
           display: inline-block;
         }
       }
+
       &.dataTables_info,
       &.dataTables_paginate {
         font-weight: normal;
         padding-top: 1rem;
         padding-bottom: 1rem;
       }
+
       &.dataTables_paginate {
         text-align: right;
         margin: 0;
+
         ul {
           &.pagination {
             justify-content: flex-end;
+
             .page-item {
               &.active {
                 .page-link {
@@ -219,6 +247,7 @@ div {
                   }
                 }
               }
+
               .page-link {
                 &:focus {
                   box-shadow: none;
@@ -236,6 +265,7 @@ div {
   div {
     &.dataTables_wrapper {
       div {
+
         .dataTables_length,
         .dataTables_filter,
         .dataTables_info,
@@ -251,5 +281,135 @@ div {
 .bs-select {
   select {
     display: inline-block !important;
+  }
+}
+
+
+table.dataTable thead {
+  >tr> {
+    th {
+
+      &.sorting_asc,
+      &.sorting_desc,
+      &.sorting {
+        padding-right: 30px;
+      }
+    }
+
+    td {
+
+      &.sorting_asc,
+      &.sorting_desc,
+      &.sorting {
+        padding-right: 30px;
+      }
+    }
+
+    th:active,
+    td:active {
+      outline: none;
+    }
+  }
+
+  .sorting,
+  .sorting_asc,
+  .sorting_desc,
+  .sorting_asc_disabled,
+  .sorting_desc_disabled {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .sorting_asc,
+  .sorting_desc,
+  .sorting_asc_disabled,
+  .sorting_desc_disabled {}
+
+  .sorting {
+
+    &:before,
+    &:after {
+      position: absolute;
+      bottom: 0.9em;
+      display: block;
+      opacity: 0.3;
+    }
+  }
+
+  .sorting_asc {
+
+    &:before,
+    &:after {
+      position: absolute;
+      bottom: 0.9em;
+      display: block;
+      opacity: 0.3;
+    }
+  }
+
+  .sorting_desc {
+
+    &:before,
+    &:after {
+      position: absolute;
+      bottom: 0.9em;
+      display: block;
+      opacity: 0.3;
+    }
+  }
+
+  .sorting_asc_disabled {
+
+    &:before,
+    &:after {
+      position: absolute;
+      bottom: 0.9em;
+      display: block;
+      opacity: 0.3;
+    }
+  }
+
+  .sorting_desc_disabled {
+
+    &:before,
+    &:after {
+      position: absolute;
+      bottom: 0.9em;
+      display: block;
+      opacity: 0.3;
+    }
+  }
+
+  .sorting:before,
+  .sorting_asc:before,
+  .sorting_desc:before,
+  .sorting_asc_disabled:before,
+  .sorting_desc_disabled:before {
+    right: 1em;
+    content: "\f0de";
+    font-family: FontAwesome;
+    font-size: 1rem;
+  }
+
+  .sorting:after,
+  .sorting_asc:after,
+  .sorting_desc:after,
+  .sorting_asc_disabled:after,
+  .sorting_desc_disabled:after {
+    right: 0.5em;
+    content: "\f0dd";
+    font-family: FontAwesome;
+    right: 16px;
+    font-size: 1rem;
+  }
+
+  .sorting_asc:before,
+  .sorting_desc:after {
+    opacity: 1;
+  }
+
+  .sorting_asc_disabled:before,
+  .sorting_desc_disabled:after {
+    opacity: 0;
   }
 }
