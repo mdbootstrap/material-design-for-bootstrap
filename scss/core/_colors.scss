@@ -705,7 +705,7 @@ $mdb-colors: () !default;
 $mdb-colors: map-merge((
   "primary":     $primary-color,
   "danger":      $danger-color,
-  "warning":     $warning-color-dark,
+  "warning":     $warning-color,
   "success":     $success-color,
   "info":        $info-color,
   "default":     $default-color,
@@ -753,7 +753,7 @@ $basic-mdb-colors: () !default;
 $basic-mdb-colors: map-merge((
   "primary":     $primary-color,
   "danger":      $danger-color,
-  "warning":     $warning-color-dark,
+  "warning":     $warning-color,
   "success":     $success-color,
   "info":        $info-color,
   "default":     $default-color,
@@ -851,3 +851,15 @@ $gradients-rgba: map-merge((
     "end": rgba(48,63,159,.9)
   ),
 ), $gradients-rgba);
+
+
+$note: () !default;
+$note: map-merge((
+  "note-primary": #176ac4,
+  "note-secondary": #58595a,
+  "note-success": #49a75f,
+  "note-danger": #e45460,
+  "note-warning": #c2a442,
+  "note-info": #2492a5,
+  "note-light": #0f0f0f
+), $note);

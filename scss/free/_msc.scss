@@ -5,6 +5,7 @@
   height: $edge-header-height;
   background-color: $edge-header-background-color;
 }
+
 .free-bird {
   margin-top: $edge-header-margin-top;
 }
@@ -13,63 +14,143 @@
 .juicy-peach-gradient {
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
+
 .young-passion-gradient {
   background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 }
+
 .lady-lips-gradient {
   background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
 }
+
 .sunny-morning-gradient {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
+
 .rainy-ashville-gradient {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
+
 .frozen-dreams-gradient {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
+
 .warm-flame-gradient {
   background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 }
+
 .night-fade-gradient {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
+
 .spring-warmth-gradient {
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
+
 .winter-neva-gradient {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
+
 .dusty-grass-gradient {
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
+
 .tempting-azure-gradient {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
+
 .heavy-rain-gradient {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
+
 .amy-crisp-gradient {
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
+
 .mean-fruit-gradient {
   background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
+
 .deep-blue-gradient {
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
+
 .ripe-malinka-gradient {
   background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
+
 .cloudy-knoxville-gradient {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+
 .morpheus-den-gradient {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
+
 .rare-wind-gradient {
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
+
 .near-moon-gradient {
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.schedule-list {
+  .hr-bold {
+    border-top: 2px solid #212529;
+  }
+
+  .font-smaller {
+    font-size: .8rem;
+  }
+}
+
+.note {
+  padding: 10px;
+  border-left: 6px solid;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.note strong {
+  font-weight: 600;
+}
+
+.note p {
+  font-weight: 500;
+}
+
+.note.note-primary {
+  background-color: #dfeefd;
+  border-color: #176ac4;
+}
+
+.note.note-secondary {
+  background-color: #e2e3e5;
+  border-color: #58595a;
+}
+
+.note.note-success {
+  background-color: #e2f0e5;
+  border-color: #49a75f;
+}
+
+.note.note-danger {
+  background-color: #fae7e8;
+  border-color: #e45460;
+}
+
+.note.note-warning {
+  background-color: #faf4e0;
+  border-color: #c2a442;
+}
+
+.note.note-info {
+  background-color: #e4f2f5;
+  border-color: #2492a5;
+}
+
+.note.note-light {
+  background-color: #fefefe;
+  border-color: #0f0f0f;
 }
