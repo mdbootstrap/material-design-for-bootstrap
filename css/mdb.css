@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.5.14
+ * Version: MDB FREE 4.5.15
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -1913,9 +1913,11 @@ a.text-light:hover, a.text-light:focus {
   padding: 0.85em 1.1em; }
 
 .waves-input-wrapper {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
   -webkit-border-radius: 0.2em;
-  border-radius: 0.2em;
-  vertical-align: bottom; }
+  border-radius: 0.2em; }
   .waves-input-wrapper.waves-button {
     padding: 0; }
   .waves-input-wrapper .waves-button-input {
@@ -4610,19 +4612,24 @@ a.waves-effect, a.waves-light {
 .btn-group .btn {
   margin: 0; }
 
-.btn .fa-lg {
+.btn .fa-lg,
+.btn-floating .fa-lg {
   font-size: 1.33333333em !important; }
 
-.btn .fa-2x {
+.btn .fa-2x,
+.btn-floating .fa-2x {
   font-size: 2em !important; }
 
-.btn .fa-3x {
+.btn .fa-3x,
+.btn-floating .fa-3x {
   font-size: 3em !important; }
 
-.btn .fa-4x {
+.btn .fa-4x,
+.btn-floating .fa-4x {
   font-size: 4em !important; }
 
-.btn .fa-5x {
+.btn .fa-5x,
+.btn-floating .fa-5x {
   font-size: 5em !important; }
 
 .btn-primary {
@@ -6389,9 +6396,6 @@ a.waves-effect, a.waves-light {
     .navbar.navbar-light form .md-form .form-control::-webkit-input-placeholder {
       color: #000;
       font-weight: 300; }
-    .navbar.navbar-light form .md-form .form-control:-ms-input-placeholder {
-      color: #000;
-      font-weight: 300; }
     .navbar.navbar-light form .md-form .form-control::-ms-input-placeholder {
       color: #000;
       font-weight: 300; }
@@ -6429,9 +6433,6 @@ a.waves-effect, a.waves-light {
   .navbar.navbar-dark form .md-form .form-control {
     color: #fff; }
     .navbar.navbar-dark form .md-form .form-control::-webkit-input-placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .navbar.navbar-dark form .md-form .form-control:-ms-input-placeholder {
       color: #fff;
       font-weight: 300; }
     .navbar.navbar-dark form .md-form .form-control::-ms-input-placeholder {
@@ -7276,7 +7277,6 @@ body.scrollable {
     .md-form .prefix ~ input,
     .md-form .prefix ~ textarea {
       margin-left: 2.5rem;
-      width: -webkit-calc(100% - 2.5rem);
       width: calc(100% - 2.5rem); }
     .md-form .prefix ~ label {
       margin-left: 2.5rem; }
@@ -7314,7 +7314,6 @@ body.scrollable {
     .md-form.form-lg .prefix ~ input,
     .md-form.form-lg .prefix ~ textarea {
       margin-left: 3rem;
-      width: -webkit-calc(100% - 3rem);
       width: calc(100% - 3rem); }
     .md-form.form-lg .prefix ~ label {
       margin-left: 3rem; }
@@ -7332,7 +7331,6 @@ body.scrollable {
     .md-form.form-sm .prefix ~ input,
     .md-form.form-sm .prefix ~ textarea {
       margin-left: 2rem;
-      width: -webkit-calc(100% - 2rem);
       width: calc(100% - 2rem); }
     .md-form.form-sm .prefix ~ label {
       margin-left: 2rem; }
@@ -7345,6 +7343,8 @@ body.scrollable {
   .md-form textarea.md-textarea-auto {
     padding: 0;
     padding-top: 1.5rem; }
+  .md-form textarea ~ label.active {
+    color: #4285f4; }
 
 .edge-header {
   display: block;
@@ -7727,7 +7727,6 @@ ul.stepper {
           content: "";
           position: absolute;
           width: 1px;
-          height: -webkit-calc(100% - 40px);
           height: calc(100% - 40px);
           left: 2.19rem;
           top: 3.75rem; } }
@@ -7806,7 +7805,6 @@ ul.stepper {
       content: "";
       position: absolute;
       width: 1px;
-      height: -webkit-calc(100% - 40px);
       height: calc(100% - 40px);
       left: 2.19rem;
       top: 3.44rem;

@@ -18,7 +18,7 @@ projects. Permission is hereby granted to any person obtaining a copy of this so
 
 MDB Free and EBM Bootstrap Plugin are available under MIT License:
 
-Copyright (c) 2017 MDBootstrap.com
+Copyright (c) 2018 MDBootstrap.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
@@ -35,42 +35,45 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 2. MDB PRO & MDB Angular PRO & MDB React Pro & Templates
 
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-|                                                |   Personal  |      Developer     |      Business      |      Corporate     |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-|                     Feature                    | 1 person &  |     1 person &     |   1-10 people &    |    10+ people &    |
-|                                                |  1 project  | unlimited projects | unlimited projects | unlimited projects |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Personal (assigned to person,                  |     yes     |         yes        |         no         |         no         |
-| can be used only by 1 person)                  |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Corporate (assigned to company,                |      no     |         no         |         yes        |         yes        |
-| can be used by X employees)                    |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Number of people (owners/employees)            |      1      |          1         |        1-10        |     No limit *     |
-| who can use MDB                                |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Number of commercial website/apps              |      1      |      No limit      |      No limit      |      No limit      |
-| which can be created                           |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Creation of an HTML/CSS template               |      no     |         yes        |         yes        |         yes        |
-| for sale (applicable only for MDB PRO,         |             |                    |                    |                    |
-| not for Templates Packs)                       |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Creation of a theme/template for CMS sale      |      no     |         no         |         no         |         no         |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Product resale (our Framework, icons, markups) |      no     |         no         |         no         |         no         |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Create products redistributed in automated way |      no     |         no         |         no         |         no         |
-| (i.e. CMS themes sold on ThemeForest or end    |             |                    |                    |                    |
-| product which can download from customer site  |             |                    |                    |                    |
-| including MDB source code) **                  |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Creation of online/offline generator based     |      no     |         no         |         no         |         no         |
-| on ourproducts                                 |             |                    |                    |                    |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
-| Embed MDB into open source project             |      no     |         no         |         no         |         no         |
-+------------------------------------------------+-------------+--------------------+--------------------+--------------------+
+
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+|                     Feature               | 1 person  | 1 person  | 1-3 people | 4-6 people | 7-9 people | 10-15 people | 15+ people | 
+|                                           |     &     |     &     |    &       |     &      |     &      |     &        |     &      |
+|                                           | 1 project | unlimited | unlimited  | unlimited  | unlimited  | unlimited    | unlimited  |
+|                                           |           |  projects | projects   | projects   | projects   | projects     | projects   |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Personal (assigned to person,             |     yes   |    yes    |     no     |    no      |    no      |      no      |     no     | 
+| can be used only by 1 person)             |           |           |            |            |            |              |            | 
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Team (assigned to company,                |    no     |     no    |     yes    |     yes    |    yes     |     yes      |    yes     |
+| can be used by X employees)               |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Number of people (owners/employees)       |     1     |     1     |    1-3*    |     4-6*   |    7-9*    |    10-15*    | No limit*  |
+| who can use MDB                           |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+ 
+| Number of website/apps                    |     1     | No limit  |  No limit  |  No limit  |  No limit  |   No limit   |  No limit  |
+| which can be created                      |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+ 
+| Creation of an HTML/CSS template          |     no    |     yes   |    yes     |    yes     |    yes     |     yes      |     yes    |
+| for sale (applicable only for MDB PRO,    |           |           |            |            |            |              |            |
+| not for Templates Packs)                  |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+ 
+| Creation of a theme/template for CMS sale |     no    |     no    |     no     |     no     |     no     |      no      |    no      |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Product resale                            |     no    |     no    |     no     |     no     |     no     |      no      |     no     |
+| (our Framework, icons, markups)           |           |           |            |            |            |              |            | 
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Create products redistributed             |    no     |     no    |     no     |     no     |     no     |      no      |     no     |
+| in automated way (i.e. CMS themes sold    |           |           |            |            |            |              |            | 
+| on ThemeForest or end product             |           |           |            |            |            |              |            |
+| which can download from customer site     |           |           |            |            |            |              |            |
+| including MDB source code) **             |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Creation of online/offline generator      |     no    |     no    |     no     |     no     |     no     |      no      |     no     | | based on ourproducts                      |           |           |            |            |            |              |            |
+| Embed MDB into open source project        |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
+| Embed MDB ino open source project         |    no     |     no    |      no    |     no     |     no     |      no      |     no     |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
 
 * Within the same company. People granted license has to be an official employee of the company. License cover current and 
 future employees
@@ -102,8 +105,8 @@ RESTRICTIONS
 3.  If the item contains licensed components, those components must only be used within the item, and you must not extract and use 
     them on a stand-alone basis.
 
-4.  You cannot redistribute any of the software (neither free not paid), or products created with MDB software to repositories 
-    like Github, where they are publicly available or include into any Open Source projects.
+4.  You cannot redistribute any of the software, or products created with MDB software to repositories like Github, 
+    where they are publicly available or include into any Open Source projects (refers to paid version).
 
 Upgrades
 
@@ -111,59 +114,143 @@ License upgrades are available as per cost below:
 
 Material design for Bootstrap 4
 
-+-----------+------------+----------+
-| From      | To:        | Price:   |
-+-----------+------------+----------+
-| Personal  | Developer  | 99$      |
-+-----------+------------+----------+
-| Personal  | Business   | 279$     |
-+-----------+------------+----------+
-| Personal  | Corporate  | 769$     |
-+-----------+------------+----------+
-| Developer | Business   | 209$     |
-+-----------+------------+----------+
-| Developer | Corporate  | 699$     |
-+-----------+------------+----------+
-| Business  | Corporate  | 529$     |
-+-----------+------------+----------+
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1 person & unlimited projects	        | 79 €    |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1-3 people & unlimited projects	    | 199 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 4-6 people & unlimited projects	    | 379 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 7-9 people & unlimited projects       | 549 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 10-15 people & unlimited projects     | 959 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 15+ people & unlimited projects	    | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            |  1-3 people & unlimited projects	    | 199 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    |  4-6 people & unlimited projects	    | 289 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 7-9 people & unlimited projects	    | 469 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 10-15 people & unlimited projects     | 879 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects   | 4-6 people & unlimited projects       | 179 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 7-9 people & unlimited projects	    | 349 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 10-15 people & unlimited projects     | 759 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 7-9 people & unlimited projects       | 119 €   |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 10-15 people & unlimited projects     | 319 €   |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 7-9 people & unlimited projects	| 10-15 people & unlimited projects     | 199 €   |
++-----------------------------------+---------------------------------------+---------+
+| 7-9 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 10-15 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |  
++-----------------------------------+---------------------------------------+---------+
 
 
-Material Design for Bootstrap 4 PRO -> Big Bundle
+Material Design for Bootstrap 4 PRO - Big Bundle
 
-+-----------+------------+----------+
-| From      | To:        | Price:   |
-+-----------+------------+----------+
-| Personal  | Developer  | 79$      |
-+-----------+------------+----------+
-| Personal  | Business   | 229$     |
-+-----------+------------+----------+
-| Personal  | Corporate  | 479$     |
-+-----------+------------+----------+
-| Developer | Business   | 179$     |
-+-----------+------------+----------+
-| Developer | Corporate  | 429$     |
-+-----------+------------+----------+
-| Business  | Corporate  | 289$     |
-+-----------+------------+----------+
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1 person & unlimited projects	        | 229 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1-3 people & unlimited projects	    | 589 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 4-6 people & unlimited projects	    | 999 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 7-9 people & unlimited projects       | 1599 €  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 10-15 people & unlimited projects     | 2449 €  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 15+ people & unlimited projects	    | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1-3 people & unlimited projects	    | 349 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 4-6 people & unlimited projects	    | 819 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 7-9 people & unlimited projects	    | 1369 €  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 10-15 people & unlimited projects     | 2229 €  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects   | 4-6 people & unlimited projects       | 469 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 7-9 people & unlimited projects	    | 999 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 10-15 people & unlimited projects     | 1879 €  |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 7-9 people & unlimited projects       | 549 €   |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 10-15 people & unlimited projects     | 1399 €  |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 7-9 people & unlimited projects	| 10-15 people & unlimited projects     | 859 €   |
++-----------------------------------+---------------------------------------+---------+
+| 7-9 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 10-15 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |  
++-----------------------------------+---------------------------------------+---------+
 
 
 Material design for Bootstrap 3 & Templates pack
 
 
-+-----------+------------+----------+
-| From      | To:        | Price:   |
-+-----------+------------+----------+
-| Personal  | Developer  | 79$      |
-+-----------+------------+----------+
-| Personal  | Business   | 229$     |
-+-----------+------------+----------+
-| Personal  | Corporate  | 479$     |
-+-----------+------------+----------+
-| Developer | Business   | 179$     |
-+-----------+------------+----------+
-| Developer | Corporate  | 429$     |
-+-----------+------------+----------+
-| Business  | Corporate  | 289$     |
-+-----------+------------+----------+
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1 person & unlimited projects	        | 59 €    |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 1-3 people & unlimited projects	    | 139 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 4-6 people & unlimited projects	    | 259 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 7-9 people & unlimited projects       | 379 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 10-15 people & unlimited projects     | 579 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            | 15+ people & unlimited projects	    | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & 1 project	            |  1-3 people & unlimited projects	    | 79 €    |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    |  4-6 people & unlimited projects	    | 199 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 7-9 people & unlimited projects	    | 319 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1 person & unlimited projects	    | 10-15 people & unlimited projects     | 519 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects   | 4-6 people & unlimited projects       | 119 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects   | 4-6 people & unlimited projects       | 119 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 7-9 people & unlimited projects	    | 229 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 10-15 people & unlimited projects     | 429 €   |
++-----------------------------------+---------------------------------------+---------+
+| 1-3 people & unlimited projects	| 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 7-9 people & unlimited projects       | 119 €   |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 10-15 people & unlimited projects     | 319 €   |
++-----------------------------------+---------------------------------------+---------+
+| 4-6 people & unlimited projects	| 15+ people & unlimited projects       | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 7-9 people & unlimited projects	| 10-15 people & unlimited projects     | 199 €   |
++-----------------------------------+---------------------------------------+---------+
+| 7-9 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |
++-----------------------------------+---------------------------------------+---------+
+| 10-15 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |  
++-----------------------------------+---------------------------------------+---------+
 
 If you have any doubt about the license, please contact us.

@@ -97,7 +97,8 @@
   }
 }
 // Overwrite default button icon size
-.btn {
+.btn,
+.btn-floating {
   .fa-lg {font-size: 1.33333333em !important;}
   .fa-2x {font-size: 2em !important;}
   .fa-3x {font-size: 3em !important;}
