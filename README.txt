@@ -16,7 +16,7 @@ Templates:
 https://mdbootstrap.com/templates/
 
 License:
-https://mdbootstrap.com/license/
+https://mdbootstrap.com/general/license/
 
 Support:
 https://mdbootstrap.com/forums/forum/support/
