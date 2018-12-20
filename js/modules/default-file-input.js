@@ -1,8 +1,7 @@
-'use strict';
+"use strict";
 
 (function ($) {
   $('.input-default-wrapper').on('change', '.input-default-js', function (e) {
-
     var $this = $(e.target),
         $label = $this.next('label'),
         $files = $this[0].files;
@@ -13,6 +12,7 @@
     } else if (e.target.value) {
       fileName = e.target.value.split('\\').pop();
     }
+
     if (fileName) {
       $label.find('.span-choose-file').html(fileName);
     } else {

@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.5.16
+ * Version: MDB FREE 4.6.0
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -4560,27 +4560,27 @@ a.waves-effect, a.waves-light {
   .btn:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
-  .btn .fa {
+  .btn .fas, .btn .fab, .btn .far {
     position: relative;
     font-size: 0.9rem; }
-    .btn .fa.right {
+    .btn .fas.right, .btn .fab.right, .btn .far.right {
       margin-left: 0.3rem; }
-    .btn .fa.left {
+    .btn .fas.left, .btn .fab.left, .btn .far.left {
       margin-right: 0.3rem; }
   .btn.btn-lg {
     padding: 1rem 2.4rem;
     font-size: 0.94rem; }
-    .btn.btn-lg .fa {
+    .btn.btn-lg .fas, .btn.btn-lg .fab, .btn.btn-lg .far {
       font-size: 1rem; }
   .btn.btn-md {
     padding: 0.7rem 1.6rem;
     font-size: 0.7rem; }
-    .btn.btn-md .fa {
+    .btn.btn-md .fas, .btn.btn-md .fab, .btn.btn-md .far {
       font-size: 0.8rem; }
   .btn.btn-sm {
     padding: 0.5rem 1.6rem;
     font-size: 0.64rem; }
-    .btn.btn-sm .fa {
+    .btn.btn-sm .fas, .btn.btn-sm .fab, .btn.btn-sm .far {
       font-size: 0.7rem; }
   .btn.btn-tb {
     padding: 0.3rem 1rem; }
@@ -4615,7 +4615,19 @@ a.waves-effect, a.waves-light {
 
 .btn .fa-lg,
 .btn-floating .fa-lg {
-  font-size: 1.33333333em !important; }
+  font-size: 1.33333em  !important; }
+
+.btn .fa-xs,
+.btn-floating .fa-xs {
+  font-size: .75em !important; }
+
+.btn .fa-sm,
+.btn-floating .fa-sm {
+  font-size: .875em !important; }
+
+.btn .fa-1x,
+.btn-floating .fa-1x {
+  font-size: 1em !important; }
 
 .btn .fa-2x,
 .btn-floating .fa-2x {
@@ -4632,6 +4644,26 @@ a.waves-effect, a.waves-light {
 .btn .fa-5x,
 .btn-floating .fa-5x {
   font-size: 5em !important; }
+
+.btn .fa-6x,
+.btn-floating .fa-6x {
+  font-size: 6em !important; }
+
+.btn .fa-7x,
+.btn-floating .fa-7x {
+  font-size: 7em !important; }
+
+.btn .fa-8x,
+.btn-floating .fa-8x {
+  font-size: 8em !important; }
+
+.btn .fa-9x,
+.btn-floating .fa-9x {
+  font-size: 9em !important; }
+
+.btn .fa-10x,
+.btn-floating .fa-10x {
+  font-size: 10em !important; }
 
 .btn-primary {
   background-color: #4285f4 !important;
@@ -6361,7 +6393,6 @@ a.waves-effect, a.waves-light {
 
 .label-for-default-js {
   width: 100%;
-  height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px); }
 
 .navbar {
@@ -6400,7 +6431,7 @@ a.waves-effect, a.waves-light {
     display: block; }
     .navbar .nav-item .nav-link.disabled:active {
       pointer-events: none; }
-    .navbar .nav-item .nav-link .fa {
+    .navbar .nav-item .nav-link .fas, .navbar .nav-item .nav-link .fab, .navbar .nav-item .nav-link .far {
       padding-right: 3px;
       padding-left: 3px; }
     @media (max-width: 992px) {
@@ -6454,9 +6485,6 @@ a.waves-effect, a.waves-light {
     .navbar.navbar-light form .md-form .form-control::-webkit-input-placeholder {
       color: #000;
       font-weight: 300; }
-    .navbar.navbar-light form .md-form .form-control:-ms-input-placeholder {
-      color: #000;
-      font-weight: 300; }
     .navbar.navbar-light form .md-form .form-control::-ms-input-placeholder {
       color: #000;
       font-weight: 300; }
@@ -6494,9 +6522,6 @@ a.waves-effect, a.waves-light {
   .navbar.navbar-dark form .md-form .form-control {
     color: #fff; }
     .navbar.navbar-dark form .md-form .form-control::-webkit-input-placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .navbar.navbar-dark form .md-form .form-control:-ms-input-placeholder {
       color: #fff;
       font-weight: 300; }
     .navbar.navbar-dark form .md-form .form-control::-ms-input-placeholder {
@@ -6704,7 +6729,7 @@ body.scrollable {
       margin-bottom: 0;
       width: 100%;
       font-size: 1.25rem; }
-      .modal-dialog.cascading-modal .modal-header .title .fa {
+      .modal-dialog.cascading-modal .modal-header .title .fas, .modal-dialog.cascading-modal .modal-header .title .fab, .modal-dialog.cascading-modal .modal-header .title .far {
         margin-right: 9px; }
     .modal-dialog.cascading-modal .modal-header .social-buttons {
       margin-top: 1.5rem; }
@@ -6770,47 +6795,77 @@ body.scrollable {
 .modal-dialog.modal-notify.modal-primary .modal-header {
   background-color: #4285f4; }
 
-.modal-dialog.modal-notify.modal-primary .fa {
+.modal-dialog.modal-notify.modal-primary .fas, .modal-dialog.modal-notify.modal-primary .fab, .modal-dialog.modal-notify.modal-primary .far {
   color: #4285f4; }
 
 .modal-dialog.modal-notify.modal-primary .badge {
   background-color: #4285f4; }
 
+.modal-dialog.modal-notify.modal-primary .btn .fas, .modal-dialog.modal-notify.modal-primary .btn .fab, .modal-dialog.modal-notify.modal-primary .btn .far {
+  color: #fff; }
+
+.modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .fas, .modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .fab, .modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .far {
+  color: #4285f4; }
+
 .modal-dialog.modal-notify.modal-danger .modal-header {
   background-color: #ff3547; }
 
-.modal-dialog.modal-notify.modal-danger .fa {
+.modal-dialog.modal-notify.modal-danger .fas, .modal-dialog.modal-notify.modal-danger .fab, .modal-dialog.modal-notify.modal-danger .far {
   color: #ff3547; }
 
 .modal-dialog.modal-notify.modal-danger .badge {
   background-color: #ff3547; }
 
+.modal-dialog.modal-notify.modal-danger .btn .fas, .modal-dialog.modal-notify.modal-danger .btn .fab, .modal-dialog.modal-notify.modal-danger .btn .far {
+  color: #fff; }
+
+.modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .fas, .modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .fab, .modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .far {
+  color: #ff3547; }
+
 .modal-dialog.modal-notify.modal-warning .modal-header {
   background-color: #ffbb33; }
 
-.modal-dialog.modal-notify.modal-warning .fa {
+.modal-dialog.modal-notify.modal-warning .fas, .modal-dialog.modal-notify.modal-warning .fab, .modal-dialog.modal-notify.modal-warning .far {
   color: #ffbb33; }
 
 .modal-dialog.modal-notify.modal-warning .badge {
   background-color: #ffbb33; }
 
+.modal-dialog.modal-notify.modal-warning .btn .fas, .modal-dialog.modal-notify.modal-warning .btn .fab, .modal-dialog.modal-notify.modal-warning .btn .far {
+  color: #fff; }
+
+.modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .fas, .modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .fab, .modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .far {
+  color: #ffbb33; }
+
 .modal-dialog.modal-notify.modal-success .modal-header {
   background-color: #00c851; }
 
-.modal-dialog.modal-notify.modal-success .fa {
+.modal-dialog.modal-notify.modal-success .fas, .modal-dialog.modal-notify.modal-success .fab, .modal-dialog.modal-notify.modal-success .far {
   color: #00c851; }
 
 .modal-dialog.modal-notify.modal-success .badge {
   background-color: #00c851; }
 
+.modal-dialog.modal-notify.modal-success .btn .fas, .modal-dialog.modal-notify.modal-success .btn .fab, .modal-dialog.modal-notify.modal-success .btn .far {
+  color: #fff; }
+
+.modal-dialog.modal-notify.modal-success .btn.btn-outline-success .fas, .modal-dialog.modal-notify.modal-success .btn.btn-outline-success .fab, .modal-dialog.modal-notify.modal-success .btn.btn-outline-success .far {
+  color: #00c851; }
+
 .modal-dialog.modal-notify.modal-info .modal-header {
   background-color: #33b5e5; }
 
-.modal-dialog.modal-notify.modal-info .fa {
+.modal-dialog.modal-notify.modal-info .fas, .modal-dialog.modal-notify.modal-info .fab, .modal-dialog.modal-notify.modal-info .far {
   color: #33b5e5; }
 
 .modal-dialog.modal-notify.modal-info .badge {
   background-color: #33b5e5; }
+
+.modal-dialog.modal-notify.modal-info .btn .fas, .modal-dialog.modal-notify.modal-info .btn .fab, .modal-dialog.modal-notify.modal-info .btn .far {
+  color: #fff; }
+
+.modal-dialog.modal-notify.modal-info .btn.btn-outline-info .fas, .modal-dialog.modal-notify.modal-info .btn.btn-outline-info .fab, .modal-dialog.modal-notify.modal-info .btn.btn-outline-info .far {
+  color: #33b5e5; }
 
 .modal {
   padding-right: 0 !important; }
@@ -7341,7 +7396,6 @@ body.scrollable {
     .md-form .prefix ~ input,
     .md-form .prefix ~ textarea {
       margin-left: 2.5rem;
-      width: -webkit-calc(100% - 2.5rem);
       width: calc(100% - 2.5rem); }
     .md-form .prefix ~ label {
       margin-left: 2.5rem; }
@@ -7379,7 +7433,6 @@ body.scrollable {
     .md-form.form-lg .prefix ~ input,
     .md-form.form-lg .prefix ~ textarea {
       margin-left: 3rem;
-      width: -webkit-calc(100% - 3rem);
       width: calc(100% - 3rem); }
     .md-form.form-lg .prefix ~ label {
       margin-left: 3rem; }
@@ -7397,7 +7450,6 @@ body.scrollable {
     .md-form.form-sm .prefix ~ input,
     .md-form.form-sm .prefix ~ textarea {
       margin-left: 2rem;
-      width: -webkit-calc(100% - 2rem);
       width: calc(100% - 2rem); }
     .md-form.form-sm .prefix ~ label {
       margin-left: 2rem; }
@@ -7548,40 +7600,31 @@ body.scrollable {
   border-left: 6px solid;
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-
-.note strong {
-  font-weight: 600; }
-
-.note p {
-  font-weight: 500; }
-
-.note.note-primary {
-  background-color: #dfeefd;
-  border-color: #176ac4; }
-
-.note.note-secondary {
-  background-color: #e2e3e5;
-  border-color: #58595a; }
-
-.note.note-success {
-  background-color: #e2f0e5;
-  border-color: #49a75f; }
-
-.note.note-danger {
-  background-color: #fae7e8;
-  border-color: #e45460; }
-
-.note.note-warning {
-  background-color: #faf4e0;
-  border-color: #c2a442; }
-
-.note.note-info {
-  background-color: #e4f2f5;
-  border-color: #2492a5; }
-
-.note.note-light {
-  background-color: #fefefe;
-  border-color: #0f0f0f; }
+  .note strong {
+    font-weight: 600; }
+  .note p {
+    font-weight: 500; }
+  .note.note-primary {
+    background-color: #dfeefd;
+    border-color: #176ac4; }
+  .note.note-secondary {
+    background-color: #e2e3e5;
+    border-color: #58595a; }
+  .note.note-success {
+    background-color: #e2f0e5;
+    border-color: #49a75f; }
+  .note.note-danger {
+    background-color: #fae7e8;
+    border-color: #e45460; }
+  .note.note-warning {
+    background-color: #faf4e0;
+    border-color: #c2a442; }
+  .note.note-info {
+    background-color: #e4f2f5;
+    border-color: #2492a5; }
+  .note.note-light {
+    background-color: #fefefe;
+    border-color: #0f0f0f; }
 
 footer.page-footer {
   bottom: 0;
@@ -7840,7 +7883,6 @@ ul.stepper {
           content: "";
           position: absolute;
           width: 1px;
-          height: -webkit-calc(100% - 40px);
           height: calc(100% - 40px);
           left: 2.19rem;
           top: 3.75rem; } }
@@ -7919,7 +7961,6 @@ ul.stepper {
       content: "";
       position: absolute;
       width: 1px;
-      height: -webkit-calc(100% - 40px);
       height: calc(100% - 40px);
       left: 2.19rem;
       top: 3.44rem;

@@ -21,7 +21,7 @@
   &:not([disabled]):not(.disabled).active {
     box-shadow: $z-depth-1-half;
   }
-  .fa {
+  .fas, .fab, .far {
     position: relative;
     font-size: $btn-icon-basic;
     &.right {
@@ -33,19 +33,19 @@
   }
   &.btn-lg {
     @include button-size($btn-padding-y-large, $btn-padding-x-large, $btn-font-size-large);
-    .fa {
+    .fas, .fab, .far {
       font-size: $btn-icon-large;
     }
   }
   &.btn-md {
     @include button-size($btn-padding-y-medium, $btn-padding-x-medium, $btn-font-size-medium);
-    .fa {
+    .fas, .fab, .far {
       font-size: $btn-icon-medium;
     }
   }
   &.btn-sm {
     @include button-size($btn-padding-y-small, $btn-padding-x-small, $btn-font-size-small);
-    .fa {
+    .fas, .fab, .far {
       font-size: $btn-icon-small;
     }
   }
@@ -99,11 +99,57 @@
 // Overwrite default button icon size
 .btn,
 .btn-floating {
-  .fa-lg {font-size: 1.33333333em !important;}
-  .fa-2x {font-size: 2em !important;}
-  .fa-3x {font-size: 3em !important;}
-  .fa-4x {font-size: 4em !important;}
-  .fa-5x {font-size: 5em !important;}
+  .fa-lg {
+    font-size: 1.33333em  !important;
+  }
+
+  .fa-xs {
+    font-size: .75em !important;
+  }
+
+  .fa-sm {
+    font-size: .875em !important;
+  }
+
+  .fa-1x {
+    font-size: 1em !important;
+  }
+
+  .fa-2x {
+    font-size: 2em !important;
+  }
+
+  .fa-3x {
+    font-size: 3em !important;
+  }
+
+  .fa-4x {
+    font-size: 4em !important;
+  }
+
+  .fa-5x {
+    font-size: 5em !important;
+  }
+
+  .fa-6x {
+    font-size: 6em !important;
+  }
+
+  .fa-7x {
+    font-size: 7em !important;
+  }
+
+  .fa-8x {
+    font-size: 8em !important;
+  }
+
+  .fa-9x {
+    font-size: 9em !important;
+  }
+
+  .fa-10x {
+    font-size: 10em !important;
+  }
 }
 @each $btn_name, $color_value in $mdb-colors {
   @include make-button($btn_name, $color_value);
@@ -112,7 +158,7 @@
 
 // button,
 // html [type="file"] {
-//   -webkit-appearance: button; 
+//   -webkit-appearance: button;
 //   appearance: button;
 // }
 

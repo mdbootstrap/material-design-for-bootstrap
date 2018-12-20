@@ -1,5 +1,3 @@
-// Datatables
-
 /*
  * MDBootstrap integration with Datatables
  * Learn more: https://mdbootstrap.com/docs/jquery/tables/datatables/
@@ -16,400 +14,181 @@
  *   DataTables 1.10.18
  */
 
-table {
-  &.dataTable {
-    thead {
-      cursor: pointer;
-
-      >tr {
-        >th {
-          &:active {
-            outline: none;
-          }
-        }
-
-        >td {
-          &:active {
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-div {
-  &.dataTables_wrapper {
-    div {
-      &.dataTables_length {
-        &.d-flex {
-          &.flex-row {
-            label {
-              margin-top: 1.2rem;
-              margin-right: 1rem;
-            }
-
-            .select-wrapper {
-              &.mdb-select {
-
-                span,
-                .select-dropdown {
-                  margin-top: 1rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &.dataTables_length,
-      &.dataTables_filter {
-        label {
-          text-align: left;
-          font-weight: normal;
-          padding-top: .5rem;
-          padding-bottom: .5rem;
-        }
-      }
-
-      &.dataTables_length,
-      &.dataTables_filter {
-
-        select,
-        input {
-          width: auto;
-        }
-      }
-
-      &.dataTables_filter {
-        text-align: right;
-
-        input {
-          margin-left: .5rem;
-          display: inline-block;
-        }
-      }
-
-      &.dataTables_info,
-      &.dataTables_paginate {
-        font-weight: normal;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-
-      &.dataTables_paginate {
-        text-align: right;
-        margin: 0;
-
-        ul {
-          &.pagination {
-            justify-content: flex-end;
-
-            .page-item {
-              &.active {
-                .page-link {
-                  &:focus {
-                    background-color: #4285f4;
-                  }
-                }
-              }
-
-              .page-link {
-                &:focus {
-                  box-shadow: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  div {
-    &.dataTables_wrapper {
-      div {
-
-        .dataTables_length,
-        .dataTables_filter,
-        .dataTables_info,
-        .dataTables_paginate ul.pagination {
-          text-align: center;
-          justify-content: center;
-        }
-      }
-    }
-  }
-}
-
-.bs-select {
-  select {
-    display: inline-block !important;
-  }
-}
-
-table {
-  &.dataTable {
-    thead {
-      cursor: pointer;
-
-      >tr {
-        >th {
-          &:active {
-            outline: none;
-          }
-        }
-
-        >td {
-          &:active {
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-div {
-  &.dataTables_wrapper {
-    div {
-      &.dataTables_length {
-        &.d-flex {
-          &.flex-row {
-            label {
-              margin-top: 1.2rem;
-              margin-right: 1rem;
-            }
-
-            .select-wrapper {
-              &.mdb-select {
-
-                span,
-                .select-dropdown {
-                  margin-top: 1rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &.dataTables_length,
-      &.dataTables_filter {
-        label {
-          text-align: left;
-          font-weight: normal;
-          padding-top: .5rem;
-          padding-bottom: .5rem;
-        }
-      }
-
-      &.dataTables_length,
-      &.dataTables_filter {
-
-        select,
-        input {
-          width: auto;
-        }
-      }
-
-      &.dataTables_filter {
-        text-align: right;
-
-        input {
-          margin-left: .5rem;
-          display: inline-block;
-        }
-      }
-
-      &.dataTables_info,
-      &.dataTables_paginate {
-        font-weight: normal;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-
-      &.dataTables_paginate {
-        text-align: right;
-        margin: 0;
-
-        ul {
-          &.pagination {
-            justify-content: flex-end;
-
-            .page-item {
-              &.active {
-                .page-link {
-                  &:focus {
-                    background-color: #4285f4;
-                  }
-                }
-              }
-
-              .page-link {
-                &:focus {
-                  box-shadow: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  div {
-    &.dataTables_wrapper {
-      div {
-
-        .dataTables_length,
-        .dataTables_filter,
-        .dataTables_info,
-        .dataTables_paginate ul.pagination {
-          text-align: center;
-          justify-content: center;
-        }
-      }
-    }
-  }
-}
-
-.bs-select {
-  select {
-    display: inline-block !important;
-  }
-}
-
-
-table.dataTable thead {
-  >tr> {
-    th {
-
-      &.sorting_asc,
-      &.sorting_desc,
-      &.sorting {
-        padding-right: 30px;
-      }
-    }
-
-    td {
-
-      &.sorting_asc,
-      &.sorting_desc,
-      &.sorting {
-        padding-right: 30px;
-      }
-    }
-
-    th:active,
-    td:active {
+ table.dataTable thead {
+  cursor: pointer;
+  > tr > {
+    th:active, td:active {
       outline: none;
     }
   }
+}
 
-  .sorting,
-  .sorting_asc,
-  .sorting_desc,
-  .sorting_asc_disabled,
-  .sorting_desc_disabled {
+div.dataTables_wrapper div {
+  &.dataTables_length {
+    &.d-flex.flex-row {
+      label {
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+      }
+      .select-wrapper.mdb-select {
+        span, .select-dropdown {
+          margin-top: 1rem;
+        }
+      }
+    }
+    label {
+      text-align: left;
+      font-weight: normal;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+  }
+  &.dataTables_filter label {
+    text-align: left;
+    font-weight: normal;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  &.dataTables_length {
+    select, input {
+      width: auto;
+    }
+  }
+  &.dataTables_filter {
+    select {
+      width: auto;
+    }
+    input {
+      width: auto;
+      margin-left: .5rem;
+      display: inline-block;
+    }
+    text-align: right;
+  }
+  &.dataTables_info {
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &.dataTables_paginate {
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: right;
+    margin: 0;
+    ul.pagination {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      .page-item {
+        &.active .page-link:focus {
+          background-color: #4285f4;
+        }
+        .page-link:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  div.dataTables_wrapper div {
+    .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate ul.pagination {
+      text-align: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+}
+
+.bs-select select {
+  display: inline-block !important;
+}
+
+table.dataTable thead {
+  > tr > {
+    th {
+      &.sorting_asc, &.sorting_desc, &.sorting {
+        padding-right: 30px;
+      }
+    }
+    td {
+      &.sorting_asc, &.sorting_desc, &.sorting {
+        padding-right: 30px;
+      }
+    }
+    th:active, td:active {
+      outline: none;
+    }
+  }
+  .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
     cursor: pointer;
     position: relative;
   }
-
-  .sorting_asc,
-  .sorting_desc,
-  .sorting_asc_disabled,
-  .sorting_desc_disabled {}
-
   .sorting {
-
-    &:before,
-    &:after {
+    &:before, &:after {
       position: absolute;
       bottom: 0.9em;
       display: block;
       opacity: 0.3;
     }
   }
-
   .sorting_asc {
-
-    &:before,
-    &:after {
+    &:before, &:after {
       position: absolute;
       bottom: 0.9em;
       display: block;
       opacity: 0.3;
     }
   }
-
   .sorting_desc {
-
-    &:before,
-    &:after {
+    &:before, &:after {
       position: absolute;
       bottom: 0.9em;
       display: block;
       opacity: 0.3;
     }
   }
-
   .sorting_asc_disabled {
-
-    &:before,
-    &:after {
+    &:before, &:after {
       position: absolute;
       bottom: 0.9em;
       display: block;
       opacity: 0.3;
     }
   }
-
   .sorting_desc_disabled {
-
-    &:before,
-    &:after {
+    &:before, &:after {
       position: absolute;
       bottom: 0.9em;
       display: block;
       opacity: 0.3;
     }
   }
-
-  .sorting:before,
-  .sorting_asc:before,
-  .sorting_desc:before,
-  .sorting_asc_disabled:before,
-  .sorting_desc_disabled:before {
+  .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before {
     right: 1em;
     content: "\f0de";
-    font-family: FontAwesome;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
     font-size: 1rem;
   }
-
-  .sorting:after,
-  .sorting_asc:after,
-  .sorting_desc:after,
-  .sorting_asc_disabled:after,
-  .sorting_desc_disabled:after {
+  .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
     right: 0.5em;
     content: "\f0dd";
-    font-family: FontAwesome;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
     right: 16px;
     font-size: 1rem;
   }
-
-  .sorting_asc:before,
-  .sorting_desc:after {
+  .sorting_asc:before, .sorting_desc:after {
     opacity: 1;
   }
-
-  .sorting_asc_disabled:before,
-  .sorting_desc_disabled:after {
+  .sorting_asc_disabled:before, .sorting_desc_disabled:after {
     opacity: 0;
   }
 }
