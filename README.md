@@ -36,7 +36,8 @@ ________
 * [Quick Start](#quick-start)
 * [How to install](#how-to-install)
 * [Additional tutorials](#additional-tutorials)
-* [Browser Support](#browser-support)
+* [Supported Browsers](#supported-browsers)
+* [Contributing](#contributing)
 * [Highlights](#highlights)
 * [Social Media](#social-media)
 * [Useful Links](#useful-links)
@@ -48,7 +49,6 @@ ________
 
 [<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-angular.png"/>](https://mdbootstrap.com/docs/angular/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-react.png"/>](https://mdbootstrap.com/docs/react/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-vue.png"/>](https://mdbootstrap.com/docs/vue/)
 
-________
 
 
 # Most important features
@@ -69,14 +69,11 @@ ________
 
 8. Detailed documentation
 
-________
-
 
 # Demo
 
 **Main demo**: https://mdbootstrap.com/docs/jquery/components/demo/
 
-________
 
 # Quick Start
 
@@ -84,7 +81,6 @@ ________
 
 **Video Tutorial**: https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
 
-________
 
 # How to install
 
@@ -92,7 +88,6 @@ You can install MDBootstrap using NPM:
 
 - `npm install mdbootstrap`
 
-________
 
 # Additional tutorials
 
@@ -100,7 +95,6 @@ ________
 
 **MDB - WordPress tutorial**: https://mdbootstrap.com/education/wordpress/
 
-________
 
 # MDBootstrap on CDNJS:
 
@@ -112,7 +106,6 @@ ________
 
 **Huge, detailed documentation available online on**: https://mdbootstrap.com/
 
-________
 
 # Supported browsers
 
@@ -120,7 +113,7 @@ MDBootstrap supports the **latest, stable releases** of all major browsers and p
 
 Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform’s web view API, are not explicitly supported. However, MDBootstrap should (in most cases) display and function correctly in these browsers as well.
 
-## Mobile devices
+### Mobile devices
 
 Generally speaking, MDBootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
 
@@ -130,7 +123,7 @@ Generally speaking, MDBootstrap supports the latest versions of each major platf
 | iOS | Supported | Supported | Supported | N/A | Supported |
 | Windows 10 Mobile | N/A | N/A | N/A | N/A | Supported |
 
-## Desktop browsers
+### Desktop browsers
 
 Similarly, the latest versions of most desktop browsers are supported.
 
@@ -139,14 +132,11 @@ Similarly, the latest versions of most desktop browsers are supported.
 | Mac | Supported | Supported | N/A | N/A | Supported | Supported |
 | Windows  | Supported | Supported | N/A | Supported | Supported | Not supported |
 
-________
-
 
 # Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/mdbootstrap/bootstrap-material-design/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-________
 
 # Highlights 
 
@@ -200,7 +190,7 @@ We care about development of our users. We have prepared numerous tutorials, whi
 **Free for personal and commercial use**  
 Our license is user friendly. Feel free to use MDB for both private as well as commercial projects.  
 
-**How can you support MDB developers?**
+**Support MDB developers**
 - Star our GitHub repo
 - Create pull requests, submit bugs, suggest new features or documentation updates
 - Follow us on [Twitter](https://twitter.com/mdbootstrap)
@@ -223,8 +213,6 @@ Material Design + WordPress Tutorial: https://mdbootstrap.com/education/wordpres
 Freebies: https://mdbootstrap.com/freebies/  
 
 Premium Templates: https://mdbootstrap.com/templates/  
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 ________
 
