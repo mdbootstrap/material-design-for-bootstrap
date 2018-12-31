@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://mdbootstrap.com/" target="_blank">
-    <img width="560" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
+    <img width="700" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
   </a>
 </p>
 
@@ -192,7 +192,7 @@ We care about development of our users. We have prepared numerous tutorials, whi
 **Free for personal and commercial use**  
 Our license is user friendly. Feel free to use MDB for both private as well as commercial projects.  
 
-**Support MDB developers**
+### Support MDB developers
 - Star our GitHub repo
 - Create pull requests, submit bugs, suggest new features or documentation updates
 - Follow us on [Twitter](https://twitter.com/mdbootstrap)
