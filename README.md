@@ -41,11 +41,14 @@ ________
 * [Social Media](#social-media)
 * [Useful Links](#useful-links)
 
+________
+
 
 # Other Technologies
 
 [<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-angular.png"/>](https://mdbootstrap.com/docs/angular/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-react.png"/>](https://mdbootstrap.com/docs/react/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-vue.png"/>](https://mdbootstrap.com/docs/vue/)
 
+________
 
 
 # Most important features
@@ -66,9 +69,14 @@ ________
 
 8. Detailed documentation
 
+________
+
+
 # Demo
 
 **Main demo**: https://mdbootstrap.com/docs/jquery/components/demo/
+
+________
 
 # Quick Start
 
@@ -76,17 +84,23 @@ ________
 
 **Video Tutorial**: https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
 
+________
+
 # How to install
 
 You can install MDBootstrap using NPM:
 
 - `npm install mdbootstrap`
 
+________
+
 # Additional tutorials
 
 **MDB - Bootstrap tutorial**: https://mdbootstrap.com/education/bootstrap/
 
 **MDB - WordPress tutorial**: https://mdbootstrap.com/education/wordpress/
+
+________
 
 # MDBootstrap on CDNJS:
 
@@ -98,11 +112,21 @@ You can install MDBootstrap using NPM:
 
 **Huge, detailed documentation available online on**: https://mdbootstrap.com/
 
+________
+
 # Browser support
 
+________
 
+
+# Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/mdbootstrap/bootstrap-material-design/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+________
 
 # Highlights 
+
 **Components**  
 Choose **among 400+  predefined components**. Each component is ready to use and fits perfectly with each other like LEGO bricks. Take, combine, enjoy!
 
@@ -161,6 +185,8 @@ Our license is user friendly. Feel free to use MDB for both private as well as c
 
 A big ❤️ **thank you to all our users** ❤️ who are working with us to improve the software. We wouldn't be where we are without you. 
 
+________
+
 # Useful Links
 
 Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
@@ -177,6 +203,8 @@ Premium Templates: https://mdbootstrap.com/templates/
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+________
+
 
 # Social Media
 
@@ -192,8 +220,8 @@ Dribbble: https://dribbble.com/mdbootstrap
 
 LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
+________
+
 # PRO version
 
 **Material Design for Bootstrap PRO**: https://mdbootstrap.com/products/jquery-ui-kit/
-
-# Visit our website: https://mdbootstrap.com/
