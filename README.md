@@ -114,7 +114,30 @@ ________
 
 ________
 
-# Browser support
+# Supported browsers
+
+MDBootstrap supports the **latest, stable releases** of all major browsers and platforms.
+
+Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform’s web view API, are not explicitly supported. However, MDBootstrap should (in most cases) display and function correctly in these browsers as well.
+
+## Mobile devices
+
+Generally speaking, MDBootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+
+|  | Chrome  | Firefox  | Safari  | Android Browser & WebView  |                  Microsoft Edge                      |
+|:--------------------:|:---------------------------:|:----------------------------:|:----------------------------:|:----------------------------:|:-------------------------------------------------------------------------:|
+| Android | Supported | Supported | N/A | Android v5.0+ supported | Supported |
+| iOS | Supported | Supported | Supported | N/A | Supported |
+| Windows 10 Mobile | N/A | N/A | N/A | N/A | Supported |
+
+## Desktop browsers
+
+Similarly, the latest versions of most desktop browsers are supported.
+
+|  | Chrome  | Firefox  | Internet Explorer  |  Microsoft Edge  |              Opera                  |      Safari      |
+|:--------------------:|:-----------------------------:|:------------------------------:|:------------------------------:|:----------------------------:|:-------------------------------------------------------------------------:|:------------------------------:|
+| Mac | Supported | Supported | N/A | N/A | Supported | Supported |
+| Windows  | Supported | Supported | N/A | Supported | Supported | Not supported |
 
 ________
 
