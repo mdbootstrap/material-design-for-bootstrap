@@ -36,6 +36,8 @@ ________
 * [Quick Start](#quick-start)
 * [How to install](#how-to-install)
 * [Additional tutorials](#additional-tutorials)
+* [Documentation](#documentation)
+* [MDBootstrap on CDNJS](#mdbootstrap-on-cdnjs)
 * [Supported Browsers](#supported-browsers)
 * [Contributing](#contributing)
 * [Highlights](#highlights)
@@ -98,9 +100,9 @@ You can install MDBootstrap using NPM:
 
 # MDBootstrap on CDNJS:
 
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/css/mdb.min.css" />`
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/js/mdb.min.js"></script>`
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>`
 
 # Documentation
 
