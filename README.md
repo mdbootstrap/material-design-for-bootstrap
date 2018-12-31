@@ -1,10 +1,12 @@
-# [Material Design for Bootstrap 4](https://mdbootstrap.com/docs/jquery/)[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet/?text=Thanks+@mdbootstrap+for+creating+amazing+and+free+Material+Design+for+Bootstrap+4+UI+KIT%20https://mdbootstrap.com/docs/jquery/&hashtags=javascript,code,webdesign,bootstrap)
-
 
 <p align="center">
-  <a href="https://vuepress.vuejs.org/" target="_blank">
+  <a href="https://mdbootstrap.com/" target="_blank">
     <img width="560" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
   </a>
+</p>
+
+<p align="center">
+  <a href="https://mdbootstrap.com/docs/jquery/"><b>Material Design for Bootstrap 4</b></a>
 </p>
 
 <p align="center">
@@ -12,6 +14,7 @@
   <a href="https://github.com/mdbootstrap/bootstrap-material-design/blob/master/License.pdf"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
   <a href="https://cdnjs.com/libraries/mdbootstrap"><img src="https://img.shields.io/cdnjs/v/mdbootstrap.svg" alt="cdnjs"></a>
   <a href="https://badge.fury.io/js/mdbootstrap"><img src="https://badge.fury.io/js/mdbootstrap.svg" alt="npm"></a>
+  <a href="https://twitter.com/intent/tweet/?text=Thanks+@mdbootstrap+for+creating+amazing+and+free+Material+Design+for+Bootstrap+4+UI+KIT%20https://mdbootstrap.com/docs/jquery/&hashtags=javascript,code,webdesign,bootstrap"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>
 </p>
 
 <p align="center">
@@ -41,19 +44,7 @@ ________
 
 # Other Technologies
 
-
-<p align="center">
-  <a href="https://mdbootstrap.com/docs/angular/"><img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-angular.png">      </a>
-</p>
-<br >
-<p align="center">
-   <a href="https://mdbootstrap.com/docs/react/"><img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-react.png">     </a>
-</p>
-<br >
-
-<p align="center">
-     <a href="https://mdbootstrap.com/docs/vue/"><img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-vue.png">     </a>
-</p>
+[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-angular.png"/>](https://mdbootstrap.com/docs/angular/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-react.png"/>](https://mdbootstrap.com/docs/react/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-vue.png"/>](https://mdbootstrap.com/docs/vue/)
 
 
 
