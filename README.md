@@ -1,13 +1,14 @@
 
 <p align="center">
+  <a href="https://mdbootstrap.com/docs/jquery/"><b>Material Design for Bootstrap 4</b></a>
+</p>
+
+<p align="center">
   <a href="https://mdbootstrap.com/" target="_blank">
     <img width="700" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
   </a>
 </p>
 
-<p align="center">
-  <a href="https://mdbootstrap.com/docs/jquery/"><b>Material Design for Bootstrap 4</b></a>
-</p>
 
 <p align="center">
   <a href="https://npmcharts.com/compare/mdbootstrap?minimal=true"><img src="https://img.shields.io/npm/dm/mdbootstrap.svg" alt="Downloads"></a>
