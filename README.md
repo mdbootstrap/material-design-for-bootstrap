@@ -89,8 +89,9 @@ ________
 
 You can install MDBootstrap using NPM:
 
-- `npm install mdbootstrap`
-
+```
+npm install mdbootstrap
+```
 
 # Additional tutorials
 
@@ -146,38 +147,50 @@ Please read [CONTRIBUTING.md](https://github.com/mdbootstrap/bootstrap-material-
 **Components**  
 Choose **among 400+  predefined components**. Each component is ready to use and fits perfectly with each other like LEGO bricks. Take, combine, enjoy!
 
+
 **Modularity**  
 Material Design for Bootstrap comes with both compiled, ready-to-use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.   
+
 
 **42 thematic sections**  
 To save your time we have combined our components and prepared thematic sections like **blog listings, contact forms, pricing table** and much more. Choose, combine and enjoy your website in less than a minute.    
 
+
 **10 fresh ready to use templates**  
 We are going further and giving to you ready to use templates! Use them as you like, as an inspiration, prototype or final product for your customers.  
+
 
 **Cross-browser compatibility**  
 Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers, all browsers love MDB.  
 
+
 **Modularity**  
 Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.  
+
 
 **Frequent updates**  
 MDB becomes better **every month**. We love the project and enhance as much as possible.  
 
+
 **Technical support**  
 We really care about reliability. If you have any questions - do not hesitate to contact us.  
+
 
 **Active community**  
 Our society grows day by day. Visit [**our forum**](https://mdbootstrap.com/support/)  and check how it is to be a part of our family.  
 
+
 **Flexbox**  
-MDB fully suppports Flex Box. You can forget about alignment issues.  
+MDB fully suppports FlexBox. You can forget about alignment issues.  
+
 
 **jQuery 3.2.1**  
 MDB is integrated with newest jQuery, therefore you can use all the newest features which comes along with it.  
 
+
 **SASS files**  
 Arranged and well documented .scss files can't wait until you compile them.  
+
 
 **Useful helpers**  
 We are web developers, we really know which issues are the most annoying in our daily work. Helpers included in MDB will solve lot of them and make your life easiers.  
@@ -190,8 +203,10 @@ We give you detailed documentation at your disposal. It will help you to impleme
 **Tutorials, tutorials, tutorials**  
 We care about development of our users. We have prepared numerous tutorials, which allow you to learn how to use MDB along with other technologies like Bootstrap, WordPress, Angular, Meteor etc.  
 
+
 **Free for personal and commercial use**  
 Our license is user friendly. Feel free to use MDB for both private as well as commercial projects.  
+
 
 ### Support MDB developers
 - Star our GitHub repo
