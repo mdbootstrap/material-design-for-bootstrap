@@ -4,9 +4,9 @@
 [![CDNJS version](https://img.shields.io/cdnjs/v/mdbootstrap.svg)](https://cdnjs.com/libraries/mdbootstrap)
 [![npm version](https://badge.fury.io/js/mdbootstrap.svg)](https://badge.fury.io/js/mdbootstrap)
 
-**400+** material UI elements, **600+** material icons, **74** CSS animations, SASS files, templates, tutorials and many more. **Free for personal and commercial use**. Available jQuery, Angular, React and Vue versions
+**400+** Material UI elements, **600+** Material icons, **74** CSS animations, SASS files, templates, tutorials and many more. **Free for personal and commercial use**. Available in jQuery, Angular, React and Vue versions
 
-Trusted by **400 000+** developers & designers. Used by such a companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
+Trusted by **400 000+** developers & designers. Used by such companies like Nike, Samsung, Amazon, IKEA, Sony and NASA.
 
 ________
 
@@ -28,32 +28,39 @@ ________
 
 8. Detailed documentation
 
-# Demo:  
+# Main demo:
 **Main demo**: https://mdbootstrap.com/docs/jquery/components/demo/
 
 # Quick Start (5 minutes):
 **Written Tutorial**: https://mdbootstrap.com/education/bootstrap/quick-start/
 
-**Video Tutorial**:https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
+**Video Tutorial**: https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
 
 # How to install:
+
 You can install MDBootstrap using NPM:
-- `npm install mdbootstrap`
+
+```
+npm install mdbootstrap
+```
 
 # Additional tutorials:
 
 **MDB - Bootstrap tutorial**: https://mdbootstrap.com/education/bootstrap/
 
-**MDB - Wordpress tutorial**: https://mdbootstrap.com/education/wordpress/
+**MDB - WordPress tutorial**: https://mdbootstrap.com/education/wordpress/
 
 # MDBootstrap on CDNJS:
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/js/mdb.min.js"></script>`
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/css/mdb.min.css" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/js/mdb.min.js"></script>
+```
 
 # Documentation:
 
-**Huge, detailed documentation avilable online on**: https://mdbootstrap.com/
+**Huge, detailed documentation available online on**: https://mdbootstrap.com/
 
 # Live Preview
 
@@ -66,10 +73,10 @@ You can install MDBootstrap using NPM:
 
 # Highlights:  
 **Components**  
-Choose **among 400+  predefined components**. Each component is ready to use and fits perfectly with each other like LEGO bricks. Take, combine, enjoy!.  
+Choose **among 400+  predefined components**. Each component is ready to use and fits perfectly with each other like LEGO bricks. Take, combine, enjoy!  
 
 **Modularity**  
-Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.   
+Material Design for Bootstrap comes with both compiled, ready-to-use libraries including all features, as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.   
 
 **42 thematic sections**  
 To save your time we have combined our components and prepared thematic sections like **blog listings, contact forms, pricing table** and much more. Choose, combine and enjoy your website in less than a minute.    
@@ -80,9 +87,6 @@ We are going further and giving to you ready to use templates! Use them as you l
 **Cross-browser compatibility**  
 Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers, all browsers love MDB.  
 
-**Modularity**  
-Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.  
-
 **Frequent updates**  
 MDB becomes better **every month**. We love the project and enhance as much as possible.  
 
@@ -92,32 +96,26 @@ We really care about reliability. If you have any questions - do not hesitate to
 **Active community**  
 Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.  
 
-**Flex box**  
-MDB fully suppports Flex Box. You can forget about alignment issues.  
+**Flexbox**  
+MDB fully supports Flexbox. You can forget about alignment issues.  
 
 **jQuery 3.2.1**  
 MDB is integrated with newest jQuery, therefore you can use all the newest features which comes along with it.  
 
 **SASS files**  
-Arrenged and well documented .scss files can't wait until you compile them.  
+Arranged and well documented .scss files can't wait until you compile them.  
 
 **Useful helpers**  
-We are web developers, we really know which issues are the most annoying in our daily work. Helpers included in MDB will solve lot of them and make your life easiers.  
-
+We are web developers, we really know which issues are the most annoying in our daily work. Helpers included in MDB will solve lot of them and make your life easier.  
 
 **Detailed documentation:**  
 We give you detailed documentation at your disposal. It will help you to implement your ideas easily.  
 
-
-
 **Tutorials, tutorials, tutorials**  
 We care about development of our users. We have prepared numerous tutorials, which allow you to learn how to use MDB along with other technologies like Bootstrap, WordPress, Angular, Meteor etc.  
 
-
-
 **Free for personal and commercial use**  
 Our license is user friendly. Feel free to use MDB for both private as well as commercial projects.  
-
 
 A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
 
@@ -308,7 +306,7 @@ LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
 - Possibility of adding custom skin
 
-**Depreciated - these settings will be stored only by one version yet**
+**Deprecated - these settings will be stored only by one version yet**
 
 - .full-bg-img class
 
@@ -640,7 +638,7 @@ What's new?
 
 - Testimonials
 
-**4. Depreciated**
+**4. Deprecated**
 
 Input alternate:
 
@@ -1086,7 +1084,7 @@ You can download new version of MDB Free on our HomePage and for MDB Pro from yo
 
 ### MDB 4.0.1  
 
-#### What's new?####
+#### What's new?
 
 This is the first update for MDB4 and Bootstrap 4. You can download new version of MDB Free on our HomePage and for MDB Pro from your account.  
 
