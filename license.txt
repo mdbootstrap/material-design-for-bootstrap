@@ -18,7 +18,7 @@ projects. Permission is hereby granted to any person obtaining a copy of this so
 
 MDB Free and EBM Bootstrap Plugin are available under MIT License:
 
-Copyright (c) 2018 MDBootstrap.com
+Copyright (c) 2019 MDBootstrap.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
@@ -33,12 +33,12 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER I
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-2. MDB PRO & MDB Angular PRO & MDB React Pro & Templates
+2. MDB PRO & Bundles & Templates & Plugins (jQuery, Angular, React, Vue versions)
 
 
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
-|                     Feature               | 1 person  | 1 person  | 1-3 people | 4-6 people | 7-9 people | 10-15 people | 15+ people | 
-|                                           |     &     |     &     |    &       |     &      |     &      |     &        |     &      |
+|                                           | 1 person  | 1 person  | 1-3 people | 4-6 people | 7-9 people | 10-15 people | 15+ people | 
+|                 Feature                   |     &     |     &     |    &       |     &      |     &      |     &        |     &      |
 |                                           | 1 project | unlimited | unlimited  | unlimited  | unlimited  | unlimited    | unlimited  |
 |                                           |           |  projects | projects   | projects   | projects   | projects     | projects   |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
@@ -51,6 +51,9 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 | Number of people (owners/employees)       |     1     |     1     |    1-3*    |     4-6*   |    7-9*    |    10-15*    | No limit*  |
 | who can use MDB                           |           |           |            |            |            |              |            |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+ 
+| One year of                               |    yes    |    yes    |    yes     |    yes     |    yes     |     yes      |     yes    | 
+| unlimited  Updates & Premium Support **   |           |           |            |            |            |              |            |
++-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
 | Number of website/apps                    |     1     | No limit  |  No limit  |  No limit  |  No limit  |   No limit   |  No limit  |
 | which can be created                      |           |           |            |            |            |              |            |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+ 
@@ -60,17 +63,16 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+ 
 | Creation of a theme/template for CMS sale |     no    |     no    |     no     |     no     |     no     |      no      |    no      |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
-| Product resale                            |     no    |     no    |     no     |     no     |     no     |      no      |     no     |
+| Product resale                            |    no     |     no    |     no     |     no     |     no     |      no      |     no     |
 | (our Framework, icons, markups)           |           |           |            |            |            |              |            | 
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
 | Create products redistributed             |    no     |     no    |     no     |     no     |     no     |      no      |     no     |
 | in automated way (i.e. CMS themes sold    |           |           |            |            |            |              |            | 
 | on ThemeForest or end product             |           |           |            |            |            |              |            |
 | which can download from customer site     |           |           |            |            |            |              |            |
-| including MDB source code) **             |           |           |            |            |            |              |            |
+| including MDB source code) ***            |           |           |            |            |            |              |            |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
-| Creation of online/offline generator      |     no    |     no    |     no     |     no     |     no     |      no      |     no     | | based on ourproducts                      |           |           |            |            |            |              |            |
-| Embed MDB into open source project        |           |           |            |            |            |              |            |
+| Creation of online/offline generator      |     no    |     no    |     no     |     no     |     no     |      no      |     no     | | based on our products                     |           |           |            |            |            |              |            |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
 | Embed MDB ino open source project         |    no     |     no    |      no    |     no     |     no     |      no      |     no     |
 +-------------------------------------------+-----------+-----------+------------+------------+------------+--------------+------------+
@@ -78,7 +80,11 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 * Within the same company. People granted license has to be an official employee of the company. License cover current and 
 future employees
 
-** MDB cannot be used to create a product which is redistributed in an automated way. I.e. our license doesn't allow to create 
+** Since new licensing structure took effect on 21.11.2018, unlimited Updates & Premium Support are free for one year after purchase.
+All customers who purchased the license before 21.11.2018 are still covered by previous structure meaning they're still entitled to
+lifetime unlimited updates.
+
+*** MDB cannot be used to create a product which is redistributed in an automated way. I.e. our license doesn't allow to create 
 another framework which will be available on your website and your customers can pay and download the framework from your website 
 including MDB libraries. On the other hand, if you create a custom app which requires manual installation on customer site, it is 
 allowed to use MDB for that purpose.
@@ -253,4 +259,4 @@ Material design for Bootstrap 3 & Templates pack
 | 10-15 people & unlimited projects	| 15+ people & unlimited projects	    | Custom  |  
 +-----------------------------------+---------------------------------------+---------+
 
-If you have any doubt about the license, please contact us.
+If you have any doubt about the license, please contact us: contact@mdbootstrap.com
