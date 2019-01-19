@@ -1,0 +1,170 @@
+/*
+ * MDBootstrap integration with Datatables
+ * Learn more: https://mdbootstrap.com/docs/jquery/tables/datatables/
+ * About MDBootstrap: https://mdbootstrap.com/
+ *
+ * This combined file was created taking that code from this webstie:
+
+ *  https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css
+ *
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.18
+ *
+ * Included libraries:
+ *   DataTables 1.10.18
+ */
+
+
+ table.dataTable {
+  tbody > tr {
+    &.selected, > .selected {
+      background-color: #B0BED9;
+    }
+  }
+  &.stripe tbody > tr.odd {
+    &.selected, > .selected {
+      background-color: #acbad4;
+    }
+  }
+  &.display tbody > tr.odd {
+    &.selected, > .selected {
+      background-color: #acbad4;
+    }
+  }
+  &.hover tbody > tr {
+    &.selected:hover, > .selected:hover {
+      background-color: #aab7d1;
+    }
+  }
+  &.display tbody > tr {
+    &.selected:hover, > .selected:hover {
+      background-color: #aab7d1;
+    }
+  }
+  &.order-column tbody > tr {
+    &.selected > {
+      .sorting_1, .sorting_2, .sorting_3 {
+        background-color: #acbad5;
+      }
+    }
+    > .selected {
+      background-color: #acbad5;
+    }
+  }
+  &.display tbody > tr {
+    &.selected > {
+      .sorting_1, .sorting_2, .sorting_3 {
+        background-color: #acbad5;
+      }
+    }
+    > .selected {
+      background-color: #acbad5;
+    }
+    &.odd.selected > .sorting_1 {
+      background-color: #a6b4cd;
+    }
+  }
+  &.order-column.stripe tbody > tr.odd.selected > .sorting_1 {
+    background-color: #a6b4cd;
+  }
+  &.display tbody > tr.odd.selected > .sorting_2, &.order-column.stripe tbody > tr.odd.selected > .sorting_2 {
+    background-color: #a8b5cf;
+  }
+  &.display tbody > tr.odd.selected > .sorting_3, &.order-column.stripe tbody > tr.odd.selected > .sorting_3 {
+    background-color: #a9b7d1;
+  }
+  &.display tbody > tr.even.selected > .sorting_1, &.order-column.stripe tbody > tr.even.selected > .sorting_1 {
+    background-color: #acbad5;
+  }
+  &.display tbody > tr.even.selected > .sorting_2, &.order-column.stripe tbody > tr.even.selected > .sorting_2 {
+    background-color: #aebcd6;
+  }
+  &.display tbody > tr.even.selected > .sorting_3, &.order-column.stripe tbody > tr.even.selected > .sorting_3 {
+    background-color: #afbdd8;
+  }
+  &.display tbody > tr.odd > .selected, &.order-column.stripe tbody > tr.odd > .selected {
+    background-color: #a6b4cd;
+  }
+  &.display tbody > tr.even > .selected, &.order-column.stripe tbody > tr.even > .selected {
+    background-color: #acbad5;
+  }
+  &.display tbody > tr.selected:hover > .sorting_1, &.order-column.hover tbody > tr.selected:hover > .sorting_1 {
+    background-color: #a2aec7;
+  }
+  &.display tbody > tr.selected:hover > .sorting_2, &.order-column.hover tbody > tr.selected:hover > .sorting_2 {
+    background-color: #a3b0c9;
+  }
+  &.display tbody > tr.selected:hover > .sorting_3, &.order-column.hover tbody > tr.selected:hover > .sorting_3 {
+    background-color: #a5b2cb;
+  }
+  &.display tbody > tr {
+    &:hover > .selected, > .selected:hover {
+      background-color: #a2aec7;
+    }
+  }
+  &.order-column.hover tbody > tr {
+    &:hover > .selected, > .selected:hover {
+      background-color: #a2aec7;
+    }
+  }
+  tbody {
+    td.select-checkbox, th.select-checkbox {
+      position: relative;
+    }
+    td.select-checkbox {
+      &:before, &:after {
+        display: block;
+        position: absolute;
+        top: 1.2em;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        box-sizing: border-box;
+      }
+    }
+    th.select-checkbox {
+      &:before, &:after {
+        display: block;
+        position: absolute;
+        top: 1.2em;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        box-sizing: border-box;
+      }
+    }
+    td.select-checkbox:before, th.select-checkbox:before {
+      content: ' ';
+      margin-top: 4px;
+      margin-left: -6px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+  }
+  tr.selected {
+    td.select-checkbox:after, th.select-checkbox:after {
+      content: '\2714';
+      margin-top: 0px;
+      margin-left: -4px;
+      text-align: center;
+      text-shadow: 1px 1px #B0BED9, -1px -1px #B0BED9, 1px -1px #B0BED9, -1px 1px #B0BED9;
+    }
+  }
+}
+
+div.dataTables_wrapper span {
+  &.select-info, &.select-item {
+    margin-left: 0.5em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  div.dataTables_wrapper span {
+    &.select-info, &.select-item {
+      margin-left: 0;
+      display: block;
+    }
+  }
+}

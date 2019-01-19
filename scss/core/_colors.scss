@@ -665,21 +665,23 @@ $material-colors: map-merge((
 ), $material-colors);
 
 // Social colors
-$fb-color:    #3b5998 !default;
-$tw-color:    #55acee !default;
-$gplus-color: #dd4b39 !default;
-$yt-color:    #ed302f !default;
-$li-color:    #0082ca !default;
-$pin-color:   #c61118 !default;
-$ins-color:   #2e5e86 !default;
-$git-color:   #333333 !default;
-$comm-color:  #30cfc0 !default;
-$vk-color:    #4c75a3 !default;
-$drib-color:  #ec4a89 !default;
-$so-color:    #ffac44 !default;
-$slack-color: #56b68b !default;
-$email-color: #4b515d !default;
-$redd-color:  #ff4500 !default;
+$fb-color:      #3b5998 !default;
+$tw-color:      #55acee !default;
+$gplus-color:   #dd4b39 !default;
+$yt-color:      #ed302f !default;
+$li-color:      #0082ca !default;
+$pin-color:     #c61118 !default;
+$ins-color:     #2e5e86 !default;
+$git-color:     #333333 !default;
+$comm-color:    #30cfc0 !default;
+$vk-color:      #4c75a3 !default;
+$drib-color:    #ec4a89 !default;
+$so-color:      #ffac44 !default;
+$slack-color:   #56b68b !default;
+$email-color:   #4b515d !default;
+$redd-color:    #ff4500 !default;
+$twitch-color:  #6441a4 !default;
+$discord-color: #7289da !default;
 
 $social-colors: () !default;
 $social-colors: map-merge((
@@ -697,7 +699,9 @@ $social-colors: map-merge((
   "so":       $so-color,
   "slack":    $slack-color,
   "email":    $email-color,
-  "reddit":   $redd-color
+  "reddit":   $redd-color,
+  "twitch":   $twitch-color,
+  "discord":   $discord-color,
 ), $social-colors);
 
 // MDB buttons colors
