@@ -188,3 +188,15 @@
     }
   }
 }
+
+.md-form .form-control.is-invalid, 
+.was-validated .md-form .form-control:invalid {
+  padding-right: 0;
+}
+.md-form .form-control.is-valid, 
+.was-validated .md-form .form-control:valid {
+  padding-right: 0;
+}
+.needs-validation .md-form label {
+  left: .3rem;
+}
