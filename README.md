@@ -1,14 +1,18 @@
 
 <p align="center">
-  <a href="https://mdbootstrap.com/docs/jquery/"><b>Material Design for Bootstrap 4</b></a>
-</p>
-
-<p align="center">
-  <a href="https://mdbootstrap.com/" target="_blank">
-    <img width="700" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
+  <a href="http://mdbootstrap.com">
+    <img width="500" src="https://mdbootstrap.com/img/Marketing/general/logo/huge/mdb.png">
   </a>
 </p>
 
+<h1 align="center">Material Design for Bootstrap</h1>
+
+<p align="center">
+  <b>400+</b> Material UI elements, <b>600+</b> Material icons, <b>74</b> CSS animations, SASS files, templates, tutorials and many more. <b>Free for personal and commercial </b>. Available jQuery, Angular, React and Vue versions.
+</p>
+<p align="center">
+  Trusted by <b>500 000+</b> developers & designers. Used by such companies like Nike, Samsung, Amazon, IKEA, Sony and NASA.
+</p>
 
 <p align="center">
   <a href="https://npmcharts.com/compare/mdbootstrap?minimal=true"><img src="https://img.shields.io/npm/dm/mdbootstrap.svg" alt="Downloads"></a>
@@ -19,11 +23,11 @@
 </p>
 
 <p align="center">
-  <b>400+</b> Material UI elements, <b>600+</b> Material icons, <b>74</b> CSS animations, SASS files, templates, tutorials and many more. <b>Free for personal and commercial </b>. Available jQuery, Angular, React and Vue versions.
+  <a href="https://mdbootstrap.com/" target="_blank">
+    <img width="700" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
+  </a>
 </p>
-<p align="center">
-  Trusted by <b>500 000+</b> developers & designers. Used by such companies like Nike, Samsung, Amazon, IKEA, Sony and NASA.
-</p>
+
 
 ________
 
@@ -50,7 +54,7 @@ ________
 
 # Other Technologies
 
-[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-angular.png"/>](https://mdbootstrap.com/docs/angular/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-react.png"/>](https://mdbootstrap.com/docs/react/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/mdb-vue.png"/>](https://mdbootstrap.com/docs/vue/)
+[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/angular.png"/>](https://mdbootstrap.com/docs/angular/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/react.png"/>](https://mdbootstrap.com/docs/react/)[<img src="https://mdbootstrap.com/img/Marketing/general/logo/small/vue.png"/>](https://mdbootstrap.com/docs/vue/)
 
 
 
@@ -75,14 +79,14 @@ ________
 
 # Demo
 
-**Main demo**: https://mdbootstrap.com/docs/jquery/components/demo/
+ - [Main demo](https://mdbootstrap.com/docs/jquery/components/demo/)
 
 
 # Quick Start
 
-**Written Tutorial**: https://mdbootstrap.com/education/bootstrap/quick-start/
+ - [Written Tutorial](https://mdbootstrap.com/education/bootstrap/quick-start/)
 
-**Video Tutorial**: https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
+ - [Video Tutorial](https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s)
 
 
 # How to install
@@ -95,9 +99,9 @@ npm install mdbootstrap
 
 # Additional tutorials
 
-**MDB - Bootstrap tutorial**: https://mdbootstrap.com/education/bootstrap/
+ - [MDB - Bootstrap tutorial](https://mdbootstrap.com/education/bootstrap/)
 
-**MDB - WordPress tutorial**: https://mdbootstrap.com/education/wordpress/
+ - [MDB - WordPress tutorial](https://mdbootstrap.com/education/wordpress/)
 
 
 # MDBootstrap on CDNJS:
@@ -108,7 +112,7 @@ npm install mdbootstrap
 
 # Documentation
 
-**Huge, detailed documentation available online on**: https://mdbootstrap.com/
+ - [Huge, detailed documentation available online](https://mdbootstrap.com/)
 
 
 # Supported browsers
@@ -121,7 +125,7 @@ Alternative browsers which use the latest version of WebKit, Blink, or Gecko, wh
 
 Generally speaking, MDBootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
 
-|  | Chrome  | Firefox  | Safari  | Android Browser & WebView  |                  Microsoft Edge                      |
+|  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox  |  [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari   | Android Browser & WebView  |                  [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br> Miscrosoft Edge                      |
 |:--------------------:|:---------------------------:|:----------------------------:|:----------------------------:|:----------------------------:|:-------------------------------------------------------------------------:|
 | Android | Supported | Supported | N/A | Android v5.0+ supported | Supported |
 | iOS | Supported | Supported | Supported | N/A | Supported |
@@ -131,7 +135,7 @@ Generally speaking, MDBootstrap supports the latest versions of each major platf
 
 Similarly, the latest versions of most desktop browsers are supported.
 
-|  | Chrome  | Firefox  | Internet Explorer  |  Microsoft Edge  |              Opera                  |      Safari      |
+|  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome  |  [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br> Internet Explorer  |  [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Internet Explorer / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br> Edge  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera                  |       [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari       |
 |:--------------------:|:-----------------------------:|:------------------------------:|:------------------------------:|:----------------------------:|:-------------------------------------------------------------------------:|:------------------------------:|
 | Mac | Supported | Supported | N/A | N/A | Supported | Supported |
 | Windows  | Supported | Supported | N/A | Supported | Supported | Not supported |
@@ -220,37 +224,33 @@ ________
 
 # Useful Links
 
-Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
+- [Getting Started](https://mdbootstrap.com/docs/jquery/getting-started/download/)
 
-5 min quick start: https://mdbootstrap.com/education/bootstrap/quick-start/
+- [5 min quick start](https://mdbootstrap.com/education/bootstrap/quick-start/)
 
-Material Design + Bootstrap Tutorial: https://mdbootstrap.com/education/bootstrap/
+- [Freebies](https://mdbootstrap.com/freebies/)
 
-Material Design + WordPress Tutorial: https://mdbootstrap.com/education/wordpress/
-
-Freebies: https://mdbootstrap.com/freebies/  
-
-Premium Templates: https://mdbootstrap.com/templates/  
+- [Premium Templates](https://mdbootstrap.com/templates/)
 
 ________
 
 
 # Social Media
 
-Twitter: https://twitter.com/MDBootstrap  
+ - [Twitter](https://twitter.com/MDBootstrap)
 
-Facebook: https://www.facebook.com/mdbootstrap  
+ - [Facebook](https://www.facebook.com/mdbootstrap) 
 
-Pinterest: https://pl.pinterest.com/mdbootstrap 
+ - [Pinterest](https://pl.pinterest.com/mdbootstrap)
 
-Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
+ - [Google+](https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts)
 
-Dribbble: https://dribbble.com/mdbootstrap
+ - [Dribbble](https://dribbble.com/mdbootstrap)
 
-LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
+ - [LinkedIn](https://www.linkedin.com/company/material-design-for-bootstrap)
 
 ________
 
 # PRO version
 
-**Material Design for Bootstrap PRO**: https://mdbootstrap.com/products/jquery-ui-kit/
+ - [Material Design for Bootstrap PRO](https://mdbootstrap.com/products/jquery-ui-kit/)
