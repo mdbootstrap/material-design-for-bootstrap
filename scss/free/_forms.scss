@@ -187,6 +187,189 @@
       }
     }
   }
+
+  &.md-outline {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=url],
+    input[type=time],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=tel],
+    input[type=number],
+    input[type=search-md],
+    input[type=search],
+    textarea {
+      // General Styles
+      transition: all .3s;
+      outline: none;
+      box-shadow: none;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      background-color: transparent;
+      box-sizing: border-box;
+
+      // Focused input style
+      &:focus:not([readonly]) {
+        border-color: #4285f4;
+        box-shadow: inset 0px 0px 0px 1px #4285f4;
+        // Focused label style
+        + label {
+          color: #4285f4;
+        }
+      }
+
+      // Valid input style
+      &.valid, &:focus.valid {
+        border-color: $input-success-color;
+        box-shadow: inset 0px 0px 0px 1px $input-success-color;
+      }
+
+      &:focus:not([readonly]).valid + label, &.valid + label:after, &:focus.valid + label:after{
+        content: attr(data-success);
+        color: $input-success-color;
+        opacity: 1;
+      }
+      // Invalid input style
+      &.invalid, &:focus.invalid {
+        border-color: $input-error-color;
+        box-shadow: inset 0px 0px 0px 1px $input-error-color;
+      }
+      &:focus:not([readonly]).invalid + label, &.invalid + label:after, &:focus.invalid + label:after {
+        content: attr(data-error);
+        color: $input-error-color;
+        opacity: 1;
+      }
+
+      &.form-control.valid + label:after,
+      &.form-control:focus.valid + label:after  {
+        top: 2.75rem;
+        left: 0;
+        position: absolute;
+      }
+      &.form-control.invalid + label:after,
+      &.form-control:focus.invalid + label:after  {
+        top: 2.75rem;
+        left: 0;
+        position: absolute;
+      }
+    }
+
+    .form-control {
+      padding: .375rem .75rem;
+    }
+
+    label {
+      font-size: .875rem;
+      position: absolute;
+      top: .65rem;
+      left: 0;
+      padding-left: 10px;
+      transition: .2s ease-out;
+      cursor: text;
+      color: #757575;
+      &.active {
+        transform: translateY(-100%);
+        background: #fff;
+        font-weight: 500;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 11px;
+        left: 8px;
+      }
+    }
+  
+    &.form-lg {
+      .form-control {
+        &.form-control-lg {
+          padding: .5rem .725rem;
+        }
+      }
+      label {
+        font-size: 1.25rem;
+        &.active {
+          transform: translateY(-100%);
+          font-size: 13px;
+        }
+      }
+      .prefix {
+        top: .65rem;
+        font-size: 25px;
+        ~input,
+        ~textarea {
+          margin-left: 2.2rem;
+          width: calc(100% - 2.2rem);
+        }
+        ~label {
+          margin-left: 2.2rem;
+        }
+        ~.form-text {
+          margin-left: 2.3rem;
+        }
+      }
+    }
+    &.form-sm {
+      .form-control {
+        &.form-control-sm {
+          padding: .25rem .625rem;
+        }
+      }
+      label {
+        font-size: .8rem;
+        top: .4rem;
+        &.active {
+          transform: translateY(-85%);
+          font-size: 10px;
+        }
+      }
+      .prefix {
+        top: .5rem;
+        font-size: 15px;
+        ~input,
+        ~textarea {
+          margin-left: 1.6rem;
+          width: calc(100% - 1.6rem);
+        }
+        ~label {
+          margin-left: 1.6rem;
+        }
+        ~.form-text {
+          margin-left: 1.7rem;
+        }
+      }
+    }
+  
+    .prefix {
+      position: absolute;
+      transition: color .2s;
+      &:focus {
+        color: #4285f4;
+      }
+    }
+    .prefix {
+      top: .6rem;
+      font-size: 20px;
+      ~input,
+      ~textarea {
+        margin-left: 2rem;
+        width: calc(100% - 2rem);
+      }
+      ~label {
+        margin-left: 2rem;
+      }
+      ~.form-text {
+        margin-left: 2.1rem;
+      }
+    }
+
+    .character-counter {
+      margin-top: -.5rem;
+    }
+  }
 }
 
 .md-form .form-control.is-invalid, 

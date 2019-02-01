@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB Lite 4.7.0
+ * Version: MDB Lite 4.7.1
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -21,7 +21,7 @@
  *
  * Contact: office@mdbootstrap.com
  *
- * Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
+ * Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js
  *
  */
 /*** Global ***/
@@ -3997,6 +3997,8 @@ a.waves-effect, a.waves-light {
     color: #747373;
     font-size: 0.9rem;
     font-weight: 400; }
+  .card .md-form label {
+    font-weight: 300; }
 
 .dropdown .dropdown-menu .dropdown-item:active {
   background-color: #757575; }
@@ -5141,6 +5143,326 @@ body.scrollable {
     padding-top: 1.5rem; }
   .md-form textarea ~ label.active {
     color: #4285f4; }
+  .md-form.md-outline {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    .md-form.md-outline input[type=text],
+    .md-form.md-outline input[type=password],
+    .md-form.md-outline input[type=email],
+    .md-form.md-outline input[type=url],
+    .md-form.md-outline input[type=time],
+    .md-form.md-outline input[type=date],
+    .md-form.md-outline input[type=datetime-local],
+    .md-form.md-outline input[type=tel],
+    .md-form.md-outline input[type=number],
+    .md-form.md-outline input[type=search-md],
+    .md-form.md-outline input[type=search],
+    .md-form.md-outline textarea {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid #dadce0;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      background-color: transparent;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .md-form.md-outline input[type=text]:focus:not([readonly]),
+      .md-form.md-outline input[type=password]:focus:not([readonly]),
+      .md-form.md-outline input[type=email]:focus:not([readonly]),
+      .md-form.md-outline input[type=url]:focus:not([readonly]),
+      .md-form.md-outline input[type=time]:focus:not([readonly]),
+      .md-form.md-outline input[type=date]:focus:not([readonly]),
+      .md-form.md-outline input[type=datetime-local]:focus:not([readonly]),
+      .md-form.md-outline input[type=tel]:focus:not([readonly]),
+      .md-form.md-outline input[type=number]:focus:not([readonly]),
+      .md-form.md-outline input[type=search-md]:focus:not([readonly]),
+      .md-form.md-outline input[type=search]:focus:not([readonly]),
+      .md-form.md-outline textarea:focus:not([readonly]) {
+        border-color: #4285f4;
+        -webkit-box-shadow: inset 0px 0px 0px 1px #4285f4;
+        box-shadow: inset 0px 0px 0px 1px #4285f4; }
+        .md-form.md-outline input[type=text]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=password]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=email]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=url]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=time]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=date]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=datetime-local]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=tel]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=number]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=search-md]:focus:not([readonly]) + label,
+        .md-form.md-outline input[type=search]:focus:not([readonly]) + label,
+        .md-form.md-outline textarea:focus:not([readonly]) + label {
+          color: #4285f4; }
+      .md-form.md-outline input[type=text].valid, .md-form.md-outline input[type=text]:focus.valid,
+      .md-form.md-outline input[type=password].valid,
+      .md-form.md-outline input[type=password]:focus.valid,
+      .md-form.md-outline input[type=email].valid,
+      .md-form.md-outline input[type=email]:focus.valid,
+      .md-form.md-outline input[type=url].valid,
+      .md-form.md-outline input[type=url]:focus.valid,
+      .md-form.md-outline input[type=time].valid,
+      .md-form.md-outline input[type=time]:focus.valid,
+      .md-form.md-outline input[type=date].valid,
+      .md-form.md-outline input[type=date]:focus.valid,
+      .md-form.md-outline input[type=datetime-local].valid,
+      .md-form.md-outline input[type=datetime-local]:focus.valid,
+      .md-form.md-outline input[type=tel].valid,
+      .md-form.md-outline input[type=tel]:focus.valid,
+      .md-form.md-outline input[type=number].valid,
+      .md-form.md-outline input[type=number]:focus.valid,
+      .md-form.md-outline input[type=search-md].valid,
+      .md-form.md-outline input[type=search-md]:focus.valid,
+      .md-form.md-outline input[type=search].valid,
+      .md-form.md-outline input[type=search]:focus.valid,
+      .md-form.md-outline textarea.valid,
+      .md-form.md-outline textarea:focus.valid {
+        border-color: #00c851;
+        -webkit-box-shadow: inset 0px 0px 0px 1px #00c851;
+        box-shadow: inset 0px 0px 0px 1px #00c851; }
+      .md-form.md-outline input[type=text]:focus:not([readonly]).valid + label, .md-form.md-outline input[type=text].valid + label:after, .md-form.md-outline input[type=text]:focus.valid + label:after,
+      .md-form.md-outline input[type=password]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=password].valid + label:after,
+      .md-form.md-outline input[type=password]:focus.valid + label:after,
+      .md-form.md-outline input[type=email]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=email].valid + label:after,
+      .md-form.md-outline input[type=email]:focus.valid + label:after,
+      .md-form.md-outline input[type=url]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=url].valid + label:after,
+      .md-form.md-outline input[type=url]:focus.valid + label:after,
+      .md-form.md-outline input[type=time]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=time].valid + label:after,
+      .md-form.md-outline input[type=time]:focus.valid + label:after,
+      .md-form.md-outline input[type=date]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=date].valid + label:after,
+      .md-form.md-outline input[type=date]:focus.valid + label:after,
+      .md-form.md-outline input[type=datetime-local]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=datetime-local].valid + label:after,
+      .md-form.md-outline input[type=datetime-local]:focus.valid + label:after,
+      .md-form.md-outline input[type=tel]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=tel].valid + label:after,
+      .md-form.md-outline input[type=tel]:focus.valid + label:after,
+      .md-form.md-outline input[type=number]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=number].valid + label:after,
+      .md-form.md-outline input[type=number]:focus.valid + label:after,
+      .md-form.md-outline input[type=search-md]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=search-md].valid + label:after,
+      .md-form.md-outline input[type=search-md]:focus.valid + label:after,
+      .md-form.md-outline input[type=search]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=search].valid + label:after,
+      .md-form.md-outline input[type=search]:focus.valid + label:after,
+      .md-form.md-outline textarea:focus:not([readonly]).valid + label,
+      .md-form.md-outline textarea.valid + label:after,
+      .md-form.md-outline textarea:focus.valid + label:after {
+        content: attr(data-success);
+        color: #00c851;
+        opacity: 1; }
+      .md-form.md-outline input[type=text].invalid, .md-form.md-outline input[type=text]:focus.invalid,
+      .md-form.md-outline input[type=password].invalid,
+      .md-form.md-outline input[type=password]:focus.invalid,
+      .md-form.md-outline input[type=email].invalid,
+      .md-form.md-outline input[type=email]:focus.invalid,
+      .md-form.md-outline input[type=url].invalid,
+      .md-form.md-outline input[type=url]:focus.invalid,
+      .md-form.md-outline input[type=time].invalid,
+      .md-form.md-outline input[type=time]:focus.invalid,
+      .md-form.md-outline input[type=date].invalid,
+      .md-form.md-outline input[type=date]:focus.invalid,
+      .md-form.md-outline input[type=datetime-local].invalid,
+      .md-form.md-outline input[type=datetime-local]:focus.invalid,
+      .md-form.md-outline input[type=tel].invalid,
+      .md-form.md-outline input[type=tel]:focus.invalid,
+      .md-form.md-outline input[type=number].invalid,
+      .md-form.md-outline input[type=number]:focus.invalid,
+      .md-form.md-outline input[type=search-md].invalid,
+      .md-form.md-outline input[type=search-md]:focus.invalid,
+      .md-form.md-outline input[type=search].invalid,
+      .md-form.md-outline input[type=search]:focus.invalid,
+      .md-form.md-outline textarea.invalid,
+      .md-form.md-outline textarea:focus.invalid {
+        border-color: #f44336;
+        -webkit-box-shadow: inset 0px 0px 0px 1px #f44336;
+        box-shadow: inset 0px 0px 0px 1px #f44336; }
+      .md-form.md-outline input[type=text]:focus:not([readonly]).invalid + label, .md-form.md-outline input[type=text].invalid + label:after, .md-form.md-outline input[type=text]:focus.invalid + label:after,
+      .md-form.md-outline input[type=password]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=password].invalid + label:after,
+      .md-form.md-outline input[type=password]:focus.invalid + label:after,
+      .md-form.md-outline input[type=email]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=email].invalid + label:after,
+      .md-form.md-outline input[type=email]:focus.invalid + label:after,
+      .md-form.md-outline input[type=url]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=url].invalid + label:after,
+      .md-form.md-outline input[type=url]:focus.invalid + label:after,
+      .md-form.md-outline input[type=time]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=time].invalid + label:after,
+      .md-form.md-outline input[type=time]:focus.invalid + label:after,
+      .md-form.md-outline input[type=date]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=date].invalid + label:after,
+      .md-form.md-outline input[type=date]:focus.invalid + label:after,
+      .md-form.md-outline input[type=datetime-local]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=datetime-local].invalid + label:after,
+      .md-form.md-outline input[type=datetime-local]:focus.invalid + label:after,
+      .md-form.md-outline input[type=tel]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=tel].invalid + label:after,
+      .md-form.md-outline input[type=tel]:focus.invalid + label:after,
+      .md-form.md-outline input[type=number]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=number].invalid + label:after,
+      .md-form.md-outline input[type=number]:focus.invalid + label:after,
+      .md-form.md-outline input[type=search-md]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=search-md].invalid + label:after,
+      .md-form.md-outline input[type=search-md]:focus.invalid + label:after,
+      .md-form.md-outline input[type=search]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=search].invalid + label:after,
+      .md-form.md-outline input[type=search]:focus.invalid + label:after,
+      .md-form.md-outline textarea:focus:not([readonly]).invalid + label,
+      .md-form.md-outline textarea.invalid + label:after,
+      .md-form.md-outline textarea:focus.invalid + label:after {
+        content: attr(data-error);
+        color: #f44336;
+        opacity: 1; }
+      .md-form.md-outline input[type=text].form-control.valid + label:after,
+      .md-form.md-outline input[type=text].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=password].form-control.valid + label:after,
+      .md-form.md-outline input[type=password].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=email].form-control.valid + label:after,
+      .md-form.md-outline input[type=email].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=url].form-control.valid + label:after,
+      .md-form.md-outline input[type=url].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=time].form-control.valid + label:after,
+      .md-form.md-outline input[type=time].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=date].form-control.valid + label:after,
+      .md-form.md-outline input[type=date].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=datetime-local].form-control.valid + label:after,
+      .md-form.md-outline input[type=datetime-local].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=tel].form-control.valid + label:after,
+      .md-form.md-outline input[type=tel].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=number].form-control.valid + label:after,
+      .md-form.md-outline input[type=number].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=search-md].form-control.valid + label:after,
+      .md-form.md-outline input[type=search-md].form-control:focus.valid + label:after,
+      .md-form.md-outline input[type=search].form-control.valid + label:after,
+      .md-form.md-outline input[type=search].form-control:focus.valid + label:after,
+      .md-form.md-outline textarea.form-control.valid + label:after,
+      .md-form.md-outline textarea.form-control:focus.valid + label:after {
+        top: 2.75rem;
+        left: 0;
+        position: absolute; }
+      .md-form.md-outline input[type=text].form-control.invalid + label:after,
+      .md-form.md-outline input[type=text].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=password].form-control.invalid + label:after,
+      .md-form.md-outline input[type=password].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=email].form-control.invalid + label:after,
+      .md-form.md-outline input[type=email].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=url].form-control.invalid + label:after,
+      .md-form.md-outline input[type=url].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=time].form-control.invalid + label:after,
+      .md-form.md-outline input[type=time].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=date].form-control.invalid + label:after,
+      .md-form.md-outline input[type=date].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=datetime-local].form-control.invalid + label:after,
+      .md-form.md-outline input[type=datetime-local].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=tel].form-control.invalid + label:after,
+      .md-form.md-outline input[type=tel].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=number].form-control.invalid + label:after,
+      .md-form.md-outline input[type=number].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=search-md].form-control.invalid + label:after,
+      .md-form.md-outline input[type=search-md].form-control:focus.invalid + label:after,
+      .md-form.md-outline input[type=search].form-control.invalid + label:after,
+      .md-form.md-outline input[type=search].form-control:focus.invalid + label:after,
+      .md-form.md-outline textarea.form-control.invalid + label:after,
+      .md-form.md-outline textarea.form-control:focus.invalid + label:after {
+        top: 2.75rem;
+        left: 0;
+        position: absolute; }
+    .md-form.md-outline .form-control {
+      padding: .375rem .75rem; }
+    .md-form.md-outline label {
+      font-size: .875rem;
+      position: absolute;
+      top: .65rem;
+      left: 0;
+      padding-left: 10px;
+      -webkit-transition: .2s ease-out;
+      -o-transition: .2s ease-out;
+      transition: .2s ease-out;
+      cursor: text;
+      color: #757575; }
+      .md-form.md-outline label.active {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        background: #fff;
+        font-weight: 500;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 11px;
+        left: 8px; }
+    .md-form.md-outline.form-lg .form-control.form-control-lg {
+      padding: .5rem .725rem; }
+    .md-form.md-outline.form-lg label {
+      font-size: 1.25rem; }
+      .md-form.md-outline.form-lg label.active {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        font-size: 13px; }
+    .md-form.md-outline.form-lg .prefix {
+      top: .65rem;
+      font-size: 25px; }
+      .md-form.md-outline.form-lg .prefix ~ input,
+      .md-form.md-outline.form-lg .prefix ~ textarea {
+        margin-left: 2.2rem;
+        width: calc(100% - 2.2rem); }
+      .md-form.md-outline.form-lg .prefix ~ label {
+        margin-left: 2.2rem; }
+      .md-form.md-outline.form-lg .prefix ~ .form-text {
+        margin-left: 2.3rem; }
+    .md-form.md-outline.form-sm .form-control.form-control-sm {
+      padding: .25rem .625rem; }
+    .md-form.md-outline.form-sm label {
+      font-size: .8rem;
+      top: .4rem; }
+      .md-form.md-outline.form-sm label.active {
+        -webkit-transform: translateY(-85%);
+        -ms-transform: translateY(-85%);
+        transform: translateY(-85%);
+        font-size: 10px; }
+    .md-form.md-outline.form-sm .prefix {
+      top: .5rem;
+      font-size: 15px; }
+      .md-form.md-outline.form-sm .prefix ~ input,
+      .md-form.md-outline.form-sm .prefix ~ textarea {
+        margin-left: 1.6rem;
+        width: calc(100% - 1.6rem); }
+      .md-form.md-outline.form-sm .prefix ~ label {
+        margin-left: 1.6rem; }
+      .md-form.md-outline.form-sm .prefix ~ .form-text {
+        margin-left: 1.7rem; }
+    .md-form.md-outline .prefix {
+      position: absolute;
+      -webkit-transition: color .2s;
+      -o-transition: color .2s;
+      transition: color .2s; }
+      .md-form.md-outline .prefix:focus {
+        color: #4285f4; }
+    .md-form.md-outline .prefix {
+      top: .6rem;
+      font-size: 20px; }
+      .md-form.md-outline .prefix ~ input,
+      .md-form.md-outline .prefix ~ textarea {
+        margin-left: 2rem;
+        width: calc(100% - 2rem); }
+      .md-form.md-outline .prefix ~ label {
+        margin-left: 2rem; }
+      .md-form.md-outline .prefix ~ .form-text {
+        margin-left: 2.1rem; }
+    .md-form.md-outline .character-counter {
+      margin-top: -.5rem; }
 
 .md-form .form-control.is-invalid,
 .was-validated .md-form .form-control:invalid {
