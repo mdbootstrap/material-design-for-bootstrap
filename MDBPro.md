@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://mdbootstrap.com">
+  <a href="https://mdbootstrap.com/products/jquery-ui-kit/">
     <img width="500" src="https://mdbootstrap.com/img/Marketing/general/logo/huge/mdb.png">
   </a>
 </p>
@@ -45,7 +45,7 @@ ________
 |⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ JavaScript Modules⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀| ❌ | ✔️ | 
 |⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 10 Premium Page Templates⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀| ❌ | ✔️ | 
 |⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Premium Support⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀| ❌ | ✔️ | 
-|⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ GitLab account and MDB Pro repository access⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀| ❌ | ✔️ | 
+|⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ GitLab account and MDB Pro repository access⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀| ❌ | ✔️ | 
 
 
 ________
