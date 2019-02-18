@@ -1,73 +1,34 @@
 <p align="center">
-  <a href="http://mdbootstrap.com">
+  <a href="https://mdbootstrap.com/docs/jquery/getting-started/download/">
     <img width="500" src="https://mdbootstrap.com/img/Marketing/general/logo/huge/mdb.png">
   </a>
 </p>
 
-<h1 align="center">Material Design for Bootstrap PRO</h1>
+<h1 align="center">Material Design for Bootstrap 4</h1>
+
+<p align="center">	
+  <a href="https://npmcharts.com/compare/mdbootstrap?minimal=true"><img src="https://img.shields.io/npm/dm/mdbootstrap.svg" alt="Downloads"></a>
+  <a href="https://github.com/mdbootstrap/bootstrap-material-design/blob/master/License.pdf"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>	
+  <a href="https://cdnjs.com/libraries/mdbootstrap"><img src="https://img.shields.io/cdnjs/v/mdbootstrap.svg" alt="cdnjs"></a>	
+  <a href="https://badge.fury.io/js/mdbootstrap"><img src="https://badge.fury.io/js/mdbootstrap.svg" alt="npm"></a>	
+  <a href="https://twitter.com/intent/tweet/?text=Thanks+@mdbootstrap+for+creating+amazing+and+free+Material+Design+for+Bootstrap+4+UI+KIT%20https://mdbootstrap.com/docs/jquery/&hashtags=javascript,code,webdesign,bootstrap"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>	
+</p>
 
 <p align="center">
-  <a href="https://mdbootstrap.com/products/jquery-ui-kit/" target="_blank">
-    <img width="700" src="https://mdbootstrap.com/wp-content/uploads/2016/11/mdb-pro-2.jpg" alt="logo">
+  <a href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">
+    <img width="700" src="https://mdbootstrap.com/img/Marketing/products/jquery/mdb-free.jpg" alt="logo">
   </a>
 </p>
 
 <p align="center">
-  ✔️<b>3000+</b> Premium Components - An impressive collection of ready to use, stunning Material Design components.
+  <b>400+</b> material UI elements, <b>600+</b> material icons, <b>74</b> CSS animations, SASS files, templates, tutorials and many more. Free for personal and commercial use. Available jQuery, Angular, React and Vue versions
 </p>
 <p align="center">
-  ✔️<b>Premium sections, plugins & templates</b> - Save huge amounts of time on website/application creation using our predefined sections and templates.
-</p>
-<p align="center">
-  ✔️<b>Premium tutorials</b> - Full access to the world's most popular tutorials for Bootstrap 4.
-    </p>
-<p align="center">
-  ✔️<b>Premium support</b> - With the Premium Support all your issues will be treated as a priority and our team will make their fullest efforts to help you with any questions related to MDB.
-    </p>
-<p align="center">
-  ✔️<b>Access to MDB Pro repository</b> - An private GitLab account dedicated to MDB Pro users.
+  Trusted by <b>800 000+</b> developers & designers. Used by such a companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
 </p>
 
 
 ________
-
-| Features | MDB Free | MDB PRO  | 
-|:--------------------:|:---------------------------:|:----------------------------:|
-| 400+ Basic Components | ✔️| ❌ |
-| 3000+ Premium Components | ❌ | ✔️ | 
-| Detailed Documentation | ✔️ | ✔️ | 
-| SASS, CSS, JS, HTML files | ✔️ | ✔️ | 
-| Basic Tutorials | ✔️ | ✔️ | 
-| Premium Tutorials | ❌ | ✔️ | 
-| 50+ Premium Sections | ❌ | ✔️ | 
-| 8 Basic Plugins | ✔️ | ✔️ | 
-| 22 Premium Plugins | ❌ | ✔️ | 
-| JavaScript Modules | ❌ | ✔️ | 
-| 10 Premium Page Templates | ❌ | ✔️ | 
-| Premium Support | ❌ | ✔️ | 
-| GitLab account and MDB Pro repository access | ❌ | ✔️ | 
-
-
-________
-
-
-* ChangeLog - https://mdbootstrap.com/docs/jquery/changelog/
-* Documentation - https://mdbootstrap.com/docs/jquery/getting-started/download/
-* Product page - https://mdbootstrap.com/products/jquery-ui-kit/
-* Support - https://mdbootstrap.com/support/
-* Angular - https://mdbootstrap.com/products/angular-ui-kit/
-* React - https://mdbootstrap.com/products/react-ui-kit/
-* Vue - https://mdbootstrap.com/products/vue-ui-kit/
-
-▶️ [Watch our "5 min Quick Start" tutorial](https://www.youtube.com/watch?v=ccrJUi39ElQ)
-
-
-
-
-
-
-
-
 
 
 ## Table of Contents
@@ -143,9 +104,9 @@ npm install mdbootstrap
 
 # MDBootstrap on CDNJS:
 
-`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" />`
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" />`
 
-`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>`
+`<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>`
 
 # Documentation
 
@@ -285,6 +246,9 @@ ________
  - [Dribbble](https://dribbble.com/mdbootstrap)
 
  - [LinkedIn](https://www.linkedin.com/company/material-design-for-bootstrap)
+ 
+ - [YouTube](https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA)
+
 
 ________
 
