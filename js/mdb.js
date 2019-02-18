@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.7.1
+ * Version: MDB FREE: 4.7.2
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -15679,6 +15679,11 @@ var _this = void 0;
 
   $(textAreaSelector).each(textAreaAutoResize);
   $body.on('keyup keydown', textAreaSelector, textAreaAutoResize);
+  $('input:-webkit-autofill').each(function () {
+    if ($(this).val().length !== "") {
+      $(this).siblings('label, i').addClass('active');
+    }
+  });
 })(jQuery);
 /*
     Enhanced Bootstrap Modals

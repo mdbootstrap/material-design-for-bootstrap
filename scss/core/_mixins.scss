@@ -269,9 +269,10 @@
 @mixin make-button ($name, $color) {
   .btn-#{$name} {
     background-color: $color !important;
-    color: set-notification-text-color($color) !important;
+    color: set-notification-text-color($color);
     &:hover {
       background-color: lighten($color, 5%);
+      color: set-notification-text-color($color);
     }
     &:focus,
     &.focus {
@@ -307,6 +308,11 @@
     &:focus {
       color: $color;
     }
+  }
+  a.btn:not([href]):not([tabindex]), 
+  a.btn:not([href]):not([tabindex]):focus, 
+  a.btn:not([href]):not([tabindex]):hover {
+    color: set-notification-text-color($color);
   }
 }
 
