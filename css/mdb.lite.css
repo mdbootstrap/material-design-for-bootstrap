@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB Lite 4.7.2
+ * Version: MDB Lite 4.7.4
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -2237,27 +2237,39 @@ a.waves-effect, a.waves-light {
   .btn:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
-  .btn .fas, .btn .fab, .btn .far {
+  .btn .fas,
+  .btn .fab,
+  .btn .far {
     position: relative;
     font-size: 0.9rem; }
-    .btn .fas.right, .btn .fab.right, .btn .far.right {
+    .btn .fas.right,
+    .btn .fab.right,
+    .btn .far.right {
       margin-left: 0.3rem; }
-    .btn .fas.left, .btn .fab.left, .btn .far.left {
+    .btn .fas.left,
+    .btn .fab.left,
+    .btn .far.left {
       margin-right: 0.3rem; }
   .btn.btn-lg {
     padding: 1rem 2.4rem;
     font-size: 0.94rem; }
-    .btn.btn-lg .fas, .btn.btn-lg .fab, .btn.btn-lg .far {
+    .btn.btn-lg .fas,
+    .btn.btn-lg .fab,
+    .btn.btn-lg .far {
       font-size: 1rem; }
   .btn.btn-md {
     padding: 0.7rem 1.6rem;
     font-size: 0.7rem; }
-    .btn.btn-md .fas, .btn.btn-md .fab, .btn.btn-md .far {
+    .btn.btn-md .fas,
+    .btn.btn-md .fab,
+    .btn.btn-md .far {
       font-size: 0.8rem; }
   .btn.btn-sm {
     padding: 0.5rem 1.6rem;
     font-size: 0.64rem; }
-    .btn.btn-sm .fas, .btn.btn-sm .fab, .btn.btn-sm .far {
+    .btn.btn-sm .fas,
+    .btn.btn-sm .fab,
+    .btn.btn-sm .far {
       font-size: 0.7rem; }
   .btn.btn-tb {
     padding: 0.3rem 1rem; }
@@ -2292,7 +2304,7 @@ a.waves-effect, a.waves-light {
 
 .btn .fa-lg,
 .btn-floating .fa-lg {
-  font-size: 1.33333em  !important; }
+  font-size: 1.33333em !important; }
 
 .btn .fa-xs,
 .btn-floating .fa-xs {
@@ -5243,6 +5255,20 @@ body.scrollable {
     .md-form textarea.md-textarea.form-control-sm.invalid + label:after,
     .md-form textarea.md-textarea.form-control-sm:focus.invalid + label:after {
       top: 3.1rem; }
+  .md-form > input[type=date]:not(.browser-default) + label {
+    -webkit-transform: translateY(-27px) scale(0.8);
+    -ms-transform: translateY(-27px) scale(0.8);
+    transform: translateY(-27px) scale(0.8);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  .md-form > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+  .md-form > input[type=time]:not(.browser-default) + label {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    font-size: .8rem; }
   .md-form .was-validated input[type=text]:valid + label {
     color: #00c851 !important; }
   .md-form .was-validated input[type=text]:invalid + label {
@@ -5588,6 +5614,24 @@ body.scrollable {
         top: 2.75rem;
         left: 0;
         position: absolute; }
+    .md-form.md-outline > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+    .md-form.md-outline > input[type=time]:not(.browser-default) + label {
+      -webkit-transform: translateY(-17px);
+      transform: translateY(-17px);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      background: #fff;
+      font-weight: 500;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 11px;
+      left: 8px; }
+    .md-form.md-outline > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label.active,
+    .md-form.md-outline > input[type=time]:not(.browser-default) + label.active {
+      -webkit-transform: translateY(-17px);
+      transform: translateY(-17px);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
     .md-form.md-outline .form-control {
       padding: .375rem .75rem; }
     .md-form.md-outline label {

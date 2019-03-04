@@ -92,6 +92,18 @@
     }
   }
 
+  > input[type=date]:not(.browser-default)+label {
+    transform: translateY(-27px) scale(0.8);
+    transform-origin: 0 0;
+  }
+
+  > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
+  > input[type=time]:not(.browser-default)+label {
+    transform: translateY(-25px);
+    transform-origin: 0 0;
+    font-size: .8rem;
+  }
+
   .was-validated {
     input[type=text] {
       &:valid {
@@ -257,6 +269,24 @@
         left: 0;
         position: absolute;
       }
+    }
+
+    > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
+    > input[type=time]:not(.browser-default)+label {
+      transform: translateY(-17px);
+      transform-origin: 0 0;
+      background: #fff;
+      font-weight: 500;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 11px;
+      left: 8px;
+    }
+
+    > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label.active,
+    > input[type=time]:not(.browser-default)+label.active {
+      transform: translateY(-17px);
+      transform-origin: 0 0;
     }
 
     .form-control {
