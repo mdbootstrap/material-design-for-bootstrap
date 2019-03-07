@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <b>400+</b> material UI elements, <b>600+</b> material icons, <b>74</b> CSS animations, SASS files, templates, tutorials and many more. Free for personal and commercial use. Available jQuery, Angular, React and Vue versions
+  <b>400+</b> material UI elements, <b>600+</b> material icons, <b>74</b> CSS animations, SASS files, templates, tutorials and many more. Free (MIT licensed) for personal and commercial use. Available jQuery, Angular, React and Vue versions
 </p>
 <p align="center">
   Trusted by <b>800 000+</b> developers & designers. Used by such a companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
@@ -254,4 +254,4 @@ ________
 
 # PRO version
 
- - [Material Design for Bootstrap PRO](https://mdbootstrap.com/products/jquery-ui-kit/)
+ - [Material Design for Bootstrap PRO](https://mdbootstrap.com/products/jquery-ui-kit/) ([licensing](MaterialDesignBootstrapPRO-License.pdf))
