@@ -11,87 +11,62 @@
   white-space: normal;
   word-wrap: break-word;
   color: $btn-color-basic;
-
   &:hover,
   &:active,
   &:focus {
     box-shadow: $z-depth-1-half;
     outline: 0;
   }
-
   &:not([disabled]):not(.disabled):active,
   &:not([disabled]):not(.disabled).active {
     box-shadow: $z-depth-1-half;
   }
-
-  .fas,
-  .fab,
-  .far {
+  .fas, .fab, .far {
     position: relative;
     font-size: $btn-icon-basic;
-
     &.right {
       margin-left: $btn-icon-margin;
     }
-
     &.left {
       margin-right: $btn-icon-margin;
     }
   }
-
   &.btn-lg {
     @include button-size($btn-padding-y-large, $btn-padding-x-large, $btn-font-size-large);
-
-    .fas,
-    .fab,
-    .far {
+    .fas, .fab, .far {
       font-size: $btn-icon-large;
     }
   }
-
   &.btn-md {
     @include button-size($btn-padding-y-medium, $btn-padding-x-medium, $btn-font-size-medium);
-
-    .fas,
-    .fab,
-    .far {
+    .fas, .fab, .far {
       font-size: $btn-icon-medium;
     }
   }
-
   &.btn-sm {
     @include button-size($btn-padding-y-small, $btn-padding-x-small, $btn-font-size-small);
-
-    .fas,
-    .fab,
-    .far {
+    .fas, .fab, .far {
       font-size: $btn-icon-small;
     }
   }
-
   &.btn-tb {
     padding: $btn-tb-padding-y $btn-tb-padding-x;
   }
-
   &.disabled,
   &:disabled {
-
     &:active,
     &:focus,
     &:hover {
       box-shadow: $z-depth-1;
     }
   }
-
   &.btn-block {
     margin: inherit;
   }
-
   &.btn-link {
     @extend .black-text;
     box-shadow: none;
     background-color: transparent;
-
     &:active,
     &:focus,
     &:hover {
@@ -99,39 +74,33 @@
       background-color: transparent;
     }
   }
-
   &[class*="btn-outline-"] {
     padding-top: $btn-outline-padding-y-basic;
     padding-bottom: $btn-outline-padding-y-basic;
-
     &.btn-lg {
       padding-top: $btn-outline-padding-y-large;
       padding-bottom: $btn-outline-padding-y-large;
     }
-
     &.btn-md {
       padding-top: $btn-outline-padding-y-medium;
       padding-bottom: $btn-outline-padding-y-medium;
     }
-
     &.btn-sm {
       padding-top: $btn-outline-padding-y-small;
       padding-bottom: $btn-outline-padding-y-small;
     }
   }
 }
-
 .btn-group {
   .btn {
     margin: 0;
   }
 }
-
 // Overwrite default button icon size
 .btn,
 .btn-floating {
   .fa-lg {
-    font-size: 1.33333em !important;
+    font-size: 1.33333em  !important;
   }
 
   .fa-xs {
@@ -182,15 +151,12 @@
     font-size: 10em !important;
   }
 }
-
-@each $btn_name,
-$color_value in $mdb-colors {
+@each $btn_name, $color_value in $mdb-colors {
   @include make-button($btn_name, $color_value);
   @include make-outline-button($btn_name, $color_value);
 }
-
-.btn-warning:not(:disabled):not(.disabled).active,
-.btn-warning:not(:disabled):not(.disabled):active,
+.btn-warning:not(:disabled):not(.disabled).active, 
+.btn-warning:not(:disabled):not(.disabled):active, 
 .show>.btn-warning.dropdown-toggle {
   color: $white-base;
 }

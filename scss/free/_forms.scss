@@ -400,6 +400,111 @@
       margin-top: -.5rem;
     }
   }
+
+  &.md-ver {
+    position: relative;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=url],
+    input[type=time],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=tel],
+    input[type=number],
+    input[type=search-md],
+    input[type=search],
+    textarea {
+      
+      &:focus {
+        box-shadow: none;
+        border-bottom-color: rgba(0,0,0,0.12);
+        ~ label {
+          top: 0;
+          opacity: 1;
+          color: #8e44ad;
+          font-size: 12px;
+          &:after {
+            visibility: visible;
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+      // Focused input style
+      &:focus:not([readonly]) {
+        border-color: #4285f4;
+        box-shadow: inset 0px 0px 0px 1px #4285f4;
+        // Focused label style
+        + label {
+          top: 0;
+          opacity: 1;
+          color: #8e44ad;
+          font-size: 12px;
+          &:after {
+            visibility: visible;
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 100%;
+      font-weight: 300;
+      opacity: 0.5;
+      cursor: text;
+      transition: 0.2s ease all;
+      margin: 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        height: 2px;
+        width: 10px;
+        visibility: hidden;
+        background-color:#8e44ad;
+        transition: 0.2s ease all;
+      }
+    }
+
+    .form-control {
+      position: relative;
+      z-index: 1;
+      border-radius: 0;
+      border-width: 0 0 1px;
+      border-bottom-color: rgba(0,0,0,0.25);
+      height: auto;
+      padding: 3px 0 5px;
+      &:focus {
+        box-shadow: none;
+        border-bottom-color: rgba(0,0,0,0.12);
+        ~ label {
+          top: 0;
+          opacity: 1;
+          color: #8e44ad;
+          font-size: 12px;
+          &:after {
+            visibility: visible;
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 .md-form .form-control.is-invalid, 

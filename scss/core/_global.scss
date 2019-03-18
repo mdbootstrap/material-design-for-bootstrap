@@ -54,13 +54,13 @@
   @include make-gradient-rgba($name, $val);
 }
 
-.dark-grey-text {
-  color: #4f4f4f !important;
-  &:hover,
-  &:focus {
-    color: #4f4f4f !important;
-  }
-}
+// .dark-grey-text {
+//   color: #4f4f4f !important;
+//   &:hover,
+//   &:focus {
+//     color: #4f4f4f !important;
+//   }
+// }
 
 // Shadow on hover
 .hoverable {
