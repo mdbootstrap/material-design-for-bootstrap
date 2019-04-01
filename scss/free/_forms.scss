@@ -215,7 +215,7 @@
     input[type=number],
     input[type=search-md],
     input[type=search],
-    textarea {
+    textarea.md-textarea {
       // General Styles
       transition: all .3s;
       outline: none;
@@ -296,7 +296,6 @@
     label {
       font-size: .875rem;
       position: absolute;
-      top: .65rem;
       left: 0;
       padding-left: 10px;
       transition: .2s ease-out;
@@ -401,10 +400,7 @@
     }
   }
 
-  &.md-ver {
-    position: relative;
-    padding-top: 16px;
-    margin-bottom: 16px;
+  &.md-bg {
     input[type=text],
     input[type=password],
     input[type=email],
@@ -416,92 +412,52 @@
     input[type=number],
     input[type=search-md],
     input[type=search],
-    textarea {
-      
-      &:focus {
-        box-shadow: none;
-        border-bottom-color: rgba(0,0,0,0.12);
-        ~ label {
-          top: 0;
-          opacity: 1;
-          color: #8e44ad;
-          font-size: 12px;
-          &:after {
-            visibility: visible;
-            width: 100%;
-            left: 0;
-          }
-        }
-      }
-      // Focused input style
+    textarea.md-textarea {
       &:focus:not([readonly]) {
-        border-color: #4285f4;
-        box-shadow: inset 0px 0px 0px 1px #4285f4;
-        // Focused label style
-        + label {
-          top: 0;
-          opacity: 1;
-          color: #8e44ad;
-          font-size: 12px;
-          &:after {
-            visibility: visible;
-            width: 100%;
-            left: 0;
-          }
-        }
+        box-shadow: none;
+        border-bottom: none;
+      }
+      box-sizing: border-box;
+      padding: 10px 5px;
+      border: 0;
+      border-top-left-radius: .3rem;
+      border-top-right-radius: .3rem;
+      background: #f5f5f5 no-repeat;
+      background-image: linear-gradient(to bottom, $input-md-focus-color, $input-md-focus-color), linear-gradient(to bottom, $input-border-color, $input-border-color);
+      background-size: 0 2px, 100% 1px;
+      background-position: 50% 100%, 50% 100%;
+      transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+      &:focus {
+        background-color: #dcdcdc;
+        background-size: 100% 2px, 100% 1px;
+        outline: none;
       }
     }
 
-    label {
-      position: absolute;
-      top: 20px;
-      left: 0;
-      bottom: 0;
-      z-index: 2;
-      width: 100%;
-      font-weight: 300;
-      opacity: 0.5;
-      cursor: text;
-      transition: 0.2s ease all;
-      margin: 0;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 45%;
-        height: 2px;
-        width: 10px;
-        visibility: hidden;
-        background-color:#8e44ad;
-        transition: 0.2s ease all;
-      }
+    > input[type=date]:not(.browser-default)+label {
+      transform: translateY(-12px) scale(0.8);
+      transform-origin: 0 0;
+    }
+  
+    > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
+    > input[type=time]:not(.browser-default)+label {
+      transform: translateY(-12px);
+      transform-origin: 0 0;
+      font-size: .8rem;
     }
 
     .form-control {
-      position: relative;
-      z-index: 1;
-      border-radius: 0;
-      border-width: 0 0 1px;
-      border-bottom-color: rgba(0,0,0,0.25);
-      height: auto;
-      padding: 3px 0 5px;
-      &:focus {
-        box-shadow: none;
-        border-bottom-color: rgba(0,0,0,0.12);
-        ~ label {
-          top: 0;
-          opacity: 1;
-          color: #8e44ad;
-          font-size: 12px;
-          &:after {
-            visibility: visible;
-            width: 100%;
-            left: 0;
-          }
-        }
+      padding: 1.1rem .7rem .4rem !important;
+    }
+
+    label {
+      top: .85rem;
+      padding-left: .7rem;
+      &.active {
+        transform: translateY(-65%);
+        font-weight: 500;
+        font-size: .7rem;
+        padding-left: .75rem;
       }
     }
   }

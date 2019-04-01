@@ -1,0 +1,29 @@
+// Treeview
+.treeview {
+  .w-20 {
+    width: 20rem;
+  }
+  .rotate {
+    cursor: pointer;
+    user-select: none;
+    transition: all .1s linear;
+    font-size: .8rem;
+    vertical-align: text-top;
+    margin-top: .2rem;
+    &.down {
+      transform: rotate(90deg);
+    }
+  }
+  .nested {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .ic-w {
+    width: 1.3rem;
+  }
+}
