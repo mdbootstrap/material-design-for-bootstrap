@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.7.6
+ * Version: MDB FREE 4.7.7
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -7340,7 +7340,8 @@ body.scrollable {
       border-bottom: 1px solid #00c851;
       -webkit-box-shadow: 0 1px 0 0 #00c851;
       box-shadow: 0 1px 0 0 #00c851; }
-    .md-form input[type=text].valid + label:after, .md-form input[type=text]:focus.valid + label:after,
+    .md-form input[type=text].valid + label:after,
+    .md-form input[type=text]:focus.valid + label:after,
     .md-form input[type=password].valid + label:after,
     .md-form input[type=password]:focus.valid + label:after,
     .md-form input[type=email].valid + label:after,
@@ -7392,7 +7393,8 @@ body.scrollable {
       border-bottom: 1px solid #f44336;
       -webkit-box-shadow: 0 1px 0 0 #f44336;
       box-shadow: 0 1px 0 0 #f44336; }
-    .md-form input[type=text].invalid + label:after, .md-form input[type=text]:focus.invalid + label:after,
+    .md-form input[type=text].invalid + label:after,
+    .md-form input[type=text]:focus.invalid + label:after,
     .md-form input[type=password].invalid + label:after,
     .md-form input[type=password]:focus.invalid + label:after,
     .md-form input[type=email].invalid + label:after,
@@ -7773,7 +7775,9 @@ body.scrollable {
         border-color: #00c851;
         -webkit-box-shadow: inset 0px 0px 0px 1px #00c851;
         box-shadow: inset 0px 0px 0px 1px #00c851; }
-      .md-form.md-outline input[type=text]:focus:not([readonly]).valid + label, .md-form.md-outline input[type=text].valid + label:after, .md-form.md-outline input[type=text]:focus.valid + label:after,
+      .md-form.md-outline input[type=text]:focus:not([readonly]).valid + label,
+      .md-form.md-outline input[type=text].valid + label:after,
+      .md-form.md-outline input[type=text]:focus.valid + label:after,
       .md-form.md-outline input[type=password]:focus:not([readonly]).valid + label,
       .md-form.md-outline input[type=password].valid + label:after,
       .md-form.md-outline input[type=password]:focus.valid + label:after,
@@ -7836,7 +7840,9 @@ body.scrollable {
         border-color: #f44336;
         -webkit-box-shadow: inset 0px 0px 0px 1px #f44336;
         box-shadow: inset 0px 0px 0px 1px #f44336; }
-      .md-form.md-outline input[type=text]:focus:not([readonly]).invalid + label, .md-form.md-outline input[type=text].invalid + label:after, .md-form.md-outline input[type=text]:focus.invalid + label:after,
+      .md-form.md-outline input[type=text]:focus:not([readonly]).invalid + label,
+      .md-form.md-outline input[type=text].invalid + label:after,
+      .md-form.md-outline input[type=text]:focus.invalid + label:after,
       .md-form.md-outline input[type=password]:focus:not([readonly]).invalid + label,
       .md-form.md-outline input[type=password].invalid + label:after,
       .md-form.md-outline input[type=password]:focus.invalid + label:after,
@@ -8593,3 +8599,35 @@ ul.stepper {
 .fast.spinner-grow {
   -webkit-animation: spinner-grow .4s linear infinite;
   animation: spinner-grow .4s linear infinite; }
+
+.treeview.w-20 {
+  width: 20rem; }
+
+.treeview .rotate {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+  font-size: .8rem;
+  vertical-align: text-top;
+  margin-top: .2rem; }
+  .treeview .rotate.down {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.treeview .nested {
+  display: none; }
+
+.treeview .active {
+  display: block; }
+
+.treeview ul {
+  list-style-type: none; }
+
+.treeview .ic-w {
+  width: 1.3rem; }

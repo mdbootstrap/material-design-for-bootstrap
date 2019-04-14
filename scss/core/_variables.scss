@@ -126,6 +126,7 @@ $hide-sidenav: "only screen and (max-width : #{$sidenav-breakpoint})" !default;
 
 // Link color
 $link-color: #0275d8 !default;
+$link-hover-color: darken($link-color, 15%) !default;
 
 // Dividers colors
 $hr-light:            $white-base !default;
