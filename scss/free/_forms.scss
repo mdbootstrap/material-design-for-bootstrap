@@ -179,14 +179,17 @@
 
   label {
     position: absolute;
-    top: $input-label-top;
+    top: 0;
     left: 0;
-    transition: $input-label-transition;
+    font-size: 1rem;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transform-origin: 0% 100%;
+    transform: translateY(12px);
     cursor: text;
     color: $input-label-color;
 
     &.active {
-      transform: $input-label-active-transform;
+      transform: translateY(-14px) scale(.8);
     }
   }
 
@@ -333,21 +336,23 @@
     }
 
     label {
-      font-size: .875rem;
+      font-size: 1rem;
       position: absolute;
+      top: 0;
       left: 0;
       padding-left: 10px;
-      transition: .2s ease-out;
+      transition: transform .2s ease-out, color .2s ease-out;
+      transform-origin: 0% 100%;
+      transform: translateY(9px);
       cursor: text;
       color: #757575;
 
       &.active {
-        transform: translateY(-100%);
+        transform: translateY(-13px) scale(.8);
         background: #fff;
         font-weight: 500;
         padding-right: 5px;
         padding-left: 5px;
-        font-size: 11px;
         left: 8px;
       }
     }
@@ -361,10 +366,11 @@
 
       label {
         font-size: 1.25rem;
+        transform: translateY(10px);
 
         &.active {
-          transform: translateY(-100%);
-          font-size: 13px;
+          font-size: 1.1rem;
+          transform: translateY(-14px) scale(.8);
         }
       }
 
@@ -397,11 +403,11 @@
 
       label {
         font-size: .8rem;
-        top: .4rem;
+        transform: translateY(8px);
 
         &.active {
-          transform: translateY(-85%);
-          font-size: 10px;
+          font-size: .85rem;
+          transform: translateY(-12px) scale(.8);
         }
       }
 
@@ -515,14 +521,39 @@
     }
 
     label {
-      top: .85rem;
+      top: 0;
       padding-left: .7rem;
+      font-size: 1rem;
+      transition: transform .2s ease-out, color .2s ease-out;
+      transform-origin: 0% 100%;
+      transform: translateY(13px);
 
       &.active {
-        transform: translateY(-65%);
+        transform: translateY(-3px) scale(.8);
         font-weight: 500;
-        font-size: .7rem;
         padding-left: .75rem;
+      }
+    }
+
+    &.form-lg {
+
+      label {
+        transform: translateY(16px);
+
+        &.active {
+          transform: translateY(-4px) scale(.8);
+        }
+      }
+    }
+
+    &.form-sm {
+
+      label {
+        transform: translateY(11px);
+
+        &.active {
+          transform: translateY(-2px) scale(.8);
+        }
       }
     }
   }
@@ -540,4 +571,18 @@
 
 .needs-validation .md-form label {
   left: .3rem;
+}
+
+//Custom fille input browser support
+@each $lang,
+$text in $custom-mdb-file-text {
+  .custom-file-input {
+    &:lang(#{$lang}) {
+      &~.custom-file-label {
+        &::after {
+          content: $text;
+        }
+      }
+    }
+  }
 }

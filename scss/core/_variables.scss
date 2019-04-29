@@ -49,6 +49,17 @@ $responsive-headings: map-merge((
   ),
 ), $responsive-headings);
 
+//Custom map for file browser
+$custom-mdb-file-text: (
+  es: "Elegir",
+  pl-PL: "Wybierz",
+  fr : "Choisir",
+  in: "Pilih",
+  zh: "選擇",
+  de: "Wählen",
+  ru: "выбирать"
+);
+
 // Blockquote
 $blockquote-padding-y:      .5rem !default;
 $blockquote-padding-x:      1rem !default;
@@ -197,7 +208,7 @@ $input-prefix-transition:             color .2s !default;
 $input-md-form-margin-top:            1.5rem !default;
 $input-md-form-margin-bottom:         $input-md-form-margin-top !default;
 $input-label-font-size:               1rem !default;
-$input-label-active-font-size:        .8rem !default;
+$input-label-active-font-size:        1rem !default;
 $input-prefix-top:                    .25rem !default;
 $input-prefix-font-size:               1.75rem !default;
 $input-prefix-margin-left:             2.5rem !default;
@@ -209,7 +220,7 @@ $input-label-valid-top:                3.56rem !default;
 $input-label-invalid-top:              3.44rem !default;
 
 $input-label-font-size-lg:             1.25rem !default;
-$input-label-active-font-size-lg:      .95rem !default;
+$input-label-active-font-size-lg:      1.15rem !default;
 $input-prefix-top-lg:                  .4rem !default;
 $input-prefix-font-size-lg:            2rem !default;
 $input-prefix-margin-left-lg:          3rem !default;
@@ -221,7 +232,7 @@ $input-label-valid-top-lg:             4.1rem !default;
 $input-label-invalid-top-lg:           4rem !default;
 
 $input-label-font-size-sm:             .875rem !default;
-$input-label-active-font-size-sm:      .75rem !default;
+$input-label-active-font-size-sm:      .95rem !default;
 $input-prefix-top-sm:                  .35rem !default;
 $input-prefix-font-size-sm:            1.5rem !default;
 $input-prefix-margin-left-sm:          2rem !default;
@@ -235,8 +246,8 @@ $input-label-invalid-top-sm:           3.1rem !default;
 $textarea-padding:                     1.5rem !default;
 
 $input-form-control-margin-bottom:     .5rem !default;
-$input-form-control-padding-top:       .3rem !default;
-$input-form-control-padding-bottom:    .55rem !default;
+$input-form-control-padding-top:       .6rem !default;
+$input-form-control-padding-bottom:    .4rem !default;
 $input-disabled-solid-color:           #BDBDBD !default;
 
 // Input group

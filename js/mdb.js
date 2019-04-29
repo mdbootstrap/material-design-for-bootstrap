@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.7.7
+ * Version: MDB FREE: 4.8.0
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -14917,22 +14917,17 @@ var WOW;
   };
 })(jQuery);
 
-'use strict';
+"use strict";
 
 (function ($) {
-
   var SCROLLING_NAVBAR_OFFSET_TOP = 50;
-
   $(window).on('scroll', function () {
-
     var $navbar = $('.navbar');
+
     if ($navbar.length) {
-
       if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
-
         $('.scrolling-navbar').addClass('top-nav-collapse');
       } else {
-
         $('.scrolling-navbar').removeClass('top-nav-collapse');
       }
     }
@@ -15541,47 +15536,39 @@ Waves.attach('.navbar-nav a:not(.navbar-brand), .nav-icons li a, .nav-tabs .nav-
 Waves.attach('.pager li a', ['waves-light']);
 Waves.attach('.pagination .page-item .page-link', ['waves-effect']);
 Waves.init();
-'use strict';
+"use strict";
+
+var _this = void 0;
 
 (function ($) {
-
-  var inputSelector = ['text', 'password', 'email', 'url', 'tel', 'number', 'search', 'search-md'].map(function (selector) {
-    return 'input[type=' + selector + ']';
-  }).join(', ') + ', textarea';
-
+  var inputSelector = "".concat(['text', 'password', 'email', 'url', 'tel', 'number', 'search', 'search-md'].map(function (selector) {
+    return "input[type=".concat(selector, "]");
+  }).join(', '), ", textarea");
   var textAreaSelector = '.materialize-textarea';
 
   var updateTextFields = function updateTextFields($input) {
-
     var $labelAndIcon = $input.siblings('label, i');
     var hasValue = $input.val().length;
     var hasPlaceholder = $input.attr('placeholder');
-    var addOrRemove = (hasValue || hasPlaceholder ? 'add' : 'remove') + 'Class';
-
+    var addOrRemove = "".concat(hasValue || hasPlaceholder ? 'add' : 'remove', "Class");
     $labelAndIcon[addOrRemove]('active');
   };
 
   var validateField = function validateField($input) {
-
     if ($input.hasClass('validate')) {
-
       var value = $input.val();
       var noValue = !value.length;
       var isValid = !$input[0].validity.badInput;
 
       if (noValue && isValid) {
-
         $input.removeClass('valid').removeClass('invalid');
       } else {
-
         var valid = $input.is(':valid');
         var length = Number($input.attr('length')) || 0;
 
         if (valid && (!length || length > value.length)) {
-
           $input.removeClass('invalid').addClass('valid');
         } else {
-
           $input.removeClass('valid').addClass('invalid');
         }
       }
@@ -15589,103 +15576,84 @@ Waves.init();
   };
 
   var textAreaAutoResize = function textAreaAutoResize() {
+    var $textarea = $(_this);
 
-    var $textarea = $(undefined);
     if ($textarea.val().length) {
-
       var $hiddenDiv = $('.hiddendiv');
       var fontFamily = $textarea.css('font-family');
       var fontSize = $textarea.css('font-size');
 
       if (fontSize) {
-
         $hiddenDiv.css('font-size', fontSize);
       }
 
       if (fontFamily) {
-
         $hiddenDiv.css('font-family', fontFamily);
       }
 
       if ($textarea.attr('wrap') === 'off') {
-
         $hiddenDiv.css('overflow-wrap', 'normal').css('white-space', 'pre');
       }
 
-      $hiddenDiv.text($textarea.val() + '\n');
+      $hiddenDiv.text("".concat($textarea.val(), "\n"));
       var content = $hiddenDiv.html().replace(/\n/g, '<br>');
-      $hiddenDiv.html(content);
-
-      // When textarea is hidden, width goes crazy.
+      $hiddenDiv.html(content); // When textarea is hidden, width goes crazy.
       // Approximate with half of window size
+
       $hiddenDiv.css('width', $textarea.is(':visible') ? $textarea.width() : $(window).width() / 2);
       $textarea.css('height', $hiddenDiv.height());
     }
   };
 
   $(inputSelector).each(function (index, input) {
-
     var $this = $(input);
     var $labelAndIcon = $this.siblings('label, i');
     updateTextFields($this);
     var isValid = input.validity.badInput;
-    if (isValid) {
 
+    if (isValid) {
       $labelAndIcon.addClass('active');
     }
   });
-
   $(document).on('focus', inputSelector, function (e) {
-
     $(e.target).siblings('label, i').addClass('active');
   });
-
   $(document).on('blur', inputSelector, function (e) {
-
     var $this = $(e.target);
     var noValue = !$this.val();
     var invalid = !e.target.validity.badInput;
     var noPlaceholder = $this.attr('placeholder') === undefined;
 
     if (noValue && invalid && noPlaceholder) {
-
       $this.siblings('label, i').removeClass('active');
     }
 
     validateField($this);
   });
-
   $(document).on('change', inputSelector, function (e) {
-
     var $this = $(e.target);
     updateTextFields($this);
     validateField($this);
   });
-
   $('input[autofocus]').siblings('label, i').addClass('active');
-
   $(document).on('reset', function (e) {
-
     var $formReset = $(e.target);
-    if ($formReset.is('form')) {
 
+    if ($formReset.is('form')) {
       var $formInputs = $formReset.find(inputSelector);
       $formInputs.removeClass('valid').removeClass('invalid').each(function (index, input) {
-
         var $this = $(input);
         var noDefaultValue = !$this.val();
         var noPlaceholder = !$this.attr('placeholder');
+
         if (noDefaultValue && noPlaceholder) {
           $this.siblings('label, i').removeClass('active');
         }
       });
-
       $formReset.find('select.initialized').each(function (index, select) {
-
         var $select = $(select);
         var $visibleInput = $select.siblings('input.select-dropdown');
         var defaultValue = $select.children('[selected]').val();
-
         $select.val(defaultValue);
         $visibleInput.val(defaultValue);
       });
@@ -15693,37 +15661,30 @@ Waves.init();
   });
 
   function init() {
-
     var $text = $('.md-textarea-auto');
+
     if ($text.length) {
+      var observe;
 
-      var observe = void 0;
       if (window.attachEvent) {
-
         observe = function observe(element, event, handler) {
-
-          element.attachEvent('on' + event, handler);
+          element.attachEvent("on".concat(event), handler);
         };
       } else {
-
         observe = function observe(element, event, handler) {
-
           element.addEventListener(event, handler, false);
         };
       }
 
       $text.each(function () {
-
         var self = this;
 
         function resize() {
-
           self.style.height = 'auto';
-          self.style.height = self.scrollHeight + 'px';
+          self.style.height = "".concat(self.scrollHeight, "px");
         }
 
         function delayedResize() {
-
           window.setTimeout(resize, 0);
         }
 
@@ -15732,16 +15693,15 @@ Waves.init();
         observe(self, 'paste', delayedResize);
         observe(self, 'drop', delayedResize);
         observe(self, 'keydown', delayedResize);
-
         resize();
       });
     }
   }
+
   init();
-
   var $body = $('body');
-  if (!$('.hiddendiv').first().length) {
 
+  if (!$('.hiddendiv').first().length) {
     var $hiddenDiv = $('<div class="hiddendiv common"></div>');
     $body.append($hiddenDiv);
   }
@@ -15788,21 +15748,176 @@ for (i = 0; i < toggler.length; i++) {
     this.classList.toggle("down");
   });
 }
-'use strict';
+/*!
+ * bsCustomFileInput v1.3.2 (https://github.com/Johann-S/bs-custom-file-input)
+ * Copyright 2018 - 2019 Johann-S <johann.servoire@gmail.com>
+ * Licensed under MIT (https://github.com/Johann-S/bs-custom-file-input/blob/master/LICENSE)
+ */
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    (global = global || self, global.bsCustomFileInput = factory());
+}(this, function () {
+  'use strict';
 
-(function ($) {
-  $('.input-default-wrapper').on('change', '.input-default-js', function (e) {
+  var Selector = {
+    CUSTOMFILE: '.custom-file input[type="file"]',
+    CUSTOMFILELABEL: '.custom-file-label',
+    FORM: 'form',
+    INPUT: 'input'
+  };
 
-    var $this = $(e.target),
-        $label = $this.next('label'),
-        $files = $this[0].files;
-    var fileName = '';
+  var textNodeType = 3;
 
-    if ($files && $files.length > 1) {
-      fileName = ($this.attr('data-multiple-target') || '').replace('{target}', $files.length);
-    } else if (e.target.value) {
-      fileName = e.target.value.split('\\').pop();
+  var getDefaultText = function getDefaultText(input) {
+    var defaultText = '';
+    var label = input.parentNode.querySelector(Selector.CUSTOMFILELABEL);
+
+    if (label) {
+      defaultText = label.innerHTML;
     }
-    fileName ? $label.find('.span-choose-file').html(fileName) : $label.html($label.html());
-  });
-})(jQuery);
+
+    return defaultText;
+  };
+
+  var findFirstChildNode = function findFirstChildNode(element) {
+    if (element.childNodes.length > 0) {
+      var childNodes = [].slice.call(element.childNodes);
+
+      for (var i = 0; i < childNodes.length; i++) {
+        var node = childNodes[i];
+
+        if (node.nodeType !== textNodeType) {
+          return node;
+        }
+      }
+    }
+
+    return element;
+  };
+
+  var restoreDefaultText = function restoreDefaultText(input) {
+    var defaultText = input.bsCustomFileInput.defaultText;
+    var label = input.parentNode.querySelector(Selector.CUSTOMFILELABEL);
+
+    if (label) {
+      var element = findFirstChildNode(label);
+      element.innerHTML = defaultText;
+    }
+  };
+
+  var fileApi = !!window.File;
+  var FAKE_PATH = 'fakepath';
+  var FAKE_PATH_SEPARATOR = '\\';
+
+  var getSelectedFiles = function getSelectedFiles(input) {
+    if (input.hasAttribute('multiple') && fileApi) {
+      return [].slice.call(input.files).map(function (file) {
+        return file.name;
+      }).join(', ');
+    }
+
+    if (input.value.indexOf(FAKE_PATH) !== -1) {
+      var splittedValue = input.value.split(FAKE_PATH_SEPARATOR);
+      return splittedValue[splittedValue.length - 1];
+    }
+
+    return input.value;
+  };
+
+  function handleInputChange() {
+    var label = this.parentNode.querySelector(Selector.CUSTOMFILELABEL);
+
+    if (label) {
+      var element = findFirstChildNode(label);
+      var inputValue = getSelectedFiles(this);
+
+      if (inputValue.length) {
+        element.innerHTML = inputValue;
+      } else {
+        restoreDefaultText(this);
+      }
+    }
+  }
+
+  function handleFormReset() {
+    var customFileList = [].slice.call(this.querySelectorAll(Selector.INPUT)).filter(function (input) {
+      return !!input.bsCustomFileInput;
+    });
+
+    for (var i = 0, len = customFileList.length; i < len; i++) {
+      restoreDefaultText(customFileList[i]);
+    }
+  }
+
+  var customProperty = 'bsCustomFileInput';
+  var Event = {
+    FORMRESET: 'reset',
+    INPUTCHANGE: 'change'
+  };
+  var bsCustomFileInput = {
+    init: function init(inputSelector, formSelector) {
+      if (inputSelector === void 0) {
+        inputSelector = Selector.CUSTOMFILE;
+      }
+
+      if (formSelector === void 0) {
+        formSelector = Selector.FORM;
+      }
+
+      var customFileInputList = [].slice.call(document.querySelectorAll(inputSelector));
+      var formList = [].slice.call(document.querySelectorAll(formSelector));
+
+      for (var i = 0, len = customFileInputList.length; i < len; i++) {
+        var input = customFileInputList[i];
+        Object.defineProperty(input, customProperty, {
+          value: {
+            defaultText: getDefaultText(input)
+          },
+          writable: true
+        });
+        handleInputChange.call(input);
+        input.addEventListener(Event.INPUTCHANGE, handleInputChange);
+      }
+
+      for (var _i = 0, _len = formList.length; _i < _len; _i++) {
+        formList[_i].addEventListener(Event.FORMRESET, handleFormReset);
+
+        Object.defineProperty(formList[_i], customProperty, {
+          value: true,
+          writable: true
+        });
+      }
+    },
+    destroy: function destroy() {
+      var formList = [].slice.call(document.querySelectorAll(Selector.FORM)).filter(function (form) {
+        return !!form.bsCustomFileInput;
+      });
+      var customFileInputList = [].slice.call(document.querySelectorAll(Selector.INPUT)).filter(function (input) {
+        return !!input.bsCustomFileInput;
+      });
+
+      for (var i = 0, len = customFileInputList.length; i < len; i++) {
+        var input = customFileInputList[i];
+        restoreDefaultText(input);
+        input[customProperty] = undefined;
+        input.removeEventListener(Event.INPUTCHANGE, handleInputChange);
+      }
+
+      for (var _i2 = 0, _len2 = formList.length; _i2 < _len2; _i2++) {
+        formList[_i2].removeEventListener(Event.FORMRESET, handleFormReset);
+
+        formList[_i2][customProperty] = undefined;
+      }
+    }
+  };
+
+  return bsCustomFileInput;
+
+}));
+//# sourceMappingURL=bs-custom-file-input.js.map
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  bsCustomFileInput.init()
+});
