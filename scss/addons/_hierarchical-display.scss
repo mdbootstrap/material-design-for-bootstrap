@@ -1,0 +1,46 @@
+.zmd-hierarchical-display {
+  visibility: hidden;
+  &.in {
+    visibility: visible;
+  }
+}
+.zmd-hierarchical-displaying {
+  visibility: visible;
+}
+
+.animation {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animation.zoomedIn,
+.animation.zoomedOut {
+  animation-timing-function: cubic-bezier(.55,0,.1,1); // "Swift Out" easing curve
+}
+
+@keyframes zoomedIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomedOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.zoomedIn {
+  animation-name: zoomedIn;
+}
+
+.zoomedOut {
+  animation-name: zoomedOut;
+}
+

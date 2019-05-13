@@ -1,6 +1,7 @@
 // Variables
 // Fonts
 $roboto-font-path:            "../font/roboto/" !default;
+$roboto-font-family:          "Roboto", sans-serif !default;
 
 $font-size-large:             1.5rem !default;
 $font-bold:                   500 !default;
@@ -216,8 +217,8 @@ $input-prefix-width:                   calc(100% - 2.5rem) !default;
 $input-group-addon-font-size:          1.4rem !default;
 $input-form-text-ml:                   2.6rem !default;
 $input-validate-mb:                    2.5rem !default;
-$input-label-valid-top:                3.56rem !default;
-$input-label-invalid-top:              3.44rem !default;
+$input-label-valid-top:                4.1rem !default;
+$input-label-invalid-top:              4rem !default;
 
 $input-label-font-size-lg:             1.25rem !default;
 $input-label-active-font-size-lg:      1.15rem !default;
@@ -228,8 +229,8 @@ $input-prefix-width-lg:                calc(100% - 3rem) !default;
 $input-group-addon-font-size-lg:       1.65rem !default;
 $input-form-text-ml-lg:                3.1rem !default;
 $input-validate-mb-lg:                 2.8rem !default;
-$input-label-valid-top-lg:             4.1rem !default;
-$input-label-invalid-top-lg:           4rem !default;
+$input-label-valid-top-lg:             4.6rem !default;
+$input-label-invalid-top-lg:           4.6rem !default;
 
 $input-label-font-size-sm:             .875rem !default;
 $input-label-active-font-size-sm:      .95rem !default;
@@ -240,8 +241,8 @@ $input-prefix-width-sm:                calc(100% - 2rem) !default;
 $input-group-addon-font-size-sm:       1.15rem !default;
 $input-form-text-ml-sm:                2rem !default;
 $input-validate-mb-sm:                 2.3rem !default;
-$input-label-valid-top-sm:             3.2rem !default;
-$input-label-invalid-top-sm:           3.1rem !default;
+$input-label-valid-top-sm:             3.7rem !default;
+$input-label-invalid-top-sm:           3.6rem !default;
 
 $textarea-padding:                     1.5rem !default;
 

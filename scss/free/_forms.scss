@@ -156,19 +156,38 @@
     margin: 0 0 $input-form-control-margin-bottom 0;
     border-radius: 0;
     padding: $input-form-control-padding-top 0 $input-form-control-padding-bottom 0;
-    background-image: none;
+    // background-image: none;
     background-color: transparent;
     height: auto;
 
     &:focus {
       box-shadow: none;
-      background: transparent;
+      // background: transparent;
     }
 
     &:disabled,
     &[readonly] {
       border-bottom: 1px solid $grey-lighten-1;
       background-color: transparent;
+    }
+
+    &.is-valid {
+      border-color: $input-success-color;
+      &:focus {
+        border-color: $input-success-color !important;
+        box-shadow: 0 1px 0 0 $input-success-color !important;
+      }
+    }
+    &.is-invalid {
+      border-color: $input-error-color;
+      &:focus {
+        box-shadow: 0 1px 0 0 $input-error-color !important;
+        border-color: $input-error-color !important;
+      }
+    }
+    &.is-valid,
+    &.is-invalid {
+      background-position: center right !important;
     }
   }
 
@@ -180,7 +199,7 @@
   label {
     position: absolute;
     top: 0;
-    left: 0;
+    // left: 0;
     font-size: 1rem;
     transition: transform .2s ease-out, color .2s ease-out;
     transform-origin: 0% 100%;
@@ -573,7 +592,7 @@
   left: .3rem;
 }
 
-//Custom fille input browser support
+// Custom fille input browser support
 @each $lang,
 $text in $custom-mdb-file-text {
   .custom-file-input {
