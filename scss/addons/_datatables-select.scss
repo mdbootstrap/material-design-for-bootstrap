@@ -17,57 +17,47 @@
  */
 
 
- table.dataTable {
+table.dataTable {
   tbody > tr {
-    &.selected, > .selected {
+    &.selected,
+    > .selected {
       background-color: #B0BED9;
     }
   }
-  &.stripe tbody > tr.odd {
-    &.selected, > .selected {
-      background-color: #acbad4;
+  &.stripe, &.display {
+    tbody > tr.odd{
+      &.selected,
+      > .selected {
+        background-color: #acbad4;
+      }
     }
   }
-  &.display tbody > tr.odd {
-    &.selected, > .selected {
-      background-color: #acbad4;
+  &.hover, &.display {
+    tbody > tr {
+      &.selected:hover,
+      > .selected:hover {
+        background-color: #aab7d1;
+      }
     }
   }
-  &.hover tbody > tr {
-    &.selected:hover, > .selected:hover {
-      background-color: #aab7d1;
-    }
-  }
-  &.display tbody > tr {
-    &.selected:hover, > .selected:hover {
-      background-color: #aab7d1;
-    }
-  }
-  &.order-column tbody > tr {
-    &.selected > {
-      .sorting_1, .sorting_2, .sorting_3 {
+  &.order-column, &.display {
+    tbody > tr {
+      &.selected > {
+        .sorting_1, .sorting_2, .sorting_3 {
+          background-color: #acbad5;
+        }
+      }
+      > .selected {
         background-color: #acbad5;
       }
     }
-    > .selected {
-      background-color: #acbad5;
-    }
   }
-  &.display tbody > tr {
-    &.selected > {
-      .sorting_1, .sorting_2, .sorting_3 {
-        background-color: #acbad5;
+  &.display, &.order-column.stripe {
+    tbody > tr {
+      &.odd.selected > .sorting_1 {
+        background-color: #a6b4cd;
       }
     }
-    > .selected {
-      background-color: #acbad5;
-    }
-    &.odd.selected > .sorting_1 {
-      background-color: #a6b4cd;
-    }
-  }
-  &.order-column.stripe tbody > tr.odd.selected > .sorting_1 {
-    background-color: #a6b4cd;
   }
   &.display tbody > tr.odd.selected > .sorting_2, &.order-column.stripe tbody > tr.odd.selected > .sorting_2 {
     background-color: #a8b5cf;
@@ -99,43 +89,33 @@
   &.display tbody > tr.selected:hover > .sorting_3, &.order-column.hover tbody > tr.selected:hover > .sorting_3 {
     background-color: #a5b2cb;
   }
-  &.display tbody > tr {
-    &:hover > .selected, > .selected:hover {
-      background-color: #a2aec7;
-    }
-  }
-  &.order-column.hover tbody > tr {
-    &:hover > .selected, > .selected:hover {
-      background-color: #a2aec7;
+  &.display, &.order-column.hover {
+    tbody > tr {
+      &:hover > .selected, > .selected:hover {
+        background-color: #a2aec7;
+      }
     }
   }
   tbody {
     td.select-checkbox, th.select-checkbox {
       position: relative;
     }
-    td.select-checkbox {
-      &:before, &:after {
-        display: block;
-        position: absolute;
-        top: 1.2em;
-        left: 50%;
-        width: 12px;
-        height: 12px;
-        box-sizing: border-box;
+    td, th {
+      &.select-checkbox {
+        &:before,
+        &:after {
+          display: block;
+          position: absolute;
+          top: 1.2em;
+          left: 50%;
+          width: 12px;
+          height: 12px;
+          box-sizing: border-box;
+        }
       }
     }
-    th.select-checkbox {
-      &:before, &:after {
-        display: block;
-        position: absolute;
-        top: 1.2em;
-        left: 50%;
-        width: 12px;
-        height: 12px;
-        box-sizing: border-box;
-      }
-    }
-    td.select-checkbox:before, th.select-checkbox:before {
+    td.select-checkbox:before,
+    th.select-checkbox:before {
       content: ' ';
       margin-top: 4px;
       margin-left: -6px;
@@ -144,7 +124,8 @@
     }
   }
   tr.selected {
-    td.select-checkbox:after, th.select-checkbox:after {
+    td.select-checkbox:after,
+    th.select-checkbox:after {
       content: '\2714';
       margin-top: 0px;
       margin-left: -4px;
