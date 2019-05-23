@@ -1048,12 +1048,12 @@ function enabled ( dt, config ) {
 	var checkinArray = function(tableComponent) {
 		return $.inArray( tableComponent, config.limitTo ) !== -1 && dt[tableComponent]( { selected: true } ).any()
 	}
-	
+
 	return (
 		checkinArray('row') ||
 		checkinArray('columns') ||
 		checkinArray('cells')
-	) ? true : false;
+	);
 }
 
 var _buttonNamespace = 0;
