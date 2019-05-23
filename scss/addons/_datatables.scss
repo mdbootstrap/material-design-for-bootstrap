@@ -36,6 +36,9 @@ div.dataTables_wrapper div {
         }
       }
     }
+  }
+  &.dataTables_length,
+  &.dataTables_filter {
     label {
       text-align: left;
       font-weight: normal;
@@ -43,37 +46,29 @@ div.dataTables_wrapper div {
       padding-bottom: .5rem;
     }
   }
-  &.dataTables_filter label {
-    text-align: left;
-    font-weight: normal;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
   &.dataTables_length {
     select, input {
       width: auto;
     }
   }
   &.dataTables_filter {
-    select {
+    select,
+    input {
       width: auto;
     }
     input {
-      width: auto;
       margin-left: .5rem;
       display: inline-block;
     }
     text-align: right;
   }
-  &.dataTables_info {
+  &.dataTables_info,
+  &.dataTables_paginate {
     font-weight: normal;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
   &.dataTables_paginate {
-    font-weight: normal;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     text-align: right;
     margin: 0;
     ul.pagination {
@@ -112,11 +107,7 @@ div.dataTables_wrapper div {
 
 table.dataTable thead {
   > tr > {
-    th {
-      &.sorting_asc, &.sorting_desc, &.sorting {
-        padding-right: 30px;
-      }
-    }
+    th,
     td {
       &.sorting_asc, &.sorting_desc, &.sorting {
         padding-right: 30px;
@@ -130,38 +121,10 @@ table.dataTable thead {
     cursor: pointer;
     position: relative;
   }
-  .sorting {
-    &:before, &:after {
-      position: absolute;
-      bottom: 0.9em;
-      display: block;
-      opacity: 0.3;
-    }
-  }
-  .sorting_asc {
-    &:before, &:after {
-      position: absolute;
-      bottom: 0.9em;
-      display: block;
-      opacity: 0.3;
-    }
-  }
-  .sorting_desc {
-    &:before, &:after {
-      position: absolute;
-      bottom: 0.9em;
-      display: block;
-      opacity: 0.3;
-    }
-  }
-  .sorting_asc_disabled {
-    &:before, &:after {
-      position: absolute;
-      bottom: 0.9em;
-      display: block;
-      opacity: 0.3;
-    }
-  }
+  .sorting,
+  .sorting_asc,
+  .sorting_desc,
+  .sorting_asc_disabled,
   .sorting_desc_disabled {
     &:before, &:after {
       position: absolute;
@@ -173,18 +136,18 @@ table.dataTable thead {
   .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before {
     right: 1em;
     content: "\f0de";
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
-    font-size: 1rem;
   }
   .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
-    right: 0.5em;
     content: "\f0dd";
+    right: 16px;
+  }
+  .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before,
+  .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
-    right: 16px;
     font-size: 1rem;
   }
+
   .sorting_asc:before, .sorting_desc:after {
     opacity: 1;
   }
