@@ -173,18 +173,22 @@
 
     &.is-valid {
       border-color: $input-success-color;
+
       &:focus {
         border-color: $input-success-color !important;
         box-shadow: 0 1px 0 0 $input-success-color !important;
       }
     }
+
     &.is-invalid {
       border-color: $input-error-color;
+
       &:focus {
         box-shadow: 0 1px 0 0 $input-error-color !important;
         border-color: $input-error-color !important;
       }
     }
+
     &.is-valid,
     &.is-invalid {
       background-position: center right !important;
@@ -199,7 +203,7 @@
   label {
     position: absolute;
     top: 0;
-    // left: 0;
+    left: 0;
     font-size: 1rem;
     transition: transform .2s ease-out, color .2s ease-out;
     transform-origin: 0% 100%;
