@@ -456,8 +456,8 @@
         }
     }
 
-    Waves.init = function(options) {
-        var body = document.body;
+    Waves.init = function(options, w) {
+        var body = (w !== undefined) ? w.document.body : document.body;
 
         options = options || {};
 
