@@ -160,3 +160,8 @@
 .show>.btn-warning.dropdown-toggle {
   color: $white-base;
 }
+
+// Gradient buttons
+@each $name, $val in $gradients {
+  @include make-gradient-button($name, $val);
+}

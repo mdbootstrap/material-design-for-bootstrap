@@ -338,20 +338,41 @@
 
     >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
     >input[type=time]:not(.browser-default)+label {
-      transform: translateY(-17px);
+      transform: translateY(-9px) scale(.8);
       transform-origin: 0 0;
       background: #fff;
       font-weight: 500;
       padding-right: 5px;
       padding-left: 5px;
-      font-size: 11px;
+      font-size: 1rem;
       left: 8px;
     }
 
     >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label.active,
     >input[type=time]:not(.browser-default)+label.active {
-      transform: translateY(-17px);
+      transform: translateY(-9px) scale(.8);
       transform-origin: 0 0;
+    }
+
+    @-webkit-keyframes autofill {
+      to {
+        color: #495057;
+        background: transparent; 
+      } 
+    }
+      
+    @keyframes autofill {
+      to {
+        color: #495057;
+        background: transparent; 
+      } 
+    }
+    
+    input:-webkit-autofill {
+      -webkit-animation-name: autofill;
+      animation-name: autofill;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; 
     }
 
     .form-control {
