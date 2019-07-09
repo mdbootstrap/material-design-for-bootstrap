@@ -4,7 +4,6 @@
  * About MDBootstrap: https://mdbootstrap.com/
  *
  * This combined file was created taking that code from this webstie:
-
  *  https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css
  *
  *
@@ -15,37 +14,27 @@
  * Included libraries:
  *   DataTables 1.10.18
  */
-table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
+table.dataTable tbody > tr.selected,
+table.dataTable tbody > tr > .selected {
   background-color: #B0BED9; }
 
-table.dataTable.stripe tbody > tr.odd.selected, table.dataTable.stripe tbody > tr.odd > .selected {
+table.dataTable.stripe tbody > tr.odd.selected,
+table.dataTable.stripe tbody > tr.odd > .selected, table.dataTable.display tbody > tr.odd.selected,
+table.dataTable.display tbody > tr.odd > .selected {
   background-color: #acbad4; }
 
-table.dataTable.display tbody > tr.odd.selected, table.dataTable.display tbody > tr.odd > .selected {
-  background-color: #acbad4; }
-
-table.dataTable.hover tbody > tr.selected:hover, table.dataTable.hover tbody > tr > .selected:hover {
+table.dataTable.hover tbody > tr.selected:hover,
+table.dataTable.hover tbody > tr > .selected:hover, table.dataTable.display tbody > tr.selected:hover,
+table.dataTable.display tbody > tr > .selected:hover {
   background-color: #aab7d1; }
 
-table.dataTable.display tbody > tr.selected:hover, table.dataTable.display tbody > tr > .selected:hover {
-  background-color: #aab7d1; }
-
-table.dataTable.order-column tbody > tr.selected > .sorting_1, table.dataTable.order-column tbody > tr.selected > .sorting_2, table.dataTable.order-column tbody > tr.selected > .sorting_3 {
+table.dataTable.order-column tbody > tr.selected > .sorting_1, table.dataTable.order-column tbody > tr.selected > .sorting_2, table.dataTable.order-column tbody > tr.selected > .sorting_3, table.dataTable.display tbody > tr.selected > .sorting_1, table.dataTable.display tbody > tr.selected > .sorting_2, table.dataTable.display tbody > tr.selected > .sorting_3 {
   background-color: #acbad5; }
 
-table.dataTable.order-column tbody > tr > .selected {
+table.dataTable.order-column tbody > tr > .selected, table.dataTable.display tbody > tr > .selected {
   background-color: #acbad5; }
 
-table.dataTable.display tbody > tr.selected > .sorting_1, table.dataTable.display tbody > tr.selected > .sorting_2, table.dataTable.display tbody > tr.selected > .sorting_3 {
-  background-color: #acbad5; }
-
-table.dataTable.display tbody > tr > .selected {
-  background-color: #acbad5; }
-
-table.dataTable.display tbody > tr.odd.selected > .sorting_1 {
-  background-color: #a6b4cd; }
-
-table.dataTable.order-column.stripe tbody > tr.odd.selected > .sorting_1 {
+table.dataTable.display tbody > tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody > tr.odd.selected > .sorting_1 {
   background-color: #a6b4cd; }
 
 table.dataTable.display tbody > tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody > tr.odd.selected > .sorting_2 {
@@ -78,16 +67,13 @@ table.dataTable.display tbody > tr.selected:hover > .sorting_2, table.dataTable.
 table.dataTable.display tbody > tr.selected:hover > .sorting_3, table.dataTable.order-column.hover tbody > tr.selected:hover > .sorting_3 {
   background-color: #a5b2cb; }
 
-table.dataTable.display tbody > tr:hover > .selected, table.dataTable.display tbody > tr > .selected:hover {
-  background-color: #a2aec7; }
-
-table.dataTable.order-column.hover tbody > tr:hover > .selected, table.dataTable.order-column.hover tbody > tr > .selected:hover {
+table.dataTable.display tbody > tr:hover > .selected, table.dataTable.display tbody > tr > .selected:hover, table.dataTable.order-column.hover tbody > tr:hover > .selected, table.dataTable.order-column.hover tbody > tr > .selected:hover {
   background-color: #a2aec7; }
 
 table.dataTable tbody td.select-checkbox, table.dataTable tbody th.select-checkbox {
   position: relative; }
 
-table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select-checkbox:after {
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select-checkbox:after, table.dataTable tbody th.select-checkbox:before, table.dataTable tbody th.select-checkbox:after {
   display: block;
   position: absolute;
   top: 1.2em;
@@ -97,17 +83,8 @@ table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-table.dataTable tbody th.select-checkbox:before, table.dataTable tbody th.select-checkbox:after {
-  display: block;
-  position: absolute;
-  top: 1.2em;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before {
+table.dataTable tbody td.select-checkbox:before,
+table.dataTable tbody th.select-checkbox:before {
   content: ' ';
   margin-top: 4px;
   margin-left: -6px;
@@ -115,7 +92,8 @@ table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after {
+table.dataTable tr.selected td.select-checkbox:after,
+table.dataTable tr.selected th.select-checkbox:after {
   content: '\2714';
   margin-top: 0px;
   margin-left: -4px;

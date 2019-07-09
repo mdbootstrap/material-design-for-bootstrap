@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.8.3
+ * Version: MDB FREE: 4.8.5
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -15748,6 +15748,24 @@ for (i = 0; i < toggler.length; i++) {
     this.classList.toggle("down");
   });
 }
+
+(function ($) {
+  var $allPanels = $('.treeview-animated .nested').hide();
+  var $elements = $('.treeview-animated-element');
+  $('.closed').click(function () {
+    $this = $(this);
+    $target = $this.siblings('.treeview-animated .nested');
+    $pointer = $this.children('.treeview-animated .fa-angle-right');
+    $this.toggleClass('open');
+    $pointer.toggleClass('down');
+    !$target.hasClass('active') ? $target.addClass('active').slideDown() : $target.removeClass('active').slideUp();
+    return false;
+  });
+  $elements.click(function () {
+    $this = $(this);
+    $this.hasClass('opened') ? $this.removeClass('opened') : ($elements.removeClass('opened'), $this.addClass('opened'));
+  });
+})(jQuery);
 /*!
  * bsCustomFileInput v1.3.2 (https://github.com/Johann-S/bs-custom-file-input)
  * Copyright 2018 - 2019 Johann-S <johann.servoire@gmail.com>
