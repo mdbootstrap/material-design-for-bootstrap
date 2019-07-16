@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.8.3
+ * Version: MDB FREE 4.8.5
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -7811,8 +7812,6 @@ body.scrollable {
   .md-form textarea.md-textarea-auto {
     padding: 0;
     padding-top: 1.5rem; }
-  .md-form textarea ~ label.active {
-    color: #4285f4; }
   .md-form.md-outline {
     position: relative;
     margin-top: 1.5rem;

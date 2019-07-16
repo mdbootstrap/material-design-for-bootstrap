@@ -247,11 +247,11 @@
     }
 
     // Label color for textarea
-    ~label {
-      &.active {
-        color: $input-md-focus-color;
-      }
-    }
+    // ~label {
+    //   &.active {
+    //     color: $input-md-focus-color;
+    //   }
+    // }
   }
 
   &.md-outline {

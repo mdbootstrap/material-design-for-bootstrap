@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.8.3
+ * Version: MDB FREE 4.8.5
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -30,6 +30,7 @@
 // Bootstrap
 @import "core/bootstrap/functions";
 @import "core/bootstrap/variables";
+@import "core/bootstrap/rfs";
 
 // CORE
 @import "core/mixins";
@@ -68,6 +69,9 @@
 // @import "addons/datatables";
 // @import "addons/datatables-select";
 // @import "addons/directives";
+// @import "addons/hierarchical-display";
+// @import "addons/flags";
+// @import "addons/rating";
 
 // Your custom styles
 @import "custom-styles";
