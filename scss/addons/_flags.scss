@@ -19,12 +19,11 @@ i.flag:not(.icon) {
   height: 11px;
   line-height: 11px;
   vertical-align: baseline;
-  margin: 0em 0.5em 0em 0em;
+  margin: 0 0.5em 0 0;
   text-decoration: inherit;
   speak: none;
-  font-smoothing: antialiased;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  font-smooth: antialiased;
+  backface-visibility: hidden;
 }
 
 /* Sprite */

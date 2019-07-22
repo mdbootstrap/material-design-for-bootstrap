@@ -1,390 +1,494 @@
-// Variables
-// Fonts
-$roboto-font-path:            "../font/roboto/" !default;
-$roboto-font-family:          "Roboto", sans-serif !default;
 
-$font-size-large:             1.5rem !default;
-$font-bold:                   500 !default;
-$font-small:                  .9rem !default;
+// ===========================================================================
+// MDB variables
+// ===========================================================================
+//
+// Table of Contents: 
+//
+//  1. Fonts
+//  2. Shadows
+//  3. Transitions
+//  4. Borders
+//  5. Globals
+//  6. Masks
+//  7. Images
+//  8. Buttons
+//  9. Cards
+//  10. Navbars
+//  11. Pagination
+//  12. Badges
+//  13. Modals
+//  14. Carousels
+//  15. Forms
+//  16. Miscellaneous
+//  17. Footers
+//  18. List groups
+//  19. Tables
+//  20. Steppers
 
-$line-height-small:           1 !default;
-$line-height-extra-large:     2.5 !default;
+
+
+// 1. Fonts
+// ===========================================================================
+
+// Basic font properties
+$roboto-font-path:                            "../font/roboto/" !default;
+$roboto-font-family:                          "Roboto", sans-serif !default;
+$mdb-font-family:                             $roboto-font-family !default;
+
+$font-size-large:                             1.5rem !default;
+$font-size-small:                             0.9rem !default;
+
+// Blockquote
+$blockquote-padding-y                        : .5rem !default;
+$blockquote-padding-x                        : 1rem !default;
+$blockquote-p-padding-y                      : $blockquote-padding-x !default;
+$blockquote-p-padding-l                      : 2rem !default;
+$blockquote-p-font-size                      : 1.1rem !default;
+
+// Custom map for file browser
+$custom-mdb-file-text                        : (
+  es                                         : "Elegir",
+  pl-PL                                      : "Wybierz",
+  fr                                         : "Choisir",
+  in                                         : "Pilih",
+  zh                                         : "選擇",
+  de                                         : "Wählen",
+  ru                                         : "выбирать"
+);
 
 // Reponsive Headings
-$responsive-headings: () !default;
-$responsive-headings: map-merge((
-  "xs": (
-    "h1": 150%,
-    "h2": 145%,
-    "h3": 135%,
-    "h4": 135%,
-    "h5": 135%
+$responsive-headings                         : () !default;
+$responsive-headings                         : map-merge((
+  "xs"                                       : (
+    "h1"                                     : 150%,
+    "h2"                                     : 145%,
+    "h3"                                     : 135%,
+    "h4"                                     : 135%,
+    "h5"                                     : 135%
   ),
-  "sm": (
-    "h1": 170%,
-    "h2": 140%,
-    "h3": 125%,
-    "h4": 125%,
-    "h5": 125%
+  "sm"                                       : (
+    "h1"                                     : 170%,
+    "h2"                                     : 140%,
+    "h3"                                     : 125%,
+    "h4"                                     : 125%,
+    "h5"                                     : 125%
   ),
-  "md": (
-    "h1": 200%,
-    "h2": 170%,
-    "h3": 140%,
-    "h4": 125%,
-    "h5": 125%
+  "md"                                       : (
+    "h1"                                     : 200%,
+    "h2"                                     : 170%,
+    "h3"                                     : 140%,
+    "h4"                                     : 125%,
+    "h5"                                     : 125%
   ),
-  "lg": (
-    "h1": 200%,
-    "h2": 170%,
-    "h3": 140%,
-    "h4": 125%,
-    "h5": 125%
+  "lg"                                       : (
+    "h1"                                     : 200%,
+    "h2"                                     : 170%,
+    "h3"                                     : 140%,
+    "h4"                                     : 125%,
+    "h5"                                     : 125%
   ),
-  "xl": (
-    "h1": 250%,
-    "h2": 200%,
-    "h3": 170%,
-    "h4": 140%,
-    "h5": 125%
+  "xl"                                       : (
+    "h1"                                     : 250%,
+    "h2"                                     : 200%,
+    "h3"                                     : 170%,
+    "h4"                                     : 140%,
+    "h5"                                     : 125%
   ),
 ), $responsive-headings);
 
-//Custom map for file browser
-$custom-mdb-file-text: (
-  es: "Elegir",
-  pl-PL: "Wybierz",
-  fr : "Choisir",
-  in: "Pilih",
-  zh: "選擇",
-  de: "Wählen",
-  ru: "выбирать"
-);
+// Links
+$link-color                                  : #0275d8 !default;
+$link-hover-color                            : darken($link-color, 15%) !default;
 
-// Blockquote
-$blockquote-padding-y:      .5rem !default;
-$blockquote-padding-x:      1rem !default;
-$blockquote-p-padding-y:    $blockquote-padding-x !default;
-$blockquote-p-padding-l:    2rem !default;
-$blockquote-p-font-size:    1.1rem !default;
+
+// 2. Shadows
+// ===========================================================================
 
 // Shadows
-$z-depth-1:          0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
-$z-depth-1-half:     0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !default;
-$z-depth-2:          0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !default;
-$z-depth-3:          0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !default;
-$z-depth-4:          0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !default;
-$z-depth-5:          0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
+$z-depth-1                                   : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
+$z-depth-1-half                              : 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !default;
+$z-depth-2                                   : 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !default;
+$z-depth-3                                   : 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !default;
+$z-depth-4                                   : 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !default;
+$z-depth-5                                   : 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
+
+
+// 3. Transitions
+// ===========================================================================
 
 // Transitions
-$transition-basic:            all .2s ease-in-out !default;
-$transition-hoverable:        all .55s ease-in-out !default;
+$transition-basic                            : all .2s ease-in-out !default;
+$transition-hoverable                        : all .55s ease-in-out !default;
+
+
+// 4. Borders
+// ===========================================================================
 
 // Border radius
-$border-radius-base:          .125rem !default;
-$border-radius-circle:        50% !default;
+$border-radius-base                          : .125rem !default;
+$border-radius-circle                        : 50% !default;
 
-// Buttons
-$btn-color-basic:             $white-base !default;
-$btn-margin-basic:            .375rem !default;
-$btn-padding-y-basic:         .84rem !default;
-$btn-padding-x-basic:         2.14rem !default;
-$btn-font-size-basic:         .81rem !default;
 
-$btn-padding-y-large:         1rem !default;
-$btn-padding-x-large:         2.4rem !default;
-$btn-font-size-large:         .94rem !default;
+// 5. Globals
+// ===========================================================================
 
-$btn-padding-y-medium:        .7rem !default;
-$btn-padding-x-medium:        1.6rem !default;
-$btn-font-size-medium:        .7rem !default;
-
-$btn-padding-y-small:         .5rem !default;
-$btn-padding-x-small:         1.6rem !default;
-$btn-font-size-small:         .64rem !default;
-
-$btn-outline-padding-y-basic:         .7rem !default;
-$btn-outline-padding-y-large:         .88rem !default;
-$btn-outline-padding-y-medium:        .58rem !default;
-$btn-outline-padding-y-small:         .38rem !default;
-
-$btn-tb-padding-y:       0.3rem !default;
-$btn-tb-padding-x:       1rem !default;
-
-$btn-transition:         $transition-basic !default;
-
-$btn-icon-basic:         .9rem !default;
-$btn-icon-large:         1rem !default;
-$btn-icon-medium:        .8rem !default;
-$btn-icon-small:         .7rem !default;
-$btn-icon-margin:        .3rem !default;
-
-/*** Global ***/
 // Media Query Ranges
-$small-screen-up:     601px !default;
-$medium-screen-up:    993px !default;
-$large-screen-up:     1201px !default;
-$small-screen:        600px !default;
-$medium-screen:       992px !default;
-$large-screen:        1200px !default;
-$sidenav-breakpoint:  1440px !default;
+$small-screen-up                             : 601px !default;
+$medium-screen-up                            : 993px !default;
+$large-screen-up                             : 1201px !default;
+$small-screen                                : 600px !default;
+$medium-screen                               : 992px !default;
+$large-screen                                : 1200px !default;
+$sidenav-breakpoint                          : 1440px !default;
 
-$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
-$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
-$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
-$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
-$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
-$hide-sidenav: "only screen and (max-width : #{$sidenav-breakpoint})" !default;
-
-// Link color
-$link-color: #0275d8 !default;
-$link-hover-color: darken($link-color, 15%) !default;
-
-// Dividers colors
-$hr-light:            $white-base !default;
-$hr-dark:             #666 !default;
-$flex-center-ul-mb:   1rem !default;
+$medium-and-up                               : "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up                                : "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down                              : "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down                             : "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only                                 : "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$hide-sidenav                                : "only screen and (max-width : #{$sidenav-breakpoint})" !default;
 
 // Divider
-$divider-margin-y:         2.8rem !default;
-$divider-margin-x:         .5rem !default;
-$divider-height:           2px !default;
+$divider-margin-y                            : 2.8rem !default;
+$divider-margin-x                            : .5rem !default;
+$divider-height                              : 2px !default;
+
+// Dividers colors
+$hr-light                                    : $white-base !default;
+$hr-dark                                     : #666 !default;
+$flex-center-ul-mb                           : 1rem !default;
+
+
+// 6. Masks
+// ===========================================================================
 
 // Masks
-$mask-overlay-transition:     all .4s ease-in-out !default;
-$mask-zoom-transition:        all .2s linear !default;
-$mask-zoom-transform:         scale(1.1) !default;
-$intro-video-transform:       translateX(-50%) translateY(-50%) !default;
-$intro-video-transition:      1s !default;
+$mask-overlay-transition                     : all .4s ease-in-out !default;
+$mask-zoom-transition                        : all .2s linear !default;
+$mask-zoom-transform                         : scale(1.1) !default;
+$intro-video-transform                       : translateX(-50%) translateY(-50%) !default;
+$intro-video-transition                      : 1s !default;
 
-// Cards
-$md-card-border-radius:          .25rem !default;
-$md-card-link-transition:        .2s ease-in-out !default;
-$md-card-font-size:              .9rem !default;
-$md-card-text-color:             #747373 !default;
+
+// 7. Images
+// ===========================================================================
 
 // Images
-$image-path: "../img" !default;
-$avatar-img-max-width: 100px !default;
+$image-path                                  : "../img" !default;
+$avatar-img-max-width                        : 100px !default;
 
-// Carousels
-$carousel-control-icon-width:         2.25rem !default;
-$carousel-control-icon-height:        $carousel-control-icon-width !default;
-$carousel-control-prev-icon:          url(#{$image-path}/svg/arrow_left.svg) !default;
-$carousel-control-next-icon:          url(#{$image-path}/svg/arrow_right.svg) !default;
-$carousel-indicators-width:           .625rem !default;
-$carousel-indicators-height:          $carousel-indicators-width !default;
-$carousel-indicators-border-radius:   $border-radius-circle !default;
-$carousel-transition-duration:        .6s !default;
-$carousel-item-transform:             translateX(0) !default;
-$carousel-item-transform-2:           translate3d(0, 0, 0) !default;
 
-// Badges
-$badge-pill-padding-x:                .6rem !default;
-$badge-pill-border-radius:            10rem !default;
+// 8. Buttons
+// ===========================================================================
 
-// Footers
-$footer-copyright-color:               rgba($white-base, .6) !default;
-$footer-copyright-bg-color:            rgba($black-base, .2) !default;
-$footer-font-size:                     .9rem !default;
+// Buttons
+$btn-color-basic                             : $white-base !default;
+$btn-margin-basic                            : .375rem !default;
+$btn-padding-y-basic                         : .84rem !default;
+$btn-padding-x-basic                         : 2.14rem !default;
+$btn-font-size-basic                         : .81rem !default;
 
-// Forms
-$input-bg-color:                      $white-base !default;
-$label-font-size:                     .8rem !default;
-$input-transition:                    all .3s !default;
-$input-disabled-color:                rgba(0,0,0, .46) !default;
-$input-md-focus-color:                $primary-color !default;
-$input-error-color:                   $error-color !default;
-$input-success-color:                 $success-color !default;
-$input-label-after-top:               65px !default;
-$input-label-after-transition:        .2s opacity ease-out, .2s color ease-out !default;
-$input-border-color:                  #ced4da !default;
+$btn-padding-y-large                         : 1rem !default;
+$btn-padding-x-large                         : 2.4rem !default;
+$btn-font-size-large                         : .94rem !default;
 
-$input-label-transition:              .2s ease-out !default;
-$input-label-color:                   #757575 !default;
-$input-label-top:                     .65rem !default;
-$input-label-active-transform:        translateY(-14px) !default;
-$input-prefix-transition:             color .2s !default;
+$btn-padding-y-medium                        : .7rem !default;
+$btn-padding-x-medium                        : 1.6rem !default;
+$btn-font-size-medium                        : .7rem !default;
 
-$input-md-form-margin-top:            1.5rem !default;
-$input-md-form-margin-bottom:         $input-md-form-margin-top !default;
-$input-label-font-size:               1rem !default;
-$input-label-active-font-size:        1rem !default;
-$input-prefix-top:                    .25rem !default;
-$input-prefix-font-size:               1.75rem !default;
-$input-prefix-margin-left:             2.5rem !default;
-$input-prefix-width:                   calc(100% - 2.5rem) !default;
-$input-group-addon-font-size:          1.4rem !default;
-$input-form-text-ml:                   2.6rem !default;
-$input-validate-mb:                    2.5rem !default;
-$input-label-valid-top:                4.1rem !default;
-$input-label-invalid-top:              4rem !default;
+$btn-padding-y-small                         : .5rem !default;
+$btn-padding-x-small                         : 1.6rem !default;
+$btn-font-size-small                         : .64rem !default;
 
-$input-label-font-size-lg:             1.25rem !default;
-$input-label-active-font-size-lg:      1.15rem !default;
-$input-prefix-top-lg:                  .4rem !default;
-$input-prefix-font-size-lg:            2rem !default;
-$input-prefix-margin-left-lg:          3rem !default;
-$input-prefix-width-lg:                calc(100% - 3rem) !default;
-$input-group-addon-font-size-lg:       1.65rem !default;
-$input-form-text-ml-lg:                3.1rem !default;
-$input-validate-mb-lg:                 2.8rem !default;
-$input-label-valid-top-lg:             4.6rem !default;
-$input-label-invalid-top-lg:           4.6rem !default;
+$btn-outline-padding-y-basic                 : .7rem !default;
+$btn-outline-padding-y-large                 : .88rem !default;
+$btn-outline-padding-y-medium                : .58rem !default;
+$btn-outline-padding-y-small                 : .38rem !default;
 
-$input-label-font-size-sm:             .875rem !default;
-$input-label-active-font-size-sm:      .95rem !default;
-$input-prefix-top-sm:                  .35rem !default;
-$input-prefix-font-size-sm:            1.5rem !default;
-$input-prefix-margin-left-sm:          2rem !default;
-$input-prefix-width-sm:                calc(100% - 2rem) !default;
-$input-group-addon-font-size-sm:       1.15rem !default;
-$input-form-text-ml-sm:                2rem !default;
-$input-validate-mb-sm:                 2.3rem !default;
-$input-label-valid-top-sm:             3.7rem !default;
-$input-label-invalid-top-sm:           3.6rem !default;
+$btn-tb-padding-y                            : 0.3rem !default;
+$btn-tb-padding-x                            : 1rem !default;
 
-$textarea-padding:                     1.5rem !default;
+$btn-transition                              : $transition-basic !default;
 
-$input-form-control-margin-bottom:     .5rem !default;
-$input-form-control-padding-top:       .6rem !default;
-$input-form-control-padding-bottom:    .4rem !default;
-$input-disabled-solid-color:           #BDBDBD !default;
+$btn-icon-basic                              : .9rem !default;
+$btn-icon-large                              : 1rem !default;
+$btn-icon-medium                             : .8rem !default;
+$btn-icon-small                              : .7rem !default;
+$btn-icon-margin                             : .3rem !default;
 
-// Input group
-$input-group-text-bgc:                #e0e0e0 !default;
-$input-group-form-control-px:         .75rem !default;
-$input-group-form-control-py:         .375rem !default;
 
-// List group
-$list-group-padding:                   0 10px 10px 0 !default;
-$list-group-transition:                .5s !default;
+// 9. Cards
+// ===========================================================================
 
-// Modals
-$modal-distance:                       10px !default;
-$modal-width:                          400px !default;
-$modal-full-height-medium-screen:      800px !default;
-$modal-full-height-large-screen:       1000px !default;
-$modal-fade-top-transform:             translate3d(0, -25%, 0) !default;
-$modal-fade-bottom-transform:          translate3d(0, 25%, 0) !default;
-$modal-fade-right-transform:           translate3d(25%, 0, 0) !default;
-$modal-fade-left-transform:            translate3d(-25%, 0, 0) !default;
-$modal-notify-body-padding:            1.5rem !default;
-$modal-notify-heading-padding:         .3rem !default;
-$modal-notify-font-size:               1.15rem !default;
-$modal-avatar-margin-top:              6rem !default;
-$modal-avatar-header-margin-top:       -6rem !default;
-$modal-avatar-header-margin-bottom:    -1rem !default;
-$modal-avatar-img-width:               130px !default;
-$modal-body-padding-right:             2rem !default;
-$modal-body-padding-left:              $modal-body-padding-right !default;
-$modal-body-margin-top:                1rem !default;
-$cascading-modal-margin-top:           -2rem !default;
-$cascading-modal-margin-right:         1rem !default;
-$cascading-modal-margin-bottom:        $cascading-modal-margin-right !default;
-$cascading-modal-margin-left:          $cascading-modal-margin-right !default;
-$cascading-modal-padding:              1.5rem !default;
-$cascading-modal-close-margin-right:   $cascading-modal-margin-right !default;
-$cascading-modal-font-size:            1.25rem !default;
-$cascading-modal-fa-margin-right:      9px !default;
-$cascading-modal-social-margin-top:    $cascading-modal-padding !default;
-$cascading-modal-a-font-size:          1rem !default;
-$cascading-modal-tabs-margin-x:        1rem !default;
-$cascading-modal-tabs-margin-top:      -1.5rem !default;
-$cascading-modal-tabs-padding-top:     1.7rem !default;
+// Cards
+$md-card-border-radius                       : .25rem !default;
+$md-card-link-transition                     : .2s ease-in-out !default;
+$md-card-font-size                           : .9rem !default;
+$md-card-text-color                          : #747373 !default;
 
-// Miscellaneous
-$edge-header-height:                   278px !default;
-$edge-header-background-color:         #ccc !default;
-$edge-header-margin-top:               -100px !default;
+
+// 10. Navbars
+// ===========================================================================
 
 // Navbars
-$navbar-font-weight:                   300 !default;
-$navbar-double-font-size:              15px !default;
+$navbar-font-weight                          : 300 !default;
+$navbar-double-font-size                     : 15px !default;
 
-$navbar-light-toggler-icon:            url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
-$navbar-light-bg-active-color:         rgba($black-base, .1) !default;
-$navbar-light-hover-color:             rgba($black-base, .75) !default;
-$navbar-light-disabled-color:          rgba(0, 0, 0, 0.5) !default;
+$navbar-light-toggler-icon                   : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
+$navbar-light-bg-active-color                : rgba($black-base, .1) !default;
+$navbar-light-hover-color                    : rgba($black-base, .75) !default;
+$navbar-light-disabled-color                 : rgba(0, 0, 0, 0.5) !default;
 
-$navbar-dark-toggler-icon:             url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
-$navbar-dark-bg-active-color:          rgba($white-base, .1) !default;
-$navbar-dark-hover-color:              rgba($white-base, .75) !default;
-$navbar-dark-disabled-color:           rgba(255, 255, 255, 0.5) !default;
+$navbar-dark-toggler-icon                    : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
+$navbar-dark-bg-active-color                 : rgba($white-base, .1) !default;
+$navbar-dark-hover-color                     : rgba($white-base, .75) !default;
+$navbar-dark-disabled-color                  : rgba(255, 255, 255, 0.5) !default;
 
-$navbar-scrolling-transition:          background .5s ease-in-out, padding .5s ease-in-out !default;
-$navbar-scrolling-transition-duration: 1s !default;
-$navbar-scrolling-padding:             12px !default;
-$navbar-top-collapse-padding:          5px !default;
-$navbar-nav-transition:                .35s !default;
-$navbar-dropdown-font-size:            0.9375rem !default;
-$navbar-dropdown-menu-padding:         10px !default;
-$navbar-flex-icons-padding-md:         6px !default;
-$navbar-flex-icons-padding-lg:         3px !default;
-$navbar-form-input-mr:                 5px !default;
-$navbar-form-input-mb:                 1px !default;
-$navbar-form-input-ml:                 8px !default;
-$navbar-form-input-height:             1rem !default;
-$navbar-breadcrumb-padding-top:        .3rem !default;
-$navbar-breadcrumb-padding-left:       1rem !default;
-$navbar-breadcrumb-color:              rgba(255,255,255,.65) !default;
+$navbar-scrolling-transition                 : background .5s ease-in-out, padding .5s ease-in-out !default;
+$navbar-scrolling-transition-duration        : 1s !default;
+$navbar-scrolling-padding                    : 12px !default;
+$navbar-top-collapse-padding                 : 5px !default;
+$navbar-nav-transition                       : .35s !default;
+$navbar-dropdown-font-size                   : 0.9375rem !default;
+$navbar-dropdown-menu-padding                : 10px !default;
+$navbar-flex-icons-padding-md                : 6px !default;
+$navbar-flex-icons-padding-lg                : 3px !default;
+$navbar-form-input-mr                        : 5px !default;
+$navbar-form-input-mb                        : 1px !default;
+$navbar-form-input-ml                        : 8px !default;
+$navbar-form-input-height                    : 1rem !default;
+$navbar-breadcrumb-padding-top               : .3rem !default;
+$navbar-breadcrumb-padding-left              : 1rem !default;
+$navbar-breadcrumb-color                     : rgba(255,255,255,.65) !default;
+
+
+// 11. Pagination
+// ===========================================================================
 
 // Pagination
-$pagination-active-transition:         all .2s linear !default;
-$pagination-page-link-transition:      all .3s linear !default;
-$pagination-page-link-font-size:       .9rem !default;
-$pagination-page-link-font-size-lg:    1rem !default;
-$pagination-page-link-font-size-sm:    .8rem !default;
-$pagination-page-item-disabled-color:  #868e96 !default;
-$pagination-page-link-color:           #212529 !default;
-$pagination-page-link-hover-bg-color:  #eee !default;
-$pagination-circle-margin-x:           2px !default;
-$pagination-circle-border-radius:      $border-radius-circle !default;
+$pagination-active-transition                : all .2s linear !default;
+$pagination-page-link-transition             : all .3s linear !default;
+$pagination-page-link-font-size              : .9rem !default;
+$pagination-page-link-font-size-lg           : 1rem !default;
+$pagination-page-link-font-size-sm           : .8rem !default;
+$pagination-page-item-disabled-color         : #868e96 !default;
+$pagination-page-link-color                  : #212529 !default;
+$pagination-page-link-hover-bg-color         : #eee !default;
+$pagination-circle-margin-x                  : 2px !default;
+$pagination-circle-border-radius             : $border-radius-circle !default;
+
+
+// 12. Badges
+// ===========================================================================
+
+// Badges
+$badge-pill-padding-x                        : .6rem !default;
+$badge-pill-border-radius                    : 10rem !default;
+
+
+// 13. Modals
+// ===========================================================================
+
+// Modals
+$modal-distance                              : 10px !default;
+$modal-width                                 : 400px !default;
+$modal-full-height-medium-screen             : 800px !default;
+$modal-full-height-large-screen              : 1000px !default;
+$modal-fade-top-transform                    : translate3d(0, -25%, 0) !default;
+$modal-fade-bottom-transform                 : translate3d(0, 25%, 0) !default;
+$modal-fade-right-transform                  : translate3d(25%, 0, 0) !default;
+$modal-fade-left-transform                   : translate3d(-25%, 0, 0) !default;
+$modal-notify-body-padding                   : 1.5rem !default;
+$modal-notify-heading-padding                : .3rem !default;
+$modal-notify-font-size                      : 1.15rem !default;
+$modal-avatar-margin-top                     : 6rem !default;
+$modal-avatar-header-margin-top              : -6rem !default;
+$modal-avatar-header-margin-bottom           : -1rem !default;
+$modal-avatar-img-width                      : 130px !default;
+$modal-body-padding-right                    : 2rem !default;
+$modal-body-padding-left                     : $modal-body-padding-right !default;
+$modal-body-margin-top                       : 1rem !default;
+$cascading-modal-margin-top                  : -2rem !default;
+$cascading-modal-margin-right                : 1rem !default;
+$cascading-modal-margin-bottom               : $cascading-modal-margin-right !default;
+$cascading-modal-margin-left                 : $cascading-modal-margin-right !default;
+$cascading-modal-padding                     : 1.5rem !default;
+$cascading-modal-close-margin-right          : $cascading-modal-margin-right !default;
+$cascading-modal-font-size                   : 1.25rem !default;
+$cascading-modal-fa-margin-right             : 9px !default;
+$cascading-modal-social-margin-top           : $cascading-modal-padding !default;
+$cascading-modal-a-font-size                 : 1rem !default;
+$cascading-modal-tabs-margin-x               : 1rem !default;
+$cascading-modal-tabs-margin-top             : -1.5rem !default;
+$cascading-modal-tabs-padding-top            : 1.7rem !default;
+
+
+// 14. Carousels
+// ===========================================================================
+
+// Carousels
+$carousel-control-icon-width                 : 2.25rem !default;
+$carousel-control-icon-height                : $carousel-control-icon-width !default;
+$carousel-control-prev-icon                  : url(#{$image-path}/svg/arrow_left.svg) !default;
+$carousel-control-next-icon                  : url(#{$image-path}/svg/arrow_right.svg) !default;
+$carousel-indicators-width                   : .625rem !default;
+$carousel-indicators-height                  : $carousel-indicators-width !default;
+$carousel-indicators-border-radius           : $border-radius-circle !default;
+$carousel-transition-duration                : .6s !default;
+$carousel-item-transform                     : translateX(0) !default;
+$carousel-item-transform-2                   : translate3d(0, 0, 0) !default;
+
+
+// 15. Forms
+// ===========================================================================
+
+// Forms
+$input-bg-color                              : $white-base !default;
+$label-font-size                             : .8rem !default;
+$input-transition                            : all .3s !default;
+$input-disabled-color                        : rgba(0,0,0, .46) !default;
+$input-md-focus-color                        : $primary-color !default;
+$input-error-color                           : $error-color !default;
+$input-success-color                         : $success-color !default;
+$input-label-after-top                       : 65px !default;
+$input-label-after-transition                : .2s opacity ease-out, .2s color ease-out !default;
+$input-border-color                          : #ced4da !default;
+
+$input-label-transition                      : .2s ease-out !default;
+$input-label-color                           : #757575 !default;
+$input-label-top                             : .65rem !default;
+$input-label-active-transform                : translateY(-14px) !default;
+$input-prefix-transition                     : color .2s !default;
+
+$input-md-form-margin-top                    : 1.5rem !default;
+$input-md-form-margin-bottom                 : $input-md-form-margin-top !default;
+$input-label-font-size                       : 1rem !default;
+$input-label-active-font-size                : 1rem !default;
+$input-prefix-top                            : .25rem !default;
+$input-prefix-font-size                      : 1.75rem !default;
+$input-prefix-margin-left                    : 2.5rem !default;
+$input-prefix-width                          : calc(100% - 2.5rem) !default;
+$input-group-addon-font-size                 : 1.4rem !default;
+$input-form-text-ml                          : 2.6rem !default;
+$input-validate-mb                           : 2.5rem !default;
+$input-label-valid-top                       : 4.1rem !default;
+$input-label-invalid-top                     : 4rem !default;
+
+$input-label-font-size-lg                    : 1.25rem !default;
+$input-label-active-font-size-lg             : 1.15rem !default;
+$input-prefix-top-lg                         : .4rem !default;
+$input-prefix-font-size-lg                   : 2rem !default;
+$input-prefix-margin-left-lg                 : 3rem !default;
+$input-prefix-width-lg                       : calc(100% - 3rem) !default;
+$input-group-addon-font-size-lg              : 1.65rem !default;
+$input-form-text-ml-lg                       : 3.1rem !default;
+$input-validate-mb-lg                        : 2.8rem !default;
+$input-label-valid-top-lg                    : 4.6rem !default;
+$input-label-invalid-top-lg                  : 4.6rem !default;
+
+$input-label-font-size-sm                    : .875rem !default;
+$input-label-active-font-size-sm             : .95rem !default;
+$input-prefix-top-sm                         : .35rem !default;
+$input-prefix-font-size-sm                   : 1.5rem !default;
+$input-prefix-margin-left-sm                 : 2rem !default;
+$input-prefix-width-sm                       : calc(100% - 2rem) !default;
+$input-group-addon-font-size-sm              : 1.15rem !default;
+$input-form-text-ml-sm                       : 2rem !default;
+$input-validate-mb-sm                        : 2.3rem !default;
+$input-label-valid-top-sm                    : 3.7rem !default;
+$input-label-invalid-top-sm                  : 3.6rem !default;
+
+$textarea-padding                            : 1.5rem !default;
+
+$input-form-control-margin-bottom            : .5rem !default;
+$input-form-control-padding-top              : .6rem !default;
+$input-form-control-padding-bottom           : .4rem !default;
+$input-disabled-solid-color                  : #BDBDBD !default;
+
+// Input group
+$input-group-text-bgc                        : #e0e0e0 !default;
+$input-group-form-control-px                 : .75rem !default;
+$input-group-form-control-py                 : .375rem !default;
+
+
+// 16. Miscellaneous
+// ===========================================================================
+
+// Miscellaneous
+$edge-header-height                          : 278px !default;
+$edge-header-background-color                : #ccc !default;
+$edge-header-margin-top                      : -100px !default;
+
+
+// 17. Footers
+// ===========================================================================
+
+// Footers
+$footer-copyright-color                      : rgba($white-base, .6) !default;
+$footer-copyright-bg-color                   : rgba($black-base, .2) !default;
+$footer-font-size                            : .9rem !default;
+
+
+// 18. List groups
+// ===========================================================================
+
+// List group
+$list-group-padding                          : 0 10px 10px 0 !default;
+$list-group-transition                       : .5s !default;
+
+
+// 19. Tables
+// ===========================================================================
 
 // Tables
-$table-th-font-size:                   .9rem !default;
-$table-td-font-size:                   $table-th-font-size !default;
-$table-th-padding-top:                 1.1rem !default;
-$table-td-padding-bottom:              1rem !default;
-$table-a-color:                        #212529 !default;
-$table-hover-transition:               .5s !default;
-$table-hover-background-color:         rgba(0, 0, 0, 0.075) !default;
-$table-sm-padding-y:                   .6rem !default;
-$table-inverse-color-border:           $white-base !default;
-$product-table-img-max-height:         150px !default;
-$product-table-img-min-width:          50px !default;
-$table-th-lg-min-width:                9rem !default;
-$table-th-sm-min-width:                6rem !default;
-$table-scroll-vertical-max-height:     300px !default;
-$table-label-height:                   0.94rem !default;
-$table-label-line-height:              $table-label-height !default;
+$table-th-font-size                          : .9rem !default;
+$table-td-font-size                          : $table-th-font-size !default;
+$table-th-padding-top                        : 1.1rem !default;
+$table-td-padding-bottom                     : 1rem !default;
+$table-a-color                               : #212529 !default;
+$table-hover-transition                      : .5s !default;
+$table-hover-background-color                : rgba(0, 0, 0, 0.075) !default;
+$table-sm-padding-y                          : .6rem !default;
+$table-inverse-color-border                  : $white-base !default;
+$product-table-img-max-height                : 150px !default;
+$product-table-img-min-width                 : 50px !default;
+$table-th-lg-min-width                       : 9rem !default;
+$table-th-sm-min-width                       : 6rem !default;
+$table-scroll-vertical-max-height            : 300px !default;
+$table-label-height                          : 0.94rem !default;
+$table-label-line-height                     : $table-label-height !default;
+
+
+// 20. Steppers
+// ===========================================================================
 
 // Steppers
-$stepper-li-a-padding:                              1.5rem!default;
-$stepper-li-a-circle-color:                         $white !default;
-$stepper-li-a-circle-border-radius:                 $border-radius-circle !default;
-$stepper-li-a-circle-bg:                            rgba($black, .38) !default;
-$stepper-li-a-circle-mr:                            .5rem !default;
-$stepper-li-a-label-color:                          rgba($black, .87) !default;
+$stepper-li-a-padding                        : 1.5rem!default;
+$stepper-li-a-circle-color                   : $white !default;
+$stepper-li-a-circle-border-radius           : $border-radius-circle !default;
+$stepper-li-a-circle-bg                      : rgba($black, .38) !default;
+$stepper-li-a-circle-mr                      : .5rem !default;
+$stepper-li-a-label-color                    : rgba($black, .87) !default;
 
-$stepper-horizontal-li-transition:                  .5s !default;
-$stepper-horizontal-li-a-label-mt:                  .63rem !default;
-$stepper-horizontal-li-after-margin:                .5rem !default;
-$stepper-horizontal-li-after-height:                1px  !default;
-$stepper-horizontal-li-after-bgc:                   rgba($black, .1) !default;
-$stepper-horizontal-breakpoint:                     47.9375rem !default;
-$stepper-horizontal-small-li-a-label-mt:            .2rem !default;
-$stepper-horizontal-small-li-after-width:           $stepper-horizontal-li-after-height !default;
-$stepper-horizontal-small-li-after-height:          calc(100% - 40px) !default;
-$stepper-horizontal-small-li-after-left:            2.19rem !default;
-$stepper-horizontal-small-li-after-top:             3.75rem !default;
+$stepper-horizontal-li-transition            : .5s !default;
+$stepper-horizontal-li-a-label-mt            : .63rem !default;
+$stepper-horizontal-li-after-margin          : .5rem !default;
+$stepper-horizontal-li-after-height          : 1px  !default;
+$stepper-horizontal-li-after-bgc             : rgba($black, .1) !default;
+$stepper-horizontal-breakpoint               : 47.9375rem !default;
+$stepper-horizontal-small-li-a-label-mt      : .2rem !default;
+$stepper-horizontal-small-li-after-width     : $stepper-horizontal-li-after-height !default;
+$stepper-horizontal-small-li-after-height    : calc(100% - 40px) !default;
+$stepper-horizontal-small-li-after-left      : 2.19rem !default;
+$stepper-horizontal-small-li-after-top       : 3.75rem !default;
 
-$stepper-vertical-li-a-label-mt:                    $stepper-horizontal-small-li-a-label-mt !default;
-$stepper-vertical-li-step-content-ml:               3.13rem !default;
-$stepper-vertical-li-step-content-padding:          .94rem !default;
-$stepper-vertical-li-step-content-p-font-size:      .88rem  !default;
-$stepper-vertical-li-after-width:                   1px !default;
-$stepper-vertical-li-after-height:                  $stepper-horizontal-small-li-after-height !default;
-$stepper-vertical-li-after-left:                    $stepper-horizontal-small-li-after-left !default;
-$stepper-vertical-li-after-top:                     3.44rem !default;
-$stepper-vertical-li-after-bgc:                     $stepper-horizontal-li-after-bgc !default;
+$stepper-vertical-li-a-label-mt              : $stepper-horizontal-small-li-a-label-mt !default;
+$stepper-vertical-li-step-content-ml         : 3.13rem !default;
+$stepper-vertical-li-step-content-padding    : .94rem !default;
+$stepper-vertical-li-step-content-p-font-size: .88rem  !default;
+$stepper-vertical-li-after-width             : 1px !default;
+$stepper-vertical-li-after-height            : $stepper-horizontal-small-li-after-height !default;
+$stepper-vertical-li-after-left              : $stepper-horizontal-small-li-after-left !default;
+$stepper-vertical-li-after-top               : 3.44rem !default;
+$stepper-vertical-li-after-bgc               : $stepper-horizontal-li-after-bgc !default;

@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.8.5
+ * Version: MDB FREE: 4.8.6
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -14964,7 +14964,7 @@ var WOW;
     else {
         window.Waves = factory.call(window);
     }
-})(typeof global === 'object' ? global : this, function() {
+})(typeof window === 'object' ? window : this, function() {
     'use strict';
 
     var Waves            = Waves || {};
@@ -15739,32 +15739,70 @@ var _this = void 0;
 
 "use strict";
 
-var toggler = document.getElementsByClassName("rotate");
-var i;
-
-for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function () {
-    this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("down");
-  });
-}
-
 (function ($) {
-  var $allPanels = $('.treeview-animated .nested').hide();
-  var $elements = $('.treeview-animated-element');
-  $('.closed').click(function () {
-    $this = $(this);
-    $target = $this.siblings('.treeview-animated .nested');
-    $pointer = $this.children('.treeview-animated .fa-angle-right');
-    $this.toggleClass('open');
-    $pointer.toggleClass('down');
-    !$target.hasClass('active') ? $target.addClass('active').slideDown() : $target.removeClass('active').slideUp();
-    return false;
-  });
-  $elements.click(function () {
-    $this = $(this);
-    $this.hasClass('opened') ? $this.removeClass('opened') : ($elements.removeClass('opened'), $this.addClass('opened'));
-  });
+  $.fn.mdbTreeview = function () {
+    var $this = $(this);
+
+    if ($this.hasClass('treeview')) {
+      var $toggler = $this.find('.rotate');
+      $.each($toggler, function (e) {
+        $($toggler[e]).off('click');
+        $($toggler[e]).on('click', function () {
+          var $this = $(this);
+          $this.siblings('.nested').toggleClass('active');
+          $this.toggleClass('down');
+        });
+      });
+    }
+
+    if ($this.hasClass('treeview-animated')) {
+      var $elements = $this.find('.treeview-animated-element');
+      var $closed = $this.find('.closed');
+      $this.find('.nested').hide();
+      $closed.off('click');
+      $closed.on('click', function () {
+        var $this = $(this);
+        var $target = $this.siblings('.nested');
+        var $pointer = $this.children('.fa-angle-right');
+        $this.toggleClass('open');
+        $pointer.toggleClass('down');
+        !$target.hasClass('active') ? $target.addClass('active').slideDown() : $target.removeClass('active').slideUp();
+        return false;
+      });
+      $elements.off('click');
+      $elements.on('click', function () {
+        var $this = $(this);
+        $this.hasClass('opened') ? $this.removeClass('opened') : ($elements.removeClass('opened'), $this.addClass('opened'));
+      });
+    }
+
+    if ($this.hasClass('treeview-colorful')) {
+      var _$elements = $this.find('.treeview-colorful-element');
+
+      var $header = $this.find('.treeview-colorful-items-header');
+      $this.find('.nested').hide();
+      $header.off('click');
+      $header.on('click', function () {
+        var $this = $(this);
+        var $target = $this.siblings('.nested');
+        var $pointerPlus = $this.children('.fa-plus-circle');
+        var $pointerMinus = $this.children('.fa-minus-circle');
+        $this.toggleClass('open');
+        $pointerPlus.removeClass('fa-plus-circle');
+        $pointerPlus.addClass('fa-minus-circle');
+        $pointerMinus.removeClass('fa-minus-circle');
+        $pointerMinus.addClass('fa-plus-circle');
+        !$target.hasClass('active') ? $target.addClass('active').slideDown() : $target.removeClass('active').slideUp();
+      });
+
+      _$elements.off('click');
+
+      _$elements.on('click', function () {
+        var $this = $(this);
+        $this.hasClass('opened') ? _$elements.removeClass('opened') : (_$elements.removeClass('opened'), $this.addClass('opened'));
+      });
+    }
+  };
 })(jQuery);
 /*!
  * bsCustomFileInput v1.3.2 (https://github.com/Johann-S/bs-custom-file-input)

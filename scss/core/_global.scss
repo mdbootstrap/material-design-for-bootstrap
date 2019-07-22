@@ -124,3 +124,30 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   color: inherit;
   text-decoration: none;
 }
+
+// Divider
+.divider-new {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: $divider-margin-y;
+  margin-bottom: $divider-margin-y;
+  > h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+  &:before,
+  &:after {
+    content: "";
+    height: 1.5px;
+    flex: 1;
+    height: $divider-height;
+    background: #c6c6c6;
+  }
+  &:before {
+    margin: 0 $divider-margin-x 0 0;
+  }
+  &:after {
+    margin: 0 0 0 $divider-margin-x;
+  }
+}

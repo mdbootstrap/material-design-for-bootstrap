@@ -1,5 +1,6 @@
 // Typography
-// ROBOTO FONT
+
+// Roboto font
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin),
@@ -53,53 +54,14 @@
   font-weight: 700;
 }
 
+// General properties
 body {
-  font-family: $roboto-font-family;
-  font-weight: 300;
+  font-family: $mdb-font-family;
+  font-weight: $font-weight-light;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-}
-
-// Responsive headings
-@each $key, $val in $grid-breakpoints {
-  @include media-breakpoint-up($key) {
-    $y: map-get($responsive-headings, $key);
-    @each $name,
-      $value in $y {
-      .#{$name}-responsive {
-        font-size: $value;
-      }
-    }
-  }
-}
-
-// Divider
-.divider-new {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: $divider-margin-y;
-  margin-bottom: $divider-margin-y;
-  > h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0;
-  }
-  &:before,
-  &:after {
-    content: "";
-    height: 1.5px;
-    flex: 1;
-    height: $divider-height;
-    background: #c6c6c6;
-  }
-  &:before {
-    margin: 0 $divider-margin-x 0 0;
-  }
-  &:after {
-    margin: 0 0 0 $divider-margin-x;
-  }
+  font-weight: $font-weight-light;
 }
 
 // Blockquote
@@ -130,10 +92,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Responsive headings
+@each $key, $val in $grid-breakpoints {
+  @include media-breakpoint-up($key) {
+    $y: map-get($responsive-headings, $key);
+    @each $name, $value in $y {
+      .#{$name}-responsive {
+        font-size: $value;
+      }
+    }
+  }
+}
+
 @each $name, $color in $basic-mdb-colors {
   @include text-emphasis-variant(".text-#{$name}", $color);
 }
 
 .font-small {
-  font-size: $font-small;
+  font-size: $font-size-small;
 }

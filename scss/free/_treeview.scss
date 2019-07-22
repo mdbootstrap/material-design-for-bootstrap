@@ -44,6 +44,7 @@
     }
 
     .treeview-animated-items {
+
       .nested {
         &::before {
           content: "";
@@ -55,34 +56,40 @@
           height: 100%;
         }
       }
-      .closed{
+
+      .closed {
         display: block;
         padding: 0.2em 0.2em 0.2em 0.4em;
         margin-right: 0;
         border-top-left-radius: 0.3em;
         border-bottom-left-radius: 0.3em;
-        &:hover{
+
+        &:hover {
           background-color: rgb(140, 185, 255);
         }
-        .fa-angle-right{
+
+        .fa-angle-right {
           transition: all .1s linear;
           font-size: .8rem;
-          &.down{
+
+          &.down {
             position: relative;
             color: #f8f9fa;
             transform: rotate(90deg);
           }
         }
       }
-      .open{
+
+      .open {
         transition: all .1s linear;
         background-color: rgb(50, 160, 255);
-        &:hover{
 
-    color: #f8f9fa;
-    background-color: rgb(50, 160, 255);
+        &:hover {
+          color: #f8f9fa;
+          background-color: rgb(50, 160, 255);
         }
-        span{
+
+        span {
           color: #f8f9fa;
         }
       }
@@ -110,5 +117,113 @@
       }
     }
   }
+}
 
+.treeview-colorful {
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(224, 127, 178, 0.2);
+
+  &.w-20 {
+    width: 20rem;
+  }
+
+  hr {
+    border-color: #a2127a;
+  }
+
+  h6 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #a2127a;
+  }
+
+  ul {
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .treeview-colorful-list {
+
+    ul {
+      padding-left: 1em;
+      margin-top: 0.1em;
+      background: rgba(224, 127, 178, 0.2);
+    }
+  }
+
+  .treeview-colorful-element {
+    padding: 0.2em 0.2em 0.2em 1em;
+    cursor: pointer;
+    transition: all .1s linear;
+    border: 2px solid transparent;
+    border-right: 0px solid transparent;
+
+    &:hover {
+      background-color: #e07fb2;
+    }
+
+    &.opened {
+      color: #ffac47;
+      border: 2px solid #ffac47;
+      border-right: 0px solid transparent;
+      background-color: #a2127a;
+
+      &:hover {
+        color: #ffac47;
+        background-color: #a2127a;
+      }
+    }
+
+  }
+  .treeview-colorful-items-header {
+    display: block;
+    padding: 0.4em;
+    margin-right: 0;
+    border-bottom: 2px solid transparent;
+    transition: all .1s linear;
+
+    &:hover {
+      background-color: #e07fb2
+    }
+
+    &.open {
+      transition: all .1s linear;
+      background-color: #a2127a;
+      border-bottom: 2px solid #ffac47;
+
+      span {
+        color: #ffac47;
+      }
+
+      &:hover {
+        color: #ffac47;
+        background-color: #a2127a;
+      }
+
+      div:hover {
+        background-color: #a2127a;
+      }
+    }
+
+    .fa-angle-right {
+      transition: all .2s linear;
+      font-size: .8rem;
+    }
+
+    .fas {
+      position: relative;
+      transition: all .2s linear;
+      transform: rotate(90deg);
+      color: #ffac47;
+    }
+
+    .fa-minus-circle {
+      transition: all .2s linear;
+      position: relative;
+      color: #ffac47;
+      transform: rotate(180deg);
+    }
+  }
 }

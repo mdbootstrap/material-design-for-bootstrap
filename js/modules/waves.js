@@ -29,7 +29,7 @@
     else {
         window.Waves = factory.call(window);
     }
-})(typeof global === 'object' ? global : this, function() {
+})(typeof window === 'object' ? window : this, function() {
     'use strict';
 
     var Waves            = Waves || {};
