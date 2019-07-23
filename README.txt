@@ -1,6 +1,6 @@
 Material Design for Bootstrap
 
-Version: MDB Free 4.8.6
+Version: MDB Free 4.8.7
 
 Documentation:
 https://mdbootstrap.com/
