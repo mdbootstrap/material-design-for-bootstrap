@@ -216,6 +216,7 @@ $btn-icon-large                              : 1rem !default;
 $btn-icon-medium                             : .8rem !default;
 $btn-icon-small                              : .7rem !default;
 $btn-icon-margin                             : .3rem !default;
+$btn-group-margin                            : .375rem !default;
 
 
 // 9. Cards
@@ -492,3 +493,10 @@ $stepper-vertical-li-after-height            : $stepper-horizontal-small-li-afte
 $stepper-vertical-li-after-left              : $stepper-horizontal-small-li-after-left !default;
 $stepper-vertical-li-after-top               : 3.44rem !default;
 $stepper-vertical-li-after-bgc               : $stepper-horizontal-li-after-bgc !default;
+
+// 21. Loader / Spinner
+// ===========================================================================
+
+// Loader / Spinner
+$spinner-border-animation: spinner-border .4s linear infinite;
+$spinner-grow-animation: spinner-grow .4s linear infinite;

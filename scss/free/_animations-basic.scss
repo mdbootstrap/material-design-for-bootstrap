@@ -42,8 +42,8 @@
 
 @media (prefers-reduced-motion) {
   .animated {
-    animation: unset !important;
     transition: none !important;
+    animation: unset !important;
   }
 }
 

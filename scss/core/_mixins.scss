@@ -102,8 +102,11 @@
   @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
 }
 
-@mixin hover-focus {
+@mixin hover {
+  &:hover { @content; }
+}
 
+@mixin hover-focus {
   &:hover,
   &:focus {
     @content;
@@ -272,6 +275,14 @@
 }
 
 // MDB Mixins
+@mixin hover-focus-active {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
 // Set the color of the button and badge
 @function set-notification-text-color($color) {
   @if (lightness($color) > 80) {

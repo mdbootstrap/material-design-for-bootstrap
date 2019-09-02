@@ -3,32 +3,35 @@
 .md-form {
 
   // Text inputs
-  input[type=text],
-  input[type=password],
-  input[type=email],
-  input[type=url],
-  input[type=time],
-  input[type=date],
-  input[type=datetime-local],
-  input[type=tel],
-  input[type=number],
+  input:not([type]),
+  input[type=text]:not(.browser-default),
+  input[type=password]:not(.browser-default),
+  input[type=email]:not(.browser-default),
+  input[type=url]:not(.browser-default),
+  input[type=time]:not(.browser-default),
+  input[type=date]:not(.browser-default),
+  input[type=datetime]:not(.browser-default),
+  input[type=datetime-local]:not(.browser-default),
+  input[type=tel]:not(.browser-default),
+  input[type=number]:not(.browser-default),
+  input[type=search]:not(.browser-default),
   input[type=search-md],
-  input[type=search],
   textarea.md-textarea {
+
     // General Styles
-    transition: $input-transition;
-    outline: none;
-    box-shadow: none;
+    box-sizing: content-box;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid $input-border-color;
     border-radius: 0;
-    box-sizing: content-box;
-    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    transition: $input-transition;
 
     // Focused input style
     &:focus:not([readonly]) {
-      box-shadow: 0 1px 0 0 $input-md-focus-color;
       border-bottom: 1px solid $input-md-focus-color;
+      box-shadow: 0 1px 0 0 $input-md-focus-color;
 
       // Focused label style
       +label {
@@ -112,9 +115,9 @@
 
   >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
   >input[type=time]:not(.browser-default)+label {
+    font-size: .8rem;
     transform: translateY(-25px);
     transform-origin: 0 0;
-    font-size: .8rem;
   }
 
   .was-validated {
@@ -156,13 +159,11 @@
     margin: 0 0 $input-form-control-margin-bottom 0;
     border-radius: 0;
     padding: $input-form-control-padding-top 0 $input-form-control-padding-bottom 0;
-    // background-image: none;
     background-color: transparent;
     height: auto;
 
     &:focus {
       box-shadow: none;
-      // background: transparent;
     }
 
     &:disabled,

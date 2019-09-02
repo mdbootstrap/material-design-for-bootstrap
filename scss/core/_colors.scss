@@ -860,11 +860,32 @@ $gradients-rgba: map-merge((
 
 $note: () !default;
 $note: map-merge((
-  "note-primary": #176ac4,
-  "note-secondary": #58595a,
-  "note-success": #49a75f,
-  "note-danger": #e45460,
-  "note-warning": #c2a442,
-  "note-info": #2492a5,
-  "note-light": #0f0f0f
+  "primary": (
+    "bgc": #dfeefd,
+    "border-color": #176ac4
+  ),
+  "secondary": (
+    "bgc": #e2e3e5,
+    "border-color": #58595a
+  ),
+  "success": (
+    "bgc": #e2f0e5,
+    "border-color": #49a75f
+  ),
+  "danger": (
+    "bgc": #fae7e8,
+    "border-color": #e45460
+  ),
+  "warning": (
+    "bgc": #faf4e0,
+    "border-color": #c2a442
+  ),
+  "info": (
+    "bgc": #e4f2f5,
+    "border-color": #2492a5
+  ),
+  "light": (
+    "bgc": #fefefe,
+    "border-color": #0f0f0f
+  )
 ), $note);

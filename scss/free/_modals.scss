@@ -73,16 +73,18 @@ body {
       .tab-content {
         padding: $cascading-modal-tabs-padding-top 0 0 0;
       }
-      //.md-tabs {
-      //  border-radius: $md-card-border-radius;
-      //  .nav-item {
-      //    .nav-link {
-      //      border-radius: $md-card-border-radius;
-      //      background-color: inherit;
-      //      color: $white-base;
-      //    }
-      //  }
-      //}
+      /*
+      .md-tabs {
+       border-radius: $md-card-border-radius;
+       .nav-item {
+         .nav-link {
+           border-radius: $md-card-border-radius;
+           background-color: inherit;
+           color: $white-base;
+         }
+       }
+      }
+      */
     }
     // Footer customization
     .modal-body,
@@ -142,11 +144,15 @@ body {
           background-color: $color;
         }
         .btn {
-          .fas, .fab, .far {
+          .fas,
+          .fab,
+          .far {
             color: #fff;
           }
           &.btn-outline-#{$name} {
-            .fas, .fab, .far {
+            .fas,
+            .fab,
+            .far {
               color: $color;
             }
           }

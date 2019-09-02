@@ -1,29 +1,25 @@
 // Buttons
 .btn {
-  box-shadow: $z-depth-1;
-  @include button-size($btn-padding-y-basic, $btn-padding-x-basic, $btn-font-size-basic);
-  transition: $btn-transition;
   margin: $btn-margin-basic;
+  color: inherit;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  white-space: normal;
+  cursor: pointer;
   border: 0;
   border-radius: $border-radius-base;
-  cursor: pointer;
-  text-transform: uppercase;
-  white-space: normal;
-  word-wrap: break-word;
-  color: inherit;
-  &:hover,
-  &:active,
-  &:focus {
-    box-shadow: $z-depth-1-half;
+  box-shadow: $z-depth-1;
+  transition: $btn-transition;
+  @include button-size($btn-padding-y-basic, $btn-padding-x-basic, $btn-font-size-basic);
+
+  @include hover-focus-active {
     outline: 0;
-  }
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
     box-shadow: $z-depth-1-half;
   }
-  .fas, .fab, .far {
-    position: relative;
-    font-size: $btn-icon-basic;
+
+  .fas,
+  .fab,
+  .far {
     &.right {
       margin-left: $btn-icon-margin;
     }
@@ -31,49 +27,24 @@
       margin-right: $btn-icon-margin;
     }
   }
+
   &.btn-lg {
     @include button-size($btn-padding-y-large, $btn-padding-x-large, $btn-font-size-large);
-    .fas, .fab, .far {
-      font-size: $btn-icon-large;
-    }
   }
   &.btn-md {
     @include button-size($btn-padding-y-medium, $btn-padding-x-medium, $btn-font-size-medium);
-    .fas, .fab, .far {
-      font-size: $btn-icon-medium;
-    }
   }
   &.btn-sm {
     @include button-size($btn-padding-y-small, $btn-padding-x-small, $btn-font-size-small);
-    .fas, .fab, .far {
-      font-size: $btn-icon-small;
-    }
   }
-  &.btn-tb {
-    padding: $btn-tb-padding-y $btn-tb-padding-x;
-  }
+
   &.disabled,
   &:disabled {
-    &:active,
-    &:focus,
-    &:hover {
+    @include hover-focus-active {
       box-shadow: $z-depth-1;
     }
   }
-  &.btn-block {
-    margin: inherit;
-  }
-  &.btn-link {
-    @extend .black-text;
-    box-shadow: none;
-    background-color: transparent;
-    &:active,
-    &:focus,
-    &:hover {
-      box-shadow: none !important;
-      background-color: transparent;
-    }
-  }
+
   &[class*="btn-outline-"] {
     padding-top: $btn-outline-padding-y-basic;
     padding-bottom: $btn-outline-padding-y-basic;
@@ -91,77 +62,37 @@
     }
   }
 }
+
+.btn-link {
+  color: $black-base;
+  background-color: transparent;
+  box-shadow: none;
+  @include hover-focus-active {
+    color: $black-base;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
 .btn-group {
-  .btn {
-    margin: 0;
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    margin-left: -$btn-group-margin;
   }
 }
-// Overwrite default button icon size
-.btn,
-.btn-floating {
-  .fa-lg {
-    font-size: 1.33333em  !important;
-  }
 
-  .fa-xs {
-    font-size: .75em !important;
-  }
-
-  .fa-sm {
-    font-size: .875em !important;
-  }
-
-  .fa-1x {
-    font-size: 1em !important;
-  }
-
-  .fa-2x {
-    font-size: 2em !important;
-  }
-
-  .fa-3x {
-    font-size: 3em !important;
-  }
-
-  .fa-4x {
-    font-size: 4em !important;
-  }
-
-  .fa-5x {
-    font-size: 5em !important;
-  }
-
-  .fa-6x {
-    font-size: 6em !important;
-  }
-
-  .fa-7x {
-    font-size: 7em !important;
-  }
-
-  .fa-8x {
-    font-size: 8em !important;
-  }
-
-  .fa-9x {
-    font-size: 9em !important;
-  }
-
-  .fa-10x {
-    font-size: 10em !important;
-  }
-}
 @each $btn_name, $color_value in $mdb-colors {
   @include make-button($btn_name, $color_value);
   @include make-outline-button($btn_name, $color_value);
 }
+
+@each $name, $val in $gradients {
+  @include make-gradient-button($name, $val);
+}
+
 .btn-warning:not(:disabled):not(.disabled).active, 
 .btn-warning:not(:disabled):not(.disabled):active, 
 .show>.btn-warning.dropdown-toggle {
   color: $white-base;
 }
 
-// Gradient buttons
-@each $name, $val in $gradients {
-  @include make-gradient-button($name, $val);
-}

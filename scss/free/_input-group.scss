@@ -8,14 +8,14 @@
     .input-group-text {
       background-color: $input-group-text-bgc;
       &.md-addon {
-        border: none;
-        background-color: transparent;
         font-weight: 500;
+        background-color: transparent;
+        border: none;
       }
     }
     .form-control {
-      margin: 0;
       padding: $input-group-form-control-py $input-group-form-control-px;
+      margin: 0;
     }
   }
 }

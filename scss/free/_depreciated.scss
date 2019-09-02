@@ -1,2 +1,18 @@
 // These settings will be only for one version
 
+// Scrolable navbar
+/*
+.navbar {
+  &.fixed-top,
+  &.sticky-top {
+    .navbar-collapse {
+      @media (min-width: 400px) and (max-width: 767px), 
+      (min-width: 800px) and (max-width: 850px) {
+        max-height: 340px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+*/

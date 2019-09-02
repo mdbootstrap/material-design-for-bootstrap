@@ -1,8 +1,8 @@
 // Cards
 .card {
-  box-shadow: $z-depth-1;
-  border: 0;
   font-weight: 400;
+  border: 0;
+  box-shadow: $z-depth-1;
   &[class*="border"] {
     border: 1px solid $grey-base;
     box-shadow: none;
@@ -20,9 +20,9 @@
       }
     }
     .card-text {
-      color: $md-card-text-color;
       font-size: $md-card-font-size;
       font-weight: 400;
+      color: $md-card-text-color;
     }
   }
   .md-form {

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.8.8
+ * Version: MDB FREE 4.8.9
  *
  *
  * Copyright: Material Design for Bootstrap
@@ -1120,7 +1120,7 @@
 .black {
   background-color: #000 !important; }
 
-.black-text, .btn.btn-link {
+.black-text {
   color: #000 !important; }
 
 .rgba-black-slight,
@@ -1913,9 +1913,9 @@ a.waves-effect, a.waves-light {
 
 @media (prefers-reduced-motion) {
   .animated {
+    transition: none !important;
     -webkit-animation: unset !important;
-            animation: unset !important;
-    transition: none !important; } }
+            animation: unset !important; } }
 
 @-webkit-keyframes fadeIn {
   from {
@@ -4446,57 +4446,40 @@ a.waves-effect, a.waves-light {
           animation-name: slideOutUp; }
 
 .btn {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  padding: 0.84rem 2.14rem;
-  font-size: 0.81rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin: 0.375rem;
+  color: inherit;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  white-space: normal;
+  cursor: pointer;
   border: 0;
   border-radius: 0.125rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  white-space: normal;
-  word-wrap: break-word;
-  color: inherit; }
-  .btn:hover, .btn:active, .btn:focus {
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-    outline: 0; }
-  .btn:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0.84rem 2.14rem;
+  font-size: 0.81rem; }
+  .btn:hover, .btn:focus, .btn:active {
+    outline: 0;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
-  .btn .fas, .btn .fab, .btn .far {
-    position: relative;
-    font-size: 0.9rem; }
-    .btn .fas.right, .btn .fab.right, .btn .far.right {
-      margin-left: 0.3rem; }
-    .btn .fas.left, .btn .fab.left, .btn .far.left {
-      margin-right: 0.3rem; }
+  .btn .fas.right,
+  .btn .fab.right,
+  .btn .far.right {
+    margin-left: 0.3rem; }
+  .btn .fas.left,
+  .btn .fab.left,
+  .btn .far.left {
+    margin-right: 0.3rem; }
   .btn.btn-lg {
     padding: 1rem 2.4rem;
     font-size: 0.94rem; }
-    .btn.btn-lg .fas, .btn.btn-lg .fab, .btn.btn-lg .far {
-      font-size: 1rem; }
   .btn.btn-md {
     padding: 0.7rem 1.6rem;
     font-size: 0.7rem; }
-    .btn.btn-md .fas, .btn.btn-md .fab, .btn.btn-md .far {
-      font-size: 0.8rem; }
   .btn.btn-sm {
     padding: 0.5rem 1.6rem;
     font-size: 0.64rem; }
-    .btn.btn-sm .fas, .btn.btn-sm .fab, .btn.btn-sm .far {
-      font-size: 0.7rem; }
-  .btn.btn-tb {
-    padding: 0.3rem 1rem; }
-  .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:focus, .btn:disabled:hover {
+  .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled:active {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .btn.btn-block {
-    margin: inherit; }
-  .btn.btn-link {
-    box-shadow: none;
-    background-color: transparent; }
-    .btn.btn-link:active, .btn.btn-link:focus, .btn.btn-link:hover {
-      box-shadow: none !important;
-      background-color: transparent; }
   .btn[class*="btn-outline-"] {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem; }
@@ -4510,60 +4493,18 @@ a.waves-effect, a.waves-light {
       padding-top: 0.38rem;
       padding-bottom: 0.38rem; }
 
-.btn-group .btn {
-  margin: 0; }
+.btn-link {
+  color: #000;
+  background-color: transparent;
+  box-shadow: none; }
+  .btn-link:hover, .btn-link:focus, .btn-link:active {
+    color: #000;
+    background-color: transparent;
+    box-shadow: none; }
 
-.btn .fa-lg,
-.btn-floating .fa-lg {
-  font-size: 1.33333em  !important; }
-
-.btn .fa-xs,
-.btn-floating .fa-xs {
-  font-size: .75em !important; }
-
-.btn .fa-sm,
-.btn-floating .fa-sm {
-  font-size: .875em !important; }
-
-.btn .fa-1x,
-.btn-floating .fa-1x {
-  font-size: 1em !important; }
-
-.btn .fa-2x,
-.btn-floating .fa-2x {
-  font-size: 2em !important; }
-
-.btn .fa-3x,
-.btn-floating .fa-3x {
-  font-size: 3em !important; }
-
-.btn .fa-4x,
-.btn-floating .fa-4x {
-  font-size: 4em !important; }
-
-.btn .fa-5x,
-.btn-floating .fa-5x {
-  font-size: 5em !important; }
-
-.btn .fa-6x,
-.btn-floating .fa-6x {
-  font-size: 6em !important; }
-
-.btn .fa-7x,
-.btn-floating .fa-7x {
-  font-size: 7em !important; }
-
-.btn .fa-8x,
-.btn-floating .fa-8x {
-  font-size: 8em !important; }
-
-.btn .fa-9x,
-.btn-floating .fa-9x {
-  font-size: 9em !important; }
-
-.btn .fa-10x,
-.btn-floating .fa-10x {
-  font-size: 10em !important; }
+.btn-group > .btn:not(:first-child),
+.btn-group > .btn-group:not(:first-child) {
+  margin-left: -0.375rem; }
 
 .btn-primary {
   background-color: #4285f4 !important;
@@ -6333,11 +6274,6 @@ table.table a.btn.btn-black {
   .show > .btn-outline-black.dropdown-toggle:focus {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.btn-warning:not(:disabled):not(.disabled).active,
-.btn-warning:not(:disabled):not(.disabled):active,
-.show > .btn-warning.dropdown-toggle {
-  color: #fff; }
-
 .btn.purple-gradient {
   transition: .5s ease;
   color: #fff; }
@@ -6366,10 +6302,15 @@ table.table a.btn.btn-black {
   .btn.blue-gradient:active:focus .btn.blue-gradient.active {
     background: linear-gradient(#5ed1fc, #3647b3); }
 
+.btn-warning:not(:disabled):not(.disabled).active,
+.btn-warning:not(:disabled):not(.disabled):active,
+.show > .btn-warning.dropdown-toggle {
+  color: #fff; }
+
 .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-weight: 400;
   border: 0;
-  font-weight: 400; }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   .card[class*="border"] {
     border: 1px solid #9e9e9e;
     box-shadow: none; }
@@ -6380,9 +6321,9 @@ table.table a.btn.btn-black {
     .card .card-body .card-title a:hover {
       transition: 0.2s ease-in-out; }
   .card .card-body .card-text {
-    color: #747373;
     font-size: 0.9rem;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #747373; }
   .card .md-form label {
     font-weight: 300; }
 
@@ -6396,13 +6337,13 @@ table.table a.btn.btn-black {
 .md-form.input-group .input-group-text {
   background-color: #e0e0e0; }
   .md-form.input-group .input-group-text.md-addon {
-    border: none;
+    font-weight: 500;
     background-color: transparent;
-    font-weight: 500; }
+    border: none; }
 
 .md-form.input-group .form-control {
-  margin: 0;
-  padding: 0.375rem 0.75rem; }
+  padding: 0.375rem 0.75rem;
+  margin: 0; }
 
 .navbar {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -6547,11 +6488,6 @@ table.table a.btn.btn-black {
       .navbar.scrolling-navbar.top-nav-collapse {
         padding-top: 5px;
         padding-bottom: 5px; } }
-  @media (min-width: 400px) and (max-width: 767px), (min-width: 800px) and (max-width: 850px) {
-    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
-      max-height: 340px;
-      overflow-x: hidden;
-      overflow-y: auto; } }
 
 .pagination .page-item.active .page-link {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -6637,14 +6573,14 @@ table.table a.btn.btn-black {
     background-color: #5e35b1; }
 
 .badge {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #fff !important;
   border-radius: 0.125rem;
-  color: #fff !important; }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .badge-pill {
-  border-radius: 10rem;
   padding-right: 0.6em;
-  padding-left: 0.6em; }
+  padding-left: 0.6em;
+  border-radius: 10rem; }
 
 .badge-primary {
   background-color: #4285f4 !important;
@@ -6723,18 +6659,31 @@ body.scrollable {
       margin-top: 1.5rem; }
       .modal-dialog.cascading-modal .modal-header .social-buttons a {
         font-size: 1rem; }
-  .modal-dialog.cascading-modal .modal-c-tabs .md-tabs {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    margin: -1.5rem 1rem 0 1rem;
-    display: -webkit-flex;
-    display: flex; }
-    .modal-dialog.cascading-modal .modal-c-tabs .md-tabs li {
-      -webkit-flex: 1;
-              flex: 1; }
-      .modal-dialog.cascading-modal .modal-c-tabs .md-tabs li a {
-        text-align: center; }
-  .modal-dialog.cascading-modal .modal-c-tabs .tab-content {
-    padding: 1.7rem 0 0 0; }
+  .modal-dialog.cascading-modal .modal-c-tabs {
+    /*
+      .md-tabs {
+       border-radius: $md-card-border-radius;
+       .nav-item {
+         .nav-link {
+           border-radius: $md-card-border-radius;
+           background-color: inherit;
+           color: $white-base;
+         }
+       }
+      }
+      */ }
+    .modal-dialog.cascading-modal .modal-c-tabs .md-tabs {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      margin: -1.5rem 1rem 0 1rem;
+      display: -webkit-flex;
+      display: flex; }
+      .modal-dialog.cascading-modal .modal-c-tabs .md-tabs li {
+        -webkit-flex: 1;
+                flex: 1; }
+        .modal-dialog.cascading-modal .modal-c-tabs .md-tabs li a {
+          text-align: center; }
+    .modal-dialog.cascading-modal .modal-c-tabs .tab-content {
+      padding: 1.7rem 0 0 0; }
   .modal-dialog.cascading-modal .modal-body,
   .modal-dialog.cascading-modal .modal-footer {
     padding-left: 2rem;
@@ -6781,10 +6730,14 @@ body.scrollable {
 .modal-dialog.modal-notify.modal-primary .badge {
   background-color: #4285f4; }
 
-.modal-dialog.modal-notify.modal-primary .btn .fas, .modal-dialog.modal-notify.modal-primary .btn .fab, .modal-dialog.modal-notify.modal-primary .btn .far {
+.modal-dialog.modal-notify.modal-primary .btn .fas,
+.modal-dialog.modal-notify.modal-primary .btn .fab,
+.modal-dialog.modal-notify.modal-primary .btn .far {
   color: #fff; }
 
-.modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .fas, .modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .fab, .modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .far {
+.modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .fas,
+.modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .fab,
+.modal-dialog.modal-notify.modal-primary .btn.btn-outline-primary .far {
   color: #4285f4; }
 
 .modal-dialog.modal-notify.modal-danger .modal-header {
@@ -6796,10 +6749,14 @@ body.scrollable {
 .modal-dialog.modal-notify.modal-danger .badge {
   background-color: #ff3547; }
 
-.modal-dialog.modal-notify.modal-danger .btn .fas, .modal-dialog.modal-notify.modal-danger .btn .fab, .modal-dialog.modal-notify.modal-danger .btn .far {
+.modal-dialog.modal-notify.modal-danger .btn .fas,
+.modal-dialog.modal-notify.modal-danger .btn .fab,
+.modal-dialog.modal-notify.modal-danger .btn .far {
   color: #fff; }
 
-.modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .fas, .modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .fab, .modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .far {
+.modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .fas,
+.modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .fab,
+.modal-dialog.modal-notify.modal-danger .btn.btn-outline-danger .far {
   color: #ff3547; }
 
 .modal-dialog.modal-notify.modal-warning .modal-header {
@@ -6811,10 +6768,14 @@ body.scrollable {
 .modal-dialog.modal-notify.modal-warning .badge {
   background-color: #ffbb33; }
 
-.modal-dialog.modal-notify.modal-warning .btn .fas, .modal-dialog.modal-notify.modal-warning .btn .fab, .modal-dialog.modal-notify.modal-warning .btn .far {
+.modal-dialog.modal-notify.modal-warning .btn .fas,
+.modal-dialog.modal-notify.modal-warning .btn .fab,
+.modal-dialog.modal-notify.modal-warning .btn .far {
   color: #fff; }
 
-.modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .fas, .modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .fab, .modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .far {
+.modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .fas,
+.modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .fab,
+.modal-dialog.modal-notify.modal-warning .btn.btn-outline-warning .far {
   color: #ffbb33; }
 
 .modal-dialog.modal-notify.modal-success .modal-header {
@@ -6826,10 +6787,14 @@ body.scrollable {
 .modal-dialog.modal-notify.modal-success .badge {
   background-color: #00c851; }
 
-.modal-dialog.modal-notify.modal-success .btn .fas, .modal-dialog.modal-notify.modal-success .btn .fab, .modal-dialog.modal-notify.modal-success .btn .far {
+.modal-dialog.modal-notify.modal-success .btn .fas,
+.modal-dialog.modal-notify.modal-success .btn .fab,
+.modal-dialog.modal-notify.modal-success .btn .far {
   color: #fff; }
 
-.modal-dialog.modal-notify.modal-success .btn.btn-outline-success .fas, .modal-dialog.modal-notify.modal-success .btn.btn-outline-success .fab, .modal-dialog.modal-notify.modal-success .btn.btn-outline-success .far {
+.modal-dialog.modal-notify.modal-success .btn.btn-outline-success .fas,
+.modal-dialog.modal-notify.modal-success .btn.btn-outline-success .fab,
+.modal-dialog.modal-notify.modal-success .btn.btn-outline-success .far {
   color: #00c851; }
 
 .modal-dialog.modal-notify.modal-info .modal-header {
@@ -6841,10 +6806,14 @@ body.scrollable {
 .modal-dialog.modal-notify.modal-info .badge {
   background-color: #33b5e5; }
 
-.modal-dialog.modal-notify.modal-info .btn .fas, .modal-dialog.modal-notify.modal-info .btn .fab, .modal-dialog.modal-notify.modal-info .btn .far {
+.modal-dialog.modal-notify.modal-info .btn .fas,
+.modal-dialog.modal-notify.modal-info .btn .fab,
+.modal-dialog.modal-notify.modal-info .btn .far {
   color: #fff; }
 
-.modal-dialog.modal-notify.modal-info .btn.btn-outline-info .fas, .modal-dialog.modal-notify.modal-info .btn.btn-outline-info .fab, .modal-dialog.modal-notify.modal-info .btn.btn-outline-info .far {
+.modal-dialog.modal-notify.modal-info .btn.btn-outline-info .fas,
+.modal-dialog.modal-notify.modal-info .btn.btn-outline-info .fab,
+.modal-dialog.modal-notify.modal-info .btn.btn-outline-info .far {
   color: #33b5e5; }
 
 .modal {
@@ -6998,64 +6967,72 @@ body.scrollable {
   position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
-  .md-form input[type=text],
-  .md-form input[type=password],
-  .md-form input[type=email],
-  .md-form input[type=url],
-  .md-form input[type=time],
-  .md-form input[type=date],
-  .md-form input[type=datetime-local],
-  .md-form input[type=tel],
-  .md-form input[type=number],
+  .md-form input:not([type]),
+  .md-form input[type=text]:not(.browser-default),
+  .md-form input[type=password]:not(.browser-default),
+  .md-form input[type=email]:not(.browser-default),
+  .md-form input[type=url]:not(.browser-default),
+  .md-form input[type=time]:not(.browser-default),
+  .md-form input[type=date]:not(.browser-default),
+  .md-form input[type=datetime]:not(.browser-default),
+  .md-form input[type=datetime-local]:not(.browser-default),
+  .md-form input[type=tel]:not(.browser-default),
+  .md-form input[type=number]:not(.browser-default),
+  .md-form input[type=search]:not(.browser-default),
   .md-form input[type=search-md],
-  .md-form input[type=search],
   .md-form textarea.md-textarea {
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    outline: none;
-    box-shadow: none;
+    box-sizing: content-box;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid #ced4da;
     border-radius: 0;
-    box-sizing: content-box;
-    background-color: transparent; }
-    .md-form input[type=text]:focus:not([readonly]),
-    .md-form input[type=password]:focus:not([readonly]),
-    .md-form input[type=email]:focus:not([readonly]),
-    .md-form input[type=url]:focus:not([readonly]),
-    .md-form input[type=time]:focus:not([readonly]),
-    .md-form input[type=date]:focus:not([readonly]),
-    .md-form input[type=datetime-local]:focus:not([readonly]),
-    .md-form input[type=tel]:focus:not([readonly]),
-    .md-form input[type=number]:focus:not([readonly]),
+    outline: none;
+    box-shadow: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .md-form input:not([type]):focus:not([readonly]),
+    .md-form input[type=text]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=password]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=email]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=url]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=time]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=date]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=tel]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=number]:not(.browser-default):focus:not([readonly]),
+    .md-form input[type=search]:not(.browser-default):focus:not([readonly]),
     .md-form input[type=search-md]:focus:not([readonly]),
-    .md-form input[type=search]:focus:not([readonly]),
     .md-form textarea.md-textarea:focus:not([readonly]) {
-      box-shadow: 0 1px 0 0 #4285f4;
-      border-bottom: 1px solid #4285f4; }
-      .md-form input[type=text]:focus:not([readonly]) + label,
-      .md-form input[type=password]:focus:not([readonly]) + label,
-      .md-form input[type=email]:focus:not([readonly]) + label,
-      .md-form input[type=url]:focus:not([readonly]) + label,
-      .md-form input[type=time]:focus:not([readonly]) + label,
-      .md-form input[type=date]:focus:not([readonly]) + label,
-      .md-form input[type=datetime-local]:focus:not([readonly]) + label,
-      .md-form input[type=tel]:focus:not([readonly]) + label,
-      .md-form input[type=number]:focus:not([readonly]) + label,
+      border-bottom: 1px solid #4285f4;
+      box-shadow: 0 1px 0 0 #4285f4; }
+      .md-form input:not([type]):focus:not([readonly]) + label,
+      .md-form input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+      .md-form input[type=search]:not(.browser-default):focus:not([readonly]) + label,
       .md-form input[type=search-md]:focus:not([readonly]) + label,
-      .md-form input[type=search]:focus:not([readonly]) + label,
       .md-form textarea.md-textarea:focus:not([readonly]) + label {
         color: #4285f4; }
-    .md-form input[type=text] + label:after,
-    .md-form input[type=password] + label:after,
-    .md-form input[type=email] + label:after,
-    .md-form input[type=url] + label:after,
-    .md-form input[type=time] + label:after,
-    .md-form input[type=date] + label:after,
-    .md-form input[type=datetime-local] + label:after,
-    .md-form input[type=tel] + label:after,
-    .md-form input[type=number] + label:after,
+    .md-form input:not([type]) + label:after,
+    .md-form input[type=text]:not(.browser-default) + label:after,
+    .md-form input[type=password]:not(.browser-default) + label:after,
+    .md-form input[type=email]:not(.browser-default) + label:after,
+    .md-form input[type=url]:not(.browser-default) + label:after,
+    .md-form input[type=time]:not(.browser-default) + label:after,
+    .md-form input[type=date]:not(.browser-default) + label:after,
+    .md-form input[type=datetime]:not(.browser-default) + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default) + label:after,
+    .md-form input[type=tel]:not(.browser-default) + label:after,
+    .md-form input[type=number]:not(.browser-default) + label:after,
+    .md-form input[type=search]:not(.browser-default) + label:after,
     .md-form input[type=search-md] + label:after,
-    .md-form input[type=search] + label:after,
     .md-form textarea.md-textarea + label:after {
       content: "";
       position: absolute;
@@ -7063,257 +7040,297 @@ body.scrollable {
       display: block;
       opacity: 0;
       transition: 0.2s opacity ease-out, 0.2s color ease-out; }
-    .md-form input[type=text].valid, .md-form input[type=text]:focus.valid,
-    .md-form input[type=password].valid,
-    .md-form input[type=password]:focus.valid,
-    .md-form input[type=email].valid,
-    .md-form input[type=email]:focus.valid,
-    .md-form input[type=url].valid,
-    .md-form input[type=url]:focus.valid,
-    .md-form input[type=time].valid,
-    .md-form input[type=time]:focus.valid,
-    .md-form input[type=date].valid,
-    .md-form input[type=date]:focus.valid,
-    .md-form input[type=datetime-local].valid,
-    .md-form input[type=datetime-local]:focus.valid,
-    .md-form input[type=tel].valid,
-    .md-form input[type=tel]:focus.valid,
-    .md-form input[type=number].valid,
-    .md-form input[type=number]:focus.valid,
+    .md-form input:not([type]).valid, .md-form input:not([type]):focus.valid,
+    .md-form input[type=text]:not(.browser-default).valid,
+    .md-form input[type=text]:not(.browser-default):focus.valid,
+    .md-form input[type=password]:not(.browser-default).valid,
+    .md-form input[type=password]:not(.browser-default):focus.valid,
+    .md-form input[type=email]:not(.browser-default).valid,
+    .md-form input[type=email]:not(.browser-default):focus.valid,
+    .md-form input[type=url]:not(.browser-default).valid,
+    .md-form input[type=url]:not(.browser-default):focus.valid,
+    .md-form input[type=time]:not(.browser-default).valid,
+    .md-form input[type=time]:not(.browser-default):focus.valid,
+    .md-form input[type=date]:not(.browser-default).valid,
+    .md-form input[type=date]:not(.browser-default):focus.valid,
+    .md-form input[type=datetime]:not(.browser-default).valid,
+    .md-form input[type=datetime]:not(.browser-default):focus.valid,
+    .md-form input[type=datetime-local]:not(.browser-default).valid,
+    .md-form input[type=datetime-local]:not(.browser-default):focus.valid,
+    .md-form input[type=tel]:not(.browser-default).valid,
+    .md-form input[type=tel]:not(.browser-default):focus.valid,
+    .md-form input[type=number]:not(.browser-default).valid,
+    .md-form input[type=number]:not(.browser-default):focus.valid,
+    .md-form input[type=search]:not(.browser-default).valid,
+    .md-form input[type=search]:not(.browser-default):focus.valid,
     .md-form input[type=search-md].valid,
     .md-form input[type=search-md]:focus.valid,
-    .md-form input[type=search].valid,
-    .md-form input[type=search]:focus.valid,
     .md-form textarea.md-textarea.valid,
     .md-form textarea.md-textarea:focus.valid {
       border-bottom: 1px solid #00c851;
       box-shadow: 0 1px 0 0 #00c851; }
-    .md-form input[type=text].valid + label:after,
-    .md-form input[type=text]:focus.valid + label:after,
-    .md-form input[type=password].valid + label:after,
-    .md-form input[type=password]:focus.valid + label:after,
-    .md-form input[type=email].valid + label:after,
-    .md-form input[type=email]:focus.valid + label:after,
-    .md-form input[type=url].valid + label:after,
-    .md-form input[type=url]:focus.valid + label:after,
-    .md-form input[type=time].valid + label:after,
-    .md-form input[type=time]:focus.valid + label:after,
-    .md-form input[type=date].valid + label:after,
-    .md-form input[type=date]:focus.valid + label:after,
-    .md-form input[type=datetime-local].valid + label:after,
-    .md-form input[type=datetime-local]:focus.valid + label:after,
-    .md-form input[type=tel].valid + label:after,
-    .md-form input[type=tel]:focus.valid + label:after,
-    .md-form input[type=number].valid + label:after,
-    .md-form input[type=number]:focus.valid + label:after,
+    .md-form input:not([type]).valid + label:after,
+    .md-form input:not([type]):focus.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).valid + label:after,
+    .md-form input[type=text]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).valid + label:after,
+    .md-form input[type=password]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).valid + label:after,
+    .md-form input[type=email]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).valid + label:after,
+    .md-form input[type=url]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).valid + label:after,
+    .md-form input[type=time]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).valid + label:after,
+    .md-form input[type=date]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).valid + label:after,
+    .md-form input[type=tel]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).valid + label:after,
+    .md-form input[type=number]:not(.browser-default):focus.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).valid + label:after,
+    .md-form input[type=search]:not(.browser-default):focus.valid + label:after,
     .md-form input[type=search-md].valid + label:after,
     .md-form input[type=search-md]:focus.valid + label:after,
-    .md-form input[type=search].valid + label:after,
-    .md-form input[type=search]:focus.valid + label:after,
     .md-form textarea.md-textarea.valid + label:after,
     .md-form textarea.md-textarea:focus.valid + label:after {
       content: attr(data-success);
       color: #00c851;
       opacity: 1; }
-    .md-form input[type=text].invalid, .md-form input[type=text]:focus.invalid,
-    .md-form input[type=password].invalid,
-    .md-form input[type=password]:focus.invalid,
-    .md-form input[type=email].invalid,
-    .md-form input[type=email]:focus.invalid,
-    .md-form input[type=url].invalid,
-    .md-form input[type=url]:focus.invalid,
-    .md-form input[type=time].invalid,
-    .md-form input[type=time]:focus.invalid,
-    .md-form input[type=date].invalid,
-    .md-form input[type=date]:focus.invalid,
-    .md-form input[type=datetime-local].invalid,
-    .md-form input[type=datetime-local]:focus.invalid,
-    .md-form input[type=tel].invalid,
-    .md-form input[type=tel]:focus.invalid,
-    .md-form input[type=number].invalid,
-    .md-form input[type=number]:focus.invalid,
+    .md-form input:not([type]).invalid, .md-form input:not([type]):focus.invalid,
+    .md-form input[type=text]:not(.browser-default).invalid,
+    .md-form input[type=text]:not(.browser-default):focus.invalid,
+    .md-form input[type=password]:not(.browser-default).invalid,
+    .md-form input[type=password]:not(.browser-default):focus.invalid,
+    .md-form input[type=email]:not(.browser-default).invalid,
+    .md-form input[type=email]:not(.browser-default):focus.invalid,
+    .md-form input[type=url]:not(.browser-default).invalid,
+    .md-form input[type=url]:not(.browser-default):focus.invalid,
+    .md-form input[type=time]:not(.browser-default).invalid,
+    .md-form input[type=time]:not(.browser-default):focus.invalid,
+    .md-form input[type=date]:not(.browser-default).invalid,
+    .md-form input[type=date]:not(.browser-default):focus.invalid,
+    .md-form input[type=datetime]:not(.browser-default).invalid,
+    .md-form input[type=datetime]:not(.browser-default):focus.invalid,
+    .md-form input[type=datetime-local]:not(.browser-default).invalid,
+    .md-form input[type=datetime-local]:not(.browser-default):focus.invalid,
+    .md-form input[type=tel]:not(.browser-default).invalid,
+    .md-form input[type=tel]:not(.browser-default):focus.invalid,
+    .md-form input[type=number]:not(.browser-default).invalid,
+    .md-form input[type=number]:not(.browser-default):focus.invalid,
+    .md-form input[type=search]:not(.browser-default).invalid,
+    .md-form input[type=search]:not(.browser-default):focus.invalid,
     .md-form input[type=search-md].invalid,
     .md-form input[type=search-md]:focus.invalid,
-    .md-form input[type=search].invalid,
-    .md-form input[type=search]:focus.invalid,
     .md-form textarea.md-textarea.invalid,
     .md-form textarea.md-textarea:focus.invalid {
       border-bottom: 1px solid #f44336;
       box-shadow: 0 1px 0 0 #f44336; }
-    .md-form input[type=text].invalid + label:after,
-    .md-form input[type=text]:focus.invalid + label:after,
-    .md-form input[type=password].invalid + label:after,
-    .md-form input[type=password]:focus.invalid + label:after,
-    .md-form input[type=email].invalid + label:after,
-    .md-form input[type=email]:focus.invalid + label:after,
-    .md-form input[type=url].invalid + label:after,
-    .md-form input[type=url]:focus.invalid + label:after,
-    .md-form input[type=time].invalid + label:after,
-    .md-form input[type=time]:focus.invalid + label:after,
-    .md-form input[type=date].invalid + label:after,
-    .md-form input[type=date]:focus.invalid + label:after,
-    .md-form input[type=datetime-local].invalid + label:after,
-    .md-form input[type=datetime-local]:focus.invalid + label:after,
-    .md-form input[type=tel].invalid + label:after,
-    .md-form input[type=tel]:focus.invalid + label:after,
-    .md-form input[type=number].invalid + label:after,
-    .md-form input[type=number]:focus.invalid + label:after,
+    .md-form input:not([type]).invalid + label:after,
+    .md-form input:not([type]):focus.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).invalid + label:after,
+    .md-form input[type=text]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).invalid + label:after,
+    .md-form input[type=password]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).invalid + label:after,
+    .md-form input[type=email]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).invalid + label:after,
+    .md-form input[type=url]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).invalid + label:after,
+    .md-form input[type=time]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).invalid + label:after,
+    .md-form input[type=date]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).invalid + label:after,
+    .md-form input[type=number]:not(.browser-default):focus.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).invalid + label:after,
+    .md-form input[type=search]:not(.browser-default):focus.invalid + label:after,
     .md-form input[type=search-md].invalid + label:after,
     .md-form input[type=search-md]:focus.invalid + label:after,
-    .md-form input[type=search].invalid + label:after,
-    .md-form input[type=search]:focus.invalid + label:after,
     .md-form textarea.md-textarea.invalid + label:after,
     .md-form textarea.md-textarea:focus.invalid + label:after {
       content: attr(data-error);
       color: #f44336;
       opacity: 1; }
-    .md-form input[type=text].form-control.valid + label:after,
-    .md-form input[type=text].form-control:focus.valid + label:after,
-    .md-form input[type=password].form-control.valid + label:after,
-    .md-form input[type=password].form-control:focus.valid + label:after,
-    .md-form input[type=email].form-control.valid + label:after,
-    .md-form input[type=email].form-control:focus.valid + label:after,
-    .md-form input[type=url].form-control.valid + label:after,
-    .md-form input[type=url].form-control:focus.valid + label:after,
-    .md-form input[type=time].form-control.valid + label:after,
-    .md-form input[type=time].form-control:focus.valid + label:after,
-    .md-form input[type=date].form-control.valid + label:after,
-    .md-form input[type=date].form-control:focus.valid + label:after,
-    .md-form input[type=datetime-local].form-control.valid + label:after,
-    .md-form input[type=datetime-local].form-control:focus.valid + label:after,
-    .md-form input[type=tel].form-control.valid + label:after,
-    .md-form input[type=tel].form-control:focus.valid + label:after,
-    .md-form input[type=number].form-control.valid + label:after,
-    .md-form input[type=number].form-control:focus.valid + label:after,
+    .md-form input:not([type]).form-control.valid + label:after,
+    .md-form input:not([type]).form-control:focus.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control:focus.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control:focus.valid + label:after,
     .md-form input[type=search-md].form-control.valid + label:after,
     .md-form input[type=search-md].form-control:focus.valid + label:after,
-    .md-form input[type=search].form-control.valid + label:after,
-    .md-form input[type=search].form-control:focus.valid + label:after,
     .md-form textarea.md-textarea.form-control.valid + label:after,
     .md-form textarea.md-textarea.form-control:focus.valid + label:after {
       top: 4.1rem; }
-    .md-form input[type=text].form-control.invalid + label:after,
-    .md-form input[type=text].form-control:focus.invalid + label:after,
-    .md-form input[type=password].form-control.invalid + label:after,
-    .md-form input[type=password].form-control:focus.invalid + label:after,
-    .md-form input[type=email].form-control.invalid + label:after,
-    .md-form input[type=email].form-control:focus.invalid + label:after,
-    .md-form input[type=url].form-control.invalid + label:after,
-    .md-form input[type=url].form-control:focus.invalid + label:after,
-    .md-form input[type=time].form-control.invalid + label:after,
-    .md-form input[type=time].form-control:focus.invalid + label:after,
-    .md-form input[type=date].form-control.invalid + label:after,
-    .md-form input[type=date].form-control:focus.invalid + label:after,
-    .md-form input[type=datetime-local].form-control.invalid + label:after,
-    .md-form input[type=datetime-local].form-control:focus.invalid + label:after,
-    .md-form input[type=tel].form-control.invalid + label:after,
-    .md-form input[type=tel].form-control:focus.invalid + label:after,
-    .md-form input[type=number].form-control.invalid + label:after,
-    .md-form input[type=number].form-control:focus.invalid + label:after,
+    .md-form input:not([type]).form-control.invalid + label:after,
+    .md-form input:not([type]).form-control:focus.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control:focus.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control:focus.invalid + label:after,
     .md-form input[type=search-md].form-control.invalid + label:after,
     .md-form input[type=search-md].form-control:focus.invalid + label:after,
-    .md-form input[type=search].form-control.invalid + label:after,
-    .md-form input[type=search].form-control:focus.invalid + label:after,
     .md-form textarea.md-textarea.form-control.invalid + label:after,
     .md-form textarea.md-textarea.form-control:focus.invalid + label:after {
       top: 4rem; }
-    .md-form input[type=text].form-control-lg.valid + label:after,
-    .md-form input[type=text].form-control-lg:focus.valid + label:after,
-    .md-form input[type=password].form-control-lg.valid + label:after,
-    .md-form input[type=password].form-control-lg:focus.valid + label:after,
-    .md-form input[type=email].form-control-lg.valid + label:after,
-    .md-form input[type=email].form-control-lg:focus.valid + label:after,
-    .md-form input[type=url].form-control-lg.valid + label:after,
-    .md-form input[type=url].form-control-lg:focus.valid + label:after,
-    .md-form input[type=time].form-control-lg.valid + label:after,
-    .md-form input[type=time].form-control-lg:focus.valid + label:after,
-    .md-form input[type=date].form-control-lg.valid + label:after,
-    .md-form input[type=date].form-control-lg:focus.valid + label:after,
-    .md-form input[type=datetime-local].form-control-lg.valid + label:after,
-    .md-form input[type=datetime-local].form-control-lg:focus.valid + label:after,
-    .md-form input[type=tel].form-control-lg.valid + label:after,
-    .md-form input[type=tel].form-control-lg:focus.valid + label:after,
-    .md-form input[type=number].form-control-lg.valid + label:after,
-    .md-form input[type=number].form-control-lg:focus.valid + label:after,
+    .md-form input:not([type]).form-control-lg.valid + label:after,
+    .md-form input:not([type]).form-control-lg:focus.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-lg:focus.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-lg.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-lg:focus.valid + label:after,
     .md-form input[type=search-md].form-control-lg.valid + label:after,
     .md-form input[type=search-md].form-control-lg:focus.valid + label:after,
-    .md-form input[type=search].form-control-lg.valid + label:after,
-    .md-form input[type=search].form-control-lg:focus.valid + label:after,
     .md-form textarea.md-textarea.form-control-lg.valid + label:after,
     .md-form textarea.md-textarea.form-control-lg:focus.valid + label:after {
       top: 4.6rem; }
-    .md-form input[type=text].form-control-lg.invalid + label:after,
-    .md-form input[type=text].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=password].form-control-lg.invalid + label:after,
-    .md-form input[type=password].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=email].form-control-lg.invalid + label:after,
-    .md-form input[type=email].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=url].form-control-lg.invalid + label:after,
-    .md-form input[type=url].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=time].form-control-lg.invalid + label:after,
-    .md-form input[type=time].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=date].form-control-lg.invalid + label:after,
-    .md-form input[type=date].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=datetime-local].form-control-lg.invalid + label:after,
-    .md-form input[type=datetime-local].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=tel].form-control-lg.invalid + label:after,
-    .md-form input[type=tel].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=number].form-control-lg.invalid + label:after,
-    .md-form input[type=number].form-control-lg:focus.invalid + label:after,
+    .md-form input:not([type]).form-control-lg.invalid + label:after,
+    .md-form input:not([type]).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-lg.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-lg:focus.invalid + label:after,
     .md-form input[type=search-md].form-control-lg.invalid + label:after,
     .md-form input[type=search-md].form-control-lg:focus.invalid + label:after,
-    .md-form input[type=search].form-control-lg.invalid + label:after,
-    .md-form input[type=search].form-control-lg:focus.invalid + label:after,
     .md-form textarea.md-textarea.form-control-lg.invalid + label:after,
     .md-form textarea.md-textarea.form-control-lg:focus.invalid + label:after {
       top: 4.6rem; }
-    .md-form input[type=text].form-control-sm.valid + label:after,
-    .md-form input[type=text].form-control-sm:focus.valid + label:after,
-    .md-form input[type=password].form-control-sm.valid + label:after,
-    .md-form input[type=password].form-control-sm:focus.valid + label:after,
-    .md-form input[type=email].form-control-sm.valid + label:after,
-    .md-form input[type=email].form-control-sm:focus.valid + label:after,
-    .md-form input[type=url].form-control-sm.valid + label:after,
-    .md-form input[type=url].form-control-sm:focus.valid + label:after,
-    .md-form input[type=time].form-control-sm.valid + label:after,
-    .md-form input[type=time].form-control-sm:focus.valid + label:after,
-    .md-form input[type=date].form-control-sm.valid + label:after,
-    .md-form input[type=date].form-control-sm:focus.valid + label:after,
-    .md-form input[type=datetime-local].form-control-sm.valid + label:after,
-    .md-form input[type=datetime-local].form-control-sm:focus.valid + label:after,
-    .md-form input[type=tel].form-control-sm.valid + label:after,
-    .md-form input[type=tel].form-control-sm:focus.valid + label:after,
-    .md-form input[type=number].form-control-sm.valid + label:after,
-    .md-form input[type=number].form-control-sm:focus.valid + label:after,
+    .md-form input:not([type]).form-control-sm.valid + label:after,
+    .md-form input:not([type]).form-control-sm:focus.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-sm:focus.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-sm.valid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-sm:focus.valid + label:after,
     .md-form input[type=search-md].form-control-sm.valid + label:after,
     .md-form input[type=search-md].form-control-sm:focus.valid + label:after,
-    .md-form input[type=search].form-control-sm.valid + label:after,
-    .md-form input[type=search].form-control-sm:focus.valid + label:after,
     .md-form textarea.md-textarea.form-control-sm.valid + label:after,
     .md-form textarea.md-textarea.form-control-sm:focus.valid + label:after {
       top: 3.7rem; }
-    .md-form input[type=text].form-control-sm.invalid + label:after,
-    .md-form input[type=text].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=password].form-control-sm.invalid + label:after,
-    .md-form input[type=password].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=email].form-control-sm.invalid + label:after,
-    .md-form input[type=email].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=url].form-control-sm.invalid + label:after,
-    .md-form input[type=url].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=time].form-control-sm.invalid + label:after,
-    .md-form input[type=time].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=date].form-control-sm.invalid + label:after,
-    .md-form input[type=date].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=datetime-local].form-control-sm.invalid + label:after,
-    .md-form input[type=datetime-local].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=tel].form-control-sm.invalid + label:after,
-    .md-form input[type=tel].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=number].form-control-sm.invalid + label:after,
-    .md-form input[type=number].form-control-sm:focus.invalid + label:after,
+    .md-form input:not([type]).form-control-sm.invalid + label:after,
+    .md-form input:not([type]).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=text]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=password]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=email]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=url]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=time]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=date]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=datetime]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=datetime-local]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=tel]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=number]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-sm.invalid + label:after,
+    .md-form input[type=search]:not(.browser-default).form-control-sm:focus.invalid + label:after,
     .md-form input[type=search-md].form-control-sm.invalid + label:after,
     .md-form input[type=search-md].form-control-sm:focus.invalid + label:after,
-    .md-form input[type=search].form-control-sm.invalid + label:after,
-    .md-form input[type=search].form-control-sm:focus.invalid + label:after,
     .md-form textarea.md-textarea.form-control-sm.invalid + label:after,
     .md-form textarea.md-textarea.form-control-sm:focus.invalid + label:after {
       top: 3.6rem; }
@@ -7324,11 +7341,11 @@ body.scrollable {
             transform-origin: 0 0; }
   .md-form > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
   .md-form > input[type=time]:not(.browser-default) + label {
+    font-size: .8rem;
     -webkit-transform: translateY(-25px);
             transform: translateY(-25px);
     -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    font-size: .8rem; }
+            transform-origin: 0 0; }
   .md-form .was-validated input[type=text]:valid + label {
     color: #00c851 !important; }
   .md-form .was-validated input[type=text]:invalid + label {
@@ -8005,27 +8022,34 @@ body.scrollable {
     font-weight: 600; }
   .note p {
     font-weight: 500; }
-  .note.note-primary {
-    background-color: #dfeefd;
-    border-color: #176ac4; }
-  .note.note-secondary {
-    background-color: #e2e3e5;
-    border-color: #58595a; }
-  .note.note-success {
-    background-color: #e2f0e5;
-    border-color: #49a75f; }
-  .note.note-danger {
-    background-color: #fae7e8;
-    border-color: #e45460; }
-  .note.note-warning {
-    background-color: #faf4e0;
-    border-color: #c2a442; }
-  .note.note-info {
-    background-color: #e4f2f5;
-    border-color: #2492a5; }
-  .note.note-light {
-    background-color: #fefefe;
-    border-color: #0f0f0f; }
+
+.note-primary {
+  background-color: #dfeefd;
+  border-color: #176ac4; }
+
+.note-secondary {
+  background-color: #e2e3e5;
+  border-color: #58595a; }
+
+.note-success {
+  background-color: #e2f0e5;
+  border-color: #49a75f; }
+
+.note-danger {
+  background-color: #fae7e8;
+  border-color: #e45460; }
+
+.note-warning {
+  background-color: #faf4e0;
+  border-color: #c2a442; }
+
+.note-info {
+  background-color: #e4f2f5;
+  border-color: #2492a5; }
+
+.note-light {
+  background-color: #fefefe;
+  border-color: #0f0f0f; }
 
 footer.page-footer {
   bottom: 0;
@@ -8034,8 +8058,8 @@ footer.page-footer {
     width: auto; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.2); }
   footer.page-footer a {
     color: #fff; }
 
@@ -8117,6 +8141,21 @@ table.table-sm td {
 .table-responsive-xl > .table-bordered {
   border-top: 1px solid #dee2e6; }
 
+/*
+.navbar {
+  &.fixed-top,
+  &.sticky-top {
+    .navbar-collapse {
+      @media (min-width: 400px) and (max-width: 767px), 
+      (min-width: 800px) and (max-width: 850px) {
+        max-height: 340px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+*/
 ul.stepper {
   counter-reset: section;
   overflow-y: auto;
@@ -8256,12 +8295,12 @@ ul.stepper {
       background-color: rgba(0, 0, 0, 0.1); }
 
 .fast.spinner-border {
-  -webkit-animation: spinner-border .4s linear infinite;
-          animation: spinner-border .4s linear infinite; }
+  -webkit-animation: spinner-border 0.4s linear infinite;
+          animation: spinner-border 0.4s linear infinite; }
 
 .fast.spinner-grow {
-  -webkit-animation: spinner-grow .4s linear infinite;
-          animation: spinner-grow .4s linear infinite; }
+  -webkit-animation: spinner-grow 0.4s linear infinite;
+          animation: spinner-grow 0.4s linear infinite; }
 
 .treeview.w-20 {
   width: 20rem; }

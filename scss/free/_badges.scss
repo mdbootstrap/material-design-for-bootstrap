@@ -1,14 +1,15 @@
 // Badges
 .badge {
-  box-shadow: $z-depth-1;
-  border-radius: $border-radius-base;
   color: $white !important;
+  border-radius: $border-radius-base;
+  box-shadow: $z-depth-1;
 }
 .badge-pill {
-  border-radius: $badge-pill-border-radius;
   padding-right: $badge-pill-padding-x;
   padding-left: $badge-pill-padding-x;
+  border-radius: $badge-pill-border-radius;
 }
 @each $name, $color in $basic-mdb-colors {
   @include make-badge($name, $color);
 }
+
