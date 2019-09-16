@@ -1,6 +1,6 @@
 {
   "name": "mdbootstrap",
-  "version": "4.8.9",
+  "version": "4.8.10",
   "main": "js/mdb.js",
   "scripts": {
     "js-compile-plugins": "babel --presets env js/src/ --out-dir js/dist/"

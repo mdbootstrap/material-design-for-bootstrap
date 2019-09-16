@@ -239,7 +239,6 @@
     &.md-textarea {
       overflow-y: hidden;
       padding: $textarea-padding 0;
-      resize: none;
     }
 
     &.md-textarea-auto {
@@ -324,14 +323,14 @@
 
       &.form-control.valid+label:after,
       &.form-control:focus.valid+label:after {
-        top: 2.75rem;
+        top: 4rem;
         left: 0;
         position: absolute;
       }
 
       &.form-control.invalid+label:after,
       &.form-control:focus.invalid+label:after {
-        top: 2.75rem;
+        top: 4rem;
         left: 0;
         position: absolute;
       }
