@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.8.10
+ * Version: MDB FREE: 4.8.11
  *
  *
  * Copyright: Material Design for Bootstrap

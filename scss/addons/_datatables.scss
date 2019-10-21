@@ -14,17 +14,11 @@
  *   DataTables 1.10.18
  */
 
- table.dataTable thead {
-  cursor: pointer;
-  > tr > {
-    th:active, td:active {
-      outline: none;
-    }
-  }
-}
-
 div.dataTables_wrapper div {
   &.dataTables_length {
+    select, input {
+      width: auto;
+    }
     &.d-flex.flex-row {
       label {
         margin-top: 1.2rem;
@@ -40,15 +34,10 @@ div.dataTables_wrapper div {
   &.dataTables_length,
   &.dataTables_filter {
     label {
-      text-align: left;
-      font-weight: normal;
       padding-top: .5rem;
       padding-bottom: .5rem;
-    }
-  }
-  &.dataTables_length {
-    select, input {
-      width: auto;
+      font-weight: 400;
+      text-align: left;
     }
   }
   &.dataTables_filter {
@@ -57,25 +46,25 @@ div.dataTables_wrapper div {
       width: auto;
     }
     input {
-      margin-left: .5rem;
       display: inline-block;
+      margin-left: .5rem;
     }
     text-align: right;
   }
   &.dataTables_info,
   &.dataTables_paginate {
-    font-weight: normal;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-weight: 400;
   }
   &.dataTables_paginate {
-    text-align: right;
     margin: 0;
+    text-align: right;
     ul.pagination {
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
       justify-content: flex-end;
+      -webkit-box-pack: end;
       .page-item {
         &.active .page-link:focus {
           background-color: #4285f4;
@@ -92,11 +81,11 @@ div.dataTables_wrapper div {
 @media (max-width: 767px) {
   div.dataTables_wrapper div {
     .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate ul.pagination {
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
       text-align: center;
       -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
     }
   }
 }
@@ -106,6 +95,7 @@ div.dataTables_wrapper div {
 }
 
 table.dataTable thead {
+  cursor: pointer;
   > tr > {
     th,
     td {
@@ -117,37 +107,34 @@ table.dataTable thead {
       outline: none;
     }
   }
-  .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
-    cursor: pointer;
-    position: relative;
-  }
   .sorting,
   .sorting_asc,
   .sorting_desc,
   .sorting_asc_disabled,
   .sorting_desc_disabled {
+    position: relative;
+    cursor: pointer;
     &:before, &:after {
       position: absolute;
-      bottom: 0.9em;
+      bottom: .9em;
       display: block;
-      opacity: 0.3;
+      opacity: .3;
     }
   }
   .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before {
     right: 1em;
+    font-family: "Font Awesome\ 5 Free", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
     content: "\f0de";
   }
   .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
-    content: "\f0dd";
     right: 16px;
-  }
-  .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before,
-  .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
+    font-family: "Font Awesome\ 5 Free", sans-serif;
     font-size: 1rem;
+    font-weight: 900;
+    content: "\f0dd";
   }
-
   .sorting_asc:before, .sorting_desc:after {
     opacity: 1;
   }

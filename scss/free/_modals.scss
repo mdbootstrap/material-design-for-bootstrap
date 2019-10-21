@@ -2,8 +2,8 @@
 // Styles for body
 body {
   &.modal-open {
-    overflow: auto;
     padding-right: 0 !important;
+    overflow: auto;
   }
   &.scrollable {
     overflow-y: auto;
@@ -14,9 +14,9 @@ body {
 // General styles
 .modal-dialog {
   .modal-content {
-    box-shadow: $z-depth-1-half;
     border: 0;
     border-radius: $border-radius-base;
+    box-shadow: $z-depth-1-half;
     .modal-header {
       border-top-left-radius: $border-radius-base;
       border-top-right-radius: $border-radius-base;
@@ -26,25 +26,25 @@ body {
   &.cascading-modal {
     margin-top: 10%;
     .close {
-      opacity: 1;
-      text-shadow: none;
       color: $white-base;
+      text-shadow: none;
       outline: 0;
+      opacity: 1;
     }
     // Cascading header
     .modal-header {
-      box-shadow: $z-depth-1-half;
+      padding: $cascading-modal-padding;
       margin: $cascading-modal-margin-top $cascading-modal-margin-right $cascading-modal-margin-bottom $cascading-modal-margin-left;
+      text-align: center;
       border: none;
       border-radius: $border-radius-base;
-      padding: $cascading-modal-padding;
-      text-align: center;
+      box-shadow: $z-depth-1-half;
       .close {
         margin-right: $cascading-modal-close-margin-right;
       }
       .title {
-        margin-bottom: 0;
         width: 100%;
+        margin-bottom: 0;
         font-size: $cascading-modal-font-size;
         .fas, .fab, .far {
           margin-right: $cascading-modal-fa-margin-right;
@@ -60,19 +60,20 @@ body {
     // Cascading tabs nav
     .modal-c-tabs {
       .md-tabs {
-        box-shadow: $z-depth-1;
+        display: flex;
         margin: $cascading-modal-tabs-margin-top $cascading-modal-tabs-margin-x 0 $cascading-modal-tabs-margin-x;
-      	display: flex;
-      	li {
-      	  flex: 1;
-      	  a {
-      	    text-align: center;
-      	  }
-      	}
+        box-shadow: $z-depth-1;
+        li {
+          flex: 1;
+          a {
+            text-align: center;
+          }
+        }
       }
       .tab-content {
         padding: $cascading-modal-tabs-padding-top 0 0 0;
       }
+
       /*
       .md-tabs {
        border-radius: $md-card-border-radius;
@@ -89,8 +90,8 @@ body {
     // Footer customization
     .modal-body,
     .modal-footer {
-      padding-left: $modal-body-padding-left;
       padding-right: $modal-body-padding-right;
+      padding-left: $modal-body-padding-left;
       color: $grey-darken-2;
       .additional-option {
         margin-top: $modal-body-margin-top;
@@ -101,14 +102,14 @@ body {
     &.modal-avatar {
       margin-top: $modal-avatar-margin-top;
       .modal-header {
-        box-shadow: none;
         @extend .img-fluid;
         margin: $modal-avatar-header-margin-top 0 $modal-avatar-header-margin-bottom;
+        box-shadow: none;
         img {
           width: $modal-avatar-img-width;
-          box-shadow: $z-depth-2;
-          margin-left: auto;
           margin-right: auto;
+          margin-left: auto;
+          box-shadow: $z-depth-2;
         }
       }
     }
@@ -116,14 +117,14 @@ body {
   // Modal notify
   &.modal-notify {
     .heading {
-      margin: 0;
       padding: $modal-notify-heading-padding;
+      margin: 0;
       font-size: $modal-notify-font-size;
       color: $white-base;
     }
     .modal-header {
-      box-shadow: $z-depth-1;
       border: 0;
+      box-shadow: $z-depth-1;
     }
     .close {
       opacity: 1;
@@ -192,8 +193,8 @@ body {
         left: $modal-distance;
       }
       &.modal-bottom-right {
-        bottom: $modal-distance;
         right: $modal-distance;
+        bottom: $modal-distance;
       }
     }
   }
@@ -235,23 +236,22 @@ body {
     }
     .modal-frame {
       position: absolute;
-      margin: 0 !important;
       width: 100%;
       max-width: 100% !important;
+      margin: 0 !important;
       &.modal-bottom {
         bottom: 0;
       }
     }
     .modal-full-height {
       position: absolute;
-      display: flex;
-      margin: 0;
-      width: $modal-width;
-      min-height: 100%;
-      height: auto;
-      min-height: 100%;
       top: 0;
       right: 0;
+      display: flex;
+      width: $modal-width;
+      height: auto;
+      min-height: 100%;
+      margin: 0;
       &.modal-top,
       &.modal-bottom {
         display: block;
@@ -263,8 +263,8 @@ body {
         bottom: auto;
       }
       &.modal-bottom {
-        min-height: 0;
         top: auto;
+        min-height: 0;
       }
       .modal-content {
         width: 100%;
@@ -284,10 +284,10 @@ body {
     }
     .modal-side {
       position: absolute;
-      bottom: $modal-distance;
       right: $modal-distance;
-      margin: 0;
+      bottom: $modal-distance;
       width: $modal-width;
+      margin: 0;
     }
   }
 }

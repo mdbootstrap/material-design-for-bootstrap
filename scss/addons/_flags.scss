@@ -17,26 +17,25 @@ i.flag:not(.icon) {
   display: inline-block;
   width: 16px;
   height: 11px;
+  margin: 0 .5em 0 0;
+  // font-smooth: antialiased;
   line-height: 11px;
-  vertical-align: baseline;
-  margin: 0 0.5em 0 0;
   text-decoration: inherit;
-  speak: none;
-  font-smooth: antialiased;
+  vertical-align: baseline;
+  // speak: none;
   backface-visibility: hidden;
 }
 
 /* Sprite */
 i.flag:not(.icon):before {
   display: inline-block;
-  content: '';
-  background: url("https://mdbootstrap.com/img/svg/flags.png") no-repeat -108px -1976px;
   width: 16px;
   height: 11px;
+  content: "";
+  background: url("https://mdbootstrap.com/img/svg/flags.png") no-repeat -108px -1976px;
 }
 
 /* Flag Sprite Based On http://www.famfamfam.com/lab/icons/flags/ */
-
 
 /*******************************
          Theme Overrides
@@ -44,308 +43,308 @@ i.flag:not(.icon):before {
 
 i.flag.ad:before,
 i.flag.andorra:before {
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 i.flag.ae:before,
 i.flag.united.arab.emirates:before,
 i.flag.uae:before {
-  background-position: 0px -26px;
+  background-position: 0 -26px;
 }
 i.flag.af:before,
 i.flag.afghanistan:before {
-  background-position: 0px -52px;
+  background-position: 0 -52px;
 }
 i.flag.ag:before,
 i.flag.antigua:before {
-  background-position: 0px -78px;
+  background-position: 0 -78px;
 }
 i.flag.ai:before,
 i.flag.anguilla:before {
-  background-position: 0px -104px;
+  background-position: 0 -104px;
 }
 i.flag.al:before,
 i.flag.albania:before {
-  background-position: 0px -130px;
+  background-position: 0 -130px;
 }
 i.flag.am:before,
 i.flag.armenia:before {
-  background-position: 0px -156px;
+  background-position: 0 -156px;
 }
 i.flag.an:before,
 i.flag.netherlands.antilles:before {
-  background-position: 0px -182px;
+  background-position: 0 -182px;
 }
 i.flag.ao:before,
 i.flag.angola:before {
-  background-position: 0px -208px;
+  background-position: 0 -208px;
 }
 i.flag.ar:before,
 i.flag.argentina:before {
-  background-position: 0px -234px;
+  background-position: 0 -234px;
 }
 i.flag.as:before,
 i.flag.american.samoa:before {
-  background-position: 0px -260px;
+  background-position: 0 -260px;
 }
 i.flag.at:before,
 i.flag.austria:before {
-  background-position: 0px -286px;
+  background-position: 0 -286px;
 }
 i.flag.au:before,
 i.flag.australia:before {
-  background-position: 0px -312px;
+  background-position: 0 -312px;
 }
 i.flag.aw:before,
 i.flag.aruba:before {
-  background-position: 0px -338px;
+  background-position: 0 -338px;
 }
 i.flag.ax:before,
 i.flag.aland.islands:before {
-  background-position: 0px -364px;
+  background-position: 0 -364px;
 }
 i.flag.az:before,
 i.flag.azerbaijan:before {
-  background-position: 0px -390px;
+  background-position: 0 -390px;
 }
 i.flag.ba:before,
 i.flag.bosnia:before {
-  background-position: 0px -416px;
+  background-position: 0 -416px;
 }
 i.flag.bb:before,
 i.flag.barbados:before {
-  background-position: 0px -442px;
+  background-position: 0 -442px;
 }
 i.flag.bd:before,
 i.flag.bangladesh:before {
-  background-position: 0px -468px;
+  background-position: 0 -468px;
 }
 i.flag.be:before,
 i.flag.belgium:before {
-  background-position: 0px -494px;
+  background-position: 0 -494px;
 }
 i.flag.bf:before,
 i.flag.burkina.faso:before {
-  background-position: 0px -520px;
+  background-position: 0 -520px;
 }
 i.flag.bg:before,
 i.flag.bulgaria:before {
-  background-position: 0px -546px;
+  background-position: 0 -546px;
 }
 i.flag.bh:before,
 i.flag.bahrain:before {
-  background-position: 0px -572px;
+  background-position: 0 -572px;
 }
 i.flag.bi:before,
 i.flag.burundi:before {
-  background-position: 0px -598px;
+  background-position: 0 -598px;
 }
 i.flag.bj:before,
 i.flag.benin:before {
-  background-position: 0px -624px;
+  background-position: 0 -624px;
 }
 i.flag.bm:before,
 i.flag.bermuda:before {
-  background-position: 0px -650px;
+  background-position: 0 -650px;
 }
 i.flag.bn:before,
 i.flag.brunei:before {
-  background-position: 0px -676px;
+  background-position: 0 -676px;
 }
 i.flag.bo:before,
 i.flag.bolivia:before {
-  background-position: 0px -702px;
+  background-position: 0 -702px;
 }
 i.flag.br:before,
 i.flag.brazil:before {
-  background-position: 0px -728px;
+  background-position: 0 -728px;
 }
 i.flag.bs:before,
 i.flag.bahamas:before {
-  background-position: 0px -754px;
+  background-position: 0 -754px;
 }
 i.flag.bt:before,
 i.flag.bhutan:before {
-  background-position: 0px -780px;
+  background-position: 0 -780px;
 }
 i.flag.bv:before,
 i.flag.bouvet.island:before {
-  background-position: 0px -806px;
+  background-position: 0 -806px;
 }
 i.flag.bw:before,
 i.flag.botswana:before {
-  background-position: 0px -832px;
+  background-position: 0 -832px;
 }
 i.flag.by:before,
 i.flag.belarus:before {
-  background-position: 0px -858px;
+  background-position: 0 -858px;
 }
 i.flag.bz:before,
 i.flag.belize:before {
-  background-position: 0px -884px;
+  background-position: 0 -884px;
 }
 i.flag.ca:before,
 i.flag.canada:before {
-  background-position: 0px -910px;
+  background-position: 0 -910px;
 }
 i.flag.cc:before,
 i.flag.cocos.islands:before {
-  background-position: 0px -962px;
+  background-position: 0 -962px;
 }
 i.flag.cd:before,
 i.flag.congo:before {
-  background-position: 0px -988px;
+  background-position: 0 -988px;
 }
 i.flag.cf:before,
 i.flag.central.african.republic:before {
-  background-position: 0px -1014px;
+  background-position: 0 -1014px;
 }
 i.flag.cg:before,
 i.flag.congo.brazzaville:before {
-  background-position: 0px -1040px;
+  background-position: 0 -1040px;
 }
 i.flag.ch:before,
 i.flag.switzerland:before {
-  background-position: 0px -1066px;
+  background-position: 0 -1066px;
 }
 i.flag.ci:before,
 i.flag.cote.divoire:before {
-  background-position: 0px -1092px;
+  background-position: 0 -1092px;
 }
 i.flag.ck:before,
 i.flag.cook.islands:before {
-  background-position: 0px -1118px;
+  background-position: 0 -1118px;
 }
 i.flag.cl:before,
 i.flag.chile:before {
-  background-position: 0px -1144px;
+  background-position: 0 -1144px;
 }
 i.flag.cm:before,
 i.flag.cameroon:before {
-  background-position: 0px -1170px;
+  background-position: 0 -1170px;
 }
 i.flag.cn:before,
 i.flag.china:before {
-  background-position: 0px -1196px;
+  background-position: 0 -1196px;
 }
 i.flag.co:before,
 i.flag.colombia:before {
-  background-position: 0px -1222px;
+  background-position: 0 -1222px;
 }
 i.flag.cr:before,
 i.flag.costa.rica:before {
-  background-position: 0px -1248px;
+  background-position: 0 -1248px;
 }
 i.flag.cs:before,
 i.flag.serbia:before {
-  background-position: 0px -1274px;
+  background-position: 0 -1274px;
 }
 i.flag.cu:before,
 i.flag.cuba:before {
-  background-position: 0px -1300px;
+  background-position: 0 -1300px;
 }
 i.flag.cv:before,
 i.flag.cape.verde:before {
-  background-position: 0px -1326px;
+  background-position: 0 -1326px;
 }
 i.flag.cx:before,
 i.flag.christmas.island:before {
-  background-position: 0px -1352px;
+  background-position: 0 -1352px;
 }
 i.flag.cy:before,
 i.flag.cyprus:before {
-  background-position: 0px -1378px;
+  background-position: 0 -1378px;
 }
 i.flag.cz:before,
 i.flag.czech.republic:before {
-  background-position: 0px -1404px;
+  background-position: 0 -1404px;
 }
 i.flag.de:before,
 i.flag.germany:before {
-  background-position: 0px -1430px;
+  background-position: 0 -1430px;
 }
 i.flag.dj:before,
 i.flag.djibouti:before {
-  background-position: 0px -1456px;
+  background-position: 0 -1456px;
 }
 i.flag.dk:before,
 i.flag.denmark:before {
-  background-position: 0px -1482px;
+  background-position: 0 -1482px;
 }
 i.flag.dm:before,
 i.flag.dominica:before {
-  background-position: 0px -1508px;
+  background-position: 0 -1508px;
 }
 i.flag.do:before,
 i.flag.dominican.republic:before {
-  background-position: 0px -1534px;
+  background-position: 0 -1534px;
 }
 i.flag.dz:before,
 i.flag.algeria:before {
-  background-position: 0px -1560px;
+  background-position: 0 -1560px;
 }
 i.flag.ec:before,
 i.flag.ecuador:before {
-  background-position: 0px -1586px;
+  background-position: 0 -1586px;
 }
 i.flag.ee:before,
 i.flag.estonia:before {
-  background-position: 0px -1612px;
+  background-position: 0 -1612px;
 }
 i.flag.eg:before,
 i.flag.egypt:before {
-  background-position: 0px -1638px;
+  background-position: 0 -1638px;
 }
 i.flag.eh:before,
 i.flag.western.sahara:before {
-  background-position: 0px -1664px;
+  background-position: 0 -1664px;
 }
 i.flag.gb.eng:before,
 i.flag.england:before {
-  background-position: 0px -1690px;
+  background-position: 0 -1690px;
 }
 i.flag.er:before,
 i.flag.eritrea:before {
-  background-position: 0px -1716px;
+  background-position: 0 -1716px;
 }
 i.flag.es:before,
 i.flag.spain:before {
-  background-position: 0px -1742px;
+  background-position: 0 -1742px;
 }
 i.flag.et:before,
 i.flag.ethiopia:before {
-  background-position: 0px -1768px;
+  background-position: 0 -1768px;
 }
 i.flag.eu:before,
 i.flag.european.union:before {
-  background-position: 0px -1794px;
+  background-position: 0 -1794px;
 }
 i.flag.fi:before,
 i.flag.finland:before {
-  background-position: 0px -1846px;
+  background-position: 0 -1846px;
 }
 i.flag.fj:before,
 i.flag.fiji:before {
-  background-position: 0px -1872px;
+  background-position: 0 -1872px;
 }
 i.flag.fk:before,
 i.flag.falkland.islands:before {
-  background-position: 0px -1898px;
+  background-position: 0 -1898px;
 }
 i.flag.fm:before,
 i.flag.micronesia:before {
-  background-position: 0px -1924px;
+  background-position: 0 -1924px;
 }
 i.flag.fo:before,
 i.flag.faroe.islands:before {
-  background-position: 0px -1950px;
+  background-position: 0 -1950px;
 }
 i.flag.fr:before,
 i.flag.france:before {
-  background-position: 0px -1976px;
+  background-position: 0 -1976px;
 }
 i.flag.ga:before,
 i.flag.gabon:before {
-  background-position: -36px 0px;
+  background-position: -36px 0;
 }
 i.flag.gb:before,
 i.flag.uk:before,
@@ -655,7 +654,7 @@ i.flag.malawi:before {
 }
 i.flag.mx:before,
 i.flag.mexico:before {
-  background-position: -72px 0px;
+  background-position: -72px 0;
 }
 i.flag.my:before,
 i.flag.malaysia:before {
@@ -965,7 +964,7 @@ i.flag.uruguay:before {
 }
 i.flag.uz:before,
 i.flag.uzbekistan:before {
-  background-position: -108px 0px;
+  background-position: -108px 0;
 }
 i.flag.va:before,
 i.flag.vatican.city:before {
@@ -1027,7 +1026,6 @@ i.flag.zw:before,
 i.flag.zimbabwe:before {
   background-position: -108px -390px;
 }
-
 
 /*******************************
          Site Overrides

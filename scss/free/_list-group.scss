@@ -17,8 +17,8 @@
     }
 
     &:last-child {
-      border-bottom-left-radius: $border-radius-base;
       border-bottom-right-radius: $border-radius-base;
+      border-bottom-left-radius: $border-radius-base;
     }
   }
 

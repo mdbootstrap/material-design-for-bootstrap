@@ -96,40 +96,38 @@ table {
       }
     }
     tbody {
-      td.select-checkbox, th.select-checkbox {
-        position: relative;
-      }
       td, th {
         &.select-checkbox {
+          position: relative;
           &:before,
           &:after {
-            display: block;
             position: absolute;
             top: 1.2em;
             left: 50%;
+            box-sizing: border-box;
+            display: block;
             width: 12px;
             height: 12px;
-            box-sizing: border-box;
           }
         }
       }
       td.select-checkbox:before,
       th.select-checkbox:before {
-        content: ' ';
         margin-top: 4px;
         margin-left: -6px;
-        border: 1px solid black;
+        content: " ";
+        border: 1px solid #000;
         border-radius: 3px;
       }
     }
     tr.selected {
       td.select-checkbox:after,
       th.select-checkbox:after {
-        content: '\2714';
-        margin-top: 0px;
+        margin-top: 0;
         margin-left: -4px;
         text-align: center;
-        text-shadow: 1px 1px #B0BED9, -1px -1px #B0BED9, 1px -1px #B0BED9, -1px 1px #B0BED9;
+        text-shadow: 1px 1px #b0bed9, -1px -1px #b0bed9, 1px -1px #b0bed9, -1px 1px #b0bed9;
+        content: "\2714";
       }
     }
   }
@@ -137,15 +135,15 @@ table {
 
 div.dataTables_wrapper span {
   &.select-info, &.select-item {
-    margin-left: 0.5em;
+    margin-left: .5em;
   }
 }
 
 @media screen and (max-width: 640px) {
   div.dataTables_wrapper span {
     &.select-info, &.select-item {
-      margin-left: 0;
       display: block;
+      margin-left: 0;
     }
   }
 }

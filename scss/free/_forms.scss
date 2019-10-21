@@ -1,21 +1,21 @@
 // Forms basic
-// Input + label wrapper styles
+// Input +  label wrapper styles
 .md-form {
 
   // Text inputs
   input:not([type]),
-  input[type=text]:not(.browser-default),
-  input[type=password]:not(.browser-default),
-  input[type=email]:not(.browser-default),
-  input[type=url]:not(.browser-default),
-  input[type=time]:not(.browser-default),
-  input[type=date]:not(.browser-default),
-  input[type=datetime]:not(.browser-default),
-  input[type=datetime-local]:not(.browser-default),
-  input[type=tel]:not(.browser-default),
-  input[type=number]:not(.browser-default),
-  input[type=search]:not(.browser-default),
-  input[type=search-md],
+  input[type="text"]:not(.browser-default),
+  input[type="password"]:not(.browser-default),
+  input[type="email"]:not(.browser-default),
+  input[type="url"]:not(.browser-default),
+  input[type="time"]:not(.browser-default),
+  input[type="date"]:not(.browser-default),
+  input[type="datetime"]:not(.browser-default),
+  input[type="datetime-local"]:not(.browser-default),
+  input[type="tel"]:not(.browser-default),
+  input[type="number"]:not(.browser-default),
+  input[type="search"]:not(.browser-default),
+  input[type="search-md"],
   textarea.md-textarea {
 
     // General Styles
@@ -34,17 +34,17 @@
       box-shadow: 0 1px 0 0 $input-md-focus-color;
 
       // Focused label style
-      +label {
+      + label {
         color: $input-md-focus-color;
       }
     }
 
     // Form message shared styles
-    +label:after {
-      content: "";
+    + label::after {
       position: absolute;
       top: $input-label-after-top;
       display: block;
+      content: "";
       opacity: 0;
       transition: $input-label-after-transition;
     }
@@ -56,10 +56,10 @@
       box-shadow: 0 1px 0 0 $input-success-color;
     }
 
-    &.valid+label:after,
-    &:focus.valid+label:after {
-      content: attr(data-success);
+    &.valid + label:after,
+    &:focus.valid + label:after {
       color: $input-success-color;
+      content: attr(data-success);
       opacity: 1;
     }
 
@@ -70,66 +70,66 @@
       box-shadow: 0 1px 0 0 $input-error-color;
     }
 
-    &.invalid+label:after,
-    &:focus.invalid+label:after {
-      content: attr(data-error);
+    &.invalid + label:after,
+    &:focus.invalid + label:after {
       color: $input-error-color;
+      content: attr(data-error);
       opacity: 1;
     }
 
-    &.form-control.valid+label:after,
-    &.form-control:focus.valid+label:after {
+    &.form-control.valid + label:after,
+    &.form-control:focus.valid + label:after {
       top: $input-label-valid-top;
     }
 
-    &.form-control.invalid+label:after,
-    &.form-control:focus.invalid+label:after {
+    &.form-control.invalid + label:after,
+    &.form-control:focus.invalid + label:after {
       top: $input-label-invalid-top;
     }
 
-    &.form-control-lg.valid+label:after,
-    &.form-control-lg:focus.valid+label:after {
+    &.form-control-lg.valid + label:after,
+    &.form-control-lg:focus.valid + label:after {
       top: $input-label-valid-top-lg;
     }
 
-    &.form-control-lg.invalid+label:after,
-    &.form-control-lg:focus.invalid+label:after {
+    &.form-control-lg.invalid + label:after,
+    &.form-control-lg:focus.invalid + label:after {
       top: $input-label-invalid-top-lg;
     }
 
-    &.form-control-sm.valid+label:after,
-    &.form-control-sm:focus.valid+label:after {
+    &.form-control-sm.valid + label:after,
+    &.form-control-sm:focus.valid + label:after {
       top: $input-label-valid-top-sm;
     }
 
-    &.form-control-sm.invalid+label:after,
-    &.form-control-sm:focus.invalid+label:after {
+    &.form-control-sm.invalid + label:after,
+    &.form-control-sm:focus.invalid + label:after {
       top: $input-label-invalid-top-sm;
     }
   }
 
-  >input[type=date]:not(.browser-default)+label {
-    transform: translateY(-27px) scale(0.8);
+  > input[type="date"]:not(.browser-default) + label {
+    transform: translateY(-27px) scale(.8);
     transform-origin: 0 0;
   }
 
-  >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
-  >input[type=time]:not(.browser-default)+label {
+  > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+  > input[type="time"]:not(.browser-default) + label {
     font-size: .8rem;
     transform: translateY(-25px);
     transform-origin: 0 0;
   }
 
   .was-validated {
-    input[type=text] {
+    input[type="text"] {
       &:valid {
-        +label {
+        + label {
           color: $input-success-color !important;
         }
       }
 
       &:invalid {
-        +label {
+        + label {
           color: $input-error-color !important;
         }
       }
@@ -156,11 +156,11 @@
 
   // Input with label
   .form-control {
-    margin: 0 0 $input-form-control-margin-bottom 0;
-    border-radius: 0;
-    padding: $input-form-control-padding-top 0 $input-form-control-padding-bottom 0;
-    background-color: transparent;
     height: auto;
+    padding: $input-form-control-padding-top 0 $input-form-control-padding-bottom 0;
+    margin: 0 0 $input-form-control-margin-bottom 0;
+    background-color: transparent;
+    border-radius: 0;
 
     &:focus {
       box-shadow: none;
@@ -168,8 +168,8 @@
 
     &:disabled,
     &[readonly] {
-      border-bottom: 1px solid $grey-lighten-1;
       background-color: transparent;
+      border-bottom: 1px solid $grey-lighten-1;
     }
 
     &.is-valid {
@@ -185,8 +185,8 @@
       border-color: $input-error-color;
 
       &:focus {
-        box-shadow: 0 1px 0 0 $input-error-color !important;
         border-color: $input-error-color !important;
+        box-shadow: 0 1px 0 0 $input-error-color !important;
       }
     }
 
@@ -206,11 +206,11 @@
     top: 0;
     left: 0;
     font-size: 1rem;
-    transition: transform .2s ease-out, color .2s ease-out;
-    transform-origin: 0% 100%;
-    transform: translateY(12px);
-    cursor: text;
     color: $input-label-color;
+    cursor: text;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transform: translateY(12px);
+    transform-origin: 0% 100%;
 
     &.active {
       transform: translateY(-14px) scale(.8);
@@ -237,8 +237,8 @@
   // Textarea
   textarea {
     &.md-textarea {
-      overflow-y: hidden;
       padding: $textarea-padding 0;
+      overflow-y: hidden;
     }
 
     &.md-textarea-auto {
@@ -247,7 +247,7 @@
     }
 
     // Label color for textarea
-    // ~label {
+    // ~ label {
     //   &.active {
     //     color: $input-md-focus-color;
     //   }
@@ -259,34 +259,34 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 
-    input[type=text],
-    input[type=password],
-    input[type=email],
-    input[type=url],
-    input[type=time],
-    input[type=date],
-    input[type=datetime-local],
-    input[type=tel],
-    input[type=number],
-    input[type=search-md],
-    input[type=search],
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="time"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="search-md"],
+    input[type="search"],
     textarea.md-textarea {
       // General Styles
-      transition: all .3s;
-      outline: none;
-      box-shadow: none;
+      box-sizing: border-box;
+      background-color: transparent;
       border: 1px solid #dadce0;
       border-radius: 4px;
-      background-color: transparent;
-      box-sizing: border-box;
+      outline: none;
+      box-shadow: none;
+      transition: all .3s;
 
       // Focused input style
       &:focus:not([readonly]) {
         border-color: #4285f4;
-        box-shadow: inset 0px 0px 0px 1px #4285f4;
+        box-shadow: inset 0 0 0 1px #4285f4;
 
         // Focused label style
-        +label {
+        + label {
           color: #4285f4;
         }
       }
@@ -295,14 +295,14 @@
       &.valid,
       &:focus.valid {
         border-color: $input-success-color;
-        box-shadow: inset 0px 0px 0px 1px $input-success-color;
+        box-shadow: inset 0 0 0 1px $input-success-color;
       }
 
-      &:focus:not([readonly]).valid+label,
-      &.valid+label:after,
-      &:focus.valid+label:after {
-        content: attr(data-success);
+      &:focus:not([readonly]).valid + label,
+      &.valid + label:after,
+      &:focus.valid + label:after {
         color: $input-success-color;
+        content: attr(data-success);
         opacity: 1;
       }
 
@@ -310,46 +310,46 @@
       &.invalid,
       &:focus.invalid {
         border-color: $input-error-color;
-        box-shadow: inset 0px 0px 0px 1px $input-error-color;
+        box-shadow: inset 0 0 0 1px $input-error-color;
       }
 
-      &:focus:not([readonly]).invalid+label,
-      &.invalid+label:after,
-      &:focus.invalid+label:after {
-        content: attr(data-error);
+      &:focus:not([readonly]).invalid + label,
+      &.invalid + label:after,
+      &:focus.invalid + label:after {
         color: $input-error-color;
+        content: attr(data-error);
         opacity: 1;
       }
 
-      &.form-control.valid+label:after,
-      &.form-control:focus.valid+label:after {
+      &.form-control.valid + label:after,
+      &.form-control:focus.valid + label:after {
+        position: absolute;
         top: 4rem;
         left: 0;
-        position: absolute;
       }
 
-      &.form-control.invalid+label:after,
-      &.form-control:focus.invalid+label:after {
+      &.form-control.invalid + label:after,
+      &.form-control:focus.invalid + label:after {
+        position: absolute;
         top: 4rem;
         left: 0;
-        position: absolute;
       }
     }
 
-    >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
-    >input[type=time]:not(.browser-default)+label {
-      transform: translateY(-9px) scale(.8);
-      transform-origin: 0 0;
-      background: #fff;
-      font-weight: 500;
+    > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+    > input[type="time"]:not(.browser-default) + label {
+      left: 8px;
       padding-right: 5px;
       padding-left: 5px;
       font-size: 1rem;
-      left: 8px;
+      font-weight: 500;
+      background: #fff;
+      transform: translateY(-9px) scale(.8);
+      transform-origin: 0 0;
     }
 
-    >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label.active,
-    >input[type=time]:not(.browser-default)+label.active {
+    > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label.active,
+    > input[type="time"]:not(.browser-default) + label.active {
       transform: translateY(-9px) scale(.8);
       transform-origin: 0 0;
     }
@@ -357,22 +357,22 @@
     @-webkit-keyframes autofill {
       to {
         color: #495057;
-        background: transparent; 
-      } 
+        background: transparent;
+      }
     }
-      
+
     @keyframes autofill {
       to {
         color: #495057;
-        background: transparent; 
-      } 
+        background: transparent;
+      }
     }
-    
+
     input:-webkit-autofill {
       -webkit-animation-name: autofill;
       animation-name: autofill;
       -webkit-animation-fill-mode: both;
-      animation-fill-mode: both; 
+      animation-fill-mode: both;
     }
 
     .form-control {
@@ -380,24 +380,24 @@
     }
 
     label {
-      font-size: 1rem;
       position: absolute;
       top: 0;
       left: 0;
       padding-left: 10px;
-      transition: transform .2s ease-out, color .2s ease-out;
-      transform-origin: 0% 100%;
-      transform: translateY(9px);
-      cursor: text;
+      font-size: 1rem;
       color: #757575;
+      cursor: text;
+      transition: transform .2s ease-out, color .2s ease-out;
+      transform: translateY(9px);
+      transform-origin: 0% 100%;
 
       &.active {
-        transform: translateY(-13px) scale(.8);
-        background: #fff;
-        font-weight: 500;
+        left: 8px;
         padding-right: 5px;
         padding-left: 5px;
-        left: 8px;
+        font-weight: 500;
+        background: #fff;
+        transform: translateY(-13px) scale(.8);
       }
     }
 
@@ -422,17 +422,17 @@
         top: .65rem;
         font-size: 25px;
 
-        ~input,
-        ~textarea {
-          margin-left: 2.2rem;
+        ~ input,
+        ~ textarea {
           width: calc(100% - 2.2rem);
-        }
-
-        ~label {
           margin-left: 2.2rem;
         }
 
-        ~.form-text {
+        ~ label {
+          margin-left: 2.2rem;
+        }
+
+        ~ .form-text {
           margin-left: 2.3rem;
         }
       }
@@ -459,17 +459,17 @@
         top: .5rem;
         font-size: 15px;
 
-        ~input,
-        ~textarea {
-          margin-left: 1.6rem;
+        ~ input,
+        ~ textarea {
           width: calc(100% - 1.6rem);
-        }
-
-        ~label {
           margin-left: 1.6rem;
         }
 
-        ~.form-text {
+        ~ label {
+          margin-left: 1.6rem;
+        }
+
+        ~ .form-text {
           margin-left: 1.7rem;
         }
       }
@@ -477,28 +477,25 @@
 
     .prefix {
       position: absolute;
+      top: .6rem;
+      font-size: 20px;
       transition: color .2s;
 
       &:focus {
         color: #4285f4;
       }
-    }
 
-    .prefix {
-      top: .6rem;
-      font-size: 20px;
-
-      ~input,
-      ~textarea {
-        margin-left: 2rem;
+      ~ input,
+      ~ textarea {
         width: calc(100% - 2rem);
-      }
-
-      ~label {
         margin-left: 2rem;
       }
 
-      ~.form-text {
+      ~ label {
+        margin-left: 2rem;
+      }
+
+      ~ .form-text {
         margin-left: 2.1rem;
       }
     }
@@ -510,36 +507,33 @@
 
   &.md-bg {
 
-    input[type=text],
-    input[type=password],
-    input[type=email],
-    input[type=url],
-    input[type=time],
-    input[type=date],
-    input[type=datetime-local],
-    input[type=tel],
-    input[type=number],
-    input[type=search-md],
-    input[type=search],
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="time"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="search-md"],
+    input[type="search"],
     textarea.md-textarea {
       &:focus:not([readonly]) {
-        box-shadow: none;
         border-bottom: none;
+        box-shadow: none;
       }
 
       box-sizing: border-box;
       padding: 10px 5px;
+      background: #f5f5f5 no-repeat;
+      background-image: linear-gradient(to bottom, $input-md-focus-color, $input-md-focus-color), linear-gradient(to bottom, $input-border-color, $input-border-color);
+      background-position: 50% 100%, 50% 100%;
+      background-size: 0 2px, 100% 1px;
       border: 0;
       border-top-left-radius: .3rem;
       border-top-right-radius: .3rem;
-      background: #f5f5f5 no-repeat;
-      background-image: linear-gradient(to bottom, $input-md-focus-color, $input-md-focus-color),
-      linear-gradient(to bottom, $input-border-color, $input-border-color);
-      background-size: 0 2px,
-      100% 1px;
-      background-position: 50% 100%,
-      50% 100%;
-      transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+      transition: background-size .3s cubic-bezier(.64, .09, .08, 1);
 
       &:focus {
         background-color: #dcdcdc;
@@ -548,16 +542,16 @@
       }
     }
 
-    >input[type=date]:not(.browser-default)+label {
-      transform: translateY(-12px) scale(0.8);
+    > input[type="date"]:not(.browser-default) + label {
+      transform: translateY(-12px) scale(.8);
       transform-origin: 0 0;
     }
 
-    >input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
-    >input[type=time]:not(.browser-default)+label {
+    > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+    > input[type="time"]:not(.browser-default) + label {
+      font-size: .8rem;
       transform: translateY(-12px);
       transform-origin: 0 0;
-      font-size: .8rem;
     }
 
     .form-control {
@@ -569,13 +563,13 @@
       padding-left: .7rem;
       font-size: 1rem;
       transition: transform .2s ease-out, color .2s ease-out;
-      transform-origin: 0% 100%;
       transform: translateY(13px);
+      transform-origin: 0% 100%;
 
       &.active {
-        transform: translateY(-3px) scale(.8);
-        font-weight: 500;
         padding-left: .75rem;
+        font-weight: 500;
+        transform: translateY(-3px) scale(.8);
       }
     }
 
@@ -617,12 +611,12 @@
   left: .3rem;
 }
 
-// Custom fille input browser support
+// Custom file input browser support
 @each $lang,
-$text in $custom-mdb-file-text {
+  $text in $custom-mdb-file-text {
   .custom-file-input {
     &:lang(#{$lang}) {
-      &~.custom-file-label {
+      & ~ .custom-file-label {
         &::after {
           content: $text;
         }

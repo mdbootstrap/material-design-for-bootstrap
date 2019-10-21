@@ -163,7 +163,7 @@
 @mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
 
   @each $breakpoint,
-  $container-max-width in $max-widths {
+    $container-max-width in $max-widths {
     @include media-breakpoint-up($breakpoint, $breakpoints) {
       max-width: $container-max-width;
     }
@@ -297,12 +297,12 @@
 // Make button
 @mixin make-button ($name, $color) {
   .btn-#{$name} {
-    background-color: $color !important;
     color: set-notification-text-color($color);
+    background-color: $color !important;
 
     &:hover {
-      background-color: lighten($color, 5%);
       color: set-notification-text-color($color);
+      background-color: lighten($color, 5%);
     }
 
     &:focus,
@@ -327,14 +327,14 @@
 
     &:not([disabled]):not(.disabled):active,
     &:not([disabled]):not(.disabled).active,
-    .show>&.dropdown-toggle {
-      box-shadow: $z-depth-1-half;
+    .show > &.dropdown-toggle {
       background-color: darken($color, 20%) !important;
+      box-shadow: $z-depth-1-half;
     }
 
     &:not([disabled]):not(.disabled):active:focus,
     &:not([disabled]):not(.disabled).active:focus,
-    .show>&.dropdown-toggle:focus {
+    .show > &.dropdown-toggle:focus {
       box-shadow: $z-depth-1-half;
     }
   }
@@ -369,31 +369,31 @@
 // Make outline button
 @mixin make-outline-button ($name, $color) {
   .btn-outline-#{$name} {
-    border: 2px solid $color !important;
-    background-color: transparent !important;
     color: $color !important;
+    background-color: transparent !important;
+    border: 2px solid $color !important;
 
     &:hover,
     &:focus,
     &:active,
     &:active:focus,
     &.active {
-      border-color: $color !important;
-      background-color: transparent !important;
       color: $color !important;
+      background-color: transparent !important;
+      border-color: $color !important;
     }
 
     &:not([disabled]):not(.disabled):active,
     &:not([disabled]):not(.disabled).active,
-    .show>&.dropdown-toggle {
-      box-shadow: $z-depth-1-half;
+    .show > &.dropdown-toggle {
       background-color: transparent !important;
       border-color: $color !important;
+      box-shadow: $z-depth-1-half;
     }
 
     &:not([disabled]):not(.disabled):active:focus,
     &:not([disabled]):not(.disabled).active:focus,
-    .show>&.dropdown-toggle:focus {
+    .show > &.dropdown-toggle:focus {
       box-shadow: $z-depth-1-half;
     }
   }
@@ -406,7 +406,7 @@
   }
 }
 
-$opacity: .9;
+$opacity: .9 !default;
 
 // Make gradient
 @mixin make-gradient-rgba($name, $value) {
@@ -419,8 +419,8 @@ $opacity: .9;
 @mixin make-gradient-button($name, $value) {
   .btn {
     &.#{$name}-gradient {
-      transition: .5s ease;
       color: $white-base;
+      transition: .5s ease;
 
       &:hover,
       &:focus,
@@ -440,8 +440,8 @@ $opacity: .9;
 
 @mixin make-badge($name, $color) {
   .badge-#{$name} {
-    background-color: $color !important;
     color: set-notification-text-color($color) !important;
+    background-color: $color !important;
   }
 }
 
@@ -463,17 +463,17 @@ $opacity: .9;
     top: $top;
     font-size: $prefix-font-size;
 
-    ~input,
-    ~textarea {
-      margin-left: $margin-left;
+    ~ input,
+    ~ textarea {
       width: $width;
-    }
-
-    ~label {
       margin-left: $margin-left;
     }
 
-    ~.form-text {
+    ~ label {
+      margin-left: $margin-left;
+    }
+
+    ~ .form-text {
       margin-left: $margin-left-2;
     }
   }
@@ -496,8 +496,8 @@ $opacity: .9;
   }
 
   .navbar-toggler-icon {
-    background-image: $background-image;
     cursor: pointer;
+    background-image: $background-image;
   }
 
   .breadcrumb,
@@ -512,7 +512,7 @@ $opacity: .9;
         }
       }
 
-      &.active>.nav-link {
+      &.active > .nav-link {
         background-color: $color-3;
 
         &:hover {
@@ -540,8 +540,8 @@ $opacity: .9;
         color: $color;
 
         @include placeholder {
-          color: $color;
           font-weight: $navbar-font-weight;
+          color: $color;
         }
       }
     }

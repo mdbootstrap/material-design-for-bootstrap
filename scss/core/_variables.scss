@@ -3,7 +3,7 @@
 // MDB variables
 // ===========================================================================
 //
-// Table of Contents: 
+// Table of Contents:
 //
 //  1. Fonts
 //  2. Shadows
@@ -26,8 +26,6 @@
 //  19. Tables
 //  20. Steppers
 
-
-
 // 1. Fonts
 // ===========================================================================
 
@@ -37,7 +35,7 @@ $roboto-font-family:                          "Roboto", sans-serif !default;
 $mdb-font-family:                             $roboto-font-family !default;
 
 $font-size-large:                             1.5rem !default;
-$font-size-small:                             0.9rem !default;
+$font-size-small:                             .9rem !default;
 
 // Blockquote
 $blockquote-padding-y                        : .5rem !default;
@@ -49,53 +47,56 @@ $blockquote-p-font-size                      : 1.1rem !default;
 // Custom map for file browser
 $custom-mdb-file-text                        : (
   es                                         : "Elegir",
-  pl-PL                                      : "Wybierz",
+  pl-pl                                      : "Wybierz",
   fr                                         : "Choisir",
   in                                         : "Pilih",
   zh                                         : "選擇",
   de                                         : "Wählen",
   ru                                         : "выбирать"
-);
+) !default;
 
 // Reponsive Headings
 $responsive-headings                         : () !default;
-$responsive-headings                         : map-merge((
-  "xs"                                       : (
-    "h1"                                     : 150%,
-    "h2"                                     : 145%,
-    "h3"                                     : 135%,
-    "h4"                                     : 135%,
-    "h5"                                     : 135%
+$responsive-headings                         : map-merge(
+  (
+    "xs"                                       : (
+      "h1"                                     : 150%,
+      "h2"                                     : 145%,
+      "h3"                                     : 135%,
+      "h4"                                     : 135%,
+      "h5"                                     : 135%
+    ),
+    "sm"                                       : (
+      "h1"                                     : 170%,
+      "h2"                                     : 140%,
+      "h3"                                     : 125%,
+      "h4"                                     : 125%,
+      "h5"                                     : 125%
+    ),
+    "md"                                       : (
+      "h1"                                     : 200%,
+      "h2"                                     : 170%,
+      "h3"                                     : 140%,
+      "h4"                                     : 125%,
+      "h5"                                     : 125%
+    ),
+    "lg"                                       : (
+      "h1"                                     : 200%,
+      "h2"                                     : 170%,
+      "h3"                                     : 140%,
+      "h4"                                     : 125%,
+      "h5"                                     : 125%
+    ),
+    "xl"                                       : (
+      "h1"                                     : 250%,
+      "h2"                                     : 200%,
+      "h3"                                     : 170%,
+      "h4"                                     : 140%,
+      "h5"                                     : 125%
+    ),
   ),
-  "sm"                                       : (
-    "h1"                                     : 170%,
-    "h2"                                     : 140%,
-    "h3"                                     : 125%,
-    "h4"                                     : 125%,
-    "h5"                                     : 125%
-  ),
-  "md"                                       : (
-    "h1"                                     : 200%,
-    "h2"                                     : 170%,
-    "h3"                                     : 140%,
-    "h4"                                     : 125%,
-    "h5"                                     : 125%
-  ),
-  "lg"                                       : (
-    "h1"                                     : 200%,
-    "h2"                                     : 170%,
-    "h3"                                     : 140%,
-    "h4"                                     : 125%,
-    "h5"                                     : 125%
-  ),
-  "xl"                                       : (
-    "h1"                                     : 250%,
-    "h2"                                     : 200%,
-    "h3"                                     : 170%,
-    "h4"                                     : 140%,
-    "h5"                                     : 125%
-  ),
-), $responsive-headings);
+  $responsive-headings
+) !default;
 
 // Links
 $link-color                                  : #0275d8 !default;
@@ -106,12 +107,12 @@ $link-hover-color                            : darken($link-color, 15%) !default
 // ===========================================================================
 
 // Shadows
-$z-depth-1                                   : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
-$z-depth-1-half                              : 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !default;
-$z-depth-2                                   : 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !default;
-$z-depth-3                                   : 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !default;
-$z-depth-4                                   : 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !default;
-$z-depth-5                                   : 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
+$z-depth-1                                   : 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !default;
+$z-depth-1-half                              : 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15) !default;
+$z-depth-2                                   : 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19) !default;
+$z-depth-3                                   : 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19) !default;
+$z-depth-4                                   : 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21) !default;
+$z-depth-5                                   : 0 27px 24px 0 rgba(0, 0, 0, .2), 0 40px 77px 0 rgba(0, 0, 0, .22) !default;
 
 
 // 3. Transitions
@@ -206,7 +207,7 @@ $btn-outline-padding-y-large                 : .88rem !default;
 $btn-outline-padding-y-medium                : .58rem !default;
 $btn-outline-padding-y-small                 : .38rem !default;
 
-$btn-tb-padding-y                            : 0.3rem !default;
+$btn-tb-padding-y                            : .3rem !default;
 $btn-tb-padding-x                            : 1rem !default;
 
 $btn-transition                              : $transition-basic !default;
@@ -239,19 +240,19 @@ $navbar-double-font-size                     : 15px !default;
 $navbar-light-toggler-icon                   : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
 $navbar-light-bg-active-color                : rgba($black-base, .1) !default;
 $navbar-light-hover-color                    : rgba($black-base, .75) !default;
-$navbar-light-disabled-color                 : rgba(0, 0, 0, 0.5) !default;
+$navbar-light-disabled-color                 : rgba(0, 0, 0, .5) !default;
 
 $navbar-dark-toggler-icon                    : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
 $navbar-dark-bg-active-color                 : rgba($white-base, .1) !default;
 $navbar-dark-hover-color                     : rgba($white-base, .75) !default;
-$navbar-dark-disabled-color                  : rgba(255, 255, 255, 0.5) !default;
+$navbar-dark-disabled-color                  : rgba(255, 255, 255, .5) !default;
 
 $navbar-scrolling-transition                 : background .5s ease-in-out, padding .5s ease-in-out !default;
 $navbar-scrolling-transition-duration        : 1s !default;
 $navbar-scrolling-padding                    : 12px !default;
 $navbar-top-collapse-padding                 : 5px !default;
 $navbar-nav-transition                       : .35s !default;
-$navbar-dropdown-font-size                   : 0.9375rem !default;
+$navbar-dropdown-font-size                   : .9375rem !default;
 $navbar-dropdown-menu-padding                : 10px !default;
 $navbar-flex-icons-padding-md                : 6px !default;
 $navbar-flex-icons-padding-lg                : 3px !default;
@@ -261,7 +262,7 @@ $navbar-form-input-ml                        : 8px !default;
 $navbar-form-input-height                    : 1rem !default;
 $navbar-breadcrumb-padding-top               : .3rem !default;
 $navbar-breadcrumb-padding-left              : 1rem !default;
-$navbar-breadcrumb-color                     : rgba(255,255,255,.65) !default;
+$navbar-breadcrumb-color                     : rgba(255, 255, 255, .65) !default;
 
 
 // 11. Pagination
@@ -348,7 +349,7 @@ $carousel-item-transform-2                   : translate3d(0, 0, 0) !default;
 $input-bg-color                              : $white-base !default;
 $label-font-size                             : .8rem !default;
 $input-transition                            : all .3s !default;
-$input-disabled-color                        : rgba(0,0,0, .46) !default;
+$input-disabled-color                        : rgba(0, 0, 0, .46) !default;
 $input-md-focus-color                        : $primary-color !default;
 $input-error-color                           : $error-color !default;
 $input-success-color                         : $success-color !default;
@@ -405,7 +406,7 @@ $textarea-padding                            : 1.5rem !default;
 $input-form-control-margin-bottom            : .5rem !default;
 $input-form-control-padding-top              : .6rem !default;
 $input-form-control-padding-bottom           : .4rem !default;
-$input-disabled-solid-color                  : #BDBDBD !default;
+$input-disabled-solid-color                  : #bdbdbd !default;
 
 // Input group
 $input-group-text-bgc                        : #e0e0e0 !default;
@@ -449,7 +450,7 @@ $table-th-padding-top                        : 1.1rem !default;
 $table-td-padding-bottom                     : 1rem !default;
 $table-a-color                               : #212529 !default;
 $table-hover-transition                      : .5s !default;
-$table-hover-background-color                : rgba(0, 0, 0, 0.075) !default;
+$table-hover-background-color                : rgba(0, 0, 0, .075) !default;
 $table-sm-padding-y                          : .6rem !default;
 $table-inverse-color-border                  : $white-base !default;
 $product-table-img-max-height                : 150px !default;
@@ -457,7 +458,7 @@ $product-table-img-min-width                 : 50px !default;
 $table-th-lg-min-width                       : 9rem !default;
 $table-th-sm-min-width                       : 6rem !default;
 $table-scroll-vertical-max-height            : 300px !default;
-$table-label-height                          : 0.94rem !default;
+$table-label-height                          : .94rem !default;
 $table-label-line-height                     : $table-label-height !default;
 
 
@@ -465,7 +466,7 @@ $table-label-line-height                     : $table-label-height !default;
 // ===========================================================================
 
 // Steppers
-$stepper-li-a-padding                        : 1.5rem!default;
+$stepper-li-a-padding                        : 1.5rem !default;
 $stepper-li-a-circle-color                   : $white !default;
 $stepper-li-a-circle-border-radius           : $border-radius-circle !default;
 $stepper-li-a-circle-bg                      : rgba($black, .38) !default;
@@ -475,7 +476,7 @@ $stepper-li-a-label-color                    : rgba($black, .87) !default;
 $stepper-horizontal-li-transition            : .5s !default;
 $stepper-horizontal-li-a-label-mt            : .63rem !default;
 $stepper-horizontal-li-after-margin          : .5rem !default;
-$stepper-horizontal-li-after-height          : 1px  !default;
+$stepper-horizontal-li-after-height          : 1px !default;
 $stepper-horizontal-li-after-bgc             : rgba($black, .1) !default;
 $stepper-horizontal-breakpoint               : 47.9375rem !default;
 $stepper-horizontal-small-li-a-label-mt      : .2rem !default;
@@ -487,7 +488,7 @@ $stepper-horizontal-small-li-after-top       : 3.75rem !default;
 $stepper-vertical-li-a-label-mt              : $stepper-horizontal-small-li-a-label-mt !default;
 $stepper-vertical-li-step-content-ml         : 3.13rem !default;
 $stepper-vertical-li-step-content-padding    : .94rem !default;
-$stepper-vertical-li-step-content-p-font-size: .88rem  !default;
+$stepper-vertical-li-step-content-p-font-size: .88rem !default;
 $stepper-vertical-li-after-width             : 1px !default;
 $stepper-vertical-li-after-height            : $stepper-horizontal-small-li-after-height !default;
 $stepper-vertical-li-after-left              : $stepper-horizontal-small-li-after-left !default;
@@ -498,5 +499,5 @@ $stepper-vertical-li-after-bgc               : $stepper-horizontal-li-after-bgc 
 // ===========================================================================
 
 // Loader / Spinner
-$spinner-border-animation: spinner-border .4s linear infinite;
-$spinner-grow-animation: spinner-grow .4s linear infinite;
+$spinner-border-animation: spinner-border .4s linear infinite !default;
+$spinner-grow-animation: spinner-grow .4s linear infinite !default;

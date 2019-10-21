@@ -15,8 +15,8 @@
     li {
       width: $carousel-indicators-width;
       height: $carousel-indicators-height;
-      border-radius: $carousel-indicators-border-radius;
       cursor: pointer;
+      border-radius: $carousel-indicators-border-radius;
     }
   }
 }
@@ -28,8 +28,7 @@
   }
   .carousel-item.active,
   .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right 
-  {
+  .carousel-item-prev.carousel-item-right {
     opacity: 1;
   }
   .carousel-item-left,

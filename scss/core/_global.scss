@@ -103,13 +103,13 @@
 
 // Links
 a {
-  cursor: pointer;
-  text-decoration: none;
   color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
   transition: $transition-basic;
   &:hover {
-    text-decoration: none;
     color: $link-hover-color;
+    text-decoration: none;
     transition: $transition-basic;
   }
   &.disabled,
@@ -127,10 +127,10 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
 
 // Divider
 .divider-new {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-top: $divider-margin-y;
   margin-bottom: $divider-margin-y;
   > h1, h2, h3, h4, h5, h6 {
@@ -138,10 +138,10 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   }
   &:before,
   &:after {
-    content: "";
-    height: 1.5px;
     flex: 1;
+    height: 1.5px;
     height: $divider-height;
+    content: "";
     background: #c6c6c6;
   }
   &:before {

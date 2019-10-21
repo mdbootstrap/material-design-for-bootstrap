@@ -8,8 +8,8 @@
 
 .flex-center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100%;
 
   p {
@@ -52,13 +52,13 @@
 }
 
 .jumbotron {
-  box-shadow: $z-depth-1;
-  border-radius: $border-radius-base;
   background-color: $white-base;
+  border-radius: $border-radius-base;
+  box-shadow: $z-depth-1;
 }
 
 @each $name,
-$color in $basic-mdb-colors {
+  $color in $basic-mdb-colors {
   @include bg-variant(".bg-#{$name}", $color);
 
   .border-#{$name} {
@@ -77,7 +77,7 @@ $color in $basic-mdb-colors {
 }
 
 .mml-1 {
-  margin-left: - 0.25rem !important;
+  margin-left: - .25rem !important;
 }
 
 .flex-1 {

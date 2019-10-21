@@ -1,7 +1,7 @@
 // Navbars
 .navbar {
-  box-shadow: $z-depth-1;
   font-weight: $navbar-font-weight;
+  box-shadow: $z-depth-1;
   form {
     .md-form {
       input {
@@ -10,11 +10,11 @@
     }
   }
   .breadcrumb {
-    margin: 0;
     padding: $navbar-breadcrumb-padding-top 0 0 $navbar-breadcrumb-padding-left;
-    background-color: inherit;
+    margin: 0;
     font-size: $navbar-double-font-size;
     font-weight: $navbar-font-weight;
+    background-color: inherit;
     .breadcrumb-item {
       color: $white-base;
       &.active {
@@ -26,8 +26,8 @@
     }
   }
   .navbar-toggler {
-    outline: 0;
     border-width: 0;
+    outline: 0;
   }
   .nav-flex-icons {
     flex-direction: row;
@@ -84,9 +84,9 @@
   }
   &.scrolling-navbar {
     @media (min-width: $small-screen) {
-      transition: $navbar-scrolling-transition;
       padding-top: $navbar-scrolling-padding;
       padding-bottom: $navbar-scrolling-padding;
+      transition: $navbar-scrolling-transition;
       .navbar-nav > li {
         transition-duration: $navbar-scrolling-transition-duration;
       }
