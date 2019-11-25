@@ -1,0 +1,36 @@
+// Bootstrap
+@import "core/bootstrap/functions";
+@import "core/bootstrap/variables";
+
+// CORE
+@import "core/mixins";
+// Your custom variables
+@import "custom-variables";
+@import "core/colors";
+@import "core/variables";
+@import "core/global";
+@import "core/helpers";
+@import "core/typography";
+@import "core/masks";
+@import "core/waves";
+
+// FREE
+@import "free/animations-basic";
+@import "free/buttons";
+@import "free/cards";
+@import "free/dropdowns";
+@import "free/input-group";
+@import "free/navbars";
+@import "free/pagination";
+@import "free/badges";
+@import "free/modals";
+@import "free/carousels";
+@import "free/forms";
+@import "free/msc";
+@import "free/footers";
+@import "free/list-group";
+@import "free/tables";
+@import "free/depreciated";
+@import "free/steppers";
+@import "free/loader";
+@import "free/treeview";
