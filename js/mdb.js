@@ -1,28 +1,27 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE: 4.10.0
+ *   Version: MDB FREE 4.10.1
  * 
  * 
- * Copyright: Material Design for Bootstrap
- * https://mdbootstrap.com/
+ *   Copyright: Material Design for Bootstrap
+ *   https://mdbootstrap.com/
  * 
- * Read the license: https://mdbootstrap.com/general/license/
+ *   Read the license: https://mdbootstrap.com/general/license/
  * 
  * 
- * Documentation: https://mdbootstrap.com/
+ *   Documentation: https://mdbootstrap.com/
  * 
- * Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
+ *   Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
  * 
- * Tutorials: https://mdbootstrap.com/education/bootstrap/
+ *   Tutorials: https://mdbootstrap.com/education/bootstrap/
  * 
- * Templates: https://mdbootstrap.com/templates/
+ *   Templates: https://mdbootstrap.com/templates/
  * 
- * Support: https://mdbootstrap.com/forums/forum/support/
+ *   Support: https://mdbootstrap.com/support/
  * 
- * Contact: office@mdbootstrap.com
+ *   Contact: office@mdbootstrap.com
  * 
- * Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js, jquery.easing.js, velocity.min.js, chart.js, wow.js, scrolling-navbar.js, waves.js, forms-free.js, enhanced-modals.js, treeview.js
- * 
+ *   Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js, jquery.easing.js, velocity.min.js, chart.js, wow.js, scrolling-navbar.js, waves.js, forms-free.js, enhanced-modals.js, treeview.js
  */
 ! function(t) {
     var e = {};
@@ -2391,7 +2390,15 @@
             var l = t('<div class="hiddendiv common"></div>');
             s.append(l)
         }
-        t(".materialize-textarea").each(a), s.on("keyup keydown", ".materialize-textarea", a)
+        t(".materialize-textarea").each(a), s.on("keyup keydown", ".materialize-textarea", a);
+        var u = t('input[type="date"]');
+        u.each((function(t, e) {
+            e.type = "text"
+        })), u.on("focus", (function(t) {
+            t.target.type = "date"
+        })), u.on("blur", (function(e) {
+            e.target.type = "text", t("label[for=".concat(e.target.id, "]")).removeClass("active")
+        }))
     }(jQuery)
 }, function(t, e) {
     ! function(t) {
