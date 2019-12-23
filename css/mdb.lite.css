@@ -2,7 +2,7 @@
 
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB LITE 4.10.1
+ *   Version: MDB LITE 4.11.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -2303,6 +2303,10 @@ a.text-light:focus {
 
 .font-small {
     font-size: .9rem
+}
+
+strong {
+    font-weight: 500
 }
 
 .view {

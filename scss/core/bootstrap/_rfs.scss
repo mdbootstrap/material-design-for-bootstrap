@@ -36,7 +36,7 @@ $rfs-rem-value: 16 !default;
 $rfs-safari-iframe-resize-bug-fix: false !default;
 
 // Disable RFS by setting $enable-responsive-font-sizes to false
-$enable-responsive-font-sizes: true !important;
+$enable-responsive-font-sizes: true !default;
 
 // Cache $rfs-base-font-size unit
 $rfs-base-font-size-unit: unit($rfs-base-font-size);
