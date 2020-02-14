@@ -10,7 +10,7 @@
   <b>400+</b> material UI elements, <b>600+</b> material icons, <b>74</b> CSS animations, SASS files, templates, tutorials and many more. Free for personal and commercial use. Available jQuery, Angular, React and Vue versions
 </p>
 <p align="center">
-  Trusted by <b>1 000 000+</b> developers & designers. Used by such a companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
+  Trusted by <b>1 000 000+</b> developers & designers. Used by companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
 </p>
 
 <p align="center">	
@@ -29,7 +29,7 @@
 
 |         | Highlights  |                         |
 |-----------------------------------------|------------------|------------------------------|
-|💎 |Thanks to MDB you can take advantage of all feature of latest version of Bootstrap 4.⠀⠀⠀⠀⠀ | ✔️ |
+|💎 |Thanks to MDB you can take advantage of all features of the latest version of Bootstrap 4.⠀⠀⠀⠀⠀ | ✔️ |
 |🎓 |We care about the development of our users. We have prepared numerous tutorials, which allow you to learn how to use MDB as well as other technologies.⠀⠀⠀⠀⠀⠀⠀⠀⠀ | ✔️ |
 |📱 |It doesn't matter whether your project will be displayed on a desktop, laptop, tablet or mobile phone. MDB looks great on every type of screen.| ✔️ |
 |🗺️ |Need inspiration? Use one of our predefined templates for free.⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀ | ✔️| 
