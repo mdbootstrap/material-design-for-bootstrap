@@ -8,3 +8,19 @@
     }
   }
 }
+
+.dropdown-submenu {
+  position: relative;
+
+  & >.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: 1px;
+    border-radius: 0 6px 6px 6px;
+  }
+
+  &:hover>.dropdown-menu {
+    display: block;
+  }
+}

@@ -94,9 +94,9 @@
   @include make-gradient-button($name, $val);
 }
 
+.btn-warning:focus,
 .btn-warning:not(:disabled):not(.disabled).active,
 .btn-warning:not(:disabled):not(.disabled):active,
 .show > .btn-warning.dropdown-toggle {
   color: $white-base;
 }
-

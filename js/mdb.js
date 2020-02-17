@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.12.0
+ *   Version: MDB FREE 4.13.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -1020,8 +1020,8 @@
         H = i.JSON,
         q = H && H.stringify,
         U = S.f,
-        Y = k.f,
-        $ = x.f,
+        $ = k.f,
+        Y = x.f,
         G = C.f,
         Q = P("symbols"),
         X = P("op-symbols"),
@@ -1031,17 +1031,17 @@
         tt = i.QObject,
         et = !tt || !tt.prototype || !tt.prototype.findChild,
         nt = a && l((function() {
-            return 7 != m(Y({}, "a", {
+            return 7 != m($({}, "a", {
                 get: function() {
-                    return Y(this, "a", {
+                    return $(this, "a", {
                         value: 7
                     }).a
                 }
             })).a
         })) ? function(t, e, n) {
             var r = U(W, e);
-            r && delete W[e], Y(t, e, n), r && t !== W && Y(W, e, r)
-        } : Y,
+            r && delete W[e], $(t, e, n), r && t !== W && $(W, e, r)
+        } : $,
         rt = function(t, e) {
             var n = Q[t] = m(j.prototype);
             return z(n, {
@@ -1060,7 +1060,7 @@
             var r = g(e, !0);
             return f(n), u(Q, r) ? (n.enumerable ? (u(t, N) && t[N][r] && (t[N][r] = !1), n = m(n, {
                 enumerable: v(0, !1)
-            })) : (u(t, N) || Y(t, N, v(1, {})), t[N][r] = !0), nt(t, r, n)) : Y(t, r, n)
+            })) : (u(t, N) || $(t, N, v(1, {})), t[N][r] = !0), nt(t, r, n)) : $(t, r, n)
         },
         at = function(t, e) {
             f(t);
@@ -1084,7 +1084,7 @@
             }
         },
         ut = function(t) {
-            var e = $(p(t)),
+            var e = Y(p(t)),
                 n = [];
             return R(e, (function(t) {
                 u(Q, t) || u(T, t) || n.push(t)
@@ -1092,7 +1092,7 @@
         },
         ct = function(t) {
             var e = t === W,
-                n = $(e ? X : p(t)),
+                n = Y(e ? X : p(t)),
                 r = [];
             return R(n, (function(t) {
                 !u(Q, t) || e && !u(W, t) || r.push(Q[t])
@@ -1111,7 +1111,7 @@
         }), rt(e, t)
     }).prototype, "toString", (function() {
         return B(this).tag
-    })), C.f = st, k.f = ot, S.f = lt, b.f = x.f = ut, w.f = ct, a && (Y(j.prototype, "description", {
+    })), C.f = st, k.f = ot, S.f = lt, b.f = x.f = ut, w.f = ct, a && ($(j.prototype, "description", {
         configurable: !0,
         get: function() {
             return B(this).description
@@ -2307,99 +2307,160 @@
     "use strict";
     n.r(e);
     n(107), n(99), n(96), n(112), n(80), n(98);
-    ! function(t) {
-        var e, n, r = "".concat(["text", "password", "email", "url", "tel", "number", "search", "search-md"].map((function(t) {
-                return "input[type=".concat(t, "]")
-            })).join(", "), ", textarea"),
-            i = function(t) {
-                var e = t.siblings("label, i"),
-                    n = t.val().length,
-                    r = t.attr("placeholder");
-                e["".concat(n || r ? "add" : "remove", "Class")]("active")
-            },
-            o = function(t) {
-                if (t.hasClass("validate")) {
-                    var e = t.val(),
-                        n = !e.length,
-                        r = !t[0].validity.badInput;
-                    if (n && r) t.removeClass("valid").removeClass("invalid");
-                    else {
-                        var i = t.is(":valid"),
-                            o = Number(t.attr("length")) || 0;
-                        i && (!o || o > e.length) ? t.removeClass("invalid").addClass("valid") : t.removeClass("valid").addClass("invalid")
+
+    function r(t, e) {
+        for (var n = 0; n < e.length; n++) {
+            var r = e[n];
+            r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
+        }
+    }
+    jQuery((function(t) {
+        (new(function() {
+            function e() {
+                ! function(t, e) {
+                    if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
+                }(this, e), this.inputSelector = "".concat(["text", "password", "email", "url", "tel", "number", "search", "search-md"].map((function(t) {
+                    return "input[type=".concat(t, "]")
+                })).join(", "), ", textarea"), this.textAreaSelector = ".materialize-textarea", this.$text = t(".md-textarea-auto"), this.$body = t("body"), this.$document = t(document)
+            }
+            var n, i, o;
+            return n = e, (i = [{
+                key: "init",
+                value: function() {
+                    var e, n = this;
+                    this.toggleActiveClass(t("input[autofocus]"), "add"), this.$text.length && (e = window.attachEvent ? function(t, e, n) {
+                        t.attachEvent("on".concat(e), n)
+                    } : function(t, e, n) {
+                        t.addEventListener(e, n, !1)
+                    }, this.$text.each((function() {
+                        var t = this;
+
+                        function n() {
+                            t.style.height = "auto", t.style.height = "".concat(t.scrollHeight, "px")
+                        }
+
+                        function r() {
+                            window.setTimeout(n, 0)
+                        }
+                        e(t, "change", n), e(t, "cut", r), e(t, "paste", r), e(t, "drop", r), e(t, "keydown", r), n()
+                    }))), t(this.inputSelector).each((function(e, r) {
+                        var i = t(r),
+                            o = r.validity.badInput;
+                        n.updateTextFields(i), o && n.toggleActiveClass(i, "add")
+                    })), this.addOnFocusEvent(), this.addOnBlurEvent(), this.addOnChangeEvent(), this.addOnResetEvent(), this.appendHiddenDiv(), this.ChangeDateInputType(), t(this.textAreaSelector).each(this.textAreaAutoResize), this.$body.on("keyup keydown", this.textAreaSelector, this.textAreaAutoResize)
+                }
+            }, {
+                key: "toggleActiveClass",
+                value: function(t, e) {
+                    e = "".concat(e, "Class"), t.siblings("label, i")[e]("active")
+                }
+            }, {
+                key: "addOnFocusEvent",
+                value: function() {
+                    var e = this;
+                    this.$document.on("focus", this.inputSelector, (function(n) {
+                        e.toggleActiveClass(t(n.target), "add")
+                    }))
+                }
+            }, {
+                key: "addOnBlurEvent",
+                value: function() {
+                    var e = this;
+                    this.$document.on("blur", this.inputSelector, (function(n) {
+                        var r = t(n.target),
+                            i = !r.val(),
+                            o = !n.target.validity.badInput,
+                            a = void 0 === r.attr("placeholder");
+                        i && o && a && e.toggleActiveClass(r, "remove"), e.validateField(r)
+                    }))
+                }
+            }, {
+                key: "addOnChangeEvent",
+                value: function() {
+                    var e = this;
+                    this.$document.on("change", this.inputSelector, (function(n) {
+                        var r = t(n.target);
+                        e.updateTextFields(r), e.validateField(r)
+                    }))
+                }
+            }, {
+                key: "addOnResetEvent",
+                value: function() {
+                    var e = this;
+                    this.$document.on("reset", (function(n) {
+                        var r = t(n.target);
+                        r.is("form") && (r.find(e.inputSelector).removeClass("valid invalid").each((function(n, r) {
+                            var i = t(r),
+                                o = !i.val(),
+                                a = !i.attr("placeholder");
+                            o && a && e.toggleActiveClass(i, "remove")
+                        })), r.find("select.initialized").each((function(e, n) {
+                            var r = t(n),
+                                i = r.siblings("input.select-dropdown"),
+                                o = r.children("[selected]").val();
+                            r.val(o), i.val(o)
+                        })))
+                    }))
+                }
+            }, {
+                key: "appendHiddenDiv",
+                value: function() {
+                    if (!t(".hiddendiv").first().length) {
+                        var e = t('<div class="hiddendiv common"></div>');
+                        this.$body.append(e)
                     }
                 }
-            },
-            a = function() {
-                var e = t(void 0);
-                if (e.val().length) {
-                    var n = t(".hiddendiv"),
-                        r = e.css("font-family"),
-                        i = e.css("font-size");
-                    i && n.css("font-size", i), r && n.css("font-family", r), "off" === e.attr("wrap") && n.css("overflow-wrap", "normal").css("white-space", "pre"), n.text("".concat(e.val(), "\n"));
-                    var o = n.html().replace(/\n/g, "<br>");
-                    n.html(o), n.css("width", e.is(":visible") ? e.width() : t(window).width() / 2), e.css("height", n.height())
+            }, {
+                key: "updateTextFields",
+                value: function(t) {
+                    var e = Boolean(t.val().length),
+                        n = Boolean(t.attr("placeholder")),
+                        r = e || n ? "add" : "remove";
+                    this.toggleActiveClass(t, r)
                 }
-            };
-        t(r).each((function(e, n) {
-            var r = t(n),
-                o = r.siblings("label, i");
-            i(r), n.validity.badInput && o.addClass("active")
-        })), t(document).on("focus", r, (function(e) {
-            t(e.target).siblings("label, i").addClass("active")
-        })), t(document).on("blur", r, (function(e) {
-            var n = t(e.target),
-                r = !n.val(),
-                i = !e.target.validity.badInput,
-                a = void 0 === n.attr("placeholder");
-            r && i && a && n.siblings("label, i").removeClass("active"), o(n)
-        })), t(document).on("change", r, (function(e) {
-            var n = t(e.target);
-            i(n), o(n)
-        })), t("input[autofocus]").siblings("label, i").addClass("active"), t(document).on("reset", (function(e) {
-            var n = t(e.target);
-            n.is("form") && (n.find(r).removeClass("valid").removeClass("invalid").each((function(e, n) {
-                var r = t(n),
-                    i = !r.val(),
-                    o = !r.attr("placeholder");
-                i && o && r.siblings("label, i").removeClass("active")
-            })), n.find("select.initialized").each((function(e, n) {
-                var r = t(n),
-                    i = r.siblings("input.select-dropdown"),
-                    o = r.children("[selected]").val();
-                r.val(o), i.val(o)
-            })))
-        })), (n = t(".md-textarea-auto")).length && (e = window.attachEvent ? function(t, e, n) {
-            t.attachEvent("on".concat(e), n)
-        } : function(t, e, n) {
-            t.addEventListener(e, n, !1)
-        }, n.each((function() {
-            var t = this;
-
-            function n() {
-                t.style.height = "auto", t.style.height = "".concat(t.scrollHeight, "px")
-            }
-
-            function r() {
-                window.setTimeout(n, 0)
-            }
-            e(t, "change", n), e(t, "cut", r), e(t, "paste", r), e(t, "drop", r), e(t, "keydown", r), n()
-        })));
-        var s = t("body");
-        if (!t(".hiddendiv").first().length) {
-            var l = t('<div class="hiddendiv common"></div>');
-            s.append(l)
-        }
-        t(".materialize-textarea").each(a), s.on("keyup keydown", ".materialize-textarea", a);
-        var u = t('input[type="date"]');
-        u.each((function(t, e) {
-            e.type = "text"
-        })), u.on("focus", (function(t) {
-            t.target.type = "date"
-        })), u.on("blur", (function(e) {
-            e.target.type = "text", t("label[for=".concat(e.target.id, "]")).removeClass("active")
-        }))
-    }(jQuery)
+            }, {
+                key: "validateField",
+                value: function(t) {
+                    if (t.hasClass("validate")) {
+                        var e = t.val(),
+                            n = !e.length,
+                            r = !t[0].validity.badInput;
+                        if (n && r) t.removeClass("valid").removeClass("invalid");
+                        else {
+                            var i = t.is(":valid"),
+                                o = Number(t.attr("length")) || 0;
+                            i && (!o || o > e.length) ? t.removeClass("invalid").addClass("valid") : t.removeClass("valid").addClass("invalid")
+                        }
+                    }
+                }
+            }, {
+                key: "ChangeDateInputType",
+                value: function() {
+                    var e = t('input[type="date"]');
+                    e.each((function(t, e) {
+                        e.type = "text"
+                    })), e.on("focus", (function(t) {
+                        t.target.type = "date"
+                    })), e.on("blur", (function(e) {
+                        e.target.type = "text", 0 === e.target.value.length && t("label[for=".concat(e.target.id, "]")).removeClass("active")
+                    }))
+                }
+            }, {
+                key: "textAreaAutoResize",
+                value: function() {
+                    var e = t(this);
+                    if (e.val().length) {
+                        var n = t(".hiddendiv"),
+                            r = e.css("font-family"),
+                            i = e.css("font-size");
+                        i && n.css("font-size", i), r && n.css("font-family", r), "off" === e.attr("wrap") && n.css("overflow-wrap", "normal").css("white-space", "pre"), n.text("".concat(e.val(), "\n"));
+                        var o = n.html().replace(/\n/g, "<br>");
+                        n.html(o), n.css("width", e.is(":visible") ? e.width() : t(window).width() / 2), e.css("height", n.height())
+                    }
+                }
+            }]) && r(n.prototype, i), o && r(n, o), e
+        }())).init()
+    }))
 }, function(t, e) {
     jQuery((function(t) {
         t(window).on("scroll", (function() {
@@ -2756,13 +2817,13 @@
             j.constructor = w
         }
         var U = new S(new w(2)),
-            Y = S.prototype.setInt8;
+            $ = S.prototype.setInt8;
         U.setInt8(0, 2147483648), U.setInt8(1, 2147483649), !U.getInt8(0) && U.getInt8(1) || s(S.prototype, {
             setInt8: function(t, e) {
-                Y.call(this, t, e << 24 >> 24)
+                $.call(this, t, e << 24 >> 24)
             },
             setUint8: function(t, e) {
-                Y.call(this, t, e << 24 >> 24)
+                $.call(this, t, e << 24 >> 24)
             }
         }, {
             unsafe: !0
@@ -11445,10 +11506,10 @@
                                                 if (0 === N) H = q;
                                                 else {
                                                     r = r || p();
-                                                    var Y = /margin|padding|left|right|width|text|word|letter/i.test(D) || /X$/.test(D) || "x" === D ? "x" : "y";
+                                                    var $ = /margin|padding|left|right|width|text|word|letter/i.test(D) || /X$/.test(D) || "x" === D ? "x" : "y";
                                                     switch (q) {
                                                         case "%":
-                                                            z *= "x" === Y ? r.percentToPxWidth : r.percentToPxHeight;
+                                                            z *= "x" === $ ? r.percentToPxWidth : r.percentToPxHeight;
                                                             break;
                                                         case "px":
                                                             break;
@@ -11457,7 +11518,7 @@
                                                     }
                                                     switch (H) {
                                                         case "%":
-                                                            z *= 1 / ("x" === Y ? r.percentToPxWidth : r.percentToPxHeight);
+                                                            z *= 1 / ("x" === $ ? r.percentToPxWidth : r.percentToPxHeight);
                                                             break;
                                                         case "px":
                                                             break;
@@ -11745,19 +11806,19 @@
         U = function(t, e) {
             return W(t) && "symbol" != typeof e && e in t && String(+e) == String(e)
         },
-        Y = function(t, e) {
+        $ = function(t, e) {
             return U(t, e = g(e, !0)) ? c(2, t[e]) : O(t, e)
         },
-        $ = function(t, e, n) {
+        Y = function(t, e, n) {
             return !(U(t, e = g(e, !0)) && y(n) && v(n, "value")) || v(n, "get") || v(n, "set") || n.configurable || v(n, "writable") && !n.writable || v(n, "enumerable") && !n.enumerable ? I(t, e, n) : (t[e] = n.value, t)
         };
-    o ? (R || (A.f = Y, M.f = $, H(z, "buffer"), H(z, "byteOffset"), H(z, "byteLength"), H(z, "length")), r({
+    o ? (R || (A.f = $, M.f = Y, H(z, "buffer"), H(z, "byteOffset"), H(z, "byteLength"), H(z, "length")), r({
         target: "Object",
         stat: !0,
         forced: !R
     }, {
-        getOwnPropertyDescriptor: Y,
-        defineProperty: $
+        getOwnPropertyDescriptor: $,
+        defineProperty: Y
     }), t.exports = function(t, e, n, o) {
         var s = t + (o ? "Clamped" : "") + "Array",
             l = "get" + t,
