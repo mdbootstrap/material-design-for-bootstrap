@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.13.0
+ *   Version: MDB FREE 4.14.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -12461,3 +12461,4 @@
         }))
     }).call(this, n(87)(t))
 }]);
+//# sourceMappingURL=mdb.min.js.map

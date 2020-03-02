@@ -2,7 +2,7 @@
 
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.13.0
+ *   Version: MDB FREE 4.14.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -10156,6 +10156,14 @@ body.modal-open {
     overflow: auto
 }
 
+body.modal-open .fixed-top {
+    padding-right: 1rem !important
+}
+
+body.modal-open .fixed-bottom {
+    padding-right: 0 !important
+}
+
 body.scrollable {
     overflow-y: auto
 }
@@ -11902,7 +11910,7 @@ body.scrollable {
 }
 
 .custom-file-input:lang(ru)~.custom-file-label::after {
-    content: "выбирать"
+    content: "Выбрать"
 }
 
 .edge-header {
@@ -12655,3 +12663,6 @@ ul.stepper li.completed a .label {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg)
 }
+
+
+/*# sourceMappingURL=mdb.min.css.map*/
