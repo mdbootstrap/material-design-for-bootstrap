@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.14.0
+ *   Version: MDB FREE 4.14.1
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -2427,7 +2427,7 @@
                             r = !t[0].validity.badInput;
                         if (n && r) t.removeClass("valid").removeClass("invalid");
                         else {
-                            var i = t.is(":valid"),
+                            var i = t[0].validity.valid,
                                 o = Number(t.attr("length")) || 0;
                             i && (!o || o > e.length) ? t.removeClass("invalid").addClass("valid") : t.removeClass("valid").addClass("invalid")
                         }

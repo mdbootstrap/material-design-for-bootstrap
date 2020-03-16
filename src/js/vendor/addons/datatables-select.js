@@ -1045,19 +1045,13 @@ function namespacedEvents ( config ) {
 }
 
 function enabled ( dt, config ) {
-	if ( $.inArray( 'rows', config.limitTo ) !== -1 && dt.rows( { selected: true } ).any() ) {
-		return true;
-	}
-
-	if ( $.inArray( 'columns', config.limitTo ) !== -1 && dt.columns( { selected: true } ).any() ) {
-		return true;
-	}
-
-	if ( $.inArray( 'cells', config.limitTo ) !== -1 && dt.cells( { selected: true } ).any() ) {
-		return true;
-	}
-
-	return false;
+	var checkinArray = function(tableComponent) {
+		return $.inArray( tableComponent, config.limitTo ) !== -1 && dt[tableComponent]( { selected: true } ).any();
+	};
+	
+	return (
+		checkinArray('row') || checkinArray('columns') || checkinArray('cells')
+	);
 }
 
 var _buttonNamespace = 0;

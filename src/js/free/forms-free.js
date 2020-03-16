@@ -162,7 +162,7 @@ jQuery(($) => {
         if (noValue && isValid) {
           $input.removeClass('valid').removeClass('invalid');
         } else {
-          const valid = $input.is(':valid');
+          const valid = $input[0].validity.valid;
           const length = Number($input.attr('length')) || 0;
   
           if (valid && (!length || length > value.length)) {

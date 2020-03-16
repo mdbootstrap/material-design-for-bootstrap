@@ -1,4 +1,4 @@
-jQuery(function ($) {
+jQuery(($) => {
   $.fn.mdbTreeview = function () {
 
     const $this = $(this);
@@ -30,7 +30,7 @@ jQuery(function ($) {
         $this.toggleClass('down');
       });
     });
-  };
+  }
 
   function treeviewAnimated($this) {
     const $elements = $this.find('.treeview-animated-element');
@@ -47,7 +47,7 @@ jQuery(function ($) {
       $this.toggleClass('open');
       $pointer.toggleClass('down');
 
-      if(!$target.hasClass('active')) {
+      if (!$target.hasClass('active')) {
         $target.addClass('active').slideDown();
       } else {
         $target.removeClass('active').slideUp();
@@ -58,14 +58,14 @@ jQuery(function ($) {
     $elements.on('click', function () {
       const $this = $(this);
 
-      if($this.hasClass('opened')) {
+      if ($this.hasClass('opened')) {
         $this.removeClass('opened');
       } else {
         $elements.removeClass('opened');
         $this.addClass('opened');
       }
     });
-  };
+  }
 
   function treeviewColorful($this) {
     const $elements = $this.find('.treeview-colorful-element');
@@ -86,7 +86,7 @@ jQuery(function ($) {
       $pointerMinus.removeClass('fa-minus-circle');
       $pointerMinus.addClass('fa-plus-circle');
 
-      if(!$target.hasClass('active')) {
+      if (!$target.hasClass('active')) {
         $target.addClass('active').slideDown();
       } else {
         $target.removeClass('active').slideUp();
@@ -97,12 +97,12 @@ jQuery(function ($) {
     $elements.on('click', function () {
       const $this = $(this);
 
-      if($this.hasClass('opened')) {
+      if ($this.hasClass('opened')) {
         $elements.removeClass('opened');
       } else {
         $elements.removeClass('opened');
         $this.addClass('opened');
       }
     });
-  };
+  }
 });
