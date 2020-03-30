@@ -2,7 +2,7 @@
 
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB LITE 4.14.1
+ *   Version: MDB LITE 4.15.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -8054,13 +8054,21 @@ body.scrollable {
 }
 
 .md-form textarea.md-textarea {
-    padding: 1.5rem 0;
+    padding: 0;
     overflow-y: hidden
+}
+
+.md-form textarea.md-textarea+label {
+    top: -0.6rem
 }
 
 .md-form textarea.md-textarea-auto {
     padding: 0;
     padding-top: 1.5rem
+}
+
+.md-form textarea.md-textarea-auto+label {
+    top: 0
 }
 
 .md-form.md-outline {
@@ -8660,6 +8668,71 @@ body.scrollable {
 
 .custom-file-input:lang(ru)~.custom-file-label::after {
     content: "Выбрать"
+}
+
+.md-form>label {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.md-form .form-control {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important
+}
+
+.md-form .input-prefix {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    color: rgba(0, 0, 0, 0.87);
+    pointer-events: none
+}
+
+.md-form .input-prefix.active {
+    color: #4285f4
+}
+
+.md-form.input-with-pre-icon label {
+    left: 36px;
+    right: initial
+}
+
+.md-form.input-with-pre-icon .input-prefix {
+    left: 16px;
+    right: initial
+}
+
+.md-form.input-with-pre-icon .form-control {
+    padding-left: 2.7rem !important
+}
+
+.md-form.input-with-post-icon .input-prefix {
+    right: 16px;
+    left: initial
+}
+
+.md-form.input-with-post-icon .form-control {
+    padding-right: 2.7rem !important
+}
+
+.md-form.input-with-post-icon.input-with-pre-icon .input-prefix {
+    right: 16px;
+    left: initial
+}
+
+.md-form.input-with-post-icon.input-with-pre-icon .input-prefix:first-of-type {
+    left: 16px;
+    right: initial
+}
+
+.md-form.input-with-post-icon.input-with-pre-icon .form-control {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important
 }
 
 .edge-header {

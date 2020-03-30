@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.14.1
+ *   Version: MDB FREE 4.15.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -2328,7 +2328,7 @@
                 key: "init",
                 value: function() {
                     var e, n = this;
-                    this.toggleActiveClass(t("input[autofocus]"), "add"), this.$text.length && (e = window.attachEvent ? function(t, e, n) {
+                    this.$text.length && (e = window.attachEvent ? function(t, e, n) {
                         t.attachEvent("on".concat(e), n)
                     } : function(t, e, n) {
                         t.addEventListener(e, n, !1)
@@ -2347,12 +2347,17 @@
                         var i = t(r),
                             o = r.validity.badInput;
                         n.updateTextFields(i), o && n.toggleActiveClass(i, "add")
-                    })), this.addOnFocusEvent(), this.addOnBlurEvent(), this.addOnChangeEvent(), this.addOnResetEvent(), this.appendHiddenDiv(), this.ChangeDateInputType(), t(this.textAreaSelector).each(this.textAreaAutoResize), this.$body.on("keyup keydown", this.textAreaSelector, this.textAreaAutoResize)
+                    })), this.addOnFocusEvent(), this.addOnBlurEvent(), this.addOnChangeEvent(), this.addOnResetEvent(), this.appendHiddenDiv(), this.ChangeDateInputType(), this.makeActiveAutofocus(), t(this.textAreaSelector).each(this.textAreaAutoResize), this.$body.on("keyup keydown", this.textAreaSelector, this.textAreaAutoResize)
+                }
+            }, {
+                key: "makeActiveAutofocus",
+                value: function() {
+                    this.toggleActiveClass(t("input[autofocus]"), "add")
                 }
             }, {
                 key: "toggleActiveClass",
                 value: function(t, e) {
-                    e = "".concat(e, "Class"), t.siblings("label, i")[e]("active")
+                    e = "".concat(e, "Class"), t.siblings("label, i, .input-prefix")[e]("active")
                 }
             }, {
                 key: "addOnFocusEvent",
@@ -2371,7 +2376,7 @@
                             i = !r.val(),
                             o = !n.target.validity.badInput,
                             a = void 0 === r.attr("placeholder");
-                        i && o && a && e.toggleActiveClass(r, "remove"), e.validateField(r)
+                        i && o && a && e.toggleActiveClass(r, "remove"), !i && o && a && r.siblings("i, .input-prefix").removeClass("active"), e.validateField(r)
                     }))
                 }
             }, {

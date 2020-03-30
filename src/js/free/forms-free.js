@@ -13,7 +13,6 @@ jQuery(($) => {
     }
 
     init() {
-      this.toggleActiveClass($('input[autofocus]'), 'add');
 
       if (this.$text.length) {
         let observe;
@@ -66,14 +65,20 @@ jQuery(($) => {
       this.addOnResetEvent();
       this.appendHiddenDiv();
       this.ChangeDateInputType();
+      this.makeActiveAutofocus();
 
       $(this.textAreaSelector).each(this.textAreaAutoResize);
       this.$body.on('keyup keydown', this.textAreaSelector, this.textAreaAutoResize);
     }
 
+    makeActiveAutofocus() {
+
+      this.toggleActiveClass($('input[autofocus]'), 'add');
+    }
+
     toggleActiveClass($this, action) {
       action = `${action}Class`;
-      $this.siblings('label, i')[action]('active');
+      $this.siblings('label, i, .input-prefix')[action]('active');
     }
 
     addOnFocusEvent() {
@@ -91,6 +96,10 @@ jQuery(($) => {
     
         if (noValue && isValid && noPlaceholder) {
           this.toggleActiveClass($this, 'remove');
+        } 
+
+        if (!noValue && isValid && noPlaceholder) {
+          $this.siblings('i, .input-prefix').removeClass('active');
         }
 
         this.validateField($this);
