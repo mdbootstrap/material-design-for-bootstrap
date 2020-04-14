@@ -1,0 +1,179 @@
+/*
+ * MDBootstrap integration with Datatables
+ * Learn more: https://mdbootstrap.com/docs/jquery/tables/datatables/
+ * About MDBootstrap: https://mdbootstrap.com/
+ *
+ * This combined file was created by the DataTables downloader builder:
+ *   https://datatables.net/download
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.18
+ *
+ * Included libraries:
+ *   DataTables 1.10.18
+ */
+
+div.dataTables_wrapper div {
+  &.dataTables_length {
+    select, input {
+      width: auto;
+    }
+    &.d-flex.flex-row {
+      label {
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+      }
+      .select-wrapper.mdb-select {
+        span, .select-dropdown {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  &.dataTables_length,
+  &.dataTables_filter {
+    label {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+  &.dataTables_filter {
+    select,
+    input {
+      width: auto;
+    }
+    input {
+      display: inline-block;
+      margin-left: .5rem;
+    }
+    text-align: right;
+  }
+  &.dataTables_info,
+  &.dataTables_paginate {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+  }
+  &.dataTables_paginate {
+    margin: 0;
+    text-align: right;
+    ul.pagination {
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      -webkit-box-pack: end;
+      .page-item {
+        &.active {
+          .page-link {
+
+            background-color: #7e7e7e;
+            &:focus {
+              background-color: #7e7e7e;
+            }
+          }
+        } 
+        .page-link:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  div.dataTables_wrapper div {
+    .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate ul.pagination {
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+      -webkit-box-pack: center;
+    }
+  }
+}
+
+.bs-select select {
+  display: inline-block !important;
+}
+
+table.dataTable thead {
+  th {
+    padding-left: 1.5rem;
+    font-weight: 600;
+  }
+  cursor: pointer;
+  > tr > {
+    th,
+    td {
+      &.sorting_asc, &.sorting_desc, &.sorting {
+        padding-right: 30px;
+      }
+    }
+    th:active, td:active {
+      outline: none;
+    }
+  }
+  
+  .sorting,
+  .sorting_asc,
+  .sorting_desc,
+  .sorting_asc_disabled,
+  .sorting_desc_disabled {
+    position: relative;
+    cursor: pointer;
+    &:before, &:after {
+      position: absolute;
+      bottom: 1rem;
+      display: block;
+      opacity: 0;
+    }
+  }
+  .sorting:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+  .sorting:before, .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before {
+    left: 0.4rem;
+    font-family: "Font Awesome\ 5 Free", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f062";
+  }
+  .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desc_disabled:after {
+    left: 0.4rem;
+    font-family: "Font Awesome\ 5 Free", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f063";
+  }
+  .sorting_asc:before, .sorting_desc:after {
+    opacity: 1;
+  }
+  .sorting_asc_disabled:before, .sorting_desc_disabled:after {
+    opacity: 0;
+  }
+}
+
+.dataTables_scrollHead {
+  .dataTables_scrollHeadInner, .dataTables_scrollHeadInner table {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  .dataTables_scrollHeadInner table {
+    margin-bottom: 0 !important;
+  }
+}
+
+.dataTables_scrollFoot {
+  .dataTables_scrollFootInner, .dataTables_scrollFootInner table {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}

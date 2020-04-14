@@ -77,8 +77,15 @@ jQuery(($) => {
     }
 
     toggleActiveClass($this, action) {
+      let selectors;
       action = `${action}Class`;
-      $this.siblings('label, i, .input-prefix')[action]('active');
+      
+      if ($this.parent().hasClass('timepicker')) {
+        selectors = 'label';
+      } else {
+        selectors = 'label, i, .input-prefix';
+      }
+      $this.siblings(selectors)[action]('active');
     }
 
     addOnFocusEvent() {

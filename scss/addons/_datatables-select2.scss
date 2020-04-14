@@ -1,0 +1,160 @@
+/*
+ * MDBootstrap integration with Datatables
+ * Learn more: https://mdbootstrap.com/docs/jquery/tables/datatables/
+ * About MDBootstrap: https://mdbootstrap.com/
+ *
+ * This combined file was created taking that code from this webstie:
+ *  https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css
+ *
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.18
+ *
+ * Included libraries:
+ *   DataTables 1.10.18
+ */
+
+ table {
+    &.dataTable {
+      tbody > tr {
+        &.selected,
+        > .selected {
+          background-color: #f5f5f5;
+        }
+        &:not(.selected):hover {
+            background-color: rgba(245, 245, 245, 0.4);
+        }
+      }
+      &.stripe, &.display {
+        tbody > tr.odd {
+          &.selected,
+          > .selected {
+            background-color: #acbad4;
+          }
+        }
+      }
+      &.hover, &.display {
+        tbody > tr {
+          &.selected:hover,
+          > .selected:hover {
+            background-color: #aab7d1;
+          }
+        }
+      }
+      &.order-column, &.display {
+        tbody > tr {
+          &.selected > {
+            .sorting_1, .sorting_2, .sorting_3 {
+              background-color: #acbad5;
+            }
+          }
+          > .selected {
+            background-color: #acbad5;
+          }
+        }
+      }
+      &.display, &.order-column.stripe {
+        tbody > tr {
+          &.odd.selected > .sorting_1 {
+            background-color: #a6b4cd;
+          }
+        }
+      }
+      &.display tbody > tr.odd.selected > .sorting_2, &.order-column.stripe tbody > tr.odd.selected > .sorting_2 {
+        background-color: #a8b5cf;
+      }
+      &.display tbody > tr.odd.selected > .sorting_3, &.order-column.stripe tbody > tr.odd.selected > .sorting_3 {
+        background-color: #a9b7d1;
+      }
+      &.display tbody > tr.even.selected > .sorting_1, &.order-column.stripe tbody > tr.even.selected > .sorting_1 {
+        background-color: #acbad5;
+      }
+      &.display tbody > tr.even.selected > .sorting_2, &.order-column.stripe tbody > tr.even.selected > .sorting_2 {
+        background-color: #aebcd6;
+      }
+      &.display tbody > tr.even.selected > .sorting_3, &.order-column.stripe tbody > tr.even.selected > .sorting_3 {
+        background-color: #afbdd8;
+      }
+      &.display tbody > tr.odd > .selected, &.order-column.stripe tbody > tr.odd > .selected {
+        background-color: #a6b4cd;
+      }
+      &.display tbody > tr.even > .selected, &.order-column.stripe tbody > tr.even > .selected {
+        background-color: #acbad5;
+      }
+      &.display tbody > tr.selected:hover > .sorting_1, &.order-column.hover tbody > tr.selected:hover > .sorting_1 {
+        background-color: #a2aec7;
+      }
+      &.display tbody > tr.selected:hover > .sorting_2, &.order-column.hover tbody > tr.selected:hover > .sorting_2 {
+        background-color: #a3b0c9;
+      }
+      &.display tbody > tr.selected:hover > .sorting_3, &.order-column.hover tbody > tr.selected:hover > .sorting_3 {
+        background-color: #a5b2cb;
+      }
+      &.display, &.order-column.hover {
+        tbody > tr {
+          &:hover > .selected, > .selected:hover {
+            background-color: #a2aec7;
+          }
+        }
+      }
+      tbody, thead {
+        td, th {
+          &.select-checkbox, &.select-checkbox-all {
+            position: relative;
+            &:before,
+            &:after {
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              left: 50%;
+              box-sizing: border-box;
+              display: block;
+              width: 20px;
+              height: 20px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+          }
+        }
+        td.select-checkbox:before,
+        th.select-checkbox.select-checkbox-all:before {
+          content: " ";
+          border: 2px solid #5a5a5a;
+          border-radius: 3px;
+        }
+      }
+      tr.selected {
+        td.select-checkbox:after,
+        th.select-checkbox:after {
+          margin-top: 0;
+          text-align: center;
+          font-family: "Font Awesome\ 5 Free", sans-serif;
+          font-size: 0.9rem;
+          font-weight: 600;
+          content: "\f00c";
+          background-color: #a6c;
+          box-shadow: 0 0 1em #5a5a5a;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  div.dataTables_wrapper span {
+    &.select-info, &.select-item {
+      margin-left: .5em;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    div.dataTables_wrapper span {
+      &.select-info, &.select-item {
+        display: block;
+        margin-left: 0;
+      }
+    }
+  }
+  
