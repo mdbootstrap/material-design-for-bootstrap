@@ -8,17 +8,16 @@ Getting started:
 https://mdbootstrap.com/docs/jquery/getting-started/download/
 
 Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/education/bootstrap/
-MDB-Wordpress: https://mdbootstrap.com/education/wordpress/
+MDB-Bootstrap: https://mdbootstrap.com/education/
 
-Templates:
+Free Templates:
 https://mdbootstrap.com/templates/
 
 License:
-https://mdbootstrap.com/general/license/
+https://mdbootstrap.com/licensing/
 
-Support:
-https://mdbootstrap.com/forums/forum/support/
+Support & Services:
+https://mdbootstrap.com/services/
 
 Contact:
 office@mdbootstrap.com
