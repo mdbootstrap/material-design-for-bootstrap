@@ -2,7 +2,7 @@
 
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.19.0
+ *   Version: MDB FREE 4.19.1
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -11093,9 +11093,11 @@ body.scrollable {
     top: 3.6rem
 }
 
+.md-form>input[type="date"]:not(.browser-default) {
+    color: transparent
+}
+
 .md-form>input[type="date"]:not(.browser-default)+label {
-    -webkit-transform: translateY(-27px) scale(0.8);
-    transform: translateY(-27px) scale(0.8);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0
 }
@@ -11818,9 +11820,11 @@ body.scrollable {
     outline: none
 }
 
+.md-form.md-bg>input[type="date"]:not(.browser-default) {
+    color: transparent
+}
+
 .md-form.md-bg>input[type="date"]:not(.browser-default)+label {
-    -webkit-transform: translateY(-12px) scale(0.8);
-    transform: translateY(-12px) scale(0.8);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0
 }

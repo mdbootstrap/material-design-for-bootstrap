@@ -109,8 +109,11 @@
     }
   }
 
+  > input[type="date"]:not(.browser-default) {
+    color: transparent;
+  }
+
   > input[type="date"]:not(.browser-default) + label {
-    transform: translateY(-27px) scale(.8);
     transform-origin: 0 0;
   }
 
@@ -551,8 +554,11 @@
       }
     }
 
+    > input[type="date"]:not(.browser-default) {
+      color: transparent;
+    }
+
     > input[type="date"]:not(.browser-default) + label {
-      transform: translateY(-12px) scale(.8);
       transform-origin: 0 0;
     }
 

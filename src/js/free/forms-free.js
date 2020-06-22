@@ -3,7 +3,7 @@ jQuery(($) => {
   class Forms {
 
     constructor() {
-      this.inputSelector = `${['text', 'password', 'email', 'url', 'tel', 'number', 'search', 'search-md']
+      this.inputSelector = `${['text', 'password', 'email', 'url', 'tel', 'number', 'search', 'search-md', 'date']
         .map((selector) => `input[type=${selector}]`)
         .join(', ')}, textarea`;
       this.textAreaSelector = '.materialize-textarea';
@@ -64,7 +64,6 @@ jQuery(($) => {
       this.addOnChangeEvent();
       this.addOnResetEvent();
       this.appendHiddenDiv();
-      this.ChangeDateInputType();
       this.makeActiveAutofocus();
 
       $(this.textAreaSelector).each(this.textAreaAutoResize);
@@ -91,6 +90,10 @@ jQuery(($) => {
     addOnFocusEvent() {
       this.$document.on('focus', this.inputSelector, (e) => {
         this.toggleActiveClass($(e.target), 'add');
+        
+        if($(e.target).attr("type") == "date") { 
+          $(e.target).css("color", "#495057"); 
+        }
       });
     }
 
@@ -103,10 +106,17 @@ jQuery(($) => {
     
         if (noValue && isValid && noPlaceholder) {
           this.toggleActiveClass($this, 'remove');
+          if($this.attr("type") == "date") {
+            $this.css("color", "transparent");
+          }
         } 
 
         if (!noValue && isValid && noPlaceholder) {
           $this.siblings('i, .input-prefix').removeClass('active');
+
+          if($this.attr("type") == "date") {
+            $this.css("color", "#495057");
+          }
         }
 
         this.validateField($this);
@@ -162,11 +172,13 @@ jQuery(($) => {
 
     updateTextFields($input) {
 
-      const hasValue = Boolean($input.val().length);
-      const hasPlaceholder = Boolean($input.attr('placeholder'));
-      const addOrRemove = hasValue || hasPlaceholder ? 'add' : 'remove';
+      if($input.attr("type") !== "date") {
+        const hasValue = Boolean($input.val().length);
+        const hasPlaceholder = Boolean($input.attr('placeholder'));
+        const addOrRemove = hasValue || hasPlaceholder ? 'add' : 'remove';
   
-      this.toggleActiveClass($input, addOrRemove);
+        this.toggleActiveClass($input, addOrRemove);
+      }
     }
 
     validateField($input) {
@@ -188,25 +200,6 @@ jQuery(($) => {
           }
         }
       }
-    }
-
-    ChangeDateInputType() {
-      const $dateInputs = $('input[type="date"]');
-    
-      $dateInputs.each((index, $item) => {
-        $item.type = 'text';
-      });
-    
-      $dateInputs.on('focus', $item => {
-        $item.target.type = 'date';
-      });
-    
-      $dateInputs.on('blur', $item => {
-        $item.target.type = 'text';
-        if($item.target.value.length === 0) {
-          $(`label[for=${$item.target.id}]`).removeClass('active');
-        }
-      });    
     }
   
     textAreaAutoResize() {

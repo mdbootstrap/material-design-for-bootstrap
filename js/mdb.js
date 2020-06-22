@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.19.0
+ *   Version: MDB FREE 4.19.1
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -2319,7 +2319,7 @@
             function e() {
                 ! function(t, e) {
                     if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
-                }(this, e), this.inputSelector = "".concat(["text", "password", "email", "url", "tel", "number", "search", "search-md"].map((function(t) {
+                }(this, e), this.inputSelector = "".concat(["text", "password", "email", "url", "tel", "number", "search", "search-md", "date"].map((function(t) {
                     return "input[type=".concat(t, "]")
                 })).join(", "), ", textarea"), this.textAreaSelector = ".materialize-textarea", this.$text = t(".md-textarea-auto"), this.$body = t("body"), this.$document = t(document)
             }
@@ -2347,7 +2347,7 @@
                         var i = t(r),
                             o = r.validity.badInput;
                         n.updateTextFields(i), o && n.toggleActiveClass(i, "add")
-                    })), this.addOnFocusEvent(), this.addOnBlurEvent(), this.addOnChangeEvent(), this.addOnResetEvent(), this.appendHiddenDiv(), this.ChangeDateInputType(), this.makeActiveAutofocus(), t(this.textAreaSelector).each(this.textAreaAutoResize), this.$body.on("keyup keydown", this.textAreaSelector, this.textAreaAutoResize)
+                    })), this.addOnFocusEvent(), this.addOnBlurEvent(), this.addOnChangeEvent(), this.addOnResetEvent(), this.appendHiddenDiv(), this.makeActiveAutofocus(), t(this.textAreaSelector).each(this.textAreaAutoResize), this.$body.on("keyup keydown", this.textAreaSelector, this.textAreaAutoResize)
                 }
             }, {
                 key: "makeActiveAutofocus",
@@ -2365,7 +2365,7 @@
                 value: function() {
                     var e = this;
                     this.$document.on("focus", this.inputSelector, (function(n) {
-                        e.toggleActiveClass(t(n.target), "add")
+                        e.toggleActiveClass(t(n.target), "add"), "date" == t(n.target).attr("type") && t(n.target).css("color", "#495057")
                     }))
                 }
             }, {
@@ -2377,7 +2377,7 @@
                             i = !r.val(),
                             o = !n.target.validity.badInput,
                             a = void 0 === r.attr("placeholder");
-                        i && o && a && e.toggleActiveClass(r, "remove"), !i && o && a && r.siblings("i, .input-prefix").removeClass("active"), e.validateField(r)
+                        i && o && a && (e.toggleActiveClass(r, "remove"), "date" == r.attr("type") && r.css("color", "transparent")), !i && o && a && (r.siblings("i, .input-prefix").removeClass("active"), "date" == r.attr("type") && r.css("color", "#495057")), e.validateField(r)
                     }))
                 }
             }, {
@@ -2419,10 +2419,12 @@
             }, {
                 key: "updateTextFields",
                 value: function(t) {
-                    var e = Boolean(t.val().length),
-                        n = Boolean(t.attr("placeholder")),
-                        r = e || n ? "add" : "remove";
-                    this.toggleActiveClass(t, r)
+                    if ("date" !== t.attr("type")) {
+                        var e = Boolean(t.val().length),
+                            n = Boolean(t.attr("placeholder")),
+                            r = e || n ? "add" : "remove";
+                        this.toggleActiveClass(t, r)
+                    }
                 }
             }, {
                 key: "validateField",
@@ -2438,18 +2440,6 @@
                             i && (!o || o > e.length) ? t.removeClass("invalid").addClass("valid") : t.removeClass("valid").addClass("invalid")
                         }
                     }
-                }
-            }, {
-                key: "ChangeDateInputType",
-                value: function() {
-                    var e = t('input[type="date"]');
-                    e.each((function(t, e) {
-                        e.type = "text"
-                    })), e.on("focus", (function(t) {
-                        t.target.type = "date"
-                    })), e.on("blur", (function(e) {
-                        e.target.type = "text", 0 === e.target.value.length && t("label[for=".concat(e.target.id, "]")).removeClass("active")
-                    }))
                 }
             }, {
                 key: "textAreaAutoResize",
@@ -12463,7 +12453,7 @@
                 console.error("Waves.displayEffect() has been deprecated and will be removed in future version. Please use Waves.init() to initialize Waves effect"), t.init(e)
             }, t
         })), $(document).ready((function() {
-            Waves.attach(".btn:not(.btn-flat), .btn-floating", ["waves-light"]), Waves.attach(".btn-flat", ["waves-effect"]), Waves.attach(".chip", ["waves-effect"]), Waves.attach(".view a .mask", ["waves-light"]), Waves.attach(".waves-light", ["waves-light"]), Waves.attach(".navbar-nav a:not(.navbar-brand), .nav-icons li a, .nav-tabs .nav-item:not(.dropdown)", ["waves-light"]), Waves.attach(".pager li a", ["waves-light"]), Waves.attach(".pagination .page-item .page-link", ["waves-effect"]), Waves.init()
+            Waves.attach(".btn:not(.btn-flat), .btn-floating", ["waves-light"]), Waves.attach(".btn-flat"), Waves.attach(".chip"), Waves.attach(".view a .mask", ["waves-light"]), Waves.attach(".waves-light", ["waves-light"]), Waves.attach(".navbar-nav a:not(.navbar-brand), .nav-icons li a, .nav-tabs .nav-item:not(.dropdown)", ["waves-light"]), Waves.attach(".pager li a", ["waves-light"]), Waves.attach(".pagination .page-item .page-link"), Waves.init()
         }))
     }).call(this, n(87)(t))
 }]);
