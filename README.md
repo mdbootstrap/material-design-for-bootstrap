@@ -61,7 +61,7 @@ We're maintaining a [dedicated Support Forum](https://mdbootstrap.com/support/) 
 
 # Quick Start Video
 
-[![Quick Start](https://mdbootstrap.com/wp-content/uploads/2020/05/yt.png)](https://youtu.be/cXTThxoywNQ)
+[![Quick Start](https://mdbootstrap.com/wp-content/uploads/2020/06/PlayDemo.png)](https://youtu.be/cXTThxoywNQ)
 
 According to your preference, you can follow a [video](https://youtu.be/cXTThxoywNQ) or [written version](https://mdbootstrap.com/education/bootstrap/quick-start/)
 
