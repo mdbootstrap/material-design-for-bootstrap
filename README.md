@@ -13,7 +13,7 @@
 
 The most popular UI KIT for building responsive, mobile-first websites and apps - free for personal & commercial use. Available jQuery, Angular, React and Vue versions.
 
-Trusted by <b>1 500 000+</b> developers & designers. Used by companies like
+Trusted by <b>2 000 000+</b> developers & designers. Used by companies like
 <table>
   <tbody>
     <tr>
@@ -41,27 +41,12 @@ We're maintaining a [dedicated Support Forum](https://mdbootstrap.com/support/) 
 
 # More Web Development Technologies
 
-|⠀  ⠀  ⠀⠀  ⠀      MDBootstrap Angular⠀  ⠀ ⠀    ⠀   |⠀  ⠀   ⠀  ⠀⠀    MDBootstrap React ⠀   ⠀   ⠀⠀  |⠀  ⠀  ⠀⠀ ⠀     MDBootstrap Vue⠀  ⠀  ⠀   ⠀   |
-| --------------- | ------------------ | ------------- |
-|⠀  ⠀ ⠀  ⠀ ⠀     ⠀ ⠀   [![MDB Angular](https://mdbootstrap.com/img/Marketing/general/logo/small/angular.png")](https://mdbootstrap.com/docs/angular/)  ⠀  |⠀  ⠀ ⠀   ⠀   ⠀⠀    [![MDB React](https://mdbootstrap.com/img/Marketing/general/logo/small/react.png)](https://mdbootstrap.com/docs/react/)  ⠀  |⠀  ⠀    ⠀⠀   ⠀  ⠀   [![MDB Vue](https://mdbootstrap.com/img/Marketing/general/logo/small/vue.png)](https://mdbootstrap.com/docs/vue/)   ⠀   ⠀ 
-
-
-# Highlights
-
-- Thanks to MDB you can take advantage of all features of the latest version of Bootstrap 4
-- We care about the development of our users. We have prepared numerous tutorials, which allow you to learn how to use MDB as well as other technologies
-- It doesn't matter whether your project will be displayed on a desktop, laptop, tablet or mobile phone. MDB looks great on every type of screen
-- Need inspiration? Use one of our predefined templates for free
-- 5 minutes, a few clicks and... done! You will be surprised at how easy it is
-- Using MDB is straightforward and pleasant. Our flexible components allow deep customization. You will easily be able to adjust each component to suit your needs.
-- Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
-- We put detailed user-friendly documentation at your disposal. It will help you to implement your ideas easily.
-
-
-
+|⠀ MDBootstrap Angular⠀ |⠀    MDBootstrap React ⠀­  |⠀ ­   MDBootstrap Vue⠀  ­ | ­­ MDBootstrap 5   ­­|
+| --------------- | ------------------ | ------------- | ------------- |
+| ­­­ ­­­ ­­­ ­­­ ­­­ ­­­ ­­­ ­­­ ­­­­   [![MDB Angular](https://mdbootstrap.com/img/Marketing/general/logo/small/angular.png")](https://mdbootstrap.com/docs/angular/) ­­ ­­­­ ­­­ |⠀   ­­ ­­­ ­­­ ­­­ ­­­ ­­­   [![MDB React](https://mdbootstrap.com/img/Marketing/general/logo/small/react.png)](https://mdbootstrap.com/docs/react/)  ⠀­­ ­­­ ­­­ ­­­ ­­­ ­­­  |⠀ ­­ ­­­ ­­­ ­­­ ­­­ ­­­   [![MDB Vue](https://mdbootstrap.com/img/Marketing/general/logo/small/vue.png)](https://mdbootstrap.com/docs/vue/)    ­­ ­­­ ­­­ ­­­ ­­­ ­­­   |    ­­­ ­­­ ­­­ ­­­ ­­­ ­­­      [![MDB 5](https://mdbootstrap.com/wp-content/uploads/2020/08/bootstrap5-logo.png)](https://mdbootstrap.com/docs/standard/)   ⠀   ­­ ­­­ ­­­ ­­­ ­­­ ­­­
 # Quick Start Video
 
-[![Quick Start](https://mdbootstrap.com/wp-content/uploads/2020/05/yt.png)](https://youtu.be/cXTThxoywNQ)
+ <a href="https://youtu.be/cXTThxoywNQ"><img src="https://mdbootstrap.com/wp-content/uploads/2020/08/PlayDemoGH.png"></a>
 
 According to your preference, you can follow a [video](https://youtu.be/cXTThxoywNQ) or [written version](https://mdbootstrap.com/education/bootstrap/quick-start/)
 
@@ -96,6 +81,149 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
   </tbody>
 </table>
 
+# Demo
+
+### Carousel
+
+<p>A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-carousel-video.gif">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-carousel.gif">
+  </p>
+</a>
+
+### Loader / Spinner
+
+<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-loader.gif">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-color-spinners.gif">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-multicolor.gif">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-crazyloader.gif">
+  </p>
+</a>
+
+### Buttons
+
+<p>You can use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more...</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/buttons/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-buttons.gif">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/buttons/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-social-buttons.png">
+  </p>
+</a>
+
+### Cards
+
+<p>Bootstrap cards are components which display content built of different elements with characteristic shadows, depth and hover effects.</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-cards-cascading.png">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-fancy-cards.gif">
+  </p>
+</a>
+
+
+<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-cards-overlay.png">
+  </p>
+</a>
+
+### Alerts 
+
+<p>Bootstrap alerts are feedback messages that are displayed after specific actions performed by the user. The length of the text is unlimited.</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-alerts.png">
+  </p>
+</a>
+
+### Hamburger Menu
+
+<p>Bootstrap alerts are feedback messages that are displayed after specific actions performed by the user. The length of the text is unlimited.</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-hamburgermenu.gif">
+  </p>
+</a>
+
+### Footer
+
+<p>A footer is an additional navigation component. It can hold links, buttons, company info, copyrights, forms, and many other elements.</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-footer.png">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-footer-image.png">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/jquery/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-footer-video.png">
+  </p>
+</a>
+
+### Sidenav
+
+<p>Bootstrap's sidenav is a vertical navigation component which apart from traditional, text links, might embed icons, dropdowns, avatars or search forms.</p>
+
+<a href="https://mdbootstrap.com/docs/jquery/navigation/sidenav/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-sidenav.gif">
+  </p>
+</a>
+
+<p>Use MDB modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/modal/" alt="Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-modal.gif">
+  </p>
+</a>
+
 # Supported browsers
 
 MDBootstrap supports the **latest, stable releases** of all major browsers and platforms.
@@ -122,6 +250,8 @@ Similarly, the latest versions of most desktop browsers are supported.
 |⠀⠀⠀Windows⠀  |Supported | Supported | N/A |⠀Supported⠀|⠀Supported⠀|⠀Not supported⠀|
 
 
+
+
 ## Documentation
 
 You can explore [huge, detailed documentation](https://mdbootstrap.com/) on our website. You can also use [sitemap](https://mdbootstrap.com/md-bootstrap-sitemap/) where each component is located
@@ -132,7 +262,7 @@ Additional tutorials for those with insatiable appetite for knowledge made by us
 
 ## Useful resources
 
-Here you'll find more resources, like [Getting Started](https://mdbootstrap.com/docs/jquery/getting-started/download/), [Freebies](https://mdbootstrap.com/freebies/), [Premium Templates](https://mdbootstrap.com/templates/) & [Snippet Editor](https://mdbootstrap.com/snippets/)
+Here you'll find more useful resources, like [Getting Started](https://mdbootstrap.com/docs/jquery/getting-started/download/), [Freebies](https://mdbootstrap.com/freebies/), [Premium Templates](https://mdbootstrap.com/templates/) & [snippet editor](https://mdbootstrap.com/snippets/)
 
 
 ## Connect with us on
@@ -150,3 +280,4 @@ Here you'll find more resources, like [Getting Started](https://mdbootstrap.com/
 - Like our page on [Facebook](https://www.facebook.com/mdbootstrap)
 
 A big ❤️ **thank you to all our users** ❤️ who are working with us to improve the software. We wouldn't be where we are without you. 
+
