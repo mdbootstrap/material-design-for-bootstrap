@@ -109,10 +109,6 @@
     }
   }
 
-  > input[type="date"]:not(.browser-default) {
-    color: transparent;
-  }
-
   > input[type="date"]:not(.browser-default) + label {
     transform-origin: 0 0;
   }
@@ -554,10 +550,6 @@
       }
     }
 
-    > input[type="date"]:not(.browser-default) {
-      color: transparent;
-    }
-
     > input[type="date"]:not(.browser-default) + label {
       transform-origin: 0 0;
     }
@@ -568,7 +560,7 @@
       transform: translateY(-12px);
       transform-origin: 0 0;
     }
-    
+
     .form-control {
       padding: 1.1rem .7rem .4rem !important;
     }
@@ -638,7 +630,7 @@
       }
     }
   }
-} 
+}
 
 .md-form {
   & > label {
@@ -647,10 +639,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
+
   .form-control {
-    box-sizing: border-box !important; 
-  } 
+    box-sizing: border-box !important;
+  }
+
+  .form-control.valid + label,
+  .form-control.invalid + label {
+    overflow: visible;
+  }
 
   .input-prefix {
     position: absolute;
@@ -659,7 +656,7 @@
     transition: $input-prefix-transition;
     color: rgba(0,0,0,.87);
     pointer-events: none;
-    
+
     &.active {
       color: $input-md-focus-color;
     }
@@ -670,7 +667,7 @@
       left: 36px;
       right: initial;
     }
-  
+
     .input-prefix {
       left: 16px;
       right: initial;
@@ -678,12 +675,12 @@
 
     .form-control {
       padding-left: 2.7rem !important;
-    } 
+    }
   }
 
   &.input-with-post-icon {
-  
-    .input-prefix { 
+
+    .input-prefix {
       right: 16px;
       left: initial;
     }
@@ -694,12 +691,12 @@
   }
 
   &.input-with-post-icon.input-with-pre-icon {
-  
-    .input-prefix {    
+
+    .input-prefix {
       right: 16px;
       left: initial;
     }
-  
+
     .input-prefix:first-of-type {
       left: 16px;
       right: initial;
@@ -709,6 +706,6 @@
       padding-left: 2.5rem !important;
       padding-right: 2.5rem !important;
     }
-  } 
-  
+  }
+
 }

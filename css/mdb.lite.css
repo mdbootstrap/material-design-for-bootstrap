@@ -2,7 +2,7 @@
 
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB LITE 4.19.1
+ *   Version: MDB LITE 4.19.2
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -7842,10 +7842,6 @@ body.scrollable {
     top: 3.6rem
 }
 
-.md-form>input[type="date"]:not(.browser-default) {
-    color: transparent
-}
-
 .md-form>input[type="date"]:not(.browser-default)+label {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0
@@ -8569,10 +8565,6 @@ body.scrollable {
     outline: none
 }
 
-.md-form.md-bg>input[type="date"]:not(.browser-default) {
-    color: transparent
-}
-
 .md-form.md-bg>input[type="date"]:not(.browser-default)+label {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0
@@ -8684,6 +8676,11 @@ body.scrollable {
 .md-form .form-control {
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box !important
+}
+
+.md-form .form-control.valid+label,
+.md-form .form-control.invalid+label {
+    overflow: visible
 }
 
 .md-form .input-prefix {
