@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Material Design for Bootstrap</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -19,13 +19,43 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Start your project here-->  
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
-      <h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1>
-      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-      <p class="animated fadeIn text-muted">MDB Team</p>
+  <!-- Start your project here-->
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <div class="text-center">
+        <h2>Release surprise! </h2>
+        <p class="h4 fw-bold">50% OFF MDB PRO</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <img src="https://mdbootstrap.com/img/Marketing/campaigns/50off-SJARV.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+​
+​
+        <h5 class="mb-3">Use this coupon code before it expires and claim the reward</h5>
+        <p class="mb-3">The coupon code will be valid until the end of the week</p>
+​
+        <div class="mt-2">
+​
+          <!--Coupon code-->
+          <code class="h2 border rounded py-1 px-5 flex-item me-2">T9TTVSQB</code>
+          <br>
+​
+          <!--Copy to clipboard-->
+​
+          <a id="disc-50" href="#" type="button" class="btn-lg btn-info" style="background-color: #009FE7;">COPY TO
+            CLIPBOARD <i class="far fa-copy ml-2"></i></a>
+          <a class="btn btn-outline-primary btn-lg mt-3" href="https://mdbootstrap.com/docs/standard/getting-started/"
+            target="_blank" style="border-color: #009FE7; color: #009FE7;" role="button">Start MDB tutorial</a>
+​
+​
+        </div>
+        <p>See <a href="https://mdbootstrap.com/pro/">prices</a></p>
+        <div class=" my-2 alert alert-success" id="code-success" style="display: none;">
+          Copied
+        </div>
+​
+      </div>
     </div>
   </div>
   <!-- End your project here-->
@@ -39,7 +69,26 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+      Clipboard_CopyTo("T9TTVSQB");
+      var div = document.getElementById('code-success');
+      div.style.display = 'block';
+      setTimeout(function () {
+        document.getElementById('code-success').style.display = 'none';
+      }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+      var tempInput = document.createElement("input");
+      tempInput.value = value;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+    }
+  </script>
 
 </body>
 </html>
