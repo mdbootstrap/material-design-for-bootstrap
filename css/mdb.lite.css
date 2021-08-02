@@ -2,7 +2,7 @@
 
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB LITE 4.19.2
+ *   Version: MDB LITE 4.20.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -7184,6 +7184,12 @@ body.scrollable {
     padding-right: 0 !important
 }
 
+.modal.modal-scrolling {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content
+}
+
 @media (min-width: 768px) {
     .modal .modal-dialog.modal-top {
         top: 0
@@ -9028,6 +9034,12 @@ ul.stepper {
     overflow-x: hidden;
     overflow-y: auto;
     counter-reset: section
+}
+
+ul.stepper li {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content
 }
 
 ul.stepper li a {

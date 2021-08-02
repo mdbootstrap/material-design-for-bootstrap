@@ -1,6 +1,6 @@
 /*!
  * Material Design for Bootstrap 4
- *   Version: MDB FREE 4.19.2
+ *   Version: MDB FREE 4.20.0
  * 
  * 
  *   Copyright: Material Design for Bootstrap
@@ -2421,8 +2421,10 @@
                 value: function(t) {
                     var e = Boolean(t.val()),
                         n = Boolean(t.attr("placeholder")),
-                        r = e || n ? "add" : "remove";
-                    "date" !== t.attr("type") && this.toggleActiveClass(t, r), "date" != t.attr("type") || e ? "date" == t.attr("type") && e && this.toggleActiveClass(t, r) : t.css("color", "transparent")
+                        r = e || n ? "add" : "remove",
+                        i = t.siblings("label").hasClass("active"),
+                        o = Boolean(t.siblings("label")[0]);
+                    "date" !== t.attr("type") && this.toggleActiveClass(t, r), "date" == t.attr("type") && !i && o ? t.css("color", "transparent") : "date" == t.attr("type") && e && this.toggleActiveClass(t, r)
                 }
             }, {
                 key: "validateField",

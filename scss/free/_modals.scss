@@ -172,6 +172,9 @@ body {
 
 // Position & Size
 .modal {
+  &.modal-scrolling {
+    height: min-content;
+  }
   padding-right: 0 !important;
   .modal-dialog {
     @media (min-width: 768px) {

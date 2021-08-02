@@ -1,6 +1,6 @@
 {
   "name": "mdbootstrap",
-  "version": "4.19.2",
+  "version": "4.20.0",
   "main": "js/mdb.min.js",
   "repository": "https://github.com/mdbootstrap/bootstrap-material-design.git",
   "author": "MDBootstrap",

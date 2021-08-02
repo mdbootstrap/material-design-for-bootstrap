@@ -8,6 +8,7 @@ ul.stepper {
   counter-reset: section;
 
   li {
+    height: min-content;
     a {
       padding: $stepper-li-a-padding;
       text-align: center;
