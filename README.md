@@ -89,7 +89,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
-    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-carousel-video.gif">
+    <img src="https://user-images.githubusercontent.com/45217974/111569660-680c7d00-87a3-11eb-94a9-1e1a6ad6ea7d.gif">
   </p>
 </a>
 
