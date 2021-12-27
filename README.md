@@ -17,18 +17,18 @@ Trusted by <b>2 000 000+</b> developers & designers. Used by companies like
 <table>
   <tbody>
     <tr>
-      <td><img src="https://mdbootstrap.com/img/logo/brands/nike.png" style="width: 10px;"></td>
-      <td><img src="https://mdbootstrap.com/img/logo/brands/amazon.png" style="width: 10px;"></td>
-      <td><img src="https://mdbootstrap.com/img/logo/brands/sony.png" style="width: 10px;"></td>
-      <td><img src="https://mdbootstrap.com/img/logo/brands/samsung.png"  style="height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/airbus.png" style="height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/yahoo.png"  style="height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/deloitte.png" style="height: 40px"></div>
-      <td><img src="https://mdbootstrap.com/img/logo/brands/ge.png" style="height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/kpmg.png" style="height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/unity.png" style="height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/ikea.png" style="max-height: 40px">
-      <td><img src="https://mdbootstrap.com/img/logo/brands/aegon.png" style="height: 40px">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/nike.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/amazon.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/sony.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/samsung.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/airbus.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/yahoo.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/deloitte.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/ge.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/kpmg.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/unity.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/ikea.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/aegon.png">
     </tr>
    </tbody>
 </table>
@@ -61,7 +61,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
         <a href="https://mdbootstrap.com/cli/">
           <img
             src="https://mdbootstrap.com/img/Marketing/products/cli/cli-free.jpg"
-            style="width: 60px;">
+            >
         </a>
       </td>
       <td align="left" valign="top">
@@ -86,12 +86,6 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 ### Carousel
 
 <p>A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
-
-<a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/" alt="Bootstrap 5" rel="dofollow">
-  <p align="center">
-    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-carousel-video.gif">
-  </p>
-</a>
 
 <a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
