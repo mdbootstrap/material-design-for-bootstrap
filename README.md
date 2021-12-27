@@ -41,9 +41,10 @@ We're maintaining a [dedicated Support Forum](https://mdbootstrap.com/support/) 
 
 # More Web Development Technologies
 
-|⠀ MDBootstrap Angular⠀ |⠀    MDBootstrap React ⠀­  |⠀ ­   MDBootstrap Vue⠀  ­ | ­­ MDBootstrap 5   ­­|
+| MDBootstrap Angular |⠀MDBootstrap React | MDBootstrap Vue⠀| MDBootstrap 5 |
 | --------------- | ------------------ | ------------- | ------------- |
-| ­­­ ­­­ ­­­ ­­­ ­­­ ­­­ ­­­ ­­­ ­­­­   [![MDB Angular](https://mdbootstrap.com/img/Marketing/general/logo/small/angular.png)](https://mdbootstrap.com/docs/angular/) ­­ ­­­­ ­­­ |⠀   ­­ ­­­ ­­­ ­­­ ­­­ ­­­   [![MDB React](https://mdbootstrap.com/img/Marketing/general/logo/small/react.png)](https://mdbootstrap.com/docs/react/)  ⠀­­ ­­­ ­­­ ­­­ ­­­ ­­­  |⠀ ­­ ­­­ ­­­ ­­­ ­­­ ­­­   [![MDB Vue](https://mdbootstrap.com/img/Marketing/general/logo/small/vue.png)](https://mdbootstrap.com/docs/vue/)    ­­ ­­­ ­­­ ­­­ ­­­ ­­­   |    ­­­ ­­­ ­­­ ­­­ ­­­ ­­­      [![MDB 5](https://mdbootstrap.com/wp-content/uploads/2020/08/bootstrap5-logo.png)](https://mdbootstrap.com/docs/standard/)   ⠀   ­­ ­­­ ­­­ ­­­ ­­­ ­­­
+|  ­­ ­­­ ­­­ ­­­ ­­­ ­­­  [![MDB Angular](https://mdbootstrap.com/img/Marketing/general/logo/small/angular.png)](https://mdbootstrap.com/docs/angular/) | ­­ ­­­ ­­­­ ­­­ ­­­  [![MDB React](https://mdbootstrap.com/img/Marketing/general/logo/small/react.png)](https://mdbootstrap.com/docs/react/) |  ­­ ­ ­­­ ­­­ [![MDB Vue](https://mdbootstrap.com/img/Marketing/general/logo/small/vue.png)](https://mdbootstrap.com/docs/vue/) |  ­­ ­­­­  [![MDB 5](https://mdbootstrap.com/wp-content/uploads/2020/08/bootstrap5-logo.png)](https://mdbootstrap.com/docs/standard/) |
+
 # Quick Start Video
 
  <a href="https://youtu.be/cXTThxoywNQ"><img src="https://mdbootstrap.com/wp-content/uploads/2020/11/YouTubeGit-1.png"></a>
