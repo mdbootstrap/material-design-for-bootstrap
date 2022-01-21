@@ -51,7 +51,7 @@ Trusted by <b>2 000 000+</b> developers & designers. Used by companies & institu
     <tr>
       <td>
           <a href="https://mdbootstrap.com/docs/standard/" alt="Bootstrap 5" rel="dofollow">
-          		<img src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.jpg">
+          		<img src="https://mdbcdn.b-cdn.net/img/Marketing/products/jquery/mdb-free.webp">
           </a>
       </td>
       <td>
