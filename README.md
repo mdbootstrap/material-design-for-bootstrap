@@ -1,3 +1,124 @@
+Bootstrap 4 UI KIT - 700+ components, MIT license, simple installation.
+
+MDB is a collection of free Bootstrap templates, themes, design tools & resources.
+
+---
+
+# Get started
+
+### [>> Get Started in 1 minute](https://mdbootstrap.com/docs/b4/jquery/getting-started/installation/)
+Simple installation via .zip, npm or cdnjs.
+ 
+### [>> Install with MDBGO](https://mdbgo.com/) 
+ Free Hosting, WordPress support, custom domains, SSL support, free database, frontend & backend templates, webpack starter included, git repostiory, FTP & jenkins support.
+ 
+### [>> Install with MDBGO + e-commerce shop integration](https://mdbgo.com/wordpress-shop/)
+One click setup! MDB GO allows you to create a WordPress page with a single click.
+Regardless whether you want to create a Travel Blog or an e-commerce shop to sell your product you can easily do that. You can even combine both into single page.
+
+
+## About Material Design for Bootstrap 4
+
+<p>Created by <a href="https://mdbootstrap.com"><img height="30" src="https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb-r.png"></a>  
+<a href="https://npmcharts.com/compare/mdbootstrap?minimal=true"> <img src="https://img.shields.io/npm/dm/mdbootstrap.svg?label=NPM%20Downloads" alt="Downloads"></a>
+<a href="https://github.com/mdbootstrap/material-design-for-bootstrap/blob/master/License.pdf"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+<a href="https://twitter.com/intent/tweet/?text=Thanks+@mdbootstrap+for+creating+amazing+and+free+Material+Design+for+Bootstrap+4+UI+KIT%20https://mdbootstrap.com/docs/b4/jquery/&hashtags=javascript,code,webdesign,bootstrap"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Let%20us%20know%20you%20were%20here%21&"></a>
+<a href="https://www.youtube.com/watch?v=c9B4TPnak1A"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/c9B4TPnak1A?label=Bootstrap%205%20Tutorial%20Views&style=social"></a></p>
+
+Trusted by <b>2 000 000+</b> developers & designers. Used by companies & institutions like
+<table>
+  <tbody>
+    <tr>
+      <td><img width="300" src="https://mdbootstrap.com/img/logo/brands/nasa.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/nike.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/amazon.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/sony.png"></td>
+      <td><img src="https://mdbootstrap.com/img/logo/brands/samsung.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/airbus.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/yahoo.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/deloitte.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/ge.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/kpmg.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/unity.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/ikea.png">
+      <td><img src="https://mdbootstrap.com/img/logo/brands/aegon.png">
+    </tr>
+   </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+          <a href="https://mdbootstrap.com/docs/standard/" alt="Bootstrap 5" rel="dofollow">
+          		<img src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.jpg">
+          </a>
+      </td>
+      <td>
+        <ul>
+        <li><b><a href="https://mdbootstrap.com/docs/b4/jquery/">500+ UI components</a></b></li>          
+         <li>Super simple, 1 minute installation</li>
+         <li>Detailed docs & practical examples</li>
+         <li>Lots of tutorials</li>
+         <li>Huge and active community</li>
+         <li><b>MIT license - free for personal & commercial use</b></li>
+        </ul>
+      </td>
+    </tr>
+   </tbody>
+</table>
+
+___
+
+# Bootstrap 5 tutorial
+
+**[>> Learn more about Bootstrap 5](https://mdbootstrap.com/docs/standard/bootstrap-5/)**
+
+**[>> Bootstrap 5 Tutorial](https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/)**
+
+**[>> Subscribe to our YouTube channel with dozens of Bootstrap tutorials](https://www.youtube.com/c/Mdbootstrap?sub_confirmation=1)**
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+         <a href="https://mdbootstrap.com/docs/b4/jquery/getting-started/installation/" alt="Bootstrap Tutorials" rel="dofollow">
+          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/learnmore-1.png">
+          </a>
+      </td>
+      <td>
+          <a href="https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/#section-beginner" alt="Bootstrap 5" rel="dofollow">
+          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/cover-bootstrap-5-1.png">
+          </a>
+      </td>
+    </tr>
+     <tr>
+        <td align="center">
+          <p align="center"><b>Start MDB jQuery learning from Basics</b></p>
+          <a href="https://mdbootstrap.com/docs/b4/jquery/getting-started/installation/" alt="Bootstrap 5" rel="dofollow">
+          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/Screenshot_26.png">
+          </a>
+         </td>
+        <td align="center">
+          <p align="center"><b>Learn Bootstrap 5 | Crash Course for Beginners in 1.5H</b></p>
+          <a href="https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/#section-beginner" alt="Bootstrap 5" rel="dofollow">
+          		<img src="https://mdbootstrap.com/wp-content/uploads/2020/12/Screenshot_26.png">
+          </a>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
 <a href="https://mdbootstrap.com/docs/jquery/getting-started/download/">
   <img src="https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb-r.png">
 </a>
