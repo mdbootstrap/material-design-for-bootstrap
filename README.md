@@ -4,6 +4,14 @@ MDB is a collection of free Bootstrap templates, themes, design tools & resource
 
 ---
 
+#### This content is for the previous 4th version of Bootstrap
+
+#### Download the latest Material Design for Bootstrap 5
+
+### [>> Get 700+ material UI components, free hosting, super simple 1 minute installation & much more](https://mdbootstrap.com/docs/standard/getting-started/installation/)
+
+---
+
 # Get started
 
 ### [>> Get Started in 1 minute](https://mdbootstrap.com/docs/b4/jquery/getting-started/installation/)
