@@ -1,6 +1,6 @@
 // Badges
 .badge {
-  color: $white !important;
+  color: $white;
   border-radius: $border-radius-base;
   box-shadow: $z-depth-1;
 }
@@ -12,4 +12,3 @@
 @each $name, $color in $basic-mdb-colors {
   @include make-badge($name, $color);
 }
-

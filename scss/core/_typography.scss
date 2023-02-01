@@ -6,16 +6,21 @@ body {
   font-weight: $font-weight-light;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $font-weight-light;
 }
 
 // Blockquote
 .blockquote {
   padding: $blockquote-padding-y $blockquote-padding-x;
-  border-left: .25rem solid #eceeef;
+  border-left: 0.25rem solid #eceeef;
   &.text-right {
-    border-right: .25rem solid #eceeef;
+    border-right: 0.25rem solid #eceeef;
     border-left: none;
   }
   .bq-title {
@@ -31,9 +36,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @each $name, $color in $basic {
   .bq-#{$name} {
-    border-left: 3px solid $color !important;
+    border-left: 3px solid $color;
     .bq-title {
-      color: $color !important;
+      color: $color;
     }
   }
 }
