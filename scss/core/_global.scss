@@ -4,28 +4,27 @@
   @each $color_type, $color_value in $color {
     @if $color_type == "base" {
       .#{$color_name} {
-        background-color: $color_value !important;
+        background-color: $color_value;
       }
       .#{$color_name}-text {
-        color: $color-value !important;
+        color: $color-value;
       }
       .rgba-#{$color_name}-slight,
       .rgba-#{$color_name}-slight:after {
-        background-color: rgba($color_value, .1);
+        background-color: rgba($color_value, 0.1);
       }
       .rgba-#{$color_name}-light,
       .rgba-#{$color_name}-light:after {
-        background-color: rgba($color_value, .3);
+        background-color: rgba($color_value, 0.3);
       }
       .rgba-#{$color_name}-strong,
       .rgba-#{$color_name}-strong:after {
-        background-color: rgba($color_value, .7);
+        background-color: rgba($color_value, 0.7);
       }
-    }
-    @else {
+    } @else {
       @if $enable_full_palette {
         .#{$color_name}.#{$color_type} {
-          background-color: $color_value !important;
+          background-color: $color_value;
         }
       }
     }
@@ -42,7 +41,7 @@
 // Material colors palette
 @each $color_name, $color in $material-colors {
   .#{$color_name} {
-    background-color: $color !important;
+    background-color: $color;
   }
 }
 
@@ -55,10 +54,10 @@
 }
 
 .dark-grey-text {
-  color: #4f4f4f !important;
+  color: #4f4f4f;
   &:hover,
   &:focus {
-    color: #4f4f4f !important;
+    color: #4f4f4f;
   }
 }
 
@@ -74,31 +73,31 @@
 
 // Shadows
 .z-depth-0 {
-  box-shadow: none !important;
+  box-shadow: none;
 }
 .z-depth-1 {
-  box-shadow: $z-depth-1 !important;
+  box-shadow: $z-depth-1;
 }
 .z-depth-1-half {
-  box-shadow: $z-depth-1-half !important;
+  box-shadow: $z-depth-1-half;
 }
 .z-depth-2 {
-  box-shadow: $z-depth-2 !important;
+  box-shadow: $z-depth-2;
 }
 .z-depth-3 {
-  box-shadow: $z-depth-3 !important;
+  box-shadow: $z-depth-3;
 }
 .z-depth-4 {
-  box-shadow: $z-depth-4 !important;
+  box-shadow: $z-depth-4;
 }
 .z-depth-5 {
-  box-shadow: $z-depth-5 !important;
+  box-shadow: $z-depth-5;
 }
 
 // Disabled cursor
 .disabled,
 :disabled {
-  pointer-events: none !important;
+  pointer-events: none;
 }
 
 // Links
@@ -120,7 +119,9 @@ a {
   }
 }
 
-a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+a:not([href]):not([tabindex]),
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
   color: inherit;
   text-decoration: none;
 }
@@ -133,7 +134,12 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   justify-content: center;
   margin-top: $divider-margin-y;
   margin-bottom: $divider-margin-y;
-  > h1, h2, h3, h4, h5, h6 {
+  > h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 0;
   }
   &:before,

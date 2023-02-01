@@ -48,7 +48,7 @@ ul.stepper {
     &.warning {
       a {
         .circle {
-          // background-color: #ff3547 !important;
+          // background-color: #ff3547   ;
           @extend .danger-color !optional;
         }
       }
@@ -94,7 +94,7 @@ ul.stepper {
     }
 
     &:hover {
-      background-color: rgba(0, 0, 0, .06);
+      background-color: rgba(0, 0, 0, 0.06);
     }
   }
 
@@ -125,7 +125,7 @@ ul.stepper {
   }
 
   > li:not(:last-of-type) {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 }
 
