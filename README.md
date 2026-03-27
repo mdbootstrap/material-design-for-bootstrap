@@ -14,7 +14,7 @@ MDB is a collection of free Bootstrap templates, themes, design tools & resource
 
 # Get started
 
-### [>> Get Started in 1 minute](https://mdbootstrap.com/docs/b4/jquery/getting-started/installation/)
+### [>> Get Started in 1 minute](https://mdbootstrap.com/docs/standard/getting-started/installation/)
 Simple installation via .zip, npm or cdnjs.
  
 ### [>> Install with MDBGO](https://mdbgo.com/) 
@@ -64,7 +64,7 @@ Trusted by <b>2 000 000+</b> developers & designers. Used by companies & institu
       </td>
       <td>
         <ul>
-        <li><b><a href="https://mdbootstrap.com/docs/b4/jquery/">500+ UI components</a></b></li>          
+        <li><b><a href="https://mdbootstrap.com/docs/standard/">500+ UI components</a></b></li>          
          <li>Super simple, 1 minute installation</li>
          <li>Detailed docs & practical examples</li>
          <li>Lots of tutorials</li>
@@ -127,7 +127,7 @@ ___
 
 
 
-<a href="https://mdbootstrap.com/docs/jquery/getting-started/download/">
+<a href="https://mdbootstrap.com/docs/standard/getting-started/installation/">
   <img src="https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb-r.png">
 </a>
 
@@ -178,9 +178,9 @@ We're maintaining a [dedicated Support Forum](https://mdbootstrap.com/support/) 
 
  <a href="https://youtu.be/cXTThxoywNQ"><img src="https://mdbootstrap.com/wp-content/uploads/2020/11/YouTubeGit-1.png"></a>
 
-According to your preference, you can follow a [video](https://youtu.be/cXTThxoywNQ) or [written version](https://mdbootstrap.com/education/bootstrap/quick-start/)
+According to your preference, you can follow a [video](https://youtu.be/cXTThxoywNQ) or [written version](https://mdbootstrap.com/learn/mdb-foundations/basics/introduction/)
 
-Also, you can install MDB Free using NPM [installation guide](https://mdbootstrap.com/docs/jquery/getting-started/installation-guide/)
+Also, you can install MDB Free using NPM [installation guide](https://mdbootstrap.com/docs/standard/getting-started/installation/)
 
 # MDB CLI - the fastest way to create and host MDB projects
 
@@ -188,7 +188,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <a href="https://mdbootstrap.com/cli/">
+        <a href="https://mdbgo.com/">
           <img
             src="https://mdbootstrap.com/img/Marketing/products/cli/cli-free.jpg"
             >
@@ -205,7 +205,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
         Make your project visible with <b><code>mdb publish</code></b>, no need to store your code, simply get the link and share it with the world!
       </td>
         <td align="center">
-          <b><a href="https://mdbootstrap.com/cli/">Get started</a> </p>
+          <b><a href="https://mdbgo.com/">Get started</a> </p>
         </td>
     </tr>
   </tbody>
@@ -217,7 +217,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/javascript/carousel/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/carousel/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-carousel.gif">
   </p>
@@ -225,25 +225,25 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 ### Loader / Spinner
 
-<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/spinners/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-loader.gif">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/spinners/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-color-spinners.gif">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/spinners/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-multicolor.gif">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/spinners/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/spinners/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-crazyloader.gif">
   </p>
@@ -253,13 +253,13 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>You can use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more...</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/buttons/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/buttons/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-buttons.gif">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/buttons/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/buttons/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-social-buttons.png">
   </p>
@@ -269,20 +269,20 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>Bootstrap cards are components which display content built of different elements with characteristic shadows, depth and hover effects.</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/cards/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-cards-cascading.png">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/cards/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-fancy-cards.gif">
   </p>
 </a>
 
 
-<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/cards/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-cards-overlay.png">
   </p>
@@ -292,7 +292,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>Bootstrap alerts are feedback messages that are displayed after specific actions performed by the user. The length of the text is unlimited.</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/components/cards/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/components/cards/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-alerts.png">
   </p>
@@ -302,7 +302,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>Bootstrap alerts are feedback messages that are displayed after specific actions performed by the user. The length of the text is unlimited.</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/extended/hamburger-menu/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-hamburgermenu.gif">
   </p>
@@ -312,19 +312,19 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>A footer is an additional navigation component. It can hold links, buttons, company info, copyrights, forms, and many other elements.</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-footer.png">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-footer-image.png">
   </p>
 </a>
 
-<a href="https://mdbootstrap.com/docs/jquery/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/navigation/footer/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-footer-video.png">
   </p>
@@ -334,7 +334,7 @@ Also, you can install MDB Free using NPM [installation guide](https://mdbootstra
 
 <p>Bootstrap's sidenav is a vertical navigation component which apart from traditional, text links, might embed icons, dropdowns, avatars or search forms.</p>
 
-<a href="https://mdbootstrap.com/docs/jquery/navigation/sidenav/" alt="Bootstrap 5" rel="dofollow">
+<a href="https://mdbootstrap.com/docs/standard/navigation/sidenav/" alt="Bootstrap 5" rel="dofollow">
   <p align="center">
     <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo4-sidenav.gif">
   </p>
@@ -378,15 +378,15 @@ Similarly, the latest versions of most desktop browsers are supported.
 
 ## Documentation
 
-You can explore [huge, detailed documentation](https://mdbootstrap.com/) on our website. You can also use [sitemap](https://mdbootstrap.com/md-bootstrap-sitemap/) where each component is located
+You can explore [huge, detailed documentation](https://mdbootstrap.com/) on our website.
 
 ## Education
 
-Additional tutorials for those with insatiable appetite for knowledge made by us & our users can be found in our [education section](https://mdbootstrap.com/education/) & in [miscellaneous](https://mdbootstrap.com/articles/)
+Additional tutorials for those with insatiable appetite for knowledge made by us & our users can be found in our [education section](https://mdbootstrap.com/learn/mdb-foundations/basics/introduction/).
 
 ## Useful resources
 
-Here you'll find more useful resources, like [Getting Started](https://mdbootstrap.com/docs/jquery/getting-started/download/), [Freebies](https://mdbootstrap.com/freebies/), [Premium Templates](https://mdbootstrap.com/templates/) & [snippet editor](https://mdbootstrap.com/snippets/)
+Here you'll find more useful resources, like [Getting Started](https://mdbootstrap.com/docs/standard/getting-started/installation/), [Freebies](https://mdbootstrap.com/freebies/), [Premium Templates](https://mdbootstrap.com/docs/standard/templates/admin-dashboard/) & [snippet editor](https://mdbootstrap.com/snippets/)
 
 
 ## Connect with us on
@@ -395,7 +395,7 @@ Here you'll find more useful resources, like [Getting Started](https://mdbootstr
 
 ## You enjoy using MDB? Check the advantages of the PRO version
 
-[Material Design for Bootstrap PRO](https://mdbootstrap.com/products/jquery-ui-kit/)
+[Material Design for Bootstrap PRO](https://mdbootstrap.com/docs/standard/pro/)
 
 ### Support MDB developers
 - Star our GitHub repo
