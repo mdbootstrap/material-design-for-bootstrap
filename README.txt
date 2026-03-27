@@ -5,20 +5,20 @@ Documentation:
 https://mdbootstrap.com/
 
 Getting started:
-https://mdbootstrap.com/docs/jquery/getting-started/download/
+https://mdbootstrap.com/docs/standard/getting-started/installation/
 
 Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/education/
+https://mdbootstrap.com/learn/mdb-foundations/basics/introduction/
 
 Free Templates:
 https://mdbootstrap.com/templates/
 
 License:
-https://mdbootstrap.com/licensing/
+https://mdbootstrap.com/general/license/
 
 Support & Services:
 https://mdbootstrap.com/services/
 
 Contact:
-office@mdbootstrap.com
+hello@mdbootstrap.com
 
