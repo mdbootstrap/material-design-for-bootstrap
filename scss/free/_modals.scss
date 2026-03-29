@@ -2,14 +2,14 @@
 // Styles for body
 body {
   &.modal-open {
-    padding-right: 0 !important;
+    padding-right: 0;
     overflow: auto;
 
     .fixed-top {
-      padding-right: 1rem !important;
+      padding-right: 1rem;
     }
     .fixed-bottom {
-      padding-right: 0 !important;
+      padding-right: 0;
     }
   }
   &.scrollable {
@@ -41,7 +41,8 @@ body {
     // Cascading header
     .modal-header {
       padding: $cascading-modal-padding;
-      margin: $cascading-modal-margin-top $cascading-modal-margin-right $cascading-modal-margin-bottom $cascading-modal-margin-left;
+      margin: $cascading-modal-margin-top $cascading-modal-margin-right
+        $cascading-modal-margin-bottom $cascading-modal-margin-left;
       text-align: center;
       border: none;
       border-radius: $border-radius-base;
@@ -53,7 +54,9 @@ body {
         width: 100%;
         margin-bottom: 0;
         font-size: $cascading-modal-font-size;
-        .fas, .fab, .far {
+        .fas,
+        .fab,
+        .far {
           margin-right: $cascading-modal-fa-margin-right;
         }
       }
@@ -68,7 +71,8 @@ body {
     .modal-c-tabs {
       .md-tabs {
         display: flex;
-        margin: $cascading-modal-tabs-margin-top $cascading-modal-tabs-margin-x 0 $cascading-modal-tabs-margin-x;
+        margin: $cascading-modal-tabs-margin-top $cascading-modal-tabs-margin-x
+          0 $cascading-modal-tabs-margin-x;
         box-shadow: $z-depth-1;
         li {
           flex: 1;
@@ -110,7 +114,8 @@ body {
       margin-top: $modal-avatar-margin-top;
       .modal-header {
         @extend .img-fluid;
-        margin: $modal-avatar-header-margin-top 0 $modal-avatar-header-margin-bottom;
+        margin: $modal-avatar-header-margin-top 0
+          $modal-avatar-header-margin-bottom;
         box-shadow: none;
         img {
           width: $modal-avatar-img-width;
@@ -141,11 +146,13 @@ body {
       color: $grey-darken-2;
     }
     @each $name, $color in $basic {
-      &.modal-#{$name}  {
+      &.modal-#{$name} {
         .modal-header {
           background-color: $color;
         }
-        .fas, .fab, .far {
+        .fas,
+        .fab,
+        .far {
           color: $color;
         }
         .badge {
@@ -175,7 +182,7 @@ body {
   &.modal-scrolling {
     height: min-content;
   }
-  padding-right: 0 !important;
+  padding-right: 0;
   .modal-dialog {
     @media (min-width: 768px) {
       &.modal-top {
@@ -247,8 +254,8 @@ body {
     .modal-frame {
       position: absolute;
       width: 100%;
-      max-width: 100% !important;
-      margin: 0 !important;
+      max-width: 100%;
+      margin: 0;
       &.modal-bottom {
         bottom: 0;
       }

@@ -5,7 +5,8 @@
   form {
     .md-form {
       input {
-        margin: 0 $navbar-form-input-mr $navbar-form-input-mb $navbar-form-input-ml;
+        margin: 0 $navbar-form-input-mr $navbar-form-input-mb
+          $navbar-form-input-ml;
       }
     }
   }
@@ -48,7 +49,9 @@
           pointer-events: none;
         }
       }
-      .fas, .fab, .far {
+      .fas,
+      .fab,
+      .far {
         padding-right: $navbar-flex-icons-padding-lg;
         padding-left: $navbar-flex-icons-padding-lg;
       }
@@ -59,7 +62,7 @@
     }
   }
   .dropdown-menu {
-    position: absolute !important;
+    position: absolute;
     margin-top: 0;
     a {
       padding: $navbar-dropdown-menu-padding;
@@ -79,10 +82,22 @@
     }
   }
   &.navbar-light {
-    @include make-navbar($navbar-light-disabled-color, $navbar-light-toggler-icon, $black, $navbar-light-hover-color, $navbar-light-bg-active-color);
+    @include make-navbar(
+      $navbar-light-disabled-color,
+      $navbar-light-toggler-icon,
+      $black,
+      $navbar-light-hover-color,
+      $navbar-light-bg-active-color
+    );
   }
   &.navbar-dark {
-    @include make-navbar($navbar-dark-disabled-color, $navbar-dark-toggler-icon, $white, $navbar-dark-hover-color, $navbar-dark-bg-active-color);
+    @include make-navbar(
+      $navbar-dark-disabled-color,
+      $navbar-dark-toggler-icon,
+      $white,
+      $navbar-dark-hover-color,
+      $navbar-dark-bg-active-color
+    );
   }
   &.scrolling-navbar {
     @media (min-width: $small-screen) {

@@ -42,8 +42,8 @@
 
 @media (prefers-reduced-motion) {
   .animated {
-    transition: none !important;
-    animation: unset !important;
+    transition: none;
+    animation: unset;
   }
 }
 
@@ -93,7 +93,6 @@
   animation-name: fadeInLeft;
 }
 
-
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -109,7 +108,6 @@
 .fadeInRight {
   animation-name: fadeInRight;
 }
-
 
 @keyframes fadeInUp {
   from {
@@ -127,7 +125,6 @@
   animation-name: fadeInUp;
 }
 
-
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -141,7 +138,6 @@
 .fadeOut {
   animation-name: fadeOut;
 }
-
 
 @keyframes fadeOutDown {
   from {
@@ -158,7 +154,6 @@
   animation-name: fadeOutDown;
 }
 
-
 @keyframes fadeOutLeft {
   from {
     opacity: 1;
@@ -174,7 +169,6 @@
   animation-name: fadeOutLeft;
 }
 
-
 @keyframes fadeOutRight {
   from {
     opacity: 1;
@@ -189,7 +183,6 @@
 .fadeOutRight {
   animation-name: fadeOutRight;
 }
-
 
 @keyframes fadeOutUp {
   from {
